@@ -1,0 +1,1317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Looking to learn C programming but not sure where to start? Look no further than WebDev Monk! Our comprehensive course is designed to take you from beginner to proficient in C programming Lanuguage.">
+
+
+<!--GOOGLE  ANALYTICS-->
+<!-- structured data-->
+
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes",
+"name":"Learn C Programming in 45 Minutes - Quick and Easy Tutorial",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Looking to learn C programming but not sure where to start? Look no further than WebDev Monk! Our comprehensive course is designed to take you from beginner to proficient in C programming Lanuguage.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/c.png",
+"contentUrl":"https://www.webdevmonk.com/main/c.png",
+"caption":"webdevmonk C 45 minutes tutorial"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Learn C Programming in 45 Minutes - Quick and Easy Tutorial" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/c.png" />
+<meta property="og:description" content="Looking to learn C programming but not sure where to start? Look no further than WebDev Monk! Our comprehensive course is designed to take you from beginner to proficient in C programming Lanuguage." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn C Programming in 45 Minutes - Quick and Easy Tutorial">
+<meta name="twitter:description" content="Looking to learn C programming but not sure where to start? Look no further than WebDev Monk! Our comprehensive course is designed to take you from beginner to proficient in C programming Lanuguage.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/c.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/c-tutorial-in-45minutes" />
+
+
+<title>Learn to C Programming in 45 Minutes - Quick and Easy Tutorial</title>
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i>   
+<h1>C basics tutorial in 45 minutes</h1>
+<img id="image" src="../main/c.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+<p>Hello everyone, this 45 minutes C tutorial will help you to learn C With clear explanations and hands-on exercises, you'll learn the fundamentals of C programming and be well on your way to creating your own programs. You'll learn about variables, data types, operators, control structures, and more. The best C tutorial for beginners and people who wants to revise the C concepts </p>
+<p>Unlock the power of programming with our comprehensive tutorial, 
+<a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a> Designed for beginners, it covers all the essential concepts and includes hands-on exercises to help you learn by doing.</p>
+<h2>Concepts: </h2>
+<p><a href="#1">1.  C Introduction</a> </p> 
+<p><a href="#2">2.  C Syntax</a> </p> 
+<p><a href="#3">3.  C Output</a> </p> 
+<p><a href="#4">4.  C Comments</a> </p> 
+<p><a href="#5">5.  C Variables</a> </p> 
+<p><a href="#6">6.  C Data Types</a> </p> 
+<p><a href="#7">7.  C Input</a> </p> 
+<p><a href="#8">8.  C Operators</a> </p> 
+<p><a href="#9">9.  C Booleans</a> </p> 
+<p><a href="#10">10.  C if, if-else, switch</a> </p> 
+<p><a href="#11">11.  C while, do-while, for</a> </p> 
+<p><a href="#12">12.  C break and continue</a> </p> 
+<p><a href="#13">13.  C Arrays</a> </p> 
+<p><a href="#14">14.  C Strings</a> </p> 
+<p><a href="#15">15.  C Functions</a> </p> 
+<p><a href="#16">16.  C Pointers</a> </p> 
+<p><a href="#17">17.  C Recursion</a> </p> 
+<p><a href="#18">18.  C Structures</a> </p>
+<p><a href="#19">19.  C Unions</a> </p>  
+<p><a href="#20">20.  C Files</a> </p> 
+<p><a href="#21">21.  C Enum</a> </p> 
+
+
+<h2 id="1">1. C Introduction</h2>
+<p>Welcome to the world of C programming! C is a high-level programming language that is widely used in a variety of applications, including operating systems, device drivers, and scientific simulations. It is known for its efficiency and flexibility, making it a popular choice among professionals and students alike.</p>
+<p>C is a programming language that is widely used in a variety of computer applications. Some common areas where C is used include:</p>
+<p>1. Operating systems: C is often used to create the core of operating systems, such as Windows and Linux, due to its efficiency and ability to work closely with hardware.</p>
+<p>2. Device drivers: C is often used to write device drivers, which are programs that allow the operating system to communicate with hardware devices such as printers and keyboards.</p>
+<p>3. Gaming: Many video games are written in C due to its ability to handle complex graphics and real-time gameplay.</p>
+<h3>Environment Setup</h3>
+<p>To set up your environment for C programming, you will need to install a C compiler and a text editor</p>
+
+<p>1. Choose a C compiler: There are several C compilers available, including GCC (GNU Compiler Collection) and Visual C++. GCC is a free, open-source compiler that is available on Linux, Mac, and Windows. </p>
+<p>2. Install the C compiler: Follow the instructions for your chosen compiler to install it on your system.</p>
+<p>3. Choose a text editor: A text editor is a program that allows you to write and edit text files. Some popular text editors for C programming include Notepad, Sublime Text, and Atom. Choose the text editor that you are most comfortable with.</p>
+<p>4. Install the text editor: Follow the instructions for your chosen text editor to install it on your system.</p>                 
+<p>Once you have installed a C compiler and text editor, you are ready to start writing and compiling C programs. To write a C program, open your text editor and create a new file. Type your C code into the file, save it with a ".c" extension, and then compile it using your C compiler.</p>
+
+<h2 id="2">2.  C Syntax</h2>
+<p>The syntax of the C programming language is the set of rules that define how a C program is written and structured.</p>
+<p>1. C is a case-sensitive language, which means that the names of variables, functions, and keywords must be written in the correct case. For example, "int" and "INT" are not the same thing in C.</p>
+<p>2. Line termination: In C, each statement must be terminated with a semicolon (;).</p>
+
+<p>3. Block structure: C uses curly braces ({ and }) to define blocks of code. This code block begins with an opening curly brace and ends with a closing curly brace.</p>
+<h3>The basic structure of a C program</h3>
+<p>1. Preprocessor directives: These are lines that begin with a pound sign (#) and are used to include header files and define macros.</p>
+<p>2. Function prototypes: These are declarations of functions that are used in the program.</p>
+<p>3. Global variables: These are variables that are declared outside of any function and are available to all functions in the program.</p>
+<p>4. The 'main()' function: This is the entry point of the program and is where execution begins.</p>
+<p>5. Local variables: These are variables that are declared inside a function and are only available within that function.</p>
+<p>6. Statements: These are the commands that are executed by the program.</p>
+
+
+<h2 id="3">3. C Output</h2>
+<p>In C, you can use the printf() function from the stdio.h library to output text, numbers, and other data types to the console. </p>
+<pre>
+<code class="language-c">
+#include&lt;stdio.h> 
+int main(){
+printf("Hello World");
+return 0;
+}
+</code>
+</pre>
+<p>The output of the above C example program is 
+"Hello World"</p>
+
+<h2 id="4">4.  C Comments</h2>
+<p>Comments are lines of code that are ignored by the compiler and are used to provide explanations or notes in the source code. Comments are useful for documenting your code and making it easier to understand for other developers.</p>
+<p>In C, there are two types of comments: single-line comments and multi-line comments.</p>
+<pre>
+<code class="language-c">
+// single line comment
+
+/* this is a 
+multi-line comment
+*/
+</code>
+</pre>
+
+<h2 id="5">5. C Variables</h2>
+<p>In C, a variable is a storage location that is used to hold a value or a reference to a value. Variables are used to store data that can be manipulated and accessed by the program.</p>
+<pre>
+<code class="language-c">
+// declaring variables
+
+int a;         // integer variable that can store one single integer value
+float num;     // float variable that can store one single decimal value
+char ch;       // character variable that can store one single character value
+</code>
+</pre>
+<p>You can assign immediately, or after declaration of the variable based on your need</p>
+<pre>
+<code class="language-c">
+int a;
+a = 10; 
+int number = 30;
+
+</code>
+</pre>
+<p>If multiple variables have same data type then you can follow this syntax</p>
+<pre>
+<code class="language-c">int a, b, c = 10;</code>
+</pre>
+<p>You can access them with its 'name' and'format specifiers' of the specific data type</p>
+<pre>
+<code class="language-c">
+#include&lt;stdio.h> 
+int main(){
+int a = 10;
+float num = 25.5;
+char ch = 'R';
+
+printf("%d \n", a);
+printf("%f \n", num);
+printf("%c \n", ch);
+
+return 0;
+
+}
+
+// Output 
+
+/* 
+10 
+25.500000 
+R */
+</code>
+</pre>
+<p>The '\n' character is used for a new line in C program.</p>
+<p>In C, format specifiers are used in the 'printf()' function to specify how a value should be formatted and displayed. Each type of data has a corresponding format specifier that you can use to control how the data is displayed.</p>
+<p>In C, there are a few rules to follow when declaring and using variables:</p>
+<p>1. Variable names only begin with a letter or an underscore (_).</p>
+<p>2. Variable names are case-sensitive. This means that "age" and "Age" are considered to be different variables.</p>
+<p>3. Variable names cannot be the same as C keywords (such as "int", "char", or "while").</p>
+<p>4. Variables must be declared before they are used. This means that you must specify the data type and name of the variable before you can assign a value to it.</p>
+
+<h2 id="6">6. C Data Types</h2>
+<p>In C, data types are used to specify the type and size of variables. C has a variety of built-in data types, including integers, floating-point numbers, characters, and more.</p>
+<h3>1. int: </h3>
+<p>In C this data type used to store integers (2,56,79). The size of an int variable depends on the machine, but it is typically at least 16 bits.</p>
+<h3>2. float: </h3>
+<p>In C this data type used to store single-precision floating-point numbers. A float variable is a 4-byte value that can hold decimal values with a precision of about 7 decimal digits.</p>
+<h3>3. char: </h3>
+<p>In C this data type used to store characters. A char variable is a single byte in size and can hold any character in the ASCII character set.</p>
+<h3>4. double: </h3>
+<p>In C this 'double' is a data type that represents a double-precision floating-point value. It is often used to store values with a larger range or greater precision than the 'float' data type.</p>
+<pre><code class="language-c"> 
+void main() {
+int num = 79;
+float fltNum = 23.99524;
+char character = 'V';
+double number = 2.718281828459045;
+long longNum= 93927;
+
+printf("num = %d \n", num);
+printf("fltNum = %f \n", fltNum);
+printf("character = %c \n", character);
+printf("number = %lf \n", number);
+printf("longNum = %ld \n", longNum);
+}
+
+// Output 
+
+/* 
+num = 79 
+fltNum = 23.995239 
+character = V
+number = 2.718282 
+longNum = 93927 
+*/
+</code>
+</pre>
+
+<h2 id="7">7. C Input</h2>
+<p>In C, you can use the 'scanf()' function to read input from the user. The scanf() function takes a format string and a list of pointers to variables as arguments, and it reads data from the standard input (typically the keyboard) and stores the values in the specified variables.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h> 
+
+void main(){
+int age;
+char ch;
+
+printf("Enter  Your age: \n");
+scanf("%d", &age);   // this will access the value from keyboard and store it in age variable
+printf("Enter a character: ");
+scanf("%c", &ch); 
+
+// now age, ch variables contain some values 
+
+printf("Your age is: \n", age);
+printf("The character is: \n",ch);
+
+
+}
+
+
+</code>
+</pre>
+<p>In this example, the 'scanf()' function is used to read an integer value for the "age" variable and a character value for the "ch" variable. The values are then output to the console using the 'printf()' function.</p>
+<h2 id="8">8. C Operators</h2>
+<p>In C, operators are special symbols that perform specific operations on one, two, or three operands, and produce a result. Operators are an essential part of C programming, and they are used to perform various types of operations, such as arithmetic, logical, relational, and bitwise operations.</p>
+<h3>1. Arithmetic Operators</h3>
+<p>In C these operators perform arithmetic operations, such as addition, subtraction, multiplication, and division. Examples: '+', '-', '*', '/', '%'.</p>
+<h3>2. Logical Operators</h3>
+<p>In C these operators will perform logical operations, like as AND, OR, and NOT. Examples: '&&', '||', '!'.</p>
+
+<h3>3. Relational operators</h3>
+<p>In C these operators will compare two operands and return a Boolean value (true or false). Examples: ==, !=, >, &lt;, >=, &lt;=.</p>
+<h3>4. Assignment operators</h3>
+<p>In C these operators assign a value to a variable. Examples: '=', '+=', '-=', '*=', '/=', '%=', '&=', '|=', '^=', '&lt;&lt;=', '>>='.</p>
+<h3>5. Increment and decrement operators</h3>
+<p> In C these operators increment or decrement the value of a variable by 1. Examples: ++, --.</p>
+<h3>6. Conditional operator</h3>
+<p>In C these operators evaluates a condition and returns one of two values depending on the result of the condition. Example: '? :'.</p>
+<h3>7. Comma operator</h3>
+<p>In C these operators separates two or more expressions and evaluates them in left-to-right order. Example: ','.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main(void) {
+int a = 10;
+int b = 5;
+
+// Arithmetic operators
+int c = a + b;  // addition
+printf("%d + %d = %d\n", a, b, c);
+
+c = a - b;  // subtraction
+printf("%d - %d = %d\n", a, b, c);
+
+c = a * b;  // multiplication
+printf("%d * %d = %d\n", a, b, c);
+
+c = a / b;  // division (integer division)
+printf("%d / %d = %d\n", a, b, c);
+
+// Comparison operators
+if (a == b) {  // equality
+printf("%d is equal to %d \n", a, b);
+} else {
+printf("%d is not equal to %d\n", a, b);
+}
+
+if (a &lt; b) {  // less than
+printf("%d is less than %d\n", a, b);
+} else {
+printf("%d is not less than %d \n", a, b);
+}
+
+if (a > b) {  // greater than
+printf("%d is greater than %d\n", a, b);
+} else {
+printf("%d is not greater than %d \n", a, b);
+}
+
+// Logical operators
+if (a == 10 && b == 5) {  // and
+printf("%d is equal to 10 and %d is equal to 5 \n", a, b);
+}
+
+if (a == 10 || b == 5) {  // or
+printf("%d is equal to 10 or %d is equal to 5\n", a, b);
+}
+
+if (!(a == 10)) {  // not
+printf("%d is not equal to 10\n", a);
+}
+
+return 0;
+}
+
+// Output 
+
+/*
+10 + 5 = 15
+10 - 5 = 5
+10 * 5 = 50
+10 / 5 = 2
+10 is not equal to 5
+10 is not less than 5
+10 is greater than 5
+10 is equal to 10 and 5 is equal to 5
+10 is equal to 10 or 5 is equal to 5
+*/
+</code>
+</pre>
+<h2 id="9">9. C Booleans </h2>
+<p>In C, a Boolean value is a value that can be either 'true' or 'false'. C does not have a built-in Boolean data type, but you can use the '_Bool' data type or the bool data type from the 'stdbool.h' header file to store Boolean values.</p>
+<p>Any non-zero value considered as a 'true' value and zero is considered as a 'false'</p>
+<pre><code class="language-c">
+#include &lt;stdio.h> // include the standard input/output header file
+#include &lt;stdbool.h> // include the "stdbool.h" header file
+
+int main() {
+bool flag = true;  // define a Boolean variable called "flag" and assign it the value "true"
+
+if (flag) {       // if the value of "flag" is "true"
+printf("True.\n");  
+} else {          // if the value of "flag" is "false"
+printf("False.\n"); 
+}
+
+return 0; // return 0 to indicate successful execution
+}
+
+// Output:  
+
+// The flag is set.
+</code>
+</pre>
+<p>In the above C program example, the bool data type is used to declare a Boolean variable called "flag". The value of "flag" is then used in an if statement to determine which message to output to the console.</p>
+<h2 id="10">10. C if, if-else, switch</h2>
+<h3>if</h3>
+<p>The 'if' statement in C allows you to specify a condition, and if that condition evaluates to 'true', a block of code will be executed.</p>
+<pre>
+<code class="language-c">
+int num = 2;
+if(num > 0){
+printf("I am executed");
+}
+</code>
+</pre>
+<h3>if-else</h3>
+<p>The 'if-else' statement is similar to the 'if' statement, but it allows you to specify a block of code to be executed even if  the condition is 'false'. The 'else' block will execute this false block</p>
+<pre>
+<code class="language-c">
+int num = 2;
+if(num > 0){
+printf("if, I am executed");
+}
+else{
+printf("else, I am executed");
+}
+</code>
+</pre>
+<h3>switch</h3>
+<p>The 'switch' statement is a control flow statement that allows you to specify multiple conditions and execute different blocks of code depending on the result of those conditions. The 'switch' statement is often used as an alternative to a series of 'if-else' statements, as it can make the code easier to read and maintain. </p>
+<pre>
+<code class="language-c">
+int num = 1;
+switch (num) {
+case 1:
+printf("num is 1\n");
+break;
+case 2:
+printf("num is 2\n");
+break;
+default:
+printf("num is something else\n");
+break;
+}
+
+</code>
+</pre>
+<p>In the C example program above, the 'switch' statement will evaluate the value of num and execute the corresponding block of code. The 'break' statement is used to exit the switch statement and prevent the code from falling through to the next case. The 'default' case is optional and is executed if none of the other cases match the value of num.</p>
+<h2 id="11">11. C while, do-while, for</h2>
+<h3>while loop in C</h3>
+<p>A while loop allows you to repeat a block of code as long as a specific condition is true. 
+It means the body of the while loop will always execute while the condition is always true.
+</p>
+<pre>
+<code class="language-c">
+while (condition) {
+// code block to be executed
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int i = 1;
+while (i &lt;= 10) {
+printf("%d\n", i);
+printf("Hello");
+i++;
+}
+return 0;
+}
+
+
+</code>
+</pre>
+<p> The above C code will print the numbers from 1 to 10 and print "Hello" in 10 times</p>
+<h3>do-while</h3>
+<p>A do-while loop is similar to a while loop, but the code block is guaranteed to be executed at least once, because the condition is checked after the code block has been executed.</p>
+<pre>
+<code class="language-c">
+do {
+// code block to be executed
+} while (condition);
+
+</code>
+</pre>
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int num;
+do {
+printf("Enter a positive number: ");
+scanf("%d", &num);
+} while (num &lt;= 0);
+printf("Thank you!\n");
+return 0;
+}
+</code>
+</pre>
+<p>the above C example code will ask the user to enter a number, and it will continue to do so until the user enters a positive number</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int num = 1;
+do {
+printf("Hello")
+} while (num &lt;= 0);
+
+return 0;
+}
+</code>
+</pre>
+<p>In the above example, the condition is false but it still execute one time. Becuase
+it execute first then it will go to check the condition.
+</p>
+<h3>for loop</h3>
+<p>A for loop is a concise way to write a loop that iterates over a range of values. </p>
+<pre>
+<code class="language-c">
+for (initialization; condition; increment) {
+// code block to be executed
+}
+
+</code>
+</pre>
+<p>The initialization statement is executed before the loop starts. The condition is checked before each iteration of the loop. If the condition is true, the code block is executed, and then the increment statement is executed. This method is executed repeatedly until the condition becomes false.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+for (int i = 1; i &lt;= 10; i++) {
+printf("%d\n", i);
+}
+return 0;
+}
+
+</code>
+</pre>
+<p>The above C example program will print the numbers from 1 to 10</p>
+<h2 id="12">12. C break and continue</h2>
+<p>The 'break' statement is used to exit a loop before it complete. When a 'break' statement is encountered within a loop, the loop is immediately terminated and control is transferred to the next statement after the loop.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+for (int i = 1; i &lt;= 10; i++) {
+if (i == 5) {
+break;
+}
+printf("%d\n", i);
+}
+printf("Done!\n");
+return 0;
+}
+
+</code>
+</pre>
+<p>The above C example program will print the numbers from 1 to 10, but it will exit the loop as soon as the number 5 is encountered:</p>
+<h3>continue</h3>
+<p>The 'continue' statement is used to skip the rest of the current iteration of a loop and move on to the next iteration. When a 'continue' statement is encountered within a loop, the rest of the code in the current iteration is skipped, and control is transferred to the next iteration of the loop.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+for (int i = 1; i &lt;= 10; i++) {
+if (i == 5) {
+continue;
+}
+printf("%d\n", i);
+}
+printf("Done!\n");
+return 0;
+}
+
+</code>
+</pre>
+<p>The above example program code will print the numbers from 1 to 10, but it will skip the number 5</p>
+<p>It is important to note that the 'break' and 'continue' statements can only be used within a loop. Attempting to use them outside of a loop will result in a compile-time error.
+</p>
+<h2 id="13">13.  C Arrays</h2>
+<p>In C, an array is a collection of elements of the same data type. Arrays are very useful for storing and managing large amounts of same data.</p>
+<p>To declare an array in C, you need to specify the type of elements it will contain and the size of the array. </p>
+<pre>
+<code class="language-c">
+data_type array_name[size];
+
+int numbers[10];
+</code>
+</pre>
+<p>You can also initialize an array when you declare it by specifying the values of its elements in curly braces</p>
+<pre>
+<code class="language-c">
+int numbers[5] = {1, 4, 7, 8, 9};
+</code>
+</pre>
+<p>To access an element of an array, you use the index of the element in square brackets. Array indices start at 0, so the first element of the array has an index of 0, the second element has an index of 1, and so on.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int numbers[5] = {1, 4, 7, 8, 9};
+printf("The third element of the array is %d\n", numbers[2]);
+return 0;
+}
+
+</code>
+</pre>
+<p>The above C code accesses the third element of the array and prints it to the screen</p>
+
+<p>You can also use a loop to iterate over the elements of an array and perform an operation on each element.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int numbers[5] = {1, 2, 3, 4, 5};
+for (int i = 0; i &lt; 5; i++) {
+printf("%d\n", numbers[i]);
+}
+return 0;
+}
+
+</code>
+</pre>
+<p>The above C program will print all the elements of the array</p>
+<p>You can take elements for an array from the user using the 'scanf()' function in C, you can use a loop to iterate over the elements of the array and use the 'scanf()' function to read each element from the user.</p>
+<pre><code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int size;
+printf("Enter the size of the array: ");
+scanf("%d", &size);
+
+int numbers[size];
+for (int i = 0; i &lt; size; i++) {
+printf("Enter element %d: ", i+1);
+scanf("%d", &numbers[i]);
+}
+
+printf("Elements of the array: ");
+for (int i = 0; i &lt; size; i++) {
+printf("%d ", numbers[i]);
+}
+printf("\n");
+
+return 0;
+}
+
+// Output: 
+
+/* 
+
+Enter the size of the array: 3
+Enter element 1: 5
+Enter element 2: 6
+Enter element 3: 8
+Elements of the array: 5 6 8 
+
+*/
+</code></pre>
+<p>You can also change the element in the array using it's index position</p>
+<pre>
+<code class="language-c">
+#include&lt;stdio.h> 
+int main() {
+int arr[5] = {1,2,3};
+printf("Before changing: ");
+for(int i = 0; i &lt; 3; i++){
+printf("%d ",arr[i]);
+}
+arr[2] = 9;
+printf("After changing: ");
+for(int i = 0; i &lt; 3; i++){
+printf("%d ",arr[i]);
+}
+return 0;
+}
+
+// Output: 
+
+/* 
+
+Before changing: 1 2 3 
+After changing: 1 2 9 
+
+*/
+</code>
+</pre>
+<h2 id="14">14. C Strings</h2>
+<p>In C, a string is a sequence of characters stored in an array. Strings are useful for storing and manipulating text data.</p>
+<p>In general we don't have a seperate data type for Strings so we use array characters.</p>
+<pre>
+<code class="language-c">char string_name[size];
+</code>
+</pre>
+<pre>
+<code class="language-c">
+char name[20];
+
+</code>
+</pre>
+<p>The above C program, declares a string with a size of 20 characters</p>
+<p>You can also initialize a string when you declare it by enclosing the characters in double quotes</p>
+<pre>
+<code class="language-c">
+char name[] = "John Smith";
+
+</code>
+</pre>
+<p>To access a character in a string, you use the index of the character in square brackets. String indices start at 0, so the first character of the string has an index of 0, the second character has an index of 1, and so on.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+char name[] = "John Smith";
+printf("The third character of the string is %c\n", name[2]);
+return 0;
+}
+
+</code>
+</pre>
+
+<p>It is important to note that strings in C are null-terminated, which means that they are terminated by a special character called the null character ('\0'). This character is used to mark the end of the string, and it is not counted as part of the string. When you iterate over the characters of a string, you should stop when you encounter the null character.</p>
+</stdio.h>
+<h3>String functions</h3>
+<p>C also provides a set of string functions in the 'string.h' header file that can be used to manipulate strings. </p>
+<p>1. 'strlen()': returns the length of a string.</p>
+<p>2. 'strcpy()': copies one string to another.</p>
+<p>3. 'strcat()': concatenates two strings.</p>
+<p>4. 'strcmp()': compares two strings.</p>
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+#include &lt;string.h>
+
+int main() {
+char s1[20] = "Hello";
+char s2[20] = "World";
+
+// concatenate s1 and s2 and store the result in s1
+strcat(s1, s2);
+
+// print the length of s1
+printf("Length of s1: %d\n", strlen(s1));
+
+// compare s1 and s2
+if (strcmp(s1, s2) == 0) {
+printf("s1 and s2 are equal\n");
+} else {
+printf("s1 and s2 are not equal\n");
+}
+
+return 0;
+}
+
+</code>
+</pre>  
+<h2 id="15">15. C Functions</h2>
+<p>In C, a function is a block of re-usable code that performs a specific task when it is called. Functions are useful for organizing and reusing code, and they help to make your code more modular and easier to maintain.</p>
+<pre>
+<code class="language-c">
+return_type function_name(parameter_list if any) {
+// function body
+}
+
+</code>
+</pre>
+<p>1. 'return_type': specifies the data type of the value returned by the function. If the function does not return a value, you can use the 'void' keyword.</p>
+<p>2. 'function_name': specifies the name of the function. Function names follow the same rules as variable names in C.</p>
+<p>3. 'parameter_list': specifies a list of parameters that the function accepts. Each parameter consists of a data type and a name. If the function does not accept any parameters, you can omit the parameter list.
+</p>
+<pre><code class="language-c">
+#include&lt;stdio.h> 
+
+int main() {
+Say_hi()
+Say_hi()
+Say_hi()
+return 0;
+}
+
+void Say_hi(){
+prinf("Hi");
+}
+</code></pre>
+<p>In the above example program, the text "Hi" will print 3 times. because we call 'Say_hi' function 3 times in the 'main()' function</p>
+<pre><code class="language-c">
+#include&lt;stdio.h> 
+
+int main() {
+printf("The sum of 9 and 4 is %d ", sum(9,4));
+printf("The sum of 5 and 3 is %d ", sum(5,3));
+printf("The sum of 10 and 8 is %d ", sum(10,8));
+
+return 0;
+}
+
+int sum(int a, int b){
+int sum = a + b;
+return sum;    
+}
+
+// Output 
+
+/* 
+The sum of 9 and 4 is 13 
+The sum of 5 and 3 is 8 
+The sum of 10 and 8 is 18 
+*/
+</code></pre>
+
+<p>Whenver the 'return' statement is encounter in the function it stop 
+executing that function and will return the value where it is called.
+</p>
+
+<h2 id="16">16. C Pointers</h2>
+<p>In C, a pointer is a specail kind of variable that stores the computer memory address of another variable. Pointers are useful for manipulating and accessing data stored in memory, and they are an essential concept in C programming.</p>
+<p>To declare a pointer in C, you use the * operator. </p>
+<pre>
+<code class="language-c">type *ptr_name;
+</code>
+</pre>
+<p>The following code declares a pointer to an integer</p>
+<pre>
+<code class="language-c">int *ptr;
+</code>
+</pre>
+<p>To access the value stored in the memory location pointed by a pointer, you use the * operator. This is known as dereferencing the pointer.</p>
+<p>For example, the following code declares an integer variable 'a' and a pointer ptr that points to 'a', and it sets the value of 'a' to 10 using the pointer.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+int a = 10;
+int *ptr = &amp;a;  // assign the address of a to ptr
+*ptr = 20;      // dereference ptr and set the value of a to 20
+printf("a = %d\n", a);
+return 0;
+}
+
+</code>
+</pre>
+<p>This code will print 'a = 20' to the screen.</p>
+<p>You can also use pointers to pass variables by reference to a function. When you pass a variable by reference, the function can modify the original variable. To pass a variable by reference, you need to pass the address of the variable using the & operator.</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+// function prototype
+void swap(int *a, int *b);
+
+int main() {
+int var1 = 10;
+int var2 = 20;
+printf("Before swapping: var1 = %d, var2 = %d\n", var1, var2);
+swap(&var1, &var2);
+printf("After swapping: var1 = %d, var2 = %d\n", var1, var2);
+return 0;
+}
+
+// function 
+void swap(int *a, int *b) {
+int temp = *a;
+*a = *b;
+*b = temp;
+}
+
+// Output: 
+
+/* 
+
+Before swapping: var1 = 10, var2 = 20
+After swapping: var1 = 20, var2 = 10
+
+*/
+</code>
+</pre>
+<p>The above C code defines a function called 'swap()' that takes two pointers to integers as parameters and swaps the values pointed by the pointers. The swap() function is called in the 'main()' function, and the values of x and y are swapped.</p>
+<p>It is important to note that pointers can be a powerful and useful tool, but they can also be complex if used improperly. In particular, you need to be careful with memory management when using pointers, and you should always make sure to deallocate any memory that you have allocated dynamically.</p>
+<h2 id="17">17. C Recursion</h2>
+<p>In C, recursion is a technique for defining a function that calls itself repeatedly until a certain condition is met. Recursion is useful for solving problems that can be divided into smaller subproblems, and it is a key concept in computer science.</p>
+
+<p>To define a recursive function in C, you need to specify a base case that stops the recursion, and you need to specify a recursive case that calls the function itself with a modified set of arguments.</p>
+<p>An example of a recursive function that finds the factorial of a specific number</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int factorial(int n) {
+if (n == 0) {
+// base case: 0! = 1
+return 1;
+} else {
+// recursive case: n! = n * (n-1)!
+return n * factorial(n-1);
+}
+}
+
+int main() {
+int num;
+printf("Enter a number: ");
+scanf("%d", &num);
+printf("The factorial of %d is %d\n", num, factorial(num));
+return 0;
+}
+
+// Output: 
+
+/* 
+
+Enter a number: 3
+The factorial of 3 is 6
+
+*/
+</code>
+</pre>
+<p>When you call a recursive function, the function calls itself with a modified set of arguments, and the function calls are stored on the call stack. When the base case is reached, the function calls are popped from the stack and the results are combined to produce the final result.</p>
+
+<h2 id="18">18.  C Structures</h2>
+<p>In C, a structure is a user-defined data type that consists of a collection of related variables. Structures are useful for organizing and manipulating data that has multiple attributes, and they are an essential concept in C programming.</p>
+<p>To define a structure in C, you use the 'struct' keyword followed by the name of the structure and the list of variables in curly braces.</p>
+<pre>
+<code class="language-c">
+struct struct_name {
+type var1;
+type var2;
+...
+};
+
+</code>
+</pre>
+<p>For example, the following code defines a structure called student that represents a student with three attributes: name, age, and grade:</p>
+<pre>
+<code class="language-c">
+struct student {
+char name[50];
+int age;
+float grade;
+};
+
+</code>
+</pre>
+<p>To create a variable of a structure type, you need to use the struct keyword followed by the name of the structure and the name of the variable. </p>
+<pre>
+<code class="language-c">struct struct_name var_name;
+</code>
+</pre>
+<p>For example, the following code creates a structure variable called s1 of type student</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+struct student s1 = {"John Smith", 20, 90.5};
+printf("Name: %s\n", s1.name);
+printf("Age: %d\n", s1.age);
+return 0;
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+#include &lt;string.h>
+
+struct student {
+char name[50];
+int age;
+float grade;
+};
+
+// function prototype
+void print_student(struct student s);
+
+int main() {
+struct student s1;
+strcpy(s1.name, "John Smith");
+s1.age = 20;
+s1.grade = 90.5;
+
+// print the student data
+print_student(s1);
+
+return 0;
+}
+
+// function definition
+void print_student(struct student s) {
+printf("Name: %s\n", s.name);
+printf("Age: %d\n", s.age);
+printf("Grade: %.1f\n", s.grade);
+}
+
+// Output: 
+
+/* 
+
+Name: John Smith
+Age: 20
+Grade: 90.5
+
+*/
+</code>
+</pre>
+<p>The above code defines a structure called 'student' that represents a 'student' with three attributes: name, age, and grade. It also defines a function called 'print_student()' that takes a structure of type student as a parameter and prints the data of the student to the screen.</p>
+<p>In the 'main()' function, the code creates a structure variable s1 of type student and initializes its variables with the data of a student. It then calls the 'print_student()' function to print the data of the student to the screen.</p>
+<pre>
+<code class="language-c">
+Name: John Smith
+Age: 20
+Grade: 90.5
+</code>
+</pre>
+
+<h2 id="19">19.  C Unions</h2>
+<p>In C, a union is a user-defined data type that consists of a collection of variables that share the same memory location. Unions are useful for saving memory when you need to store different data types in the same location, and they are an essential concept in C programming.</p>
+<p>To define a union in C, you use the union keyword followed by the name of the 'union' and the list of variables in curly braces.</p>
+<pre>
+<code class="language-c">
+union union_name {
+type var1;
+type var2;
+...
+};
+
+</code>
+</pre>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+union value {
+int i;
+float f;
+};
+
+int main() {
+union value v;
+
+// store an integer in the union
+v.i = 10;
+printf("v.i = %d\n", v.i);
+
+// store a float in the union
+v.f = 3.14;
+printf("v.f = %f\n", v.f);
+
+// the value of v.i is now invalid, because it was overwritten by v.f
+printf("v.i = %d\n", v.i);
+
+return 0;
+}
+
+// Output
+
+/* 
+v.i = 10
+v.f = 3.14
+v.i = 0
+*/
+</code>
+</pre>
+<h3>Difference between Structure and Union in C?</h3>
+<p>The main difference between a structure and a union in C is that a structure has separate memory locations for each of its variables, while a union has a single memory location shared by all of its variables.</p>
+<p>This means that when you define a structure, the memory required to store the structure is equal to the sum of the sizes of its variables. For example, if you define a structure with two integers and a float, the memory required to store the structure will be 8 bytes (assuming that each integer takes up 4 bytes and the float takes up 4 bytes).</p>
+<p>On the other hand, when you define a union, the memory required to store the union is equal to the size of the largest variable in the union. For example, if you define a union with an integer and a float, the memory required to store the union will be 4 bytes (assuming that the integer takes up 4 bytes and the float takes up 4 bytes).</p>
+<p>Here is an example of a program that illustrates the difference between structures and unions in C</p>
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+struct point {
+int x;
+int y;
+};
+
+union value {
+int i;
+float f;
+};
+
+int main() {
+struct point p = {1, 2};
+union value v;
+
+printf("Size of struct point: %ld bytes\n", sizeof(struct point));
+printf("Size of union value: %ld bytes\n", sizeof(union value));
+
+// store an integer in the union
+v.i = 10;
+printf("v.i = %d\n", v.i);
+
+// store a float in the union
+v.f = 3.14;
+printf("v.f = %f\n", v.f);
+
+// the value of v.i is now invalid, because it was overwritten by v.f
+printf("v.i = %d\n", v.i);
+
+return 0;
+}
+
+</code>
+</pre>
+<h2 id="20">20. C Files</h2>
+<p>In C, a file is a collection of data stored on a storage device, such as a hard drive or a USB drive. Files are used to store and manipulate data in a persistent manner, which means that the data remains in the file even after the program that created the file has finished executing.</p>
+<p>There are two kinds of files in C language: text files and binary files. Text files contain data in the form of plain text, and they are used to store data that can be easily read and edited by humans. Binary files contain data in a binary format, and they are used to store data that is not intended to be read or edited by humans.</p>
+<p>To work with files in C, you need to use the 'stdio.h' library, which provides a set of functions for reading and writing files. Some of the most common file manipulation functions in C are</p>
+<p>1. 'fopen()': opens a file for reading or writing.</p>
+<p>2. 'fclose()': closes a file that was previously opened with fopen().</p>
+<p>3. 'fgetc()': reads a single character from a file.</p>
+<p>4. 'fputc()': writes a single character to a file.</p>
+<p>5. 'fgets()': reads a line of text from a file.</p>
+<p>6. 'fputs()': writes a line of text to a file.</p>
+<p>7. 'fread()': reads a block of data from a file.</p>
+<p>8. 'fwrite()': writes a block of data to a file.</p>
+
+<pre>
+<code class="language-c">
+#include &lt;stdio.h>
+
+int main() {
+// open a file for writing
+FILE *file = fopen("data.txt", "w");
+if (file == NULL) {
+printf("Error opening file!\n");
+return 1;
+}
+
+// write a line of text to the file
+fputs("Hello, world!\n", file);
+
+// close the file
+fclose(file);
+
+// open the file for reading
+file = fopen("data.txt", "r");
+if (file == NULL) {
+printf("Error opening file!\n");
+return 1;
+}
+
+// read a line of text from the file
+char buffer[100];
+fgets(buffer, 100, file);
+printf("%s", buffer);
+
+// close the file
+fclose(file);
+
+return 0;
+}
+
+// Output: 
+// Hello, world!
+
+</code>
+</pre>
+<p>The above code opens a file called 'data.txt' for writing, writes a line of text to the file, closes the file, and then reopens it for reading. It reads a line of text from the file and prints it to the screen.</p>
+<p>It is important to note that you need to use the 'fopen()' function with caution, because it can fail if the file does not exist or if you do not have permission to access the file. You should always check the return value of 'fopen() 'to ensure that the file was opened successfully before attempting to read or write data to the file.</p>
+<h2 id="21">21. C enum</h2>
+<p>In C, an enumeration (enum) is a user-defined data type that consists of a set of named constants. Enumerations are useful for defining a set of related constants and giving them meaningful names, and they are an essential concept in C programming.</p>
+<p>To define an enumeration in C, you use the 'enum' keyword followed by the name of the enumeration and the list of constants in curly braces. </p>
+<pre><code class="language-c">
+enum enum_name {
+const1,
+const2,
+...
+};
+
+</code></pre>
+<p>For example, the following code defines an enumeration called colors that represents a set of colors:</p>
+<pre>
+<code class="language-c">
+enum colors {
+RED,
+GREEN,
+BLUE
+};
+</code>
+</pre>
+<p>To create a variable of an enumeration type, you need to use the 'enum' keyword followed by the name of the enumeration and the name of the variable.</p>
+<pre><code class="language-c">
+enum enum_name var_name;
+
+</code></pre>
+
+<pre><code class="language-c">
+#include &lt;stdio.h>
+
+enum colors {
+RED,
+GREEN,
+BLUE
+};
+
+int main() {
+enum colors c = RED;
+printf("Color: %d\n", c);
+return 0;
+}
+
+
+// Output
+// Color: 0
+</code></pre>
+<p>This code defines an enumeration called colors and creates an enumeration variable c of type colors. It assigns the value RED to c and prints it to the screen.</p>
+<p>It is important to note that the constants in an enumeration are assigned consecutive integer values starting from 0 by default. However, you can also specify explicit values for the constants in the enumeration if you want.</p>
+<pre>
+<code class="language-c">
+enum fruits {
+APPLE = 1,
+BANANA = 2,
+ORANGE = 4
+};
+</code>
+</pre>
+<h3>Why to use 'enum'?</h3>
+<p>Type safety: Enumerations are a separate data type in C, which means that you can't accidentally use an enumeration value where an integer value is expected. This helps to prevent errors in your code and makes it easier to debug.</p>
+<p>Improved readability: Enumerations allow you to give meaningful names to a set of related constants, which makes your code easier to read and understand. For example, using an enumeration to represent the months of the year is more readable than using integer constants to represent the same values.</p>
+<p>Overall, enumerations are a useful tool for improving the readability, type safety, memory usage, and performance of your C programs.</p>
+<h1>Thank You</h1>
+<p>
+Thank you so much for taking the time to visit 'webdevemonk' and learn about C programming through our tutorial. We hope that you found the information helpful and that you feel more confident in your coding skills. <br>
+</p>
+<p>We strive to provide high-quality, easy-to-follow tutorials for those who are interested in learning web development and programming. We appreciate your support and hope that you continue to visit and learn with us.</p>
+<p>Again, thank you for choosing 'webdevemonk'. We hope to see you again soon!</p>
+
+</main>
+
+
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevmonk</h2></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

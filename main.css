@@ -1,0 +1,438 @@
+  @import url('https://fonts.googleapis.com/css2?family=Abel&family=Anek+Devanagari:wght@300&family=Baloo+Paaji+2&family=Inter+Tight:wght@200&family=Julius+Sans+One&family=League+Gothic&family=Manuale&family=Noto+Sans+KR:wght@300&family=Paytone+One&family=Roboto&family=Signika+Negative&family=Spline+Sans&family=Unbounded:wght@300&display=swap'); 
+*{
+      box-sizing: border-box;
+      margin: 0%;
+      padding: 0%;
+     --nav:rgb(255, 255, 255);
+     --main:rgb(255, 255, 255);
+     --footer: black;
+     --header:white;
+     --listcolor:rgb(238, 118, 49);
+     --listfont: 'Spline Sans', sans-serif;
+     --listsize:19px;
+     --h1:'Baloo Paaji 2', cursive;
+     --para: 'Noto Sans KR', sans-serif;
+     --parasize:19px;
+     --h2:'Anek Devanagari', sans-serif;
+     --h3: 'Signika Negative', sans-serif;
+      --para2size:18px;
+
+}
+body{
+     animation: transition 0.3s;
+ }
+ @keyframes transition{
+     from{
+         opacity: 0;
+         transform:translateY(-10px);
+     }
+     to{
+         opacity: 1;
+         transform:translateY(0);
+     }
+ }
+nav{
+     width: 100%;
+     background-color:var(--nav);
+     padding: 18px;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+nav ul{
+     display: flex;
+     
+}
+nav ul li{
+     font-size: var(--listsize);
+     font-family: var(--listfont);
+     padding: 18px;
+     list-style: none;
+     color: var(--listcolor);
+}
+nav ul a{
+     text-decoration: none;
+     letter-spacing: 1px;
+     
+}
+header{
+     width: 100%;
+     background: white;
+     height: 30vh;
+     border-radius: 10px;
+     padding: 18px;
+     text-align: center;
+     padding: 18px;
+     display:flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     background-color:rgba(255, 255, 255, 0.868);
+     background-position:bottom;
+ 
+     background-size: cover;
+}
+header h1{
+     font-family: var(--h1);
+     color:rgb(250, 142, 18);
+   
+}
+ 
+header p{
+      font-family: var(--para);
+      font-size: var(--parasize);
+      word-spacing: 3px;
+}
+main{
+     width: 100%;
+     padding: 18px;
+}
+main h1{
+     font-family: var(--h1);
+}
+main p{
+     font-family: var(--para);
+     font-size: var(--parasize);
+}
+ 
+.column1,.column2,.column3{
+     width: 100%;
+     padding: 18px;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     text-align: center;
+     flex-direction: column;
+     
+     word-spacing: 9px;
+     
+}
+.column1 .cards,.column2 .cards, .column3 .cards{
+     display: flex;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     gap:20px;
+     
+}
+.column1 .cards a, .column2 .cards a, .column3 .cards a{
+     text-decoration: none;
+     font-family: var(--listfont);
+     color:rgb(0, 0, 0);
+     font-size: var(--listsize);
+}
+.column1 .cards .card {
+     width:250px;
+     height: 250px;
+     border-radius: 15px;
+     box-shadow: 0 5px 15px rgb(178, 107, 240);
+}
+.column2 .cards .card{
+     width: 250px;
+     height: 250px;
+     border-radius: 15px;
+     box-shadow: 0 5px 15px rgb(214, 151, 75);
+}
+.column3 .cards .card{
+     width: 250px;
+     height: 250px;
+     border-radius: 15px;
+     box-shadow: 0 3px  9px rgb(76, 111, 248); 
+}
+ .js{
+      
+     background: url('./JS.png');
+    background-position: center;
+ }
+ .java{
+    background: url('./java.png');
+    background-position: center;
+ }
+.react{
+     background: url('./react.png');
+     background-position: center;
+     color: white;
+}
+.flutter{
+     background: url('./flutter.png');
+     background-position: center;
+}
+.c{
+     background: url('./c.png'); 
+     background-position: center;
+}
+.cpp{
+     background: url('./cpp.png'); 
+     background-position: center;
+}
+.csharp{
+     background: url('./csharp.png');
+     background-position: center;
+}
+.html{
+     background: url('./html.png');
+     background-position: center;
+}
+.css{
+     background: url('./css.png');
+     background-position: center;
+}
+.dart{
+     background: url('./dart.png');
+     background-position: center;
+}
+.javapdf{
+     background: url('./javapdf.png');
+     background-position: center;
+}
+.python{
+     background: url('./python.png');
+     background-position: center;
+}
+.flutterpdf{
+     background: url('./flutterpdf.png');
+     background-position: center;
+}
+.w3pdf{
+     background: url('./web.png');
+     background-position: center;
+}
+.programming{
+     background: url('./programming.png');
+     background-position: center;
+}
+ .card1{
+     display: flex;
+     justify-content:center;
+     align-items: center;
+ }
+footer{
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     background-color: black;
+     padding: 18px;
+     height: 25vh;
+     align-items: center;
+     font-family: var(--listfont);
+     flex-direction: column;
+}
+footer .copy-right, footer .content-one{
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+      
+}
+footer a{
+     text-decoration: none;
+     color: white;
+}
+ 
+footer li{
+     list-style: none;
+}
+footer .copy-right ul, footer .content-one ul{
+     display: flex;
+     flex-direction: row;
+     gap:30px;
+}
+footer p{
+     color: white;
+}
+footer #mail{
+color:rgb(0, 0, 0);
+border:1px solid white;
+background-color: white;
+padding: 9px;
+border-radius: 18px;
+}
+i{
+     color:black;
+     font-size: 25px;
+      
+}
+#opens{
+     display: none;
+}
+#closes{
+     display: none;
+}
+/*   P R O J E C T S */
+.projects{
+     display: flex;
+     flex-direction: column;
+     width: 100%;
+     gap:30px;
+}
+.project {
+     display: flex;
+     justify-content: space-around;
+     width: 100%;
+    
+}
+a{
+     text-decoration: none;
+     color:black;
+     font-size: 15px;
+}
+.project #project-img{
+     width:300px;
+     height: 300px;
+}
+main p{
+     font-size: 16px;
+     line-height: 30px;
+     word-spacing: 5px;
+}
+/******  P D F ********/
+.pdfs{
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap:30px;
+}
+.pdfs a{
+text-decoration: none;
+width: 80%;
+text-align: center;
+font-family: var(--h1);
+letter-spacing: 1.5px;
+font-size: 22px;
+ 
+}
+.pdfs .py{
+     padding: 30px;
+     border-radius: 18px;
+     color:rgb(3, 3, 3);
+     background-color: rgb(133, 144, 246);
+}
+.demo-btn{
+     width: 50%;
+     margin: auto;
+     padding: 10px;
+}
+.demo-btn a{
+     text-decoration: none;
+     text-align: center;
+     padding: 15px;
+     border: 1px solid white;
+     border-radius: 18px;
+     background-color: blue;
+     color:white;
+}
+.note1,.color,.tip1,.chat{
+     background-color: rgb(242, 255, 196);
+}
+.pass,.form,.rock,.time{
+background-color: rgb(226, 181, 123);
+}
+.quote,.todo{
+     background-color:cadetblue
+}
+ol li{
+     font-family: var(--para);
+}
+@media screen and (max-width:800px) {
+     .project {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          flex-direction: column;
+          align-items: center;
+       
+     }
+     
+     nav{
+     justify-content: space-around;
+     width: 100%;
+     text-align: center;
+    }
+    #opens{
+     display: block;
+ 
+    
+   }
+     #closes{
+          display: none;
+     }
+    nav ul{
+     position: absolute;
+     flex-direction: column;
+     background-color: rgb(243, 242, 242);
+     width: 100%;
+     top:12%;
+     z-index: 1;
+     display: none;
+     align-items:center ;
+     justify-content: center;
+     gap:30px;
+     height: 50vh;
+     }
+     
+     header{
+          width: 100%;
+          flex-wrap: wrap;
+        
+     }
+     main{
+          width: 100%;
+     }
+     main h1{
+          font-size: 21px;
+          word-spacing: 3px;
+     }
+     .column1,.column2,.column3{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          padding: 10px; 
+          
+          
+     }
+     .column1 .cards, .column2 .cards, .column3 .cards{
+          display: flex;
+          justify-content: space-around;
+          flex-direction: column;
+          gap:30px;
+          
+     }
+     .column1 .cards .card,.column2 .cards .card, .column3 .cards .card{
+          width:200px;
+          height: 200px;
+     }
+     footer{
+          flex-direction: column;
+          width: 100%;
+          padding: 15px;
+          height: 50vh;
+          justify-content: space-around;
+          text-align: center;
+     }
+     footer .copy-right{
+          flex-direction: column;
+     }
+     footer .content-one {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap:30px;
+     }
+     footer .content-one ul {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+     }
+     footer .privacy-policy{
+          flex-direction: column;
+     }
+     footer h2{
+          margin-bottom: 15px;
+     }
+     footer ul{
+          flex-direction: column;
+          gap:20px;
+     }
+}
+ 

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills. ">
+    
+          
+     <!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes",
+"name":"Learn CSS fundamentals in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills..",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/css.png",
+"contentUrl":"https://www.webdevmonk.com/main/css.png",
+"caption":"Learn CSS fundamentals in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Learn CSS fundamentals in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/css.png" />
+<meta property="og:description" content="Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn CSS fundamentals in 45 minutes">
+<meta name="twitter:description" content="Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/css.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/css-tutorial-in-45minutes" />
+<title>Learn CSS fundamentals in 45 minutes</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+  
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+     <i class="fa-solid fa-arrow-up" id="up"></i> 
+     <h1>CSS basics tutorial in 45 minutes</h1>  
+     <img id="image" src="../main/css.png" alt="CSS tutorial in 45 minutes" width="400px" height="400px">  
+     <p>Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills. </p> 
+     
+     <p>This 45 minutes CSS tutorial is specially made for beginners and people who looking for the CSS revision.</p>
+     <p>Get a solid foundation in computer programming by reading our comprehensive tutorial,
+     <br>Learn the Fundamentals of Progarmming <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>.</p> 
+     <h2>Concepts: </h2>
+                         <p><a href="#1">1. CSS Introduction</a> </p> 
+                         <p><a href="#2"> 2. CSS Syntax</a></p>  
+                         <p><a href="#3"> 3. CSS Styling</a></p> 
+                         <p><a href="#4"> 4. CSS Comments</a></p> 
+                         <p><a href="#5"> 5. CSS Selectors</a></p> 
+                         <p><a href="#6"> 6. CSS colors</a></p> 
+                         <p><a href="#7"> 7. CSS backgrounds</a></p> 
+                         <p><a href="#8"> 8. CSS margins and padding</a></p> 
+                         <p><a href="#9"> 9. CSS Borders</a></p> 
+                         <p><a href="#10"> 10. CSS Units</a></p>
+                         <p><a href="#11"> 11. CSS List Style</a></p> 
+                         <p><a href="#12"> 12. CSS Text Styling</a></p> 
+                         <p><a href="#13"> 13. CSS  border-radius</a></p> 
+                         
+                         <p><a href="#14"> 14. CSS height and width</a></p> 
+                         <p><a href="#15"> 15. CSS Box Model</a></p>  
+                         <p><a href="#16"> 16. CSS Positions</a></p> 
+                         <p><a href="#17"> 17. CSS Flex</a></p> 
+                         <p><a href="#18"> 18. CSS Grid</a></p> 
+                         <p><a href="#19"> 19. CSS Z-index</a></p> 
+                         <p><a href="#20"> 20. CSS Attribute Selectors</a></p> 
+                         <p><a href="#21"> 21. CSS Transitions</a></p> 
+                         <p><a href="#22"> 22. CSS Animations</a></p> 
+ <h2 id="1">1. CSS Introduction</h2>
+ <p>The Cascading Style Sheets (CSS) is a  language used for presenting the look and formatting of a document written in HTML. It is used to control the appearance of web pages, including colors, layout, and font styles.</p>
+<p>To use CSS, you'll need to create a stylesheet file and link it to your HTML document.</p>
+<p>Here's an example of how you can use CSS with HTML to style a webpage</p>
+<p>First, create an HTML document with some basic content:</p>
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+&lt;title>My Website&lt;/title>
+&lt;/head>
+&lt;body>
+&lt;h1>Welcome to my website!&lt;/h1>
+&lt;p>This is some sample content.&lt;/p>
+&lt;/body>
+&lt;/html>
+     
+</code>
+</pre>
+<p>Next, create a CSS stylesheet and link it to your HTML document. You can do this by adding a &lt;link> element in the &lt;head> of your HTML document, like this:</p>
+<pre>
+<code class="language-html">
+&lt;head>
+     &lt;title>My Website&lt;/title>
+     &lt;link rel="stylesheet" type="text/css" href="styles.css">
+     &lt;/head>
+</code>
+</pre>
+<p>Now you can add your styles to the styles.css file. For example, you could change the font size of the &lt;h1> element and the color of the &lt;p> element:</p>
+<pre>
+<code class="language-css">
+h1 {
+  font-size: 32px;
+}
+
+p {
+  color: blue;
+}
+</code>
+</pre>
+<p>With these styles in place, the text in the &lt;h1> element will appear larger and the text in the &lt;p> element will be blue when you view the webpage in a browser.</p>
+<h3>Why to learn CSS?</h3>
+
+<p>CSS is used to control the appearance and layout of web pages, and it is an essential part of the front-end development process. If you want to build websites or work in web development, you'll need to be proficient in CSS.</p>
+<p> CSS is an important part of becoming a proficient web developer and can be a valuable skill in many different careers.</p>
+
+<h2 id="2">2. CSS Syntax</h2>
+ <p>The syntax for CSS consists of a set of rules that specify how styles should be applied to elements in an HTML document. In CSS, the each rule is consists of a 'selector' and a 'declaration block'.</p>
+<pre>
+     <code class="language-css">
+selector {
+     property: value;
+}
+</code>
+</pre>
+<p>Here's an example of a CSS rule that sets the font size and color of all &lt;h1> elements to 32px and green, respectively:</p>
+<pre>
+<code class="language-css">
+h1 {
+     font-size: 32px;
+     color: green;
+     }
+        
+</code>
+</pre>
+
+<h2 id="3">3. CSS Styling</h2>
+<p>There are three ways that you can style a website</p>
+<h3>1. Inline CSS</h3>
+<p> Inline CSS is used to apply style to a single element directly on HTML element. To use inline CSS, you can use the 'style' attribute in the HTML element. </p>
+<pre>
+     <code class="language-html">
+&lt;p style="color: blue; font-size: 18px;">This is some text.&lt;/p>
+
+     </code>
+</pre>
+<h3>2. Internal CSS</h3>
+<p>Internal CSS is used to style a specific HTML document. To use internal CSS, you can include a &lt;style> element in the &lt;head> of your HTML document and add your styles between the &lt;style> and &lt;/style> tags. </p>
+<pre>
+<code class="language-html">
+&lt;head>
+&lt;style>
+     p {
+     color: blue;
+     font-size: 18px;
+     }
+&lt;/style>
+&lt;/head>
+
+&lt;body>
+   &lt;p>Welcome to webdevmonk&lt;/p>
+&lt;/body>
+        
+</code>
+</pre>
+<h3>3. External CSS</h3>
+<p>External CSS is used to style many HTML documents. This is the recomended to most people. 
+To use external CSS, you can create a separate CSS file and link to it from your HTML document using a &lt;link> element in the &lt;head> of your HTML document.</p>
+<pre>
+<code class="language-html">
+&lt;head>
+  &lt;link rel="stylesheet" type="text/css" href="style.css">
+&lt;/head>
+
+&lt;body>
+     &lt;p>Welcome to webdevmonk&lt;/p>
+  &lt;/body>
+</code>
+</pre>
+<p>The content in the css file might be</p>
+<pre>
+<code class="language-css">
+/* this is style.css file */
+     p {
+     color: blue;
+     font-size: 18px;
+     }
+</code>
+</pre>
+<h2 id="4">4.  CSS Comments</h2>
+ <p>You can use comments in CSS to add notes or explanations to your stylesheet. Comments can be helpful for keeping track of what your styles do and for communicating with other developers who may be working on the same stylesheet.</p>
+<pre>
+<code class="language-css">
+/* This is a comment */
+
+body {
+     /* This is another comment */
+     background-color: lightblue;
+}
+
+</code>
+</pre>
+<p>CSS comments are ignored by the browser and are not displayed in the rendered page.</p>
+ 
+<h2 id="5">5. CSS Selectors</h2>
+ <p>CSS selectors are used to specify which elements a CSS rule should be applied to. There are many different types of selectors that you can use, including element, class, ID, and attribute selectors.</p>
+<pre>
+<code class="language-css">
+/* element selectors: This rule will apply the color red to all &lt;p> elements in the HTML document. */
+     p{
+     color:blue;
+}
+</code></pre>
+
+<pre><code class="language-html">
+&lt;p class="warning">This is a warning</p>
+ 
+</code>
+</pre>
+
+<pre>
+<code class="language-css"> 
+/* class selectors: Class selectors apply a style to all elements with a particular class attribute. To use a class selector, you must first define the class in the HTML element, and then you can use a '.' followed by the class name in the CSS rule */
+
+.warning {
+     color: red;
+   }
+   
+</code>
+</pre>
+
+<pre>
+<code class="language-html">&lt;div id="main-content">...</div>
+</code>
+</pre>
+<pre><code class="language-css">
+/* ID selectors: ID selectors apply a style to a single element with 
+a particular ID attribute. 
+To use an ID selector, you must first define the ID in the
+HTML element, and then you can use a '#' followed by the ID name in the CSS rule. 
+*/
+
+ #main-content {
+     width: 960px;
+     margin: 0 auto;
+   }
+
+</code></pre>
+
+ <h2 id="6">6. CSS colors</h2>
+ <p>CSS allows you to specify colors in a number of different ways. Some of the most common ways to specify colors in CSS include:</p>
+<p><strong>1. Using named colors: </strong>  There are a set of predefined named colors that you can use in CSS. like "blue", "green", "lightblue", etc.</p>
+<pre>
+<code class="language-css">
+p {
+     color: purple;
+     }
+     
+</code>
+</pre>
+<p><strong>2. Using RGB values: </strong> RGB (Red, Green, Blue) values allow you to specify a color by its levels of red, green, and blue. You can specify an RGB value using the rgb() function, with values ranging from 0 to 255 for each color component.</p>
+<pre>
+<code class="language-css">
+p {
+     color: rgb(255, 0, 0);  /* red */
+     }
+        
+</code>
+</pre>
+
+<p>3. <strong>Using HSL values:</strong>   HSL (Hue, Saturation, Lightness) values allow you to specify a color by its hue, saturation, and lightness. You can specify an HSL value using the hsl() function, with values ranging from 0 to 360 for the hue, and 0 to 100 for the saturation and lightness</p>
+<pre>
+<code class="language-css">
+p {
+     color: hsl(120, 100%, 50%);  /* green */
+     }
+     
+</code>
+</pre>
+
+<p>4. <strong>Using hexadecimal values:</strong> Hexadecimal values allow you to specify a color using a six-digit code. The first two digits represent the level of red, the second two digits represent the level of green, and the final two digits represent the level of blue.</p>
+<pre>
+<code class="language-css">
+p {
+     color: #FF0000;  /* red */
+     }
+        
+</code>
+</pre>
+<h3>CSS background-color</h3>
+<p>The background-color property  is used to state the background color of an element. You can use it to change the color of the background of any element on your web page, including the &lt;body> element, &lt;div> elements, and even individual table cells or list items.</p>
+<pre>
+<code class="language-css">
+body {
+     background-color: lightblue;
+     }
+     
+     div {
+     background-color: rgb(255, 255, 0);  /* yellow */
+     }
+     
+     td {
+     background-color: #FFFF00;  /* yellow */
+     }
+</code>
+</pre>
+<p>You can also use the 'background-color' property to create a transparent background by specifying the 'transparent 'value.</p>
+<pre>
+<code class="language-css">
+div {
+     background-color: transparent;
+     }
+</code>
+</pre>
+
+<h2 id="7">7.  CSS backgrounds</h2>
+ <p>The 'background' property can be used to set the background color, image, repeat style, attachment, and position of an element.</p>
+<p>You can also use the 'background-color', 'background-image', 'background-repeat', 'background-attachment', and 'background-position' properties individually if you only want to set specific background-related properties. </p>
+ <pre>
+     <code class="language-css">
+div {
+     background-color: red;
+     background-image: url("image.jpg");
+     background-repeat: repeat-y;
+}
+        
+</code>
+</pre>
+ <h2 id="8">8. CSS margins and padding</h2>
+ <p>The 'margin' and 'padding' properties in CSS are used to create space around and within elements.</p>
+<p><strong>margin: </strong>The 'margin'property is used to create space around an element. It clears an area outside the border of an element. The margin property can be set for individual sides (margin-top, margin-right, margin-bottom, margin-left) or for all sides at once (margin).</p>
+<pre>
+<code class="language-css">
+p {
+  margin: 20px;  /* sets a 20px margin on all sides */
+}
+
+</code>
+</pre> 
+
+<pre>
+     <code class="language-css">
+p {
+     margin-top: 10px;
+     margin-right: 15px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+     }
+     
+     </code>
+     </pre> 
+<p><strong>padding: </strong> The padding property is used to create space within an element, around the content. It clears an area inside the border of an element. Like the margin property, the padding property can be set for individual sides (padding-top, padding-right, padding-bottom, padding-left) or for all sides at once (padding).</p>
+
+<pre>
+<code class="language-css">
+div {
+  padding: 20px;  /* sets a 20px padding on all sides */
+}
+   </code>
+</pre>
+
+<pre>
+     <code class="language-css">
+p {
+     margin-top: 10px;
+     margin-right: 15px;
+     margin-bottom: 5px;
+     margin-left: 20px;
+}
+     
+     </code>
+     </pre> 
+<p>I recommend learning more about these properties and practicing with them to get a better understanding of how they work.</p>
+
+
+
+<h2 id="9">9.  CSS Borders</h2>
+ <p>The border property in CSS is used to specify the border of an element. You can use the border property to set the border width, style, and color for an element.</p>
+<pre>
+<code class="language-css">
+div {
+     border: 2px solid blue;
+     }
+</code>
+</pre>
+<p>You can also use the 'border-width', 'border-style', and 'border-color' properties individually if you only want to set specific border-related properties.</p>
+ <pre>
+<code class="language-css">
+div {
+     border-width: 2px;
+     border-style: solid;
+     border-color: blue;
+     }
+</code>
+ </pre>
+ 
+ <h2 id="10">10. CSS Units</h2>
+ <p>CSS allows you to specify sizes and dimensions using a variety of units. Some of the most common CSS units are: </p>
+
+ <p>1. <strong>px (pixels): </strong>A pixel is a dot on the screen, and the size of a pixel depends on the resolution of the device.</p>
+ <p>2. <strong>em (ems):</strong> An em is a unit of measurement that is equal to the current font size. 1 em is always equal to 16px (pixels)</p>
+ <p>3. <strong>rem (root ems): </strong> A rem is similar to an em, but it is always relative to the root element's font size (typically the <html> element). </p>
+ <p>4. <strong>% (percentages): </strong> Percentages are used to specify sizes as a percentage of another value. For example, you can use percentages to specify the width of an element as a percentage of its parent element's width.</p>
+ <p>5. <strong>vw (viewport widths): </strong> A viewport width (vw) is a unit of measurement that is equal to 1% of the viewport's width.</p>
+ <p>6. <strong>vh (viewport heights): </strong> A viewport height (vh) is a unit of measurement that is equal to 1% of the viewport's height. Viewport heights are useful for specifying dimensions that are responsive to the size of the viewport.</p>
+<pre>
+<code class="language-html">
+&lt;html>
+&lt;head>
+&lt;style>
+body {
+font-size: 16px;
+}
+
+div {
+width: 80%;  /* 80% of the parent element's width */
+margin: 2em;  /* 2 times the font size */
+padding: 1rem;  /* 1 times the root element's font size */
+border: 1vw solid blue;  /* 1% of the viewport's width */
+height: 50vh;  /* 50% of the viewport's height */
+}
+&lt;/style>
+
+&lt;/head>
+
+&lt;body>
+
+&lt;div>
+This is a div element with various CSS units applied to its dimensions and spacing.
+&lt;/div>
+&lt;/body>
+
+&lt;/html>
+        
+</code>
+</pre>
+
+<h2 id="11">11. CSS List Style</h2>
+<p>The 'list-style' property in CSS is used to specify the style of a list item marker (e.g., a bullet or numbering) for ordered and unordered lists</p>
+<pre>
+<code class="language-css">
+ul {
+  list-style: square;
+}
+
+</code>
+</pre>
+<p> The 'list-style' property sets the list item marker style to squares for all unordered lists in the document.</p>
+<p>There are many values that you can use for 'list-style' property: </p>
+<p><strong>1. disc: </strong>A filled circle</p>
+<p><strong>2. circle: </strong> An unfilled circle</p>
+<p><strong>3. square: </strong>A filled square</p>
+<p><strong>4. none: </strong>Decimal numbering (e.g., 1, 2, 3)</p>
+<p><strong>5. decimal: </strong>Lowercase Roman numbering (e.g., i, ii, iii)</p>
+<p><strong>6. lower-roman: </strong>Uppercase Roman numbering (e.g., I, II, III)</p>
+<p><strong>7. upper-roman: </strong> Lowercase alphabetical numbering (e.g., a, b, c)</p>
+<p><strong>8. lower-alpha: </strong> Uppercase alphabetical numbering (e.g., A, B, C)</p>
+<p><strong>9. upper-alpha: </strong> No list item marker</p>
+<h2 id="12">12. CSS Text Styling</h2>
+<p>CSS provides a number of properties that you can use to style the text in your web pages. </p>
+<p><strong>1. color: </strong> he color property is used to specify the color of the text.</p>
+<p><strong>2. font-family: </strong>  The 'font-family' property is used to specify the font family to use for the text. You can specify a specific font family (e.g., "Arial"), or you can specify a list of font families in case the first choice is not available on the user's device.</p>
+<p><strong>3. font-size: </strong>  The 'font-size' property is used to specify the size of the text. </p>
+<p><strong>4. font-weight: </strong> The 'font-weight' property is used to specify the weight (boldness) of the text. You can use values like "normal" or "bold" to set the font weight, or you can use numerical values ranging from 100 to 900 to specify the font weight more precisely.</p>
+<p><strong>5. text-allign: </strong> The 'text-align' property is used to specify the alignment of the text within an element. You can use values like "
+</p>
+<pre>
+<code class="language-css">
+p {
+     color: blue;
+     font-family: Arial, sans-serif;
+     font-size: 16px;
+     font-weight: bold;
+     text-align: center;
+     }
+</code>
+</pre>
+
+<h2 id="13">13.   CSS border-radius</h2>
+<p>The 'border-radius' property in CSS allows you to add rounded corners to an element's border.</p>
+<pre>
+<code class="language-css">
+.my-element {
+     border-radius: 10px;
+     }
+        
+</code>
+</pre>
+<p>This will give all four corners of the element a radius of 10px.
+You can also specify different radii for each corner using the following syntax:</p>
+<pre>
+<code class="language-css">
+.my-element {
+     border-radius: 10px 20px 30px 40px;
+     }
+        
+</code>
+</pre>
+<p>This will give the top-left corner a radius of 10px, the top-right corner a radius of 20px, the bottom-right corner a radius of 30px, and the bottom-left corner a radius of 40px.</p>
+
+
+
+<h2 id="14">14. CSS height and width</h2>
+<p>In CSS, the 'height' and 'width' properties are used to specify the height and width of an element, respectively.</p>
+<pre>
+<code class="language-css">
+.my-element {
+     height: 200px;
+     width: 100px;
+     }
+        
+</code>
+</pre>
+<p>This will set the element's height to 200 pixels and its width to 100 pixels.</p>
+<p>You can also use the 'height' and 'width' properties to set the dimensions of an element using a percentage value, which will be calculated based on the dimensions of the element's parent container.
+</p>
+<pre>
+<code class="language-css">
+.my-element {
+     height: 50%;
+     width: 75%;
+     }
+        
+</code>
+</pre>
+<p>This will set the element's height to 50% of the height of its parent container, and its width to 75% of the width of its parent container.</p>
+
+<h2 id="15">15. CSS Box Model</h2>
+<p>The CSS box model is a way of representing the layout of an HTML element on a web page. Generally, it consists of four parts: the content, padding, margin, and padding.</p>
+<img id="image" src="../main/box model.PNG" alt="Box Model in CSS Image to illustrate" height="300px" width="300px">
+<p>The content of the element is the actual content of the element, such as text or images. The padding is the gap between the content and the border. The border is the line that surrounds the content and padding. And the margin is the space outside the border.</p>
+<p>You can use CSS properties such as 'height', 'width', 'padding', 'border', and 'margin' to control the dimensions and spacing of the different parts of the box model.</p>
+<pre>
+<code class="language-css">
+.my-element {
+     width: 300px;
+     height: 200px;
+     padding: 10px;
+     border: 1px solid black;
+     margin: 20px;
+     }
+        
+</code>
+</pre>
+<p>This will create an element that is 300 pixels wide and 200 pixels tall, with a 10-pixel padding, a 1-pixel black border, and a 20-pixel margin.</p>
+
+<h2 id="16">16. CSS Positions</h2>
+<p>In CSS, the position property is used to control the positioning of an element on a web page. There are five possible values for the 'position' property: static, relative, absolute, fixed, and sticky.</p>
+<p><strong>static: </strong>  This is the default value for the position property. Elements with a static position are not affected by the top, bottom, left, or right properties, and they will appear in the normal flow of the page.</p>
+<p><strong>relative: </strong>  Elements with a relative position are positioned relative to their normal position in the flow of the page. You can use the top, bottom, left, and right properties to adjust the element's position relative to its normal position.</p>
+<p><strong>absolute: </strong>  Elements with an absolute position are positioned relative to their nearest ancestor element that has a position value of relative, absolute, or fixed. If no such ancestor exists, the element is positioned relative to the initial containing block of the document. You can use the top, bottom, left, and right properties to adjust the element's position.</p>
+<p><strong>fixed: </strong>  Elements with a fixed position are positioned relative to the initial containing block of the document, and they will remain in the same position on the page even when the page is scrolled. You can use the top, bottom, left, and right properties to adjust the element's position.
+<p><strong>sticky: </strong>The sticky value for the position property in CSS allows you to create an element that is "sticky" on the page, meaning that it remains in a fixed position when the page is scrolled, until a certain scroll position is reached.</p>
+</p>
+<pre>
+<code class="language-html">
+&lt;div class="container">
+     &lt;div class="static">Static&lt;/div>
+     &lt;div class="relative">Relative&lt;/div>
+     &lt;div class="absolute">Absolutelt;/div>
+     &lt;div class="fixed">Fixed&lt;/div>
+     &lt;div class="sticky">Sticky&lt;/div>
+     &lt;/div>
+        
+</code>
+</pre>
+<pre>
+<code class="language-css">
+.static {
+     position: static;
+     }
+     
+     .relative {
+     position: relative;
+     top: 10px;
+     left: 20px;
+     }
+     
+     .absolute {
+     position: absolute;
+     top: 30px;
+     right: 40px;
+     }
+     
+     .fixed {
+     position: fixed;
+     bottom: 50px;
+     left: 60px;
+     }
+     
+     .sticky {
+     position: sticky;
+     top: 0;
+     }
+     
+</code>
+</pre>
+<h2 id="17">17. CSS Flex</h2>
+<p>The CSS flex layout is a flexible layout model that allows you to control the layout and sizing of elements within a container. It allows you to specify how elements should be distributed within the container, and how they should be sized based on the available space.</p>
+<p>To use the flex layout, you need to set the 'display' property of the container element to 'flex' or 'inline-flex'. You can then use the 'flex-direction', 'flex-wrap', and 'justify-content' properties to control the layout of the child elements within the container</p>
+<pre>
+<code class="language-css">
+.container {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     }
+        
+</code>
+</pre>
+<p>This will create a row of elements, with the first element at the start of the row, the last element at the end of the row, and the other elements evenly distributed between them.</p>
+<p>You can also use the align-items and align-self properties to control the vertical alignment of the elements within the container.</p>
+<pre>
+<code class="language-css">
+.container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     }
+        
+</code>
+</pre>
+<p>This will create a column of elements, with all of the elements vertically centered within the container.</p>
+<h2 id="18">18. CSS Grid</h2>
+<p>The CSS grid layout is a two-dimensional layout model that allows you to create complex, responsive layouts using rows and columns. It allows you to specify how elements should be positioned and sized within a container, and how they should behave when the size of the container or the size of the elements changes.</p>
+<p>To use the grid layout, you need to set the 'display' property of the container element to 'grid' or 'inline-grid'. You can then use the 'grid-template-columns' and 'grid-template-rows' properties to specify the number and size of the columns and rows in the grid.</p>
+<pre>
+<code class="language-css">
+.container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 50px 50px;
+     }
+     
+</code>
+</pre>
+<p>This will create a grid with three columns that are each 1 fraction unit wide, and two rows that are each 50 pixels tall.</p>
+
+<p>You can then use the 'grid-column' and 'grid-row' properties to specify the position of the child elements within the grid.</p>
+<pre>
+<code class="language-css">
+.element-1 {
+     grid-column: 1 / 3;
+     grid-row: 1 / 2;
+     }
+     
+     .element-2 {
+     grid-column: 2 / 4;
+     grid-row: 1 / 3;
+     }
+     
+     .element-3 {
+     grid-column: 1 / 2;
+     grid-row: 2 / 3;
+     }
+        
+</code>
+</pre>
+<p>This will position the first element in the first and second columns of the first row, the second element in the second and third columns of the first and second rows, and the third element in the first column of the second row.</p>
+
+
+
+
+<h2 id="19">19. CSS Z-index</h2>
+<p>The 'z-index' property in CSS is used to specify the stack order of elements that overlap. Elements with a higher 'z-index' value will be stacked in front of elements with a lower 'z-index' value.</p>
+<p>The 'z-index' property only applies to elements that have a position value of 'absolute', 'relative', or 'fixed'. It does not apply to elements with a position value of 'static'.</p>
+<pre>
+<code class="language-css">
+.element-1 {
+     position: absolute;
+     z-index: 1;
+     }
+     
+     .element-2 {
+     position: absolute;
+     z-index: 2;
+     }
+        
+</code>
+</pre>
+<p>In this example, the element-2 element will be stacked in front of the element-1 element, because it has a higher 'z-index 'value.</p>
+<p>Note that the 'z-index' property only affects the stacking order of elements within the same parent element.</p>
+<h2 id="20">20. CSS Attribute Selectors</h2>
+<p>In CSS, attribute selectors allow you to style elements based on their attributes and attribute values.</p>
+<p><strong>[attribute]: </strong> Selects elements that have the specified attribute, regardless of the attribute's value.</p>
+<pre>
+<code class="language-css">
+[title] {
+     /* Styles all elements that have a "title" attribute */
+     }
+     
+</code>
+</pre>
+<p><strong>[attribute=value]:</strong> Selects elements that have the specified attribute with the specified value.</p>
+<pre>
+<code class="language-css">
+[type="text"] {
+     /* Styles all elements that have a "type" attribute with a value of "text" */
+     }
+        
+</code>
+</pre>
+<p><strong>[attribute~=value]:</strong> Selects elements that have the specified attribute with a value that contains the specified word.</p>
+<pre>
+<code class="language-css">
+[class~="warning"] {
+     /* Styles all elements that have a "class" attribute with a value that contains the word "warning" */
+     }
+        
+</code>
+</pre>
+<p><strong>[attribute|=value]: </strong> Selects elements that have the specified attribute with a value that starts with the specified value, followed by a hyphen.</p>
+<pre>
+<code class="language-css">
+[lang|="en"] {
+     /* Styles all elements that have a "lang" attribute with a value that starts with "en" followed by a hyphen */
+     }
+        
+</code>
+</pre>
+<h2 id="21">21. CSS Transitions</h2>
+<p>CSS transitions allow you to change the value of a CSS property over time, creating a smooth, animated effect.</p>
+<p>To create a transition, you need to specify the CSS property that you want to animate, the duration of the transition, and any other transition properties such as the transition timing function and the delay before the transition starts.</p>
+<pre>
+<code class="language-css">
+.my-element {
+     width: 100px;
+     transition: width 1s ease-in-out;
+     }
+     
+     .my-element:hover {
+     width: 200px;
+     }
+        
+</code>
+</pre>
+<p>In the above CSS example, when the user hovers over the .my-element element, the width of the element will smoothly transition from 100 pixels to 200 pixels over the course of 1 second, using the ease-in-out timing function.</p>
+<p>You can use transitions to animate any CSS property that has a numeric value, such as 'width', 'height', 'opacity', and so on.</p>
+
+<h2 id="22">22.  CSS Animations</h2>
+<p>CSS animations allow you to create more complex, multi-step animations by specifying a series of keyframes that define the values of CSS properties at different points in the animation.
+</p>
+<p>To create an animation, you need to define the keyframes of the animation using the '@keyframes' rule, and then apply the animation to an element using the animation property.</p>
+<pre>
+<code class="language-css">
+@keyframes fade {
+     0% {
+          opacity: 0;
+     }
+     50% {
+          opacity: 1;
+     }
+     100% {
+          opacity: 0;
+     }
+     }
+     
+     .my-element {
+     animation: fade 1s infinite;
+     }
+        
+</code>
+</pre>
+<p>In this example, the fade animation will be applied to the .my-element element, and it will repeat indefinitely. The animation will start at an 'opacity' of 0, gradually increase to an 'opacity' of 1 at the 50% mark, and then gradually decrease back to an 'opacity' of 0 at the 100% mark.</p>
+<p>You can use the 'animation-duration', 'animation-timing-function', and 'animation-delay' properties to control the duration, timing, and delay of the animation.</p>
+<h1>Thank You</h1>
+<p>Thank you for visiting WebDevMonk and for reading our CSS3 tutorial. We are glad that you took the time to learn more about this powerful styling language and hope that you found the information helpful. If you enjoyed your visit to our site, we would be grateful if you would share it with your friends and encourage them to visit us as well.
+</p>
+<p>In addition to our CSS3 tutorial, we have many other tutorials available on a variety of web development topics. We encourage you to explore our site and continue your learning journey with us. We also have a "Projects" page where you can find free source code and instructions for building various web development projects. We hope that you will take advantage of these resources and continue to visit WebDevMonk to further your knowledge and skills.</p>
+</main>
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

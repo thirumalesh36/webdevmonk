@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Make an easy Digital Clock using HTML CSS and JS with webdevmonk's Step by Step Algorithm and free source code">
+     
+     <!-- Google Analytics-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/projects/time-application",
+"url":"https://www.webdevmonk.com/projects/time-application-project",
+"name":"Digital Clock using HTML CSS and JS",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Make an easy Digital Clock using HTML CSS and JS with webdevmonk's Step by Step Algorithm and free source code",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/projects/time-application-project"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/projects/time-application-project/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/projects/time-application-project" />
+<meta property="og:title" content="Digital Clock using HTML CSS and JS" />
+<meta property="og:description" content="Make an easy Digital Clock using HTML CSS and JS with webdevmonk's Step by Step Algorithm and free source code." />
+<meta property="og:image" content="https://www.webdevmonk.com/project-demo-images/time-app.PNG" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/PNG" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@webdevmonk"/>
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Digital Clock using HTML CSS and JS" />
+<meta name="twitter:description" content="Make an easy Digital Clock using HTML CSS and JS with webdevmonk's Step by Step Algorithm and free source code" />
+
+
+     
+     <title>Digital Clock using HTML CSS and JS (Free Source Code)</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+<i class="fa-solid fa-arrow-up" id="up"></i> 
+<br><br><br>  
+<h1>Digital Clock</h1>
+<br>
+<div class="demo-btn">
+     <a href="https://webdevmonk9.github.io/time-app/">DEMO</a>
+</div>
+<br><br><br>
+<h1>Step by Step Algorithm: </h1>
+<p>1. Create an HTML document with a head and body element. In the head, specify the character encoding and viewport, and include a title and style element. In the style element, define styles for the body element that specify the text alignment, font size, background color, color, and font family. In the body, create a div element with an id of "clock".</p>
+<p>2. In the body, include a script element that contains the JavaScript code for the clock.</p>
+<p>3. Inside the script element, define a function called updateClock() that will be responsible for updating the clock display.</p>
+<p>4. Inside the updateClock() function, create a new Date object and assign it to a variable called now. This object will represent the current date and time.</p>
+<p>5. Use the getHours(), getMinutes(), and getSeconds() methods of the Date object to retrieve the current hours, minutes, and seconds, and assign them to variables.</p>
+<p>6. Use conditional statements to check if the hours, minutes, or seconds are less than 10. If they are, add a leading zero to the value.</p>
+<p>7. Concatenate the hours, minutes, and seconds variables into a string in the format "HH:MM:SS", and assign it to a variable called clockStr.</p>
+<p>8. Use the document.getElementById() method to get a reference to the "clock" element, and use the textContent property to set its text content to the clockStr variable.</p>
+<p>9. Use the setInterval() function to call the updateClock() function every 1 second (1000 milliseconds).</p>
+
+<h2>HTML: </h2>
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+     &lt;meta charset="UTF-8">
+     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge">
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0">
+     &lt;title>Clock>&lt;/title>
+     &lt;style>
+     body {
+          text-align: center;
+          font-size: 60px;
+          background-color: #333;
+          color: white;
+          font-family: sans-serif;
+     }
+     &lt;/style>
+&lt;/head>
+&lt;body>
+     &lt;div id="clock">&lt;/div>
+     &lt;script>
+     function updateClock() {
+          // Get the current time
+          var now = new Date();
+
+          // Get the hours, minutes, and seconds from the current time
+          var hours = now.getHours();
+          var minutes = now.getMinutes();
+          var seconds = now.getSeconds();
+
+          // Format the hours, minutes, and seconds
+          if (hours &lt; 10) {
+          hours = "0" + hours;
+          }
+          if (minutes &lt; 10) {
+          minutes = "0" + minutes;
+          }
+          if (seconds &lt; 10) {
+          seconds = "0" + seconds;
+          }
+
+          // Build the clock display string
+          var clockStr = hours + ":" + minutes + ":" + seconds;
+
+          // Set the text of the clock element to the clock display string
+          document.getElementById("clock").textContent = clockStr;
+     }
+
+     // Update the clock every 1 second
+     setInterval(updateClock, 1000);
+     &lt;/script>
+&lt;/body>
+&lt;/html>
+
+</code></pre>
+
+
+<p>You can improve this project in your own version.</p>
+<p>We are ready to release more projects please support us by sharing and visiting webdevmonk</p>
+
+</main>
+
+
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

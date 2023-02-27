@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Learn HTML in 45 minutes completely with webdevmonk Learn HTML in 45 minutes tutorial">
+     
+      
+     <!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes",
+"name":"Learn HTML in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Learn HTML in 45 minutes completely with webdevmonk Learn HTML in 45 minutes tutorial",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/html.png",
+"contentUrl":"https://www.webdevmonk.com/main/html.png",
+"caption":"Learn HTML in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes" />
+     <meta property="og:title" content="Learn HTML in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/html.png" />
+<meta property="og:description" content="Learn HTML in 45 minutes completely with webdevmonk Learn HTML in 45 minutes tutorial" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn HTML in 45 minutes">
+<meta name="twitter:description" content="Learn HTML in 45 minutes completely with webdevmonk Learn HTML in 45 minutes tutorial">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/html.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/html-tutorial-in-45minutes" />
+<title>Learn HTML in 45 minutes</title>
+
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+  
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+          <i class="fa-solid fa-arrow-up" id="up"></i> 
+          <h1>HTML 45 minutes basics tutorial</h1>
+          <img src="../main/html.png" alt="webdevmonk 45 minutes HTML tutorial" width="200px">   
+       <p>This simple HTML tutorial, will help you to learn all the concepts of HTML with example programs. This 45 minutes HTML tutorial is specially made for beginners who looking for easy HTML tutorial and people who looking for the HTML Markup language revision.</p>
+       <p>Get a solid foundation in computer programming by reading our comprehensive tutorial,
+          <br>Learn the Fundamentals of Progarmming <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>.</p>        <h2>Concepts:</h2>
+                         <p><a href="#1">1. HTML Introduction </a> </p> 
+                         <p><a href="#2">2. HTML Document Outline</a></p>  
+                         <p><a href="#3"> 3. HTML Comments </a></p> 
+                         <p><a href="#4"> 4. HTML Page Information</a></p> 
+                         <p><a href="#5"> 5. HTML Document Structure</a></p> 
+                         <p><a href="#6"> 6. HTML Text Markup</a></p> 
+                         <p><a href="#7"> 7. HTML Links</a></p> 
+                         <p><a href="#8"> 8. HTML Lists</a></p> 
+                         <p><a href="#9"> 9. HTML Forms</a></p> 
+                         <p><a href="#10"> 10. HTML Tables</a></p>
+                         <p><a href="#11"> 11. HTML Images and Image Map</a></p> 
+                         <p><a href="#12"> 12. HTML Chatacter Entities</a></p> 
+                         <p><a href="#13"> 13. HTML &lt;br> and &amp;nbsp;</a></p> 
+                         
+                         <p><a href="#14"> 14. HTML Core Attributes</a></p> 
+                         <p><a href="#15"> 15. HTML Language Attributes</a></p>  
+                         <p><a href="#16"> 16. HTML Semantic Elemets</a></p> 
+                         <p><a href="#17"> 17. HTML Window Events</a></p> 
+                         <p><a href="#18"> 18. HTML Form Events</a></p> 
+                         <p><a href="#19"> 19. HTML Mouse Events</a></p>
+                         <p><a href="#20">20. HTML Favicon</a></p>
+                         <p><a href="#21"> 21. HTML File Paths</a></p> 
+
+<h2 id="1">1. Introduction to HTML</h2>
+<p>HTML (HyperText Markup Language) is a markup language used to structure content for the web. HTML elements are used to describe the structure and content of web pages.</p>
+<p>An HTML file consists of a series of elements, which are represented by tags. These tags are used to mark up the content of the page, including headings, paragraphs, lists, links, and more.</p>
+<p>HTML is one part of building a beautiful website. You can use CSS (Cascading Style Sheets) to control the appearance of your HTML elements, and JavaScript to add interactivity and dynamic behavior to your page.</p>                   
+<h3>How to write code for HTML</h3>
+<p>1. To write HTML code, you will need a text editor. There are many text editors available, both free and paid. Some popular options include Notepad++, Sublime Text, and Atom.</p>
+<p>2. Once you have a text editor installed, you can create a new HTML file by selecting "File > New" from the menu and then saving the file with an .html extension.</p>
+<p>3. Once you have write your html code, then open the HTML file, it will open your browser and you can see your result there</p>
+<h3>Why to Learn HTML? </h3>
+<p> It is the foundation of the World Wide Web and is used to create and display the content that you see when you access a webpage.</p>
+<p>HTML is the basis for all web development and is used to create the structure and content of webpages. If you want to learn how to build websites or web applications, knowing HTML is essential.</p>
+ <p> HTML is used by millions of websites and web applications around the world, making it a valuable skill to have in today's digital economy.</p>
+ <p>Among all these, HTML is easy to learn</p>
+ 
+ 
+ 
+ 
+ <h2 id="2">2. HTML Document Outline</h2>
+<p>In HTML, the 'html', 'head', and 'body' tags are used to structure the content of a webpage.</p>
+<p>The 'html' tag is the root element of an HTML document and is used to enclose all the content of the page.</p>
+<p>The 'head' element is a container for metadata (information about the document, such as its title, scripts, and style sheets) and is placed within the html element, but before the body element.</p>
+<p>The 'body' element contains the main content of the webpage and is also placed within the html element, following the head element</p>
+
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;head>
+     &lt;title>Page Title</title>
+     </head>
+     &lt;body>
+     &lt;!-- Page content goes here-->
+     &lt;h1>Hello Welcome to webdevmonk&lt;/h1>
+     &lt;p>webdevmonk is an online learning platform for the developers&lt;/p>
+     &lt;/body>
+
+&lt;/html>
+</code>
+</pre>
+<img src="../main/html webpage example.PNG" alt="An example of how html page in VS code editor" id="special">
+<p>The DOCTYPE declaration is used to specify the type of document being used. In this case, &lt;!DOCTYPE html> indicates that the document is an HTML5 document.</p>
+<p>The DOCTYPE declaration is not an HTML tag, but it is an important part of any HTML document and must be included at the beginning of the document, before the 'html' tag. It tells the web browser which version of HTML the document is written in and how to interpret the HTML code.</p>
+<p>The 'title' element, which is placed within the head element, specifies the title of the document, which is displayed in the browser's title bar or tab.</p>
+
+<h2 id="3">3. HTML Comments</h2>
+<p>In HTML, you can use comments to add notes or explanations to your code. Comments are ignored by the web browser and are not displayed on the webpage. They are useful for explaining the purpose of a particular piece of code or for temporarily disabling a piece of code without deleting it.</p>
+<pre><code class="language-html">&lt;!-- This is an HTML comment -->
+</code></pre>
+<pre><code class="language-html">&lt;!-- This is
+multi line comment
+-->
+</code></pre>
+<p>It's a good practice to use comments in your HTML code to make it easier to understand and maintain.</p>
+
+<h2 id="4">4. HTML Page Information</h2>
+<p>There are several HTML tags that you can use to add information to your webpage. The most common ones are:</p>
+<p>'title': The 'title' element specifies the title of the document and is placed within the head element. The title is displayed in the browser's title bar or tab and is also used by search engines to identify the content of the webpage.</p>
+<p>'meta': The meta element is used to provide metadata about the webpage, such as a description or keywords for search engines. In HTML, it is placed within the head tag only and has various attributes that can be used to specify the metadata.</p>
+<pre>
+<code class="language-html">
+&lt;meta name="description" content="This is a description of the webpage">
+&lt;meta name="keywords" content="HTML, CSS, JavaScript">
+</code>
+</pre>
+<img id="special" src="../main/title and meta description.PNG" alt="where title and meta description appear in website/webpage"  >
+<p>In HTML, the 'link', 'base', 'style', and 'script' tags are used to add external resources or styles to a webpage.</p>
+<p>The 'link' tag is used to link to external resources, such as style sheets or favicons. It is placed within the head element</p>
+<pre>
+<code class="language-html">
+&lt;link rel="stylesheet" href="styles.css">
+&lt;link rel="shortcut icon" href="favicon.ico">
+</code>
+</pre>
+<p>The 'base' tag is used to specify a base URL for all the links on a webpage. It is also placed within the head element and has an 'href' attribute that specifies the base URL.</p>
+<pre>
+<code class="language-html">
+&lt;base href="https://www.example.com/">
+</code>
+</pre>
+<p>The style tag is used to add styles to a webpage. It is also placed within the head element and has a type attribute</p>
+<pre>
+<code class="language-html">
+&lt;style type="text/css" media="screen">
+     body {
+          background-color: lightblue;
+     }
+     &lt;/style>
+</code>
+</pre>
+<p>The 'script' tag is used to add scripts (usually written in JavaScript) to a webpage. It can be placed either in the head element or in the body element, depending on when you want the script to be executed. </p>
+<p>The script can also be placed directly between the opening and closing script tags.</p>
+<pre>
+<code class="language-html">
+&lt;!-- external source-->
+&lt;script type="text/javascript" src="script.js">&lt;/script>
+ 
+&lt;!-- internal source-->
+&lt;script type="text/javascript">
+     alert("This is an inline script");
+&lt;/script>
+
+</code>
+</pre>
+<h3>Self Closing Tags:</h3>
+<p>In HTML, some tags are self-closing, which means that they don't have a closing tag. Instead, they are closed by using a slash (/) at the end of the opening tag.</p>
+<p>For example, the 'img' tag is used to add an image to a webpage and is a self-closing tag</p>
+
+<pre>
+<code class="language-html">
+&lt;img src="image.jpg" alt="Description of the image">
+&lt;br>
+&lt;hr>
+&lt;input type="text" value="Enter your name">
+
+</code>
+</pre>
+
+<h2 id="5">5. HTML Document Structure</h2>
+<p>In HTML, there are several tags that you can use to structure and format your content. Some of the most commonly used tags are:</p>
+<p>1. 'h1' to 'h6': The 'h1' to 'h6' tags are used to define headings on a webpage. The h1 tag represents the highest level of heading, while h6 represents the lowest level. Headings are used to organize the content of a webpage and are often displayed in larger and bolder text than the rest of the content. </p>
+<pre>
+<code class="language-html">
+&lt;h1>This is a level 1 heading&lt;/h1>
+&lt;h2>This is a level 2 heading&lt;/h2>
+&lt;h3>This is a level 3 heading&lt;/h3>
+&lt;h4>This is a level 4 heading&lt;/h4>
+&lt;h5>This is a level 5 heading&lt;/h5> 
+&lt;h6>This is a level 6 heading&lt;/h6>
+</code>
+</pre>
+
+<p>2. 'p': The 'p' tag is used to define a paragraph of text. It is often used to enclose blocks of text on a webpage.  </p>
+<pre>
+<code class="language-html">
+&lt;p>This is a paragraph of text.</p>
+&lt;p>This is another paragraph of text.</p>
+     
+</code>
+</pre>
+
+<p>3. 'div': The 'div' tag is used to define a division or section of content on a webpage. It is a block-level element that can contain other elements and is often used to group related content together.</p>
+<pre>
+<code class="language-html">
+&lt;div>
+     &lt;h2>This is a heading within a division&lt;/h2>
+     &lt;p>This is a paragraph of text within the division.&lt;/p>
+&lt;/div>
+</code></pre>
+<p>4. 'span': The 'span' tag is used to apply styles to a small part of a text or to group inline elements together. It is an inline element that can be used within a block-level element, such as a paragraph.</p>
+<pre>
+<code class="language-html">
+     &lt;p>This is a &lt;span style="color: red;">red&lt;/span> paragraph of text.&lt;/p> 
+</code>
+</pre>
+
+<p>5. 'br': The 'br' tag is used to insert a line break in the text. It is a self-closing tag and doesn't have a closing tag.</p>
+
+<pre>
+<code class="language-html">
+    &lt;p>This is a line of text&lt;br>
+     This is another line of text &lt;/p>
+     
+</code>
+</pre>
+
+<p>6. 'hr': The 'hr' tag is used to insert a horizontal rule (a line) on a webpage. It is a self-closing tag and doesn't have a closing tag. </p>
+<pre>
+<code class="language-html">
+&lt;p>Before the horizontal line&lt;hr> &lt;/p>
+&lt;p>After the horizontal line&lt;/p>
+</code>
+</pre>
+
+<h2 id="6">6. HTML Text Markup</h2>
+<p>In HTML, we have some tags to markup tha text.</p>
+
+<p>1. &lt;strong>: The &lt;strong> tag is used to indicate that the text within it is important, and is typically displayed in a bold font.</p>
+<p>2. &lt;em>: The &lt;em> tag is used to indicate that the text within it is emphasized, and is typically displayed in an italic font.</p>
+<p>3. &lt;b>: The &lt;b> tag is used to make the text within it bold. It is similar to the &lt;strong> tag, but does not convey any additional meaning.</p>
+<p>4. &lt;i>: The &lt;i> tag is used to make the text within it italic. It is similar to the &lt;em> tag, but does not convey any additional meaning.</p>
+<p>5. &lt;blockquote>: The &lt;blockquote> tag is used to indicate that the text within it is a block quote, and is typically displayed with indents on the left and right sides.</p>
+<p>6. &lt;q>: The &lt;q> tag is used to indicate that the text within it is a short quotation, and is typically displayed with quotation marks around it.</p>
+<p>7. &lt;abbr>: The &lt;abbr> tag is used to indicate that the text within it is an abbreviation or acronym, and allows you to provide the full expansion of the term using the title attribute.</p>
+<p>8. &lt;pre>: The &lt;pre> tag is used to indicate that the text within it is preformatted and should be displayed as-is, with whitespace preserved.</p>
+<p>9. &lt;code>: The &lt;code> tag is used to indicate that the text within it is a piece of code, and is typically displayed in a monospace font.</p>
+<p>10. &lt;del>: The &lt;del> tag is used to indicate that the text within it has been deleted, and is typically displayed with a line through it.</p>
+<p>11. &lt;ins>: The &lt;ins> tag is used to indicate that the text within it has been inserted, and is typically displayed with an underline.</p>
+<p>12. &lt;sub>: The &lt;sub> tag is used to indicate that the text within it should be displayed as a subscript.</p>
+<p>13. &lt;sup>: The &lt;sup> tag is used to indicate that the text within it should be displayed as a superscript.</p>
+<h2>example</h2>
+<pre>
+<code class="language-html">
+&lt;html>
+&lt;head>
+&lt;title>HTML Text Markup Examples&lt;/title>
+&lt;/head>
+&lt;body>
+     &lt;h1>HTML Text Markup Examples&lt;/h1>
+     &lt;p>
+     In this example, we will demonstrate the use of various HTML tags for formatting text.
+     &lt;/p>
+
+     &lt;h2>Emphasis Tags&lt;/h2>
+     &lt;p>
+     The &lt;strong>strong&lt;/strong> tag is used to indicate that the text within it is important, and is typically displayed in a bold font.
+     &lt;/p>
+
+     &lt;p>
+     The &lt;em>em&lt;/em> tag is used to indicate that the text within it is emphasized, and is typically displayed in an italic font.
+     &lt;/p>
+
+     &lt;h2>Bold and Italic Tags&lt;/h2>
+     &lt;p>
+     The &lt;b>b&lt;/b> tag is used to make the text within it bold. It is similar to the &lt;strong>strong&lt;/strong> tag, but does not convey any additional meaning.
+     &lt;/p>
+
+     &lt;p>
+     The &lt;i>i&lt;/i> tag is used to make the text within it italic. It is similar to the &lt;em>em&lt;/em> tag, but does not convey any additional meaning.
+     &lt;/p>
+
+     &lt;h2>Quotation Tags&lt;/h2>
+     &lt;p>
+     The &lt;blockquote>blockquote&lt;/blockquote> tag is used to indicate that the text within it is a block quote, and is typically displayed with indents on the left and right sides.
+     &lt;/p>
+
+     &lt;p>
+     The &lt;q>q&lt;/q> tag is used to indicate that the text within it is a short quotation, and is typically displayed with quotation marks around it.
+     &lt;/p>
+
+     &lt;h2>Abbreviation Tag&lt;/h2>
+     &lt;p>
+     The &lt;abbr title="Hypertext Markup Language">HTML&lt;/abbr> tag is used to indicate that the text within it is an abbreviation or acronym, and allows you to provide the full expansion of the term using the `title` attribute.
+     &lt;/p>
+
+     &lt;h2>Preformatted Text Tag&lt;/h2>
+     &lt;p>
+     The &lt;pre>pre&lt;/pre> tag is used to indicate that the text within it is preformatted and should be displayed as-is, with whitespace preserved.
+     &lt;/p>
+
+     &lt;h2>Code Tag&lt;/h2>
+     &lt;p>
+     The &lt;code>code&lt;/code> tag is used to indicate that the text within it is a piece of code, and is typically displayed in a monospace font.
+     &lt;/p>
+
+     &lt;h2>Deleted and Inserted Text Tags&lt;/h2>
+     &lt;p>
+     The &lt;del>del&lt;/del> tag is used to indicate that the text within it has been deleted, and is typically displayed with a line through it.
+     &lt;/p>
+
+     &lt;p>
+     The &lt;ins>ins&lt;/ins> tag is used
+     &lt;/p>
+
+     &lt;/body>
+&lt;/html>
+</code>
+</pre>
+<p> By using these tags appropriately, you can create well-structured and easily readable content on the web.</p>
+
+<h2 id="7">7. HTML Links</h2>
+<p>In HTML, you can create links to other web pages or to specific locations within the same page using the <a> (anchor) tag.</p>
+
+<p>To create a link to another web page, you need to specify the destination URL using the href attribute</p>
+<pre>
+<code class="language-html">
+&lt;a href="https://google.com">Google&lt;/a> 
+&lt;&lt;p>Click here to visit another page &lt;a href="../dir1/page1.html">Page 1&lt;/a>&lt;/p>
+&lt;&lt;p>Click here to jump to specific section in same page &lt;a href="#mysecton">Section 1&lt;/a>&lt;/p>
+&lt;!-- Some content-->
+&lt;h2 id="mysection">Section 1&lt;/h2>
+</code>
+</pre>
+
+<h2 id="8">8. HTML Lists</h2>
+<p>In HTML, you can create lists using the &lt;ul> (unordered list) and &lt;ol> (ordered list) tags.</p>
+<p> You can also use the &lt;dd> (definition description) and &lt;dl> (definition list) tags to create definition lists</p>
+<p>An unordered list is a list of items that are not ordered in any specific way.</p>
+<p>To create an unordered list, you can use the &lt;ul> tag and nest individual list items within &lt;li> (list item) tags.</p>
+
+
+<pre> 
+<code class="language-html">
+&lt;ul>
+     &lt;li>Item 1 &lt;/li>
+     &lt;li>Item 2 &lt;/li>
+     &lt;li>Item 3 &lt;/li>
+     &lt;/ul>
+  </code>
+</pre>
+<p>This will create a list with bullet points next to each item</p>
+<ul>
+     <li>Item 1 </li>
+     <li>Item 2 </li>
+     <li>Item 3 </li>
+     </ul>
+<p>An ordered list is a list of items that are ordered in a specific way, such as numerically or alphabetically. To create an ordered list, you can use the &lt;ol> tag and nest individual list items within &lt;li> tags.</p>
+<pre>
+<code class="language-html">
+&lt;ol>
+     &lt;li>Item 1 &lt;/li>
+     &lt;li>Item 2 &lt;/li>
+     &lt;li>Item 3 &lt;/li>
+     &lt;/ol>
+        
+</code>
+</pre>
+<p>This will create a list with numbers next to each item</p>
+<ol>
+     <li>Item 1 </li>
+     <li>Item 2 </li>
+     <li>Item 3 </li>
+     </ol>
+<p>You can also nest lists within lists to create multi-level lists (useful for dropdown menus)</p>  
+<pre>
+<code class="language-html">
+&lt;ul>
+    &lt;li>Item 1&lt;/li>
+    &lt;li>Item 2
+    &lt;ul>
+      &lt;li>Subitem 1&lt;/li>
+      &lt;li>Subitem 2&lt;/li>
+      &lt;/ul>
+    &lt;/li>
+    &lt;li>Item 3&lt;/li>
+&lt;/ul>
+   
+</code>
+</pre>
+
+
+<p>A definition list is a list of terms and their corresponding definitions. To create a definition list, you can use the &lt;dl> tag and nest the terms within &lt;dt> (definition term) tags and the definitions within &lt;dd> tags. </p>
+
+<pre>
+<code class="language-html">
+&lt;dl>
+   &lt;dt>Term 1&lt;/dt>
+   &lt;dd>Definition 1&lt;/dd>
+   &lt;dt>Term 2&lt;/dt>
+   &lt;dd>Definition 2&lt;/dd>
+   &lt;dt>Term 3&lt;/dt>
+   &lt;dd>Definition 3&lt;/dd>
+&lt;/dl>
+        
+</code>
+</pre>
+<p>This will create a definition list with the terms and definitions listed in separate columns:</p>
+<dl>
+     <dt>Term 1</dt>
+     <dd>Definition 1</dd>
+     <dt>Term 2</dt>
+     <dd>Definition 2</dd>
+     <dt>Term 3</dt>
+     <dd>Definition 3</dd>
+   </dl>
+   <p>The &lt;dd> tag is used to indicate the description or definition of the term that precedes it in the list. The &lt;dl> tag is used to define the entire definition list.</p>
+
+<h2 id="9">9.  HTML Forms</h2>
+<p>In HTML, you can use forms to collect user input. Forms are created using the &lt;form> element, and contain various form elements such as text fields, buttons, and checkboxes.</p>
+<pre>
+<code class="language-html">
+&lt;form>
+     &lt;label for="name">Name: &lt;/label>&lt;br>
+     &lt;input type="text" id="name" name="name">&lt;br>
+     &lt;label for="email">Email :&lt;/label>&lt;br>
+     &lt;input type="email" id="email" name="email">&lt;br>
+     &lt;input type="submit" value="Submit">
+&lt;/form> 
+</code>
+</pre>
+
+<p>Forms can also contain other elements such as radio buttons, checkboxes, and dropdown menus</p>
+ <pre>
+<code class="language-html">
+&lt;form>
+     &lt;label for="name">Name:&lt;/label>&lt;br>
+     &lt;input type="text" id="name" name="name">&lt;br>
+     &lt;label for="email">Email:&lt;/label>&lt;br>
+     &lt;input type="email" id="email" name="email">&lt;br>
+     &lt;label for="gender">Gender:&lt;/label>&lt;br>
+     &lt;input type="radio" id="male" name="gender" value="male">
+     &lt;label for="male">Male&lt;/label>&lt;br>
+     &lt;input type="radio" id="female" name="gender" value="female">
+     &lt;label for="female">Female&lt;/label>&lt;br>
+     &lt;label for="hobbies">Hobbies:&lt;/label>&lt;br>
+     &lt;input type="checkbox" id="hobby1" name="hobby" value="reading">
+     &lt;label for="hobby1">Reading&lt;/label>&lt;br>
+     &lt;input type="checkbox" id="hobby2" name="hobby" value="music">
+     &lt;label for="hobby2">Music&lt;/label>&lt;br>
+     &lt;label for="country">Country:&lt;/label>&lt;br>
+     &lt;select id="country" name="country">
+     &lt;option value="usa">India&lt;/option>
+     &lt;option value="canada">Canada&lt;/option>
+     &lt;option value="mexico">Mexico&lt;/option>
+     &lt;/select>&lt;br>
+     &lt;input type="submit" value="Submit">
+&lt;/form> 
+        
+</code>
+ </pre>
+ <h3>HTML Buttons: </h3>
+<p>In HTML, you can create buttons using the &lt;button> element. A button can be used to trigger an action when clicked by the user, such as submitting a form or navigating to a different page.</p>
+<p>To create a button in HTML, you can use the 'button' element or the 'input' element with the type attribute set to button.</p>
+<pre>
+<code class="language-html">
+&lt;button>Click me&lt;/button>
+&lt;input type="button" value="Click me">
+
+</code>
+</pre>
+<p>We can style this buttons as we want. Using Java Script, we can 
+     make this button to perform an action.
+</p>
+<pre>
+<code class="language-html">
+&lt;style>
+  #myBtn{
+     padding:9px;
+     border-radius: 18px;
+     background-color: black;
+     color:white;
+  }
+
+  &lt;/style>
+&lt;button id="myBtn">Click me&lt;/button>
+&lt;script>
+   let button = document.getElementById("myBtn");
+   button.onclick = function(){
+     alert("Hi");
+   }
+&lt;/script>
+     
+</code>
+</pre>
+
+
+<style>
+     #myBtn{
+        padding:9px;
+        border-radius: 18px;
+        background-color: black;
+        color:white;
+     }
+   
+     </style>
+   <button id="myBtn">Click me</button>
+   <script>
+      let button = document.getElementById("myBtn");
+      button.onclick = function(){
+        alert("Hi");
+      }
+
+</script>
+
+<h3>label:</h3>
+<p>In HTML, the 'label' element is used to create a label for an input element. The label element can be used to provide a description for the input element, or to group related elements together.</p>
+<pre>
+<code class="language-html">
+&lt;label for="email">Email:&lt;/label>
+&lt;input type="email" id="email" name="email">
+     
+</code>
+</pre>
+
+<br> <br> <br>
+
+<h2 id="10">10. HTML Tables</h2>
+<p>HTML tables are used to present data in a tabular format on a web page. Tables are made up of rows and columns, and each cell in the table can contain text or other content.</p>
+<p>To create a table in HTML, you can use the 'table' element, which consists of one or more 'tr' (table row) elements, each of which contains one or more 'td' (table cell) elements.</p>
+<pre>
+<code class="language-html">
+&lt;table>
+     &lt;tr>
+        &lt;td>Row 1, Cell 1&lt;/td>
+        &lt;td>Row 1, Cell 2&lt;/td>
+     &lt;/tr>
+     &lt;tr>
+       &lt;td>Row 2, Cell 1&lt;/td>
+       &lt;td>Row 2, Cell 2&lt;/td>
+     &lt;/tr>
+&lt;/table>
+</code>
+</pre> 
+
+<p>By applying some style on this we can make this more like an accurate table</p>    
+<pre>
+<code class="language-html">
+     &lt;style>
+     table {
+          border-collapse: collapse;
+          border: 1px solid black;
+          }
+          
+          td {
+          padding: 10px;
+          border: 1px solid black;
+          text-align: center;
+          }
+          
+          th {
+          background-color: lightgray;
+          font-weight: bold;
+          }
+     &lt;/style>
+&lt;table>
+     &lt;tr>
+          &lt;td>Row 1, Cell 1&lt;/td>
+          &lt;td>Row 1, Cell 2&lt;/td>
+     &lt;/tr>
+     &lt;tr>
+          &lt;td>Row 2, Cell 1&lt;/td>
+          &lt;td>Row 2, Cell 2&lt;/td>
+     &lt;/tr>
+&lt;/table>
+</code>
+</pre>    
+ 
+<style>
+     table {
+          border-collapse: collapse;
+          border: 1px solid black;
+        }
+        
+        td {
+          padding: 10px;
+          border: 1px solid black;
+          text-align: center;
+        }
+        
+        th {
+          background-color: lightgray;
+          font-weight: bold;
+        }
+     </style>
+<table>
+     <tr>
+        <td>Row 1, Cell 1</td>
+        <td>Row 1, Cell 2</td>
+     </tr>
+     <tr>
+       <td>Row 2, Cell 1</td>
+       <td>Row 2, Cell 2</td>
+     </tr>
+</table>
+
+<h2 id="11">11. HTML Images and Image Map</h2>
+<p>HTML images are used to display images on a web page. To add an image to an HTML page, you can use the img element.</p>
+<pre>
+<code class="language-html">
+&lt;img src="image.jpg" alt="My image">
+</code>
+</pre>
+ 
+<p>The 'src' attribute specifies the source of the image, and the 'alt' attribute provides a text alternative for the image in case it cannot be displayed in the browser.</p>
+
+<p>You can also use the 'width' and 'height' attributes to specify the dimensions of the image in pixels.</p>
+ 
+<pre>
+<code class="language-html">
+&lt;img src="image.jpg" alt="My image" width="200" height="100">
+
+</code>
+</pre>
+
+<p>An image map is a way to create multiple clickable areas on an image. To create an image map in HTML, you can use the 'map' and 'area' elements.</p>
+<pre>
+<code class="language-html">
+ &lt;img src="image.jpg" alt="My image" usemap="#map1">
+
+ &lt;map name="map1">
+     &lt;area shape="rect" coords="0,0,100,100" href="area1.html" alt="Area 1">
+     &lt;area shape="circle" coords="200,200,50" href="area2.html" alt="Area 2">
+&lt;/map>
+     
+</code>
+</pre>
+<h2 id="12">12.  HTML Chatacter Entities</h2>
+<p>HTML character entities are used to display special characters on a web page that may not be easily entered using a keyboard or may not be supported by the character encoding of the page.</p>
+<p>Here is a list of some common HTML character entities:</p>
+<p>
+     &amp;lt;  &nbsp;&nbsp; : Less than sign    &lt; <br>
+     &amp;gt;  &nbsp;&nbsp;: Greater than sign  &gt;<br>
+     &amp;amp; &nbsp;&nbsp;: Ampersand  &amp;<br>
+     &amp;quot; &nbsp;&nbsp;: Double quotation mark &quot;<br>
+     &amp;apos; &nbsp;&nbsp;: Single quotation mark &apos;<br>
+      &amp;copy; &nbsp;&nbsp;: Copyright symbol &copy;<br>
+     &amp;reg; &nbsp;&nbsp;: Registered trademark symbol &reg;</p>
+<pre>
+<code class="language-html">
+&lt;p>Copyright &amp;&copy; 2021&lt;/p>
+&lt;p>
+&amp;lt;head> The head tag &amp;lt;/head>
+&lt;/p>
+</code>
+</pre>
+<p>
+
+     <p>Copyright &© 2021</p>
+     <p>
+     &lt;head> The head tag &lt;/head>
+     </p>
+
+<h2 id="13">13. HTML &lt;br> and &amp;nbsp;</h2>
+<p>The &lt;br> element is used to insert a line break in an HTML document. It is an empty element, which means that it does not have a closing tag and does not contain any content.</p>
+<pre>
+<code class="language-html">
+&lt;p>This is some text.&lt;br>This is more text on a new line.&lt;/p>
+
+</code>
+</pre>
+<p>This will display the text "This is some text." on one line, and "This is more text on a new line." on the next line.</p>
+<p>The '&amp;&nbsp;' character entity is used to insert a non-breaking space in an HTML document. It is a special character that represents a space that will not be collapsed, even if it appears at the end of a line.</p>
+
+<pre>
+<code class="language-html">
+&lt;p>This is some text.&amp;nbsp;&amp;nbsp;&amp;nbsp;This is more text on the same line.&lt;/p>
+
+</code>
+</pre>
+<p>This will display the text "This is some text. This is more text on the same line." on one line, with three non-breaking space between "text." and "This".</p>
+
+<h2 id="14">14.  HTML Core Attributes</h2>
+<p>HTML elements have some attributes to provide additional information about the element. </p>
+<p>These are useful for java script to get the specific element or css to style the element.</p>
+<p>1. 'id': This attribute assigns a unique identifier to an element. The id attribute is used to identify an element and to create a link to that element from other elements on the page or in other documents.
+</p>
+<p>2. 'class': This attribute assigns one or more class names to an element. The class attribute is used to apply styles to elements in CSS.</p>
+<p>3. 'style': This attribute allows you to specify inline styles for an element. The style attribute is used to apply specific styles to an element, rather than using a separate stylesheet.</p>
+<p>4. 'title': This attribute provides additional information about an element. The title attribute is usually displayed as a tooltip when the mouse pointer hovers over the element.</p>
+<p>5. 'lang': This attribute specifies the language of the element's content. The lang attribute is used to specify the language of an element's content and to help search engines and screen readers understand the content.</p>
+<p>6. 'accesskey': This attribute defines a shortcut key to activate or focus an element. The accesskey attribute is used to specify a shortcut key that can be used to activate or focus an element.</p>
+<p>Note that these attributes are just a small subset of the attributes available in HTML. </p>
+
+<h2 id="15">15.  HTML Language Attributes</h2>
+<p>HTML language attributes are used to specify the language of an element's content and to help search engines and screen readers understand the content. </p>
+<p>the most commonly used HTML language attributes are</p>
+<p>1. 'lang': This attribute specifies the language of the element's content. </p>
+<p>2. 'xml:lang': This attribute is similar to the lang attribute, but is used specifically in XML documents.</p>
+<p>3. 'hreflang': This attribute specifies the language of the linked document. The hreflang attribute is used in the a element to specify the language of the linked document.</p>
+
+<h2 id="16">16. HTML Semantic Elemets </h2>
+<p>These tags are most important for SEO(Search Engine Optimization). Consider this tags to use for your HTML document.</p>
+<p>They provide additional meaning and structure to the content of a web page, making it easier for both humans and machines to understand the content and context of the page.</p>
+<p>1. 'header': This element represents the header of a section or page. It typically contains the title or heading of the section or page, as well as other elements such as logos or navigation links.</p>
+<p>2.' nav': This element represents a section of the page that contains navigation links. It is used to indicate the primary navigation links for a web page.</p>
+<p>3. 'article': This element represents a self-contained piece of content, such as a blog post or news article. It is used to indicate that the content within the element is independent from the rest of the page.
+</p>
+<p>4. 'footer': This element represents the footer of a section or page. It typically contains information such as copyright notices, links to related content, or contact information.</p>
+<p>5. 'section': This element represents a generic section of a web page. It is used to group related content together and to provide a heading or title for the section.</p>
+<p>6. 'aside':  It is often used for sidebars or for content such as advertisements or related links.</p>
+
+<pre><code class="language-html">
+     &lt;html>
+     &lt;head>
+     &lt;title>My Blog&lt;/title>
+     &lt;/head>
+     &lt;body>
+
+     &lt;header>
+
+     &lt;h1>My Blog&lt;/h1>
+
+     &lt;nav>
+     &lt;ul>
+     &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+     &lt;li>&lt;a href="#">About&lt;/a>&lt;/li>
+     &lt;li>&lt;a href="#">Contact&lt;/a>&lt;/li>
+     &lt;/ul>
+     &lt;/nav>
+
+     &lt;/header>
+
+     &lt;main>
+
+     &lt;article>
+     &lt;h2>My First Blog Post&lt;/h2>
+     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, odio non fringilla lobortis, turpis risus gravida lorem, nec tincidunt nibh mauris quis erat. Maecenas tincidunt ornare ligula, id vehicula ipsum ornare non. Praesent in nulla sed ligula congue dictum. Aliquam erat volutpat. Sed suscipit, urna vel iaculis scelerisque, diam purus convallis nibh, eget bibendum risus arcu id orci. Proin venenatis, diam in auctor gravida, lectus nibh dictum ipsum, a fringilla lacus enim non lectus.</p>
+     &lt;/article>
+
+     &lt;article>
+     &lt;h2>My Second Blog Post</h2>
+     &lt;p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum, odio non fringilla lobortis, turpis risus gravida lorem, nec tincidunt nibh mauris quis erat. Maecenas tincidunt ornare ligula, id vehicula ipsum ornare non. Praesent in nulla sed ligula congue dictum. Aliquam erat volutpat. Sed suscipit, urna vel iaculis scelerisque, diam purus convallis nibh, eget bibendum risus arcu id orci. Proin venenatis, diam in auctor gravida, lectus nibh dictum ipsum, a fringilla lacus enim non lectus.</p>
+     &lt;/article>
+
+              &lt;/main>
+
+              &lt;aside>
+              &lt;h3>Related Links</h3>
+              &lt;ul>
+              &lt;li>&lt;a href="#">Link 1&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">Link 2&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">Link 3&lt;/a>&lt;/li>
+              &lt;/ul>
+              &lt;/aside>
+
+              &lt;footer>
+              &lt;p>Copyright 2021 My Blog&lt;/p>
+          &lt;/footer>
+
+          &lt;/body>
+          &lt;/html>
+        
+</code></pre>
+
+<h2 id="17">17.  HTML Window Events</h2>
+<p>HTML window events allow you to execute JavaScript code in response to user actions such as clicking a button, loading a page, or resizing the window.</p>
+
+<p>1. 'onload': This event is triggered when the browser finishes loading the page.</p>
+<p>2. 'onunload': This event is triggered when the user leaves the page or closes the browser window. </p>
+<p>3. 'onresize': This event is triggered when the user resizes the browser window.</p>
+<p>4. 'onscroll': This event is triggered when the user scrolls the page. It can be used to execute code in response to scrolling, such as updating the position of fixed elements or loading new content as the user scrolls.</p>
+<p>5. 'onfocus': This event is triggered when an element receives focus.</p>
+<p>6. 'onblur': This event is triggered when an element loses focus</p>
+
+<pre>
+<code class="language-html">
+&lt;html>
+   &lt;head>
+     &lt;title>My Page&lt;/title>
+   &lt;/head>
+
+  &lt;body onload="init()">
+&lt;!-- Page content goes here -->
+&lt;script>
+     function init() {
+     // Code to be executed when the page is loaded goes here
+         alert("The page is fully loaded!");
+     }
+&lt;/script>
+  &lt;/body>
+&lt;/html>
+        
+</code>
+</pre>
+
+ <h2 id="18">18. HTML Form Events </h2>
+ <p>HTML form events are events that are triggered by actions that occur in an HTML form. </p>
+<p>1. 'onsubmit': This event is triggered when the user submits a form. It can be used to execute code when the form is submitted, such as validating the form data or sending the data to the server.</p>        
+<p>2. 'onreset': This event is triggered when the user resets a form. </p>
+<p>3. 'onfocus': This event is triggered when an element within a form receives focus</p>
+<p>4. 'onblur': This event is triggered when an element within a form loses focus. </p>
+<p>5. 'onchange': This event is triggered when the value of an element within a form is changed. </p>
+
+<pre>
+<code class="language-html">
+     &lt;form onsubmit="return validateForm()" onreset="resetForm()">
+     &lt;label for="name">Name:&lt;/label>&lt;br>
+     &lt;input type="text" id="name" name="name">&lt;br>
+     &lt;label for="email">Email:&lt;/label>&lt;br>
+     &lt;input type="email" id="email" name="email">&lt;br>&lt;br>
+     &lt;input type="submit" value="Submit">
+     &lt;input type="reset" value="Reset">
+     &lt;/form> 
+        
+     &lt;script>
+        function validateForm() {
+          // Validate form input and return true if the form is valid, false if not
+          // For example, you could check that the name field is not empty and that the email field is a valid email address
+          // If the form is invalid, you can display an error message to the user
+        }
+        
+        function resetForm() {
+          // Reset the form to its default state
+          // For example, you could clear any input fields or reset any selected options
+        }
+        &lt;/script>
+        
+</code>
+</pre>
+
+<h2 id="19">19. HTML Mouse Events</h2>
+<p>HTML provides several mouse events that you can use to create interactive websites. For example:</p>
+<p>1. 'onclick': Triggered when the user clicks on an element</p>
+<p>2. 'onmousedown': Triggered when the user presses a mouse button over an element</p>
+<p>3. 'onmouseenter': Triggered when the user moves the mouse pointer over an element</p>
+<p>4. 'onmouseleave': Triggered when the user moves the mouse pointer out of an element</p>
+<p>5. 'oncontextmenu': Triggered when the user right-clicks on an element
+</p>
+<p>6. 'onmouseout': Triggered when the mouse pointer leaves an element</p>
+<p>7. 'onmouseover': Triggered when the mouse pointer moves over an element</p>
+<p>8. 'onmouseup': Triggered when the user releases a mouse button over an element</p>
+ 
+
+ 
+<h2 id="20">20. HTML Favicon</h2>
+<img id="special-fav" src="../main/favicon.PNG" alt="Favicon in webpage example" width="500px" height="100px">
+<p>A favicon (short for "favorite icon") is a small icon that is displayed in the browser's address bar, bookmark menu, or on the page tab. It is used to represent a website and help users identify and locate it more easily.</p>
+<pre>
+<code class="language-html">
+&lt;link rel="shortcut icon" type="image/x-icon" href="/path/to/favicon.ico">
+ 
+</code>
+</pre>
+<p>Replace /path/to/favicon.ico with the path to your favicon file. The favicon file should be a small image in ICO or PNG format. You can also use a transparent PNG file for the favicon, which allows it to blend in with the background color of the browser's address bar.</p>
+<p>It is a good idea to create a favicon that is at least 16x16 pixels in size, since it may be displayed at that size in some browsers. </p>
+
+<h2 id="21">21. HTML File Paths</h2>
+<p>In HTML, file paths are used to link external files such as stylesheets, images, and scripts to an HTML document.</p>
+<p>There are two types of file paths:</p>
+<p>1. 'Absolute file paths': An absolute file path is a complete URL that includes the domain name. For example:</p>
+<pre>
+<code class="language-html">
+&lt;link rel="stylesheet" href="https://www.example.com/css/styles.css">
+
+</code>
+</pre>
+<p>'2. Relative file paths': A relative file path points to a file relative to the current page. For example:</p>
+<pre>
+<code class="language-html">
+&lt;img src="images/logo.png">
+&lt;a href="about.html">About&lt;/a>
+&lt;a href="about/about.html">About&lt;/a>
+
+</code>
+</pre>
+<h1>Thank You</h1>
+<p>Thank you for taking the time to read our HTML tutorial. We hope that it was helpful to you in your learning journey.</p>
+<p>As you continue to develop your skills, it's important to not just read through a tutorial once, but to revisit the material multiple times in order to fully understand the concepts. We encourage you to re-read this tutorial, and to practice what you've learned by building some small projects on your own.</p>
+<p>Additionally, we have many other tutorials available on webdevmonk.com that cover a wide range of topics. We encourage you to continue exploring and learning with us.</p>
+<p>Thank you again for choosing webdevmonk as your source for learning. We hope that you will continue to find value in our tutorials and resources.</p>
+
+</main> 
+
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+          <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

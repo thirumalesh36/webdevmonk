@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Learn the fundamental concepts and building blocks of computer programming  at webdevmonk. Understand the logic and structure behind coding languages and take the first steps towards building your own programs.">
+
+<!--GOOGLE  ANALYTICS-->
+<!-- structured data
+
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/computer-programming-all-concepts ",
+"url":"https://www.webdevmonk.com/tutorials/computer-programming-all-concepts",
+"name":"The Building Blocks of Computer Programming",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Learn the fundamental concepts and building blocks of computer programming  at webdevmonk. Understand the logic and structure behind coding languages and take the first steps towards building your own programs.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/computer-programming-all-concepts"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/computer-programming-all-concepts/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/programming.png",
+"contentUrl":"https://www.webdevmonk.com/main/programming.png",
+"caption":"The Building Blocks of Computer Programming"
+}
+}
+]
+}
+
+</script>
+-->
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/computer-programming-all-concepts" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="The Building Blocks of Computer Programming" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/c.png" />
+<meta property="og:description" content="Learn the fundamental concepts and building blocks of computer programming  at webdevmonk. Understand the logic and structure behind coding languages and take the first steps towards building your own programs." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="The Building Blocks of Computer Programming">
+<meta name="twitter:description" content="Learn the fundamental concepts and building blocks of computer programming  at webdevmonk. Understand the logic and structure behind coding languages and take the first steps towards building your own programs.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/programming.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/computer-programming-all-concepts" />
+
+
+<title>The Building Blocks of Computer Programming</title>
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i>   
+<img id="image" src="../main/programming.png" alt="Computer programming all basics to get started" width="500px" height="400px">  
+<p>Hello folks! Welcome to our tutorial on programming language concepts. In this tutorial, we will introduce you to the fundamental concepts used in programming languages and provide real-world examples to help you understand how they are applied in practice. Whether you are new to programming or an experienced developer, this tutorial is for you. Let's get started!</p>          
+<h2>Concepts: </h2>
+<p><a href="#1">1. Introduction to Computer Programming</a> </p> 
+<p><a href="#2">2. Programming languages</a></p>
+<p><a href="#3">3. Source Code</a></p>
+<p><a href="#4">4. Compiler and Interpreter</a></p>
+<p><a href="#5">5. ASCII</a></p>
+<p><a href="#6">6. Memory Address</a></p>
+<p><a href="#7">7. Comments</a></p>
+<p><a href="#8">8. Output</a></p>
+<p><a href="#9">9. Input</a></p>
+<p><a href="#10">10. Variables</a></p>
+<p><a href="#11">11. Data Types</a></p>
+<p><a href="#12">12. Operators</a></p>
+<p><a href="#13">13. Strings</a></p>
+<p><a href="#14">14. Booleans</a></p>
+<p><a href="#15">15. Conditional Statements</a></p>
+<p><a href="#16">16. Loops</a></p>
+<p><a href="#17">17. Functions</a></p>
+<p><a href="#18">18. Classes and Objects</a></p>
+<p><a href="#19">19. Arrays</a></p>
+<p><a href="#20">20. Data Structures</a></p>
+<p><a href="#21">21. Linear Data Structures</a></p>
+<p><a href="#22">22. Non-Linear Data structure</a></p>
+<p><a href="#23">23. Linked Lists</a></p>
+<p><a href="#24">24. Internet</a></p>
+<p><a href="#25">25. Front End</a></p>
+<p><a href="#26">26. Back End</a></p>
+<p><a href="#27">27. Libraries</a></p>
+<p><a href="#28">28. Frameworks</a></p>
+<p><a href="#29">29. Server</a></p>
+<p><a href="#30">30. Data Bases</a></p>
+<p><a href="#31">31. Cloud</a></p>
+<p><a href="#32">32. Difference between Cloud and Data Base</a></p>
+<p><a href="#33">33. How Computer Works?</a></p>
+<p><a href="#34">34. Pixels</a></p>
+<p><a href="#35">35. Video Games</a></p>
+
+
+
+
+<h2 id="1">1. Introduction to Computer Programming</h2>
+<p>Computer programming is the process of designing and building instructions that a computer can follow to complete a task. It is a way of telling a computer what you want it to do using a specific set of instructions.</p>
+<h2>example</h2>
+<p><strong>Creating apps:</strong> We know, many people use apps on their phones or tablets to do things like play games, check the weather, or order food. These apps are created using computer programming languages.</p>
+<p><strong>Designing websites:</strong> If you visit a website, you are using a program that was created using computer programming. Websites are made up of many different elements, like text, images, and buttons, and a programmer puts all of these elements together to create the website.</p>
+<p><strong>Controlling robots:</strong> Some factories use robots to build products or move materials around. These robots are controlled using computer programming, which tells them what tasks to complete and how to do them.</p>
+<p>In simple words, computer programming is used to create all kinds of programs and systems that make our lives easier and more convenient. It is an important skill to learn if you are interested in working with computers or technology.</p>
+
+<h2 id="2">2. Programming languages</h2>
+<p>Programming languages are used to write instructions that a computer can understand and follow. Just like we use different languages like English, Spanish, or French to communicate with people, we use different programming languages to communicate with computers.</p>
+<p>There are many different programming languages, and each one is used for a specific purpose. For example, some programming languages are used to create websites, while others are used to create apps or games.</p>
+
+<h2>example</h2>
+<p><strong>HTML: </strong>This programming language (actually it is a markup language) is used to create the structure and layout of a website. It tells the website what elements to display and where to display them.</p>
+<p><strong>Java: </strong>This popular programming language is often used to create apps for Android phones and tablets. It is also used to create games and other types of software.</p>
+<p><strong>Python: </strong>This programming language is used for a variety of purposes, including creating web servers, analyzing data, and building artificial intelligence systems.</p>
+
+
+<h2 id="3">3. Source Code</h2>
+<p>The Source code is a set of instructions that a programmer writes using a programming language. It is the "raw" code that is written and edited by a programmer, and it is usually stored in a file with a specific file extension that indicates the programming language it is written in.</p>
+<p>Source code is used to create all kinds of programs and systems that run on computers. When a programmer writes the source code for a program, they are essentially writing a set of instructions that tell the computer what to do.</p>
+<p>For example, if you wanted to make a simple game where you have to catch falling objects, you might write a set of instructions like this</p>
+<p>1. Display a picture of a person on the screen</p>
+<p>2. Display a picture of a falling object above the person</p>
+<p>3. If the person moves their hand to the same spot on the screen as the falling object, make a "catching" sound and display a message that says "You caught the object!"</p>
+<p>4. If the person doesn't catch the object, make a "miss" sound and display a message that says "You missed the object!"</p>
+<p>These instructions are like the source code for your game. They tell the computer what to do and how to behave.</p>
+
+<h2 id="4">4. Compiler and Interpreter</h2>
+<p>These are just work like a translator between the humans and the computers</p>
+<p>A compiler is a program that takes source code written in a programming language and converts it into a form that a computer can understand and execute. When you write source code, you are writing it in a "high-level" programming language that is easier for humans to read and understand. However, computers can only execute instructions that are written in a "low-level" language called machine code.</p>
+<p>A compiler takes the source code and converts it into machine code that the computer can execute. This process is called "compiling."</p>
+<p>An interpreter is a program that executes instructions written in a programming language directly, without first compiling the instructions into machine code. Interpreters read the source code and execute it line by line, translating the instructions into actions that the computer can perform.</p>
+<h2>example</h2>
+<p> When you download an app to your phone or tablet, it was probably created using a programming language like Java or C++. These languages are usually compiled into machine code before they can be run on a device.</p>
+<p>Some programming languages, like Python and Ruby, are typically interpreted rather than compiled. This means that you can run the source code directly without first compiling it.</p>
+<p>When you install a piece of software on your computer, it was probably compiled into machine code before it was distributed. This makes it easier for the computer to execute the instructions in the software.</p>
+
+<h2 id="5">5. ASCII</h2>
+<p>ASCII (American Standard Code for Information Interchange) is a standard code that represents characters (letters, numbers, symbols) as numbers. Each character is represented by a unique number, which can be stored in a computer as a series of bits (ones and zeros).</p>
+<p>ASCII is used to represent characters in computers and other devices that use text. It is a widely-used standard, and it is supported by almost all computer systems and devices.</p>
+<h2>example</h2>
+<p><strong>Text messaging:</strong> When you send a text message on your phone, the message is converted into ASCII code before it is transmitted to the recipient. The recipient's phone receives the message and converts the ASCII code back into the original text message.</p>
+<p><strong>Webpages:</strong> Assume that  you visit a webpage, the text on the page is stored in ASCII code on the web server. When you request the webpage, your web browser downloads the ASCII code and displays the text on your screen.</p>
+<p><strong>Printing documents:</strong> Whenever you print a document, your computer sends the ASCII code for each character in the document to the printer. The printer receives the ASCII code and prints the characters on the page.</p>
+<p>In simple terms, ASCII is an important standard that is used to represent characters in computers and other devices. It allows us to store and transmit text in a way that is understood by computers and other devices.</p>
+
+<h2 id="6">6. Memory Address</h2>
+<p>A memory address is a unique identifier for a specific location in a computer's memory. Memory is a type of storage that a computer uses to hold data and instructions. It is divided into many small slots, and each slot has its own unique memory address.</p>
+<p>When a program is running on a computer, it uses memory to store and access data. The program can access a specific location in memory by using its memory address. This is similar to how you might use an address to find a specific house on a street.</p>
+<p>Here are three examples of how memory addresses are used in the real world</p>
+<p><strong>Storing data:</strong> When you save a file on your computer, the computer stores the data in a specific location in memory. The memory address of that location is used to access the data when you open the file.</p>
+<p><strong>Running programs:</strong> When you run a program on your computer, the program is loaded into memory and its instructions are stored at specific memory addresses. The computer accesses these addresses to execute the instructions in the program.</p>
+<p><strong>Debugging software:</strong> When a programmer is trying to fix a problem in a program, they might use memory addresses to identify where the problem is occurring. By looking at the data stored at specific memory addresses, they can often figure out what is causing the problem.</p>
+<p>Overall, memory addresses are an important part of how computers store and access data. They are used to identify specific locations in memory and access the data stored there.</p>
+
+<h2 id="7">7. Comments</h2>
+<p>In general, the comments are lines of text that are added to the source code of a program but are not executed as part of the program. Comments are used to add explanations or notes to the code, and they are usually ignored by the compiler or interpreter when the program is run.</p>
+<p>Comments are an important part of programming because they allow programmers to add explanations and documentation to their code. This makes it easier for other people (or even the programmer themselves) to understand what the code is doing.</p>
+
+
+<h2 id="8">8. Output</h2>
+<p>Output in computer programming refers to the data that a computer program produces. For example, if you are using a computer program to do math, the output might be the answer to a math problem. Or, if you are using a computer program to play a game, the output might be the images and sounds that you see and hear on the screen.</p>
+<h2>example</h2>
+<p>1. When you use a calculator app on your phone, the numbers you enter and the result of the math calculation are all examples of output.</p>
+<p>1. In  a video game, the characters and objects on the screen, as well as the music and sound effects, are all examples of output.</p>
+<p>1. When you search for something on the internet using a search engine, the list of websites and other information that appears on the screen is an example of output.</p>
+
+<h2 id="9">9.  Input</h2>
+<p>Input is refers to the data that is entered into a computer program. This can include things like numbers, words, or other types of information.</p>
+<h2>example</h2>
+<p>1. When you type a message on your phone or computer, the letters and words you type are examples of input.</p>
+<p>2. When you use a computer program to create a document or a picture, the text and images you add to the document or picture are examples of input.</p>
+<p>3. When you use a computer program to make a purchase online, the credit card number and other personal information you enter are examples of input.</p>
+
+<h2 id="10">10. Variables</h2>
+<p>Variables in computer programming are like containers that store values or information. They can be used to store different types of data, such as numbers, words, or true/false statements.</p>
+<p>These variables are mutable and temporary stored in computer memory.</p>
+<p>1. A weather app might use a variable to store the current temperature. The variable could be called "currentTemperature" and it might store a number like 72 degrees.</p>
+<p>2. Any game app might use a variable to keep track of the player's score. The variable could be called "playerScore" and it might store a number that increases every time the player wins a level.</p>
+<p>3. An e-commerce website might use a variable to store the total cost of a customer's order. The variable could be called "orderTotal" and it might store a number like 45.99.</p>
+
+<h2 id="11">11. Data Types</h2>
+<p>In programming, data types are like categories that determine what kind of information a variable can store. Different data types allow for different kinds of values to be stored.</p>
+<p>1. A "string" data type is used to store words or phrases. For example, in a social media app, a string variable might be used to store a user's name or bio.</p>
+<p>2. A "number" data type is used to store numerical values. For example, in a calculator app, a number variable might be used to store the result of a math calculation.</p>
+<p>3. A "boolean" data type is used to store true/false values. For example, in a to-do list app, a boolean variable might be used to store whether or not a task has been completed.</p>
+
+<h2 id="12">12. Operators</h2>
+<p>The operators are symbols that are used to perform operations on variables. These operations can include things like mathematical calculations, assignment of values, or comparison of values.</p>
+<p>1. The "+" operator is used to add two numbers together. For example, in a shopping app, the "+" operator might be used to calculate the total cost of multiple items in a customer's cart.</p>
+<p>2. The "-" is used to subtract. For example, in a game app, the "-" operator might be used to decrease a player's health points when they get hit by an enemy.</p>
+<p>3. The "=="  is used to check if two values are equal. For example, in a quiz app, the "==" operator might be used to check if the user's answer is correct.</p>
+
+
+<h2 id="13">13.  Strings</h2>
+<p>A string is a data type that is used to store a sequence of characters, such as letters, numbers, or symbols. Strings are often used to store words or phrases ('s',T', '9', '@', etc).</p>
+<h2>example</h2>
+<p>1. In a messaging app, a string might be used to store the text of a message that a user types in.</p>
+<p>2. A website that displays movie information, a string might be used to store the title of a movie.</p>
+<p>3. In a virtual pet app, a string might be used to store the name that a user gives to their pet.</p>
+
+
+<h2 id="14">14. Booleans</h2>
+<p>A boolean is a data type that can have one of two values: true or false. Booleans are often used to store the result of a true/false question or to represent on/off states.</p>
+<p>1. In a music streaming app, a boolean might be used to store whether or not the user has a premium subscription. If the user has a premium subscription, the boolean would be set to true. If not then it could be false</p>
+<p>2. In a navigation app, a boolean might be used to store whether or not the user has enabled location services. If location services are enabled, the boolean would be set to true.If not then it could be false.</p>
+<p>3. In a quiz app, a boolean might be used to store the result of a true/false question. If the user's answer is correct, the boolean would be set to true. If not then it could be false</p>
+
+
+<h2 id="15">15. Conditional Statements</h2>
+<p>A conditional statements are used to execute different pieces of code based on whether a certain condition is true or false. They allow the program to make decisions and take different actions based on the data it is processing.</p>
+<h2>example</h2>
+<p>1. In a weather app, a conditional statement might be used to check the current temperature. If the temperature is above 80 degrees, the app could display a message saying "It's warm outside!" or if the temperature is below 80 degrees, the app could display a message might be "It's cool outside!"
+</p>
+<p>2. In a game app, a conditional statement might be used to check the player's score. If the player's score is above a certain threshold, the app could unlock a new level for the player to play. If the player's score is below the threshold, the app could display a message saying "Keep playing to unlock the next level!"</p>
+<p>3. In a social media app, a conditional statement might be used to check the user's age. If the user is under 13 years old, the app could display a message saying "Sorry, you must be 13 or older to use this app." If the user is 13 or older, the app could allow the user to create an account.</p>
+
+
+
+<h2 id="16">16. Loops</h2>
+<p>Loops are a way for a computer to repeat a task multiple times. This can be really useful when we want to do the same thing over and over again, without having to type out the same code multiple times.</p>
+<h2>example</h2>
+<p>1. Let's say you have a program that displays the numbers from 1 to 10 on the screen. You could use a loop to tell the computer to print each number, one at a time.</p>
+<p>2. A program that checks the password a user enters to make sure it is correct. If the password is incorrect, the program could use a loop to ask the user to try again until they enter the correct password.</p>
+<p>3. A  program that searches through a large database to find a particular piece of information. The program could use a loop to go through each record in the database, one at a time, until it finds the information it is looking for.</p>
+
+<h2 id="17">17. Functions</h2>
+<p>A function is a block of code that performs a specific task. Functions are really useful because they allow us to reuse code in different parts of our program, without having to type out the same code multiple times.</p>
+<h2>example</h2>
+<p>1. Let's say we have a program that displays a greeting to the user. We could create a function called "displayGreeting" that contains the code to display the greeting. Then, whenever we want to show the greeting to the user, we can just call the "displayGreeting" function. This is like using a recipe from a cookbook  we can use the same recipe multiple times to make the same dish, without having to write out the instructions each time.</p>
+<p>2. Assume that a program that needs to send an email. You could create a function that takes the email address, subject, and message as inputs, and then uses those inputs to send the email. This way, you only need to write the code to send an email once, and you can use the function whenever you need to send an email.</p>
+
+
+<h2 id="18">18. Classes and Objects</h2>
+<p>A class is a template or blueprint for creating objects. Generally, an object is an instance of a class.</p>
+<p>Imagine you want to create a program that helps you keep track of your favorite movies. You could create a class called "Movie" that has information about each movie, such as its title, director, and release year. This class would be like a blueprint for creating movie objects.</p>
+<p>Then, you could create individual movie objects using the "Movie" class as a template. For example, you could create a movie object for the film "Star Wars" using the "Movie" class. This object would have its own specific title, director, and release year. You could create additional movie objects for other films using the same "Movie" class.</p>
+<h2>example</h2>
+<p>1. You could create a class called "Person" that has information about people, such as their name, age, and address. Then, you could create individual person objects for each person you want to store information about.</p>
+<p>2. A class called "Book" that has information about books, such as their title, author, and number of pages. Then, you could create individual book objects for each book you want to store information about.</p>
+
+
+<h2 id="19">19. Arrays</h2>
+<p>An array is a way to store a list of values in a computer program. Each value in the list is called an element, and the elements can be of different types, such as numbers, strings, or objects.</p>
+<p>Imagine you want to create a program that keeps track of your favorite colors. You could create an array called "favoriteColors" that stores the colors you like. The array might look something like this: favoriteColors = ["red", "green", "blue"]</p>
+<h2>example</h2>
+<p>You could create an array called "studentGrades" that stores a list of grades for each student in a class. Each element in the array could be a number representing a student's grade.</p>
+<p>An array called "shoppingList" that stores a list of items you need to buy at the store. Each element in the array could be a string representing an item on the list.</p>
+<p>An array called "employeeRecords" that stores a list of employee objects, where each object has information about a particular employee, such as their name and job title.</p>
+
+<h2 id="20">20. Data Structures</h2>
+<p>A data structure is a way of organizing and storing data in a computer so that it can be accessed and modified efficiently. There are many different types of data structures, and each one is designed to support specific operations and scenarios.</p>
+<h2>example</h2>
+<p>1. An array is a data structure that stores a list of values. Each value in the list is called an element, and the elements can be of different types, such as numbers, strings, or objects. Arrays are useful for storing lists of data that need to be accessed in order, such as a list of high scores in a game.</p>
+<p>2. A linked list is a data structure that stores a list of elements, with each element pointing to the next element in the list. Linked lists are useful for inserting and deleting elements from the list quickly, because you only need to update the pointers of the elements that come before and after the element you are inserting or deleting.</p>
+<p>3. Linked list might be used to store a list of the user's posts on their timeline. Each element in the list could be an object representing a post, with information about the post's content, time stamp, and other details. The linked list would allow the app to efficiently insert and delete posts as needed.</p>
+<p>4. A stack is a data structure that stores a list of elements in a last-in, first-out (LIFO) order. Stacks are useful for keeping track of a list of items that need to be processed in a specific order, such as a list of undo/redo actions in a word processor.</p>
+<p>5. A stack might be used to implement the "undo" functionality in a text editor within the app. When the user makes a change to their text, the app could push a copy of the previous version onto the stack. If the user wants to undo their change, the app could pop the previous version off the stack and restore it.
+</p>
+<p>6. A queue is a data structure that stores a list of elements in a first-in, first-out (FIFO) order. Queues are useful for storing a list of tasks that need to be processed in the order they were received, such as a list of print jobs in a printer.</p>
+<p>7. A queue might be used to store a list of notifications that need to be shown to the user. Each element in the queue could be an object representing a notification, with information about the type of notification, the sender, and other details. The app could process the notifications in the order they were received, so the user sees them in the correct order.</p>
+<p>8. A tree is a data structure that stores a set of elements in a hierarchical structure. Each element in the tree is called a node, and the nodes are connected by edges. Trees are useful for storing data that needs to be organized in a hierarchical way, such as the directory structure of a file system.</p>
+<p>9. A tree might be used to store the hierarchical structure of the user's friends on the app. Each node in the tree could represent a person, with edges connecting the node to the person's friends. The tree would allow the app to efficiently search for friends based on their relationships to the user.</p>
+
+<h2 id="21">21. Linear Data Structures</h2>
+<p>A linear data structure is a data structure that stores data in a linear or sequential way, meaning that the data is organized in a single line or sequence. Arrays and linked lists are two main types of linear data structures: </p>
+<h2>example</h2>
+<p>1. An array is a linear data structure that stores a list of values. Each value in the list is called an element, and the elements can be of different types, such as numbers, strings, or objects. Arrays are useful for storing lists of data that need to be accessed in order, such as a list of high scores in a game.</p>
+<p>2. A linked list is a linear data structure that stores a list of elements, with each element pointing to the next element in the list. Linked lists are useful for inserting and deleting elements from the list quickly, because you only need to update the pointers of the elements that come before and after the element you are inserting or deleting.</p>
+<p>3. A queue is a linear data structure that stores a list of elements in a first-in, first-out (FIFO) order. Queues are useful for storing a list of tasks that need to be processed in the order they were received, such as a list of print jobs in a printer.</p>
+
+<h2 id="22">22. Non-Linear Data structure</h2>
+<p>A non-linear data structure is a data structure that stores data in a way that is not organized in a single line or sequence. There are many different types of non-linear data structures, including trees, graphs, and hash tables.</p>
+<h2>example</h2>
+<p>1. A tree might be used in a file browser app to store the hierarchical structure of the user's files and directories. The app could use a tree data structure to store the root directory as the top node, with the subdirectories and files as child nodes connected to the root node by edges. This would allow the app to efficiently display the directory structure and allow the user to navigate through their files.</p>
+<p>2. A graph might be used in a social networking app to store the connections between users and the relationships between them. The app could use a graph data structure to store each user as a node, with edges connecting the nodes to represent the relationships between the users. This would allow the app to efficiently find users based on their connections to other users.</p>
+<p>3. A hash table might be used in a password manager app to store and look up user passwords quickly. The app could use a hash table to store the passwords as key-value pairs, with the user's login name as the key and the password as the value. The app could use a hash function to map the login names to specific indices in the hash table, allowing it to look up the passwords in constant time.</p>
+
+
+
+<h2 id="23">23.  Linked Lists</h2>
+<p>A linked list is a data structure that stores a list of elements, with each element pointing to the next element in the list. Linked lists are a type of linear data structure, meaning that the elements are organized in a single line or sequence.</p>
+<h2>example</h2>
+<p>1. Imagine you have a program that keeps track of a list of songs that you like to listen to. You could create a linked list called "favoriteSongs" that stores the songs in the order you like to listen to them. Each element in the list could be an object representing a song, with information about the song's title, artist, and other details. The linked list would allow you to efficiently insert and delete songs from the list as your tastes change.</p>
+<p>2. Let's say, you have a program that helps you plan your day. You could create a linked list called "tasks" that stores a list of things you need to do in the order you want to do them. Each element in the list could be an object representing a task, with information about the task's description, priority, and other details. The linked list would allow you to efficiently insert and delete tasks as your schedule changes.</p>
+<p>3. For suppose, you have a program that helps you keep track of your favorite recipes. You could create a linked list called "favoriteRecipes" that stores a list of recipes you like to cook. Each element in the list could be an object representing a recipe, with information about the recipe's name, ingredients, and instructions. The linked list would allow you to efficiently insert and delete recipes as your tastes change.</p>
+
+
+<h2 id="24">24. Internet</h2>
+<p>The Internet is a global network of computers that allows people to communicate and share information with each other. It consists of many different computer systems that are connected to each other using a variety of technologies, such as cables, satellites, and wireless connections.</p>
+<h2>example</h2>
+<p>1. Imagine you have a program that allows you to send and receive email messages. The program could use the Internet to connect to an email server, which is a computer that stores and sends email messages. When you send an email, the program would use the Internet to send the message to the email server, which would then forward the message to the recipient's email server. When you receive an email, the program would use the Internet to connect to your email server and download the message.Imagine you have a program that allows you to send and receive email messages. The program could use the Internet to connect to an email server, which is a computer that stores and sends email messages. When you send an email, the program would use the Internet to send the message to the email server, which would then forward the message to the recipient's email server. When you receive an email, the program would use the Internet to connect to your email server and download the message.</p>
+<p>2. Imagine you have a program that helps you browse the web. The program could use the Internet to connect to web servers, which are computers that store websites. When you enter a web address into the program, it would use the Internet to send a request to the web server to download the website. The web server would then send the website back to the program, which would display the website on your computer.</p>
+<p>3. Imagine you have a program that allows you to make video calls with your friends. The program could use the Internet to connect to a video call server, which is a computer that routes video call traffic between different users. When you make a video call, the program would use the Internet to send a request to the video call server to connect to your friend's computer. The video call server would then establish a connection between your computer and your friend's computer, allowing you to see and hear each other in real-time.</p>
+
+<h2 id="25">25. Front End</h2>
+<p>The Front-end refers to the parts of a website or application that the user interacts with directly. It includes the design, layout, and user interface of the app, as well as the client-side code that runs in the user's web browser or app.</p>
+<p>The main languages used for front-end development are HTML, CSS, and JavaScript.</p>
+<p>We have tutorials for them. Check it here 
+<a href="./html-tutorial-in-45minutes.html">HTML</a>&nbsp;
+<a href="./css-tutorial-in-45minutes.html">CSS</a>&nbsp;
+<a href="./js-tutorial-in-45minutes.html">JavaScript</a>&nbsp;
+
+</p>
+<h3>HTML</h3>
+<p>Hypertext Markup Language (HTML) is a standard for structuring and formatting the content of a website. It is used to define the structure of a webpage and how it should be displayed in a web browser. HTML consists of a series of elements and tags that are used to define the structure and content of a webpage. These elements and tags can be used to create headings, paragraphs, lists, links, and other types of content, as well as to specify the layout and design of the webpage. HTML is an essential part of the World Wide Web and is used to create the vast majority of websites.</p>
+<p>HTML is like the blueprint for a house. It defines the structure and layout of the house, including the location of the rooms, windows, and doors. Just as a blueprint is used to guide the construction of a house, HTML is used to define the structure and layout of a web page.</p>
+<h3>CSS</h3>
+<p>CSS is a language used to define the style and layout of a webpage written in HTML. It allows web developers to control the appearance of a website by specifying formatting such as font size, color, and layout in a separate file from the HTML content. By separating the content of a webpage from its presentation, CSS makes it easier to maintain and update the look of a website. It is an important tool for web development and is used to style the structure and content of a webpage.</p>
+<p>CSS is like the interior design of a house. It defines the look and feel of the house, including the colors, textures, and finishes of the walls, floors, and furniture. Just as interior design is used to make a house look attractive and inviting, CSS is used to style and format a web page to make it look appealing and easy to use.</p>
+<h3>JavaScript</h3>
+<p>JavaScript is a programming language that is used to add interactivity and dynamic behavior to a website. It is used to create effects such as animations, form validation, and interactive maps.</p>
+<p>JavaScript is like the electrical and plumbing systems of a house. It adds functionality to the house, such as lighting, heating, and water. Just as these systems make a house livable and functional, JavaScript adds interactivity and dynamic behavior to a web page, making it more interactive and engaging for the user.</p>
+<h2>example</h2>
+<p>Imagine you have a program that allows you to create and edit documents online. The front-end of the program might use HTML to structure the content of the document, CSS to control the layout and formatting of the document, and JavaScript to add interactive features such as spell check and auto-save.</p>
+
+<h2 id="26">26. Back End</h2>
+<p>The Back-end refers to the parts of a website or application that run on the server, rather than on the user's device. It includes the server-side code that runs on the server, as well as the databases that store the data used by the app.</p>
+<p>The main languages used for back-end development are server-side languages such as PHP, Python, Node js, Java and Ruby. These languages are used to write the code that runs on the server, handling tasks such as storing and retrieving data from a database, processing user requests, and generating HTML, CSS, and JavaScript that is sent to the user's web browser or app.</p>
+<p>Back-end development is used to create the logic and functionality of a website or app, while front-end development is used to create the user interface and design. The front-end and back-end of a website or app are connected through APIs (Application Programming Interfaces), which are sets of rules and protocols that allow the front-end and back-end to communicate with each other.</p>
+<h2>example</h2>
+<p>1. Imagine you have a program that allows you to shop online. The back-end of the program might use a server-side language such as PHP to process the user's orders and store them in a database. It might also use a database management system such as MySQL to store information about the user's account, the items in their shopping cart, and their order history. The front-end of the program, which runs on the user's device, might use HTML, CSS, and JavaScript to display the user interface and handle tasks such as displaying the catalog of items, adding items to the cart, and processing the payment.</p>
+<p>2.Let's say you have a program that allows you to search for and book flights. The back-end of the program might use a server-side language such as Python to search for flights based on the user's criteria and store the results in a database. It might also use a database management system such as MongoDB to store information about the available flights, the user's search history, and the user's bookings. The front-end of the program might use HTML, CSS, and JavaScript to display the user interface and handle tasks such as displaying the search</p>
+
+<h2 id="27">27. Libraries</h2>
+<p>A library is a collection of pre-written code that can be used to perform common tasks in a program. Libraries are a useful tool for programmers because they allow them to reuse code that has already been tested and debugged, rather than having to write the code from scratch. This can save a lot of time and effort, and help ensure that the code is reliable and efficient.</p>
+<p>Imagine you have a bunch of building blocks and you want to build a tower. The blocks are like a code library. You can choose the specific blocks that you need to build your tower (your code).</p>
+<p>Libraries are typically written in the same language as the program, and they can be used in a variety of contexts, such as web development, data analysis, and machine learning. Some examples of popular libraries include NumPy (a library for scientific computing with Python), pandas (a library for data manipulation and analysis with Python), and TensorFlow (a library for machine learning with Python).</p>
+<p>Here is an example that illustrates the difference between writing complete code using a programming language and using a library</p>
+<p>Imagine you have a program that displays a list of images on a web page. You want to add a feature that allows the user to filter the images by category. Without using a library, you might write the following code in JavaScript:</p>
+<pre>
+<code class="language-js">
+const images = [
+{ src: 'image1.jpg', category: 'landscape' },
+{ src: 'image2.jpg', category: 'portrait' },
+{ src: 'image3.jpg', category: 'landscape' },
+{ src: 'image4.jpg', category: 'portrait' }
+];
+
+function filterImages(category) {
+return images.filter(image => image.category === category);
+}
+
+const filteredImages = filterImages('landscape');
+
+</code>
+</pre>
+<p>This code defines an array of images and a function called "filterImages" that takes a category as an argument and returns a new array of images that match the specified category.
+</p>
+<p>Now imagine you want to use a library to filter the images. You could use the Lodash library, which provides a function called "filter" that filters an array based on a given predicate. To use this function, you would first have to import the Lodash library, like this:</p>
+<pre>
+<code class="language-js">
+import _ from 'lodash';
+
+const images = [
+{ src: 'image1.jpg', category: 'landscape' },
+{ src: 'image2.jpg', category: 'portrait' },
+{ src: 'image3.jpg', category: 'landscape' },
+{ src: 'image4.jpg', category: 'portrait' }
+];
+
+const filteredImages = _.filter(images, { category: 'landscape' });
+
+</code>
+</pre>
+<p>This code imports the Lodash library , so that you can use it in your code by calling ".filter". The "filteredImages" variable now contains an array of images that match the "landscape" category.</p>
+<h2>Advantages of using libraries</h2>
+<p>1. Time-saving: Libraries allow you to reuse code that has already been written and tested, saving you the time and effort of writing the code yourself.</p>
+<p>2.Reliability: Libraries are usually well-documented and well-tested, so you can be confident that they will work correctly in your program.</p>
+<p>3. Maintenance: If you use a library in your program, you don't have to worry about maintaining the code yourself.</p>
+<p>4. Community support: Many libraries have a large community of users and developers, which can be a useful resource for getting help and support.</p>
+<p>5. Code reuse: Libraries allow you to reuse code across multiple projects, saving you the time and effort of writing similar code multiple times.</p>
+
+<h2 id="28">28. Frameworks</h2>
+<p>A framework is a set of libraries and tools that provide a structure for building and organizing a software application. Frameworks are designed to make it easier to develop applications by providing a set of standardized components and conventions for building and organizing the code.</p>
+<p>Imagine you want to build a house. You could start from scratch and design and build everything yourself, but that would be a lot of work. Instead, you might use a framework, like a set of pre-made blueprints. The blueprints give you a structure to follow and tell you how to build the different parts of the house. You can customize and add your own touches, but you have to work within the structure provided by the blueprints.</p>
+<p>Frameworks are often used in conjunction with a programming language, such as JavaScript or Python. They provide a set of libraries and tools that are specific to a particular domain, such as web development or machine learning, and they often include features such as routing, database integration, and user authentication.</p>
+<p>Imagine you are building a web application that allows users to create and share notes online. You want to use the Django framework, which is a popular framework for building web applications with Python.</p>
+<p>To use Django, you would first install it on your computer and create a new Django project using the Django command-line tools. This would create a basic skeleton of your web application, including directories for your code, templates, and static files.</p>
+<p>Next, you would create a Django "app" within your project to hold the code for your notes feature. An app is a self-contained unit of code that performs a specific task within a Django project.</p>
+<p>To create the notes feature, you would write code to define a Django "model" that represents the data for a note (such as the title, content, and date). You would also write code to define a Django "view" that handles the logic for displaying and processing the notes (such as creating a new note, editing an existing note, or deleting a note). Finally, you would write code to define a Django "template" that defines the HTML layout and design of your notes pages.</p>
+<p>Once you have written this code, you can use the Django command-line tools to "migrate" the database, which will create the necessary tables and fields in the database to store your notes data.</p>
+<p>Finally, you would use Django's built-in web server to test your web application locally, and then deploy it to a web server when you are ready to make it available to users.</p>
+<h3>Difference between Libraries and Frameworks</h3>
+<p>Libraries and frameworks are both collections of code that provide useful functions and features for developers. However, there are some key differences between the two:</p>
+<p>1. <strong>Purpose:</strong> Libraries are collections of code that you can use to add specific functionality to your own code. For example, the Python "math" library provides functions for performing mathematical operations, like calculating the square root of a number. Frameworks, on the other hand, provide an overall structure for building an application. They usually include both code libraries and other tools, and they often dictate a specific way of organizing and building an application. </p>
+<p>2. <strong>Inclusion:</strong> When you use a library, you usually include the specific pieces of code that you need in your own codebase. With a framework, you build your application using the framework's structure and tools, and you often don't need to include the framework's code directly in your codebase.</p>
+<p>3. <strong>Control:</strong> Because you include specific pieces of code from a library in your own codebase, you have more control over how the library's code is used. With a framework, you have to work within the constraints of the framework and use the tools and structure provided by the framework.</p>
+<p>Overall, the main difference between libraries and frameworks is the level of abstraction. Libraries provide specific functionality that you can use in your code, while frameworks provide a higher-level structure for building an application.</p>
+
+<h2 id="29">29. Server</h2>
+<p>A server is a computer or computer program that provides a service to other computers or programs. It can be thought of as a kind of "middleman" that sits between the computers that are requesting a service (clients) and the resources that are being provided (such as databases, files, or applications).</p>
+<p>Imagine you are at a restaurant and you want to order some food. You (the client) tell the server (the server computer) what you want to eat. The server then goes to the kitchen (the resource) and tells the chef (another program) to prepare your food. The chef gets all the ingredients and cooks your food, then gives it to the server to bring back to you. The server brings the food (the response) back to you, and you can eat it.</p>
+<p>Now, let's look at how servers work in the context of an online application like Instagram or Facebook:</p>
+<p>When you open the Instagram or Facebook app on your phone, you are making a request to the server to see your feed or profile. The server receives your request and goes to the database (a resource) to retrieve the information you requested. The server then sends the information back to your phone (the response), and you can see your feed or profile on the app.</p>
+<p>In this example, your phone is the client, the server is the server computer, and the database is the resource. The server acts as a middleman, communicating with the client (your phone) and the resource (the database) to fulfill the request (showing your feed or profile).</p>
+
+
+<h2 id="30">30.  Data Bases</h2>
+<p>A database is a collection of information that is stored electronically and can be easily accessed and modified. Databases are used to store and organize large amounts of data, and they are used in many different types of applications, including online stores, social media platforms, and customer relationship management systems.</p>
+<p>Imagine you have a library full of books. Each book has a title, an author, and a number of pages. You want to be able to find specific books quickly, so you create a list of all the books in the library and the information about each book. This list is like a database. You can use the database to find a specific book by looking for the title, the author, or the number of pages.</p>
+<p> Let's look at how databases work in the context of an online application like Instagram or Facebook:</p>
+<p>When you post a photo on Instagram or a status update on Facebook, the app stores that information in a database. The database stores the photo or update, along with other information like the time it was posted and your username. When you open the app and want to see your feed or profile, the app retrieves the information from the database and displays it for you.</p>
+<p>In this example, the database is like a library of all the photos and updates that have been posted on Instagram or Facebook. The app (the client) can access the database (the resource) to retrieve the information it needs to show you your feed or profile.
+</p>
+
+
+
+<h2 id="31">31. Cloud</h2>
+<p>The cloud is a way of storing and accessing data and programs over the Internet, instead of storing them on a computer or server. When you use the cloud, you can access your data and programs from any device with an Internet connection, and you don't have to store anything on your own computer.</p>
+<p>Imagine you have a bunch of toys and you want to share them with your friends. You could give each of your friends a toy to keep, but then you wouldn't have any toys left for yourself. Instead, you could put all your toys in a big toy box and let your friends play with the toys when they come over. The toy box is like the cloud. You can access the toys (the data and programs) from anywhere, and you don't have to store them on your own shelf (your computer).</p>
+
+<h2 id="32">32.  Difference between Cloud and Data Base</h2>
+<p>A cloud and a database are both ways of storing and accessing data electronically, but they are used for different purposes and have some key differences.</p>
+
+<p>Here's an example to help explain the difference between a cloud and a database:</p>
+<p>1. <strong>Purpose:</strong> A database is used to store and organize data in a structured way, and it is designed to make it easy to retrieve and use specific pieces of data. A cloud is a way of storing and accessing data and programs over the Internet, and it is designed to make it easy to access data and programs from any device with an Internet connection.</p>
+<p>2. <strong>Accessibility:</strong> A database is typically stored on a single computer or server, and it can only be accessed by other computers or programs that are connected to that server. A cloud is a network of servers that are connected to the Internet, and it can be accessed from anywhere with an Internet connection.</p>
+<p>3. <strong>Control:</strong> With a database, you usually have more control over the data and how it is used. You can choose which data to store and how to structure it, and you can set up permissions to control who can access and modify the data. With a cloud, you have less control over the data and how it is used. You have to work within the constraints of the cloud provider's services and terms of use.</p>
+<p>4. <strong>Cost:</strong> Using a database usually requires upfront costs for hardware, software, and maintenance. A cloud can be more cost-effective because you only pay for the resources you use, and you don't have to worry about maintaining the hardware and software yourself.</p>
+<p>Imagine you have a bunch of toys and you want to share them with your friends. You could put all your toys in a big toy box and let your friends play with the toys when they come over. The toy box is like the cloud. You can access the toys (the data and programs) from anywhere, and you don't have to store them on your own shelf (your computer).</p>
+<p>Now, imagine you want to keep track of which toys you have and which toys your friends have. You could create a list of all the toys and mark which toys are yours and which toys belong to your friends. This list is like a database. You can use the database to find a specific toy by looking for its name or type, and you can see which toys are yours and which toys belong to your friends.</p>
+<p>Now, let's look at how a cloud and a database might be used in a real-world example, like a social media app:</p>
+<p>When you use a social media app like Instagram or Facebook, the app stores all the photos, updates, and other data in a database. The database stores the data, along with other information like the time it was posted and your username. When you open the app and want to see your feed or profile, the app retrieves the data from the database and displays it for you.</p>
+<p>The social media app also uses the cloud to store the data. The data is stored on servers (large computers) in data centers, which are connected to the Internet. This means you can use the app on your phone, tablet, or computer to access your data and use the app, without having to store anything on your own device.</p>
+<p>In this example, the database is like the list of toys, and the cloud is like the toy box. The database is used to store and organize the data (the toys) and make it easy to retrieve and use. The cloud is used to store the data (the toys) and make it accessible from anywhere with an Internet connection.</p>
+<h2 id="33">33. How Computer Works?</h2>
+<p>
+At a high level, a computer works by using a processor (a kind of "brain") to execute instructions that tell the computer what to do. These instructions are called programs or code, and they are written by programmers using a programming language.
+</p>
+<p>1. <strong> Input:</strong> The first step in the process is to input data into the computer. This can be done in a variety of ways, such as typing on a keyboard, clicking a mouse, or scanning a barcode.</p>
+<p>2. <strong>Storage:</strong> The data that is input into the computer needs to be stored somewhere so it can be accessed and used later. The computer stores the data in its memory (such as the RAM or hard drive).</p>
+<p>3. <strong>Processing:</strong> Once the data is stored in the computer's memory, the processor (the "brain" of the computer) can access the data and execute instructions (the code) to perform a task. The processor reads the instructions one by one and executes them in order.</p>
+<p>4. <strong>Output:</strong> After the processor has executed the instructions, the computer produces an output. This could be a result of a calculation, a message on the screen, or a printed document.</p>
+<p>5. <strong>Communication:</strong> A computer can also communicate with other devices and computers over a network (such as the Internet). This allows it to send and receive data and instructions to and from other devices.</p>
+<h2>example</h2>
+<p>Imagine you have a recipe for a cake and you want to use your computer to help you make the cake. You input the recipe into the computer by typing it into a word processor (such as Microsoft Word). The computer stores the recipe in its memory.</p>
+<p>Next, you use a program (such as a calculator) to help you convert the recipe's measurements from cups to grams. You input the measurement (1 cup of sugar) into the calculator program, and the program uses its instructions (the code) to perform a calculation (1 cup of sugar is equal to 200 grams). The program outputs the result (200 grams) on the screen.</p>
+<p>Finally, you use the computer to communicate with a printer to print out the recipe so you can take it to the kitchen. The computer sends the recipe to the printer, and the printer produces a printed copy of the recipe.</p>
+<p>In this example, the input is the recipe that you typed into the word processor, the storage is the computer's memory where the recipe is stored, the processing is the calculation performed by the calculator program, the output is the result displayed on the screen, and the communication is the sending of the recipe to the printer.</p>
+
+<h2 id="34">34. Pixels</h2>
+<p>Pixels are the smallest units of a digital image or display. They are tiny dots of color that, when combined, create the overall image or display.</p>
+<p>In a digital image or display, the pixels are arranged in a grid pattern, with each pixel having a specific position on the grid. The pixels are so small that they are not visible to the naked eye, but when they are combined, they create the overall image or display.</p>
+<p>The number of pixels in an image or display is often used to determine the size and quality of the image or display. The more pixels there are in an image or display, the higher the resolution and the clearer the image will be.</p>
+<p>For example, a digital image with a resolution of 1920 x 1080 pixels (1080p) will be higher quality and have more detail than an image with  1280 x 720 pixels (720p). Similarly, a display with a higher resolution (such as 4K or 8K) will be able to show more detail and provide a higher quality image than a display with a lower resolution (such as 1080p).</p>
+<p>The size of an image or display is often measured in pixels. For example, a digital image that is 1920 pixels wide and 1080 pixels tall (also known as 1080p) will be larger than an image that is 1280 pixels wide and 720 pixels tall (also known as 720p). Similarly, a display with a higher resolution (such as 4K or 8K) will be able to show a larger image than a display with a lower resolution (such as 1080p).</p>
+<p>In video games, the number of pixels and the resolution of the display can have a significant impact on the quality and performance of the game. Higher resolution displays can provide more detailed and realistic graphics, but they can also require more processing power to run smoothly.</p>
+<h2>example</h2>
+<p>Imagine you have a puzzle with lots of tiny puzzle pieces. Each puzzle piece is a pixel. When you put all the puzzle pieces together, they create a picture. The pixels in a digital image or display work in the same way. When you put all the pixels together, they create the overall image or display.</p>
+<p>n a digital image or display, the pixels are arranged in a grid pattern, with each pixel having a specific position on the grid. The pixels are so small that they are not visible to the naked eye, but when they are combined, they create the overall image or display.</p>
+<p>Pixels are important because they determine the resolution of an image or display. The more pixels there are in an image or display, the higher the resolution and the clearer the image will be.</p>
+
+<h2 id="35">35. Video Games</h2>
+<p>Video games are created using a variety of programming languages and frameworks. The specific languages and frameworks used can vary depending on the game and the platform it is being developed for (such as a PC, a console, or a mobile device).</p>
+<p>Some common programming languages and frameworks used in game development include:</p>
+<p>1. <strong>C++: </strong>C++ is a high-performance programming language that is often used in game development. It is a good choice for creating fast, resource-intensive games.</p>
+<p>2. <strong>C#: </strong>C# is a programming language that is designed for building Windows applications. It is often used in game development because it is easy to learn and use, and it has a wide range of tools and libraries available.</p>
+<p>3. <strong>Unity: </strong> Unity is a cross-platform game engine that is used to develop games for a variety of platforms, including PC, console, and mobile. It includes tools for creating graphics, sound, and gameplay, and it supports a range of programming languages, including C# and UnityScript (a variant of JavaScript). </p>
+<p>4. <strong>Unreal Engine:</strong> Unreal Engine is a game engine developed by Epic Games. It is used to create high-quality games for a variety of platforms, including PC, console, and mobile. It includes tools for creating graphics, sound, and gameplay, and it supports a range of programming languages, including C++ and Blueprints (a visual scripting language).</p>
+
+<h1>Thank You</h1>
+<p>Thank you for visiting our site to learn about computer programming fundamentals and the different programming languages. We hope that you found the information helpful and that it has given you a good foundation for your journey in programming.</p>
+<p>We encourage you to revisit our site as you continue to learn and grow in your skills. We have many other tutorials available that build upon the basic concepts you have learned, and we recommend starting with these before moving on to more advanced topics.</p>
+<p>Thank you again for choosing WebDevMonk as a resource for your learning. We hope to see you back here soon!</p>
+</main>
+
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevemonk</h2></a>
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

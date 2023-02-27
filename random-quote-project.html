@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="In this webdevmonk website page you can find how to create a random quote generator with basic knowledge of HTML CSS and JavaScript">
+   
+     <!-- Google Analytics-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/projects/random-quote-project ",
+"url":"https://www.webdevmonk.com/projects/random-quote-project",
+"name":"Create a Random Quote Generator using HTML CSS and JS",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"In this webdevmonk website page you can find how to create a random quote generator with basic knowledge of HTML CSS and JavaScript",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/projects/random-quote-project"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/projects/random-quote-project/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/projects/random-quote-project" />
+<meta property="og:title" content="Create a Random Quote Generator using HTML CSS and JS" />
+<meta property="og:description" content="In this webdevmonk website page you can find how to create a random quote generator with basic knowledge of HTML CSS and JavaScript" />
+<meta property="og:image" content="https://www.webdevmonk.com/project-demo-images/random-quote.PNG" />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/PNG" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:site" content="@webdevmonk"/>
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Create a Random Quote Generator using HTML CSS and JS" />
+<meta name="twitter:description" content="learn how to create a password-generator application using HTML CSS and JS with webdevmonk's Step by Step Algorithm and free source code." />
+
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/projects/random-quote-project" />
+
+
+   
+     <title>Create a Random Quote Generator using HTML CSS and JS (Free Source Code)</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+<i class="fa-solid fa-arrow-up" id="up"></i> 
+<br><br><br> 
+<h1>Random Quote Generator</h1>
+<br> 
+<div class="demo-btn">
+     <a href="https://webdevmonk9.github.io/random-quote/">DEMO</a>
+</div>
+<br><br><br>
+<h1>Step by Step Algorithm: </h1>
+<p>1. Create an HTML document with the necessary html, head, and body tags.</p>
+<p>2. Inside the "quote-generator" div, create two p elements with ids of "quote" and "source". These will be used to display the quote and its source, respectively.</p>
+<p>3. Below the p elements, create a button element with an id of "get-quote-button". This will be used to trigger the generation of a new quote.</p>
+<p>4. At the bottom of the body, include a script element with a src attribute that points to the JavaScript file that will contain the logic for the quote generator.</p>
+<p>5. In the JavaScript file, create a function that will be called when the "get-quote-button" is clicked. This function will be responsible for retrieving a quote and its source from some external source, such as an API or a pre-defined array of quotes.</p>
+<p>6. nside the function, use DOM manipulation techniques to update the text content of the "quote" and "source" p elements with the retrieved quote and source.</p>
+<p>7. Add an event listener to the "get-quote-button" element that calls the function when the button is clicked.</p>
+
+<h2>HTML: </h2>
+<pre>
+<code class="language-html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+     &lt;meta charset="UTF-8"&gt;
+     &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+     &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+     &lt;link rel="stylesheet" href="style.css"&gt;
+     &lt;title&gt;Ranodm Quote Generator&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+     &lt;div id="quote-generator"&gt;
+          &lt;p id="quote"&gt;&lt;/p&gt;
+          &lt;p id="source"&gt;&lt;/p&gt;
+          &lt;button id="get-quote-button"&gt;Get a new quote&lt;/button&gt;
+          &lt;/div&gt;
+     &lt;script src="app.js"&gt;&lt;/script&gt;    
+&lt;/body&gt;
+&lt;/html&gt;
+     
+</code></pre>
+<h2>CSS: </h2>
+<pre>
+<code class="language-css">
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
+
+#quote-generator {
+width: 50%;
+margin: 10% auto;
+text-align: center;
+font-family: sans-serif;
+display: flex;
+flex-direction: column;
+gap:30px;
+}
+
+button {
+background-color: lightblue;
+border: none;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: skyblue;
+}
+        
+          
+</code>
+</pre>
+<h1>Step by Step Algorithm: </h1>
+<p>1. Define an array of quote objects, each containing a quote and a source.</p>
+<p>2. Use the document.getElementById() method to get a reference to the "get-quote-button" element, and assign it to a variable.</p>
+<p>3. Add an event listener to the "get-quote-button" element that listens for a click event. </p>
+<p>4. Inside the event listener function, use the Math.random() function to generate a random number between 0 and the length of the quotes array.</p>
+<p>5. Use the random number as an index to select a quote object from the quotes array.</p>
+<p>6. Use the document.getElementById() method to get a reference to the "quote" and "source" elements, and assign them to variables.</p>
+<p>7. Use the innerHTML property to set the text content of the "quote" and "source" elements to the quote and source of the selected quote object.</p>
+
+<h2>Java Script: </h2>
+<pre>
+<code class="language-js">
+var quotes = [ 
+{    quote: "The best and most beautiful things in the world cannot be seen or even touched - they must be felt with the heart.", source: "Helen Keller"  },  
+{    quote: "It is during our darkest moments that we must focus to see the light.",    source: "Aristotle"  },  
+{    quote: "Hardships often prepare ordinary people for an extraordinary destiny.",    source: "C.S. Lewis"  },  
+{    quote: "The only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.",    source: "Steve Jobs"  }, 
+{    quote: "The two most important days in your life are the day you are born and the day you find out why.",    source: "Mark Twain"  }];
+
+document.getElementById('get-quote-button').onclick = function() {
+     // choose a random quote
+     var quote = quotes[Math.floor(Math.random() * quotes.length)];
+
+     // display the quote
+     document.getElementById('quote').innerHTML = quote.quote;
+     document.getElementById('source').innerHTML = "-   "+quote.source;
+};
+     
+</code>
+</pre>
+<p>You can improve this project in your own version.</p>
+<p>We are ready to release more projects please support us by sharing and visiting webdevmonk</p>
+
+</main>
+
+
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

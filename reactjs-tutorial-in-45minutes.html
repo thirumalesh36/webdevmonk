@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Learn the essentials of React JS, the popular JavaScript library for building web apps, with Web Dev Monk's comprehensive tutorial. Suitable for beginners and experienced developers alike, this tutorial covers everything from the basics of React to advanced techniques and best practices.">
+     
+     <!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes",
+"name":"Mastering the Basics of React: A Step-by-Step Tutorial",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Learn the essentials of React JS, the popular JavaScript library for building web apps, with Web Dev Monk's comprehensive tutorial. Suitable for beginners and experienced developers alike, this tutorial covers everything from the basics of React to advanced techniques and best practices.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/react.png",
+"contentUrl":"https://www.webdevmonk.com/main/react.png",
+"caption":"Mastering the Basics of React: A Step-by-Step Tutorial"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes" />
+<meta property="og:title" content="Mastering the Basics of React: A Step-by-Step Tutorial" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/react.png" />
+<meta property="og:description" content="Learn the essentials of React JS, the popular JavaScript library for building web apps, with Web Dev Monk's comprehensive tutorial. Suitable for beginners and experienced developers alike, this tutorial covers everything from the basics of React to advanced techniques and best practices." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Mastering the Basics of React: A Step-by-Step Tutorial">
+<meta name="twitter:description" content="Learn the essentials of React JS, the popular JavaScript library for building web apps, with Web Dev Monk's comprehensive tutorial. Suitable for beginners and experienced developers alike, this tutorial covers everything from the basics of React to advanced techniques and best practices. ">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/react.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/reactjs-tutorial-in-45minutes" />
+
+     
+     <title>Mastering the Basics of React: A Step-by-Step Tutorial</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+  
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+            <div class="menu" id="menu">
+               <i class="fa-solid fa-bars" id="opens" onclick></i>
+               <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+         </div>
+       </nav>
+       <main> 
+     <i class="fa-solid fa-arrow-up" id="up"></i>
+     <h1>React JS tutorial</h1>   
+     <img id="image" src="../main/react.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+       <p>Learn the essentials of React JS, the popular JavaScript library for building web apps, with Web Dev Monk's comprehensive tutorial. Suitable for beginners and experienced developers alike, this tutorial covers everything from the basics of React to advanced techniques and best practices.</p>
+       <p>Master the basics of programming with our tutorial 
+          <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>  Beginner-friendly with essential concepts with clear explanation.</p>   
+       <h2>Concepts: </h2>
+                         <p><a href="#1">1. React Introduction </a> </p> 
+                         <p><a href="#2">2.  Prerequisites</a> </p> 
+                         <p><a href="#3">3.  Installation</a> </p> 
+                         <p><a href="#4">4.  Environment Set Up</a> </p> 
+                         <p><a href="#5">5.  First React Application</a> </p> 
+                         <p><a href="#6">6.  React Components</a> </p> 
+                         <p><a href="#7">7.  React JSX</a> </p> 
+                         <p><a href="#8">8.  React Props</a> </p> 
+                         <p><a href="#9">9.  React State</a> </p> 
+                         <p><a href="#10">10.  React Life Cycle</a> </p> 
+                         <p><a href="#11">11.  React Events</a> </p> 
+                         <p><a href="#12">12.  React Forms</a> </p> 
+                         <p><a href="#13">13.  React Conditional Rendering</a> </p> 
+                         <p><a href="#14">14.  React Lists and Keys</a> </p> 
+                         <p><a href="#15">15.  React Higher-Order functions</a> </p> 
+                         <p><a href="#16">16.  React Asynchronus Programming</a> </p> 
+                         <p><a href="#17">17.  React Networking</a> </p> 
+                         <p><a href="#18">18.  React Persistence</a> </p> 
+                         <p><a href="#19">19.  React Animations</a> </p> 
+                         <p><a href="#20">20.  React Testing</a> </p> 
+                       
+
+
+
+
+<h2 id="1">1. React JS Introduction</h2>
+<p>React is a popular JavaScript library for building user interfaces. It was developed by Facebook, and is often used for building 
+single-page applications and mobile applications.</p>
+<p>One of the main features of React is the way it allows you 
+to define your application's UI as a function of its state.
+ This means that you can describe the structure and content of your UI using declarative components, and 
+React will automatically update the UI when the underlying data changes.
+</p>
+<p>React uses a virtual DOM (a lightweight in-memory 
+representation of the actual DOM) to improve 
+performance by minimizing the number of DOM updates that are 
+needed when the UI is updated. This makes it an 
+efficient choice for building large, 
+complex applications that may need to update the UI frequently.</p>
+<h2 id="2">2. Prerequisites</h2>
+<p>To start learning React, you should have a basic understanding of JavaScript and the web. Here are some specific things you should be familiar with before diving into React</p>
+<p>1. <strong>HTML and CSS:</strong> React is a JavaScript library, so you'll need to know how to create and style web pages using HTML and CSS.</p>
+<p>2. <strong>JavaScript:</strong> React is written in JavaScript, so you'll need to be comfortable with the language to use it effectively. This includes concepts like variables, functions, asynchronus programming, objects and all other ES6 features.</p>
+<p>3. <strong>Web development concepts:</strong> It's helpful to have a basic understanding of how the web works, including concepts like HTTP, servers, and the DOM.</p>
+<p>4. <strong>A text editor:</strong> You'll need a text editor to write your code. Some popular options include Visual Studio Code, Sublime Text, and Atom.</p>
+<p>5. <strong>A modern web browser:</strong> You'll need a web browser to test your React applications. Some popular options include Google Chrome, Mozilla Firefox, and Safari.</p>
+<p>While it's not required, it can also be helpful to have some experience with a JavaScript build tool like webpack or Babel. These tools are often used to compile and bundle React code for production use.</p>
+
+
+
+<h2 id="3">3. Installation</h2>
+<p>There are a few different ways to install React, depending on your needs. Here are the steps for installing React using a package manager like npm or yarn</p>
+<h3>1. Install Node.js</h3><p> 
+React is built with JavaScript, and you'll need Node.js installed on your computer to use React. You can download the latest version of Node.js from the official website <a href="https://nodejs.org/">https://nodejs.org/</a> or through a package manager like Homebrew (for macOS).
+</p>
+<h3>2. Create a new project directory</h3>
+<p>Create a new directory on your computer where you want to store your React project. This will be the root of your project.</p>
+<h3>3. Initialize the project</h3>
+<p>Open a terminal window and navigate to the root of your project directory. Then, run the following command to initialize the project:</p>
+<pre><code class="language-js">npm init -y
+</code></pre>
+<p>This will create a 'package.json' file in your project directory, which stores information about your project, including the dependencies it requires.</p>
+<h3>4. Install React</h3>
+<p>Next, you'll need to install React itself. Run the following command to install React and save it as a dependency in your package.json file</p>
+<pre><code class="language-js">npm install react react-dom --save
+</code></pre>
+    
+<h2 id="4">4.  Environment Set Up</h2>
+<p>To set up a development environment for React, you'll need to install a few tools on your computer. Here are the steps to set up a basic React development environment</p>
+<p>After you finishing the "Installation" steps you can follow these steps</p>
+<h3>1. Create the project files
+</h3>
+<p>Create the following files in your project directory</p>
+<p>1. <strong>index.html:</strong> This will be the HTML file for your React application.</p>
+<p>2. <strong>index.js:</strong> This will be the entry point for your React application.</p>
+<p>3. <strong>app.js:</strong> This will be the main component for your React application.</p>
+
+<h3>2. Add the React libraries</h3>
+<p>In your 'index.html' file, add the following script tags to include the React and ReactDOM libraries</p>
+<pre><code class="language-js">
+&lt;script src="https://unpkg.com/react@16/umd/react.development.js">&lt;/script>
+&lt;script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">&lt;/script>
+
+</code></pre>
+<h3>3. Write some code</h3>
+<p>In your 'app.js' file, add the following code to create a simple React component</p>
+<pre><code class="language-js">
+import React from 'react';
+
+function App() {
+     return &lt;div>Hello, world!&lt;/div>;
+}
+
+</code></pre>
+<h3>4. Render the component</h3>
+<p>In your 'index.js' file, add the following code to render the App component</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import App from './app';
+
+ReactDOM.render(&lt;App />, document.getElementById('root'));
+
+</code>
+</pre>
+<h3>5. Run the project</h3>
+<p>Open your 'index.html' file in a web browser to see your React application in action.</p>
+
+
+
+
+
+<h2 id="5">5. First React Application</h2>
+<p>Let's build a simple "Hello, World!" application in React</p>
+<p>As said above, To create a "Hello, World!" application in React, you will need to have Node.js and npm (the Node.js package manager) installed on your computer.</p>
+<p>Here's one way you can create a "Hello, World!" application in React:</p>
+<p>1. Create a new directory for your project, and navigate to it in the terminal.
+</p>
+<p>2. Run the following command to create a new React app</p>
+<pre><code class="language-js">npx create-react-app hello-world
+</code></pre>
+<p>This will create a new directory called "hello-world" with the necessary files for a React app.</p>
+<p>3. Navigate to the "hello-world" directory and start the development server by running the following command:</p>
+<pre><code class="language-js">
+cd hello-world
+npm start
+     
+</code></pre>
+<p>This will open a new browser window with the "Hello, World!" app running.</p>
+<p>4. Open the file 'src/App.js' in a text editor. This is the root component of your React app. Replace the contents of the file with the following code</p>
+<pre><code class="language-js">
+import React from 'react';
+
+function App() {
+     return &lt;h1>Hello, World!&lt;/h1>;
+}
+
+export default App;
+     
+</code></pre>
+<p>5. Save the file and the browser window will automatically refresh with the updated "Hello, World!" message.</p>
+<p>Successfully, we created a simple "Hello, World!" application in React</p>
+
+<h2 id="6">6.  React Components</h2>
+<p>In React, a component is a piece of reusable code that represents a part of a user interface. Components allow you to split your UI into smaller, reusable pieces, which makes it easier to build and maintain complex applications.</p>
+<p>There are two types of components in React: functional components and class components.</p>
+<p><strong>Functional components</strong> are simple JavaScript functions that accept props (short for properties) as an argument and return a React element. They are often used for presenting static data, or for simple logic that doesn't require state.</p>
+<pre><code class="language-js">
+import React from 'react';
+
+function HelloMessage(props) {
+     return &lt;div>Hello {props.name}&lt;/div>;
+}
+     
+</code></pre>
+<p><strong>Class components</strong>, on the other hand, are JavaScript classes that extend the 'React.Component' class. They can have state, lifecycle methods, and other features that are not available to functional components.</p>
+<pre><code class="language-js">
+import React from 'react';
+
+class HelloMessage extends React.Component {
+render() {
+  return &lt;div>Hello {this.props.name}&lt;/div>;
+}
+}
+     
+</code></pre>
+<p>To use a component in your application, you can simply import it and render it like any other element. For example</p>
+<pre>
+     <code class="language-js">
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+import HelloMessage from './HelloMessage';
+
+ReactDOM.render(
+     &lt;HelloMessage name="John" />,
+     document.getElementById('root')
+);
+          
+     </code>
+</pre>
+<h2>example</h2>
+<pre><code class="language-js">
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+     function Greeting(props) {
+     return &lt;h1>Hello, {props.name}&lt;/h1>;
+}
+
+     class App extends React.Component {
+     render() {
+     return (
+          &lt;div>
+          &lt;Greeting name="John" />
+          &lt;Greeting name="Jane" />
+          &lt;/div>
+     );
+     }
+}
+
+ ReactDOM.render(
+     &lt;App />,
+     document.getElementById('root')
+);
+
+</code></pre>
+<p>In this example, we define two components: a functional component called Greeting, and a class component called App.</p>
+<p>The Greeting component is a simple function that takes a name prop and returns a h1 element with a greeting message.</p>
+<p>The 'App' component is a class that comes from React.Component. It has a single method called render, which returns a JSX element that contains two instances of the Greeting component.</p>
+<p>Finally, we use the 'ReactDOM.render' function to render the App component to the DOM. This will create a tree of React elements that will be rendered to the page.</p>
+<p>When the page loads, you should see two greeting messages: "Hello, John" and "Hello, Jane".</p>
+
+<h2 id="7">7.  React JSX</h2>
+<p>JSX (JavaScript XML) is a syntax extension for JavaScript that allows you to write HTML-like code in your JavaScript files. It is commonly used in the React JavaScript library for building user interfaces.</p>
+<p>In React, JSX is used to define the structure of a component's user interface. It looks like HTML, but it is actually just JavaScript that is syntactically similar to HTML. For example, here is a simple JSX element that renders a div element with the text "Hello, World!"</p>
+<pre><code class="language-js">const element = &lt;div>Hello, World!&lt;/div>;
+</code></pre>
+<p>JSX elements can contain other JSX elements, as well as JavaScript expressions.</p>
+<pre><code class="language-js">
+const name = 'John';
+const element = &lt;h1>Hello, {name}!&lt;/h1>;
+
+</code></pre>
+<p>JSX elements must have a single root element, so if you want to return multiple elements from a component, you will need to wrap them in a parent element.</p>
+<pre>
+<code class="language-js">
+return (
+     &lt;div>
+     &lt;h1>Hello, World!&lt;/h1>
+     &lt;p>This is a paragraph&lt;/p>
+     &lt;/div>
+);
+
+</code>
+</pre>
+<p>JSX is not required to use React, but it is a convenient way to define the structure of a component's user interface and make it easier to read and understand.</p>
+<h2 id="8">8. React Props </h2>
+<p>In React, props (short for "properties") are a way to pass data from a parent component to a child component. Props are, cannot be modified by the child component.</p>
+<p>The 'props' object is generally used to access the props for the component.  For example, consider the following component that displays a message</p>
+<pre><code class="language-js">
+function Message(props) {
+     return &lt;h1>{props.message}&lt;/h1>;
+     }
+        
+</code></pre>
+<p>To pass a prop to this component, you can use JSX syntax to specify the prop name and value</p>
+<pre><code class="language-js">
+&lt;Message message="Hello, World!" />
+
+</code></pre>
+<p>This will render the component with the message "Hello, World!".</p>
+<p>Props can be of any type, including numbers, strings, arrays, and even objects. You can also pass functions as props, which can be useful for defining event handlers or for performing other actions in the parent component.</p>
+<pre>
+     <code class="language-js">
+import React from 'react';
+
+function Message(props) {
+     return (
+     &lt;div>
+       &lt;h1>{props.title}&lt;/h1>
+       &lt;p>{props.message}&lt;/p>
+     &lt;/div>
+     );
+}
+
+function App() {
+     return (
+     &lt;div>
+          &lt;Message title="Hello" message="Welcome to my app" />
+          &lt;Message title="Goodbye" message="Thank you for visiting" />
+     &lt;/div>
+     );
+}
+
+export default App;
+
+     </code>
+</pre>
+<p>In this example, the Message component expects two props: title and message. The App component renders two instances of the Message component, each with its own set of props.</p>
+<p>When the component is rendered, the JSX code will be transformed into actual HTML that will be displayed in the browser. The resulting HTML is look like this</p>
+<pre>
+<code class="language-html">
+&lt;div>
+   &lt;div>
+     &lt;h1>Hello &lt;/h1>
+     &lt;p>Welcome to my app &lt;/p>
+   &lt;/div>
+&lt;div>
+     &lt;h1>Goodbye &lt;/h1>
+     &lt;p>Thank you for visiting &lt;/p>
+&lt;/div>
+&lt;/div>
+        
+</code>
+</pre>
+<p>This example demonstrates how you can use props to customize the behavior and appearance of a component, without having to write new code for each instance of the component.</p>
+
+<h2 id="9">9. React State</h2>
+<p>In React, state is an object that represents the component's internal data. It is used to store and manage the component's data and behavior.</p>
+<p>State is considered to be private to a component, and it should only be modified using React's setState() method. This ensures that the component's internal state is consistent with the component's rendered output, and helps to prevent unexpected behavior.</p>
+<p>To use state in a React component, you need to define a class component by extending the 'React.Component' class and adding a 'constructor' method to initialize the component's state. Here's an example of a simple component that displays a message</p>
+<pre><code class="language-js">
+import React from 'react';
+
+class Message extends React.Component {
+     constructor(props) {
+     super(props);
+     this.state = {
+          message: 'Hello, World!'
+     };
+     }
+
+     render() {
+     return &lt;h1>{this.state.message}&lt;/h1>;
+     }
+}
+
+</code></pre>
+<p>To access the component's state, you can use the 'this.state' object. To update the state, you can use the 'setState()' method, which will trigger a re-render of the component.</p>
+<p>Here's an example of a component that allows the user to toggle between two different messages</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+
+class ToggleMessage extends React.Component {
+constructor(props) {
+super(props);
+this.state = {
+     showMessage: true
+};
+}
+
+toggleMessage = () => {
+this.setState(prevState => ({
+     showMessage: !prevState.showMessage
+}));
+}
+
+render() {
+return (
+     &lt;div>
+     {this.state.showMessage && &lt;p>Hello, World!&lt;/p>}
+     &lt;button onClick={this.toggleMessage}>Toggle Message&lt;/button>
+     &lt;/div>
+);
+}
+}
+     
+</code>
+</pre>
+<p>In this example, the 'ToggleMessage' component has a state with a single boolean property called 'showMessage'. When the button is clicked, the 'toggleMessage' function is called, which toggles the value of 'showMessage' 
+     and updates the component's state using 'setState()'. This causes the component to re-render, and the message is displayed or hidden based on the value of 'showMessage'.</p>
+
+<h2 id="10">10. React Life Cycle</h2>
+<p>React components have a lifecycle of events that occurs from the time the component is created to the time it is destroyed. These events are called lifecycle methods, and they allow you to control the behavior of a component at different stages of its lifecycle.
+</p>
+<p>There are several lifecycle methods in React, and they can be grouped into three categories</p>
+<h3>1. Mounting</h3>
+<p>These methods are called when a component is being inserted into the DOM.</p>
+<p><strong>constructor():</strong> This method will call before the component is mounted. It is used to initialize state and bind event handlers.</p>
+<p> <strong>render():</strong> This method is called to render the component's JSX.</p>
+<p><strong>componentDidMount():</strong> This method is called after the component has been rendered and added to the DOM. It is often used to trigger API calls or perform other side effects.</p>
+<h3>2. Updating</h3>
+<p>These methods are called when a component's state or props are changed.
+</p>
+<p><strong>shouldComponentUpdate():</strong> This method is called before the component is re-rendered due to a state or prop change. It can be used to optimize performance by avoiding unnecessary re-renders.</p>
+<p><strong>render():</strong> This method is called to re-render the component.</p>
+<p><strong>getSnapshotBeforeUpdate():</strong> This method is called before the component's updated DOM is committed. It can be used to capture information from the DOM that may be lost during the update.</p>
+<p> <strong>componentDidUpdate():</strong> This method is called after the component's updated DOM has been committed. It is often used to trigger API calls or perform other side effects.
+</p>
+
+<h3>3. Unmounting</h3>
+<p>This method will call when the component is being removed from the DOM.</p>
+<p><strong>componentWillUnmount():</strong> This method will call before the component is unmounted and destroyed. It is often used to perform cleanup tasks such as canceling network requests or removing event listeners.</p>
+<p>By implementing these lifecycle methods, you can control the behavior of your components at different stages of their lifecycle and perform actions such as fetching data, setting up event listeners, and cleaning up resources.</p>
+
+<h2 id="11">11. React Events</h2>
+<p>In React, events are triggered by user actions, such as clicking a button, typing in a text field, or hovering over an element. You can attach event handlers to your React components to specify the behavior that should occur when an event is triggered.
+</p>
+<p>To handle an event in a React component, you can use the 'on' prefix followed by the event name, and assign a function to the event handler. For example, to handle a click event on a button, you can use the 'onClick' event handler</p>
+<pre><code class="language-js">
+import React from 'react';
+
+function Button() {
+     const handleClick = () => {
+     console.log('Button was clicked');
+     };
+
+     return &lt;button onClick={handleClick}>Click me&lt;/button>;
+}
+
+</code></pre>
+<p>In this example, the 'handleClick' function is called whenever the button is clicked. You can also pass arguments to the event handler function, if needed. For example</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+
+function ListItem(props) {
+     const handleClick = index => {
+     console.log(`List item ${index} was clicked`);
+     };
+
+     return &lt;li onClick={() => handleClick(props.index)}>{props.item}&lt;/li>;
+}
+
+function List(props) {
+     const items = ['item 1', 'item 2', 'item 3'];
+     return (
+          &lt;ul>
+          {items.map((item, index) => (
+               &lt;ListItem key={item} item={item} index={index} />
+          ))}
+          &lt;/ul>
+     );
+}
+     
+</code>
+</pre>
+<p>In this example, the 'ListItem' component has an 'onClick' event handler that calls the 'handleClick' function with the index prop as an argument. 
+When a list item is clicked, the 'handleClick' function will be called with the index of the item that was clicked.</p>
+<p>React supports a wide range of events, including mouse events, keyboard events, and touch events.</p>
+
+<h2 id="12">12. React Forms</h2>
+<p>In React, forms are used to collect user input and allow users to interact with your application. Forms are created using a combination of HTML form elements and React components.</p>
+<p>To create a 'form' in React, you can use the form element and the 'input', 'select', and 'textarea' elements to create the form fields. Here's an example of a simple form that allows the user to enter their name and email address</p>
+<pre><code class="language-js">
+import React from 'react';
+
+class ContactForm extends React.Component {
+     constructor(props) {
+     super(props);
+     this.state = {
+          name: '',
+          email: ''
+     };
+     }
+
+     handleChange = event => {
+     this.setState({
+          [event.target.name]: event.target.value
+     });
+     }
+
+     handleSubmit = event => {
+     event.preventDefault();
+     console.log(this.state);
+     }
+
+     render() {
+     return (
+          &lt;form onSubmit={this.handleSubmit}>
+               &lt;label>
+          Name:
+          &lt;input
+               type="text"
+               name="name"
+               value={this.state.name}
+               onChange={this.handleChange}
+          />
+          &lt;/label>
+          &lt;<br />
+          &lt;label>
+          Email:
+          &lt;input
+               type="email"
+               name="email"
+               value={this.state.email}
+               onChange={this.handleChange}
+          />
+          &lt;/label>
+          &lt;br />
+          &lt;button type="submit">Submit&lt;/button>
+          &lt;/form>
+     );
+     }
+}
+     
+</code></pre>
+<p>In this example, the 'ContactForm' component has a state with two 
+     properties: 'name' and 'email'. The 'handleChange' function is called 
+     whenever the user types in the form fields, and it updates the 
+     corresponding state property with the new value. 
+     The 'handleSubmit' function is called when the form is 
+     submitted, and it prevents the 
+     default form submission behavior and 
+     logs the form data to the console.</p>
+<p>React also provides a number of form-related components, such as Form, Label, and Input, that can be used to build more complex forms with additional functionality.</p>
+
+<h2 id="13">13.  React Conditional Rendering</h2>
+<p>In React, you can use conditional rendering to render different elements or components based on a condition. This is useful for rendering different content based on the state of your application or for rendering different components depending on the user's input or interaction with your app.</p>
+<p>To perform conditional rendering in React, you can use JavaScript's 'if' and 'ternary' operators, or the '&&' operator.</p>
+<p>Here's an example of how you can use the if operator to render different elements based on a condition</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+
+function UserInfo(props) {
+     if (props.user) {
+     return (
+          &lt;div>
+          &lt;p>Name: {props.user.name}&lt;/p>
+          &lt;p>Email: {props.user.email}&lt;/p>
+          &lt;/div>
+     );
+     } else {
+     return &lt;p>Loading...&lt;/p>;
+     }
+}
+
+</code>
+</pre>
+<p>This example will only render the user's name and email if the user prop is truthy. If the user prop is null or undefined, the component will not render anything.</p>
+<p>Conditional rendering is a powerful tool for building flexible and dynamic user interfaces in React.</p>
+
+<h2 id="14">14. React Lists and Keys</h2>
+<p>In React, lists are used to render a collection of items, such as a list of users, a list of products, or a list of comments. To create a list in React, you can use the 'map()' function to iterate over the collection and return an array of elements.</p>
+<p>Here's an example of how you can create a list of users</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+
+function UserList(props) {
+     const users = [
+     { id: 1, name: 'John' },
+     { id: 2, name: 'Jane' },
+     { id: 3, name: 'Bob' }
+     ];
+
+     return (
+     &lt;ul>
+          {users.map(user => (
+               &lt;li key={user.id}>{user.name}&lt;/li>
+          ))}
+          &lt;/ul>
+     );
+}
+     
+</code>
+</pre>
+<p>In this example, the 'UserList' component iterates over the 'users' array and creates a list item for each user.</p>
+<p>It's important to note that when you create a list in React, you should include a unique 'key' prop for each item in the list. The 'key' prop is used by React to identify each element in the list and ensure that the elements are rendered correctly. The 'key' prop should be a unique value that identifies each element, such as an ID or index.</p>
+<p> Here is an example of using the index of each element as the key prop in a React component</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+
+function MyList(props) {
+     const items = ['item1', 'item2', 'item3'];
+
+     return (
+          &lt;ul>
+          {items.map((item, index) => (
+               &lt;li key={index}>{item}&lt;/li>
+          ))}
+     &lt;/ul>
+     );
+}
+
+export default MyList;
+     
+</code>
+</pre>
+<p>In this example, we have an array of strings called items that we want to render as a list. We use the map method to iterate over the array and return a list item element for each element in the array. We pass the index of each element as the key prop for each list item element.</p>
+<p>
+This is useful when the elements in the array do not have unique identifying properties and you need a way to distinguish between them. The key prop is used by React to keep track of each element in the list, so it is important to use a unique value for the key prop of each element.
+</p>
+
+<h2 id="15">15. React Higher-Order functions</h2>
+<p>In React, a higher-order function is a function that takes a component as an argument and returns a new component. These functions are often used to abstract common behavior that can be shared among multiple components.
+</p>
+<p>Here is an example of a higher-order function that takes a component and adds a new prop called 'title' to it</p>
+<pre><code class="language-js">
+import React from 'react';
+
+function withTitle(WrappedComponent) {
+     return class extends React.Component {
+     render() {
+          return &lt;WrappedComponent {...this.props} title="My Title" />;
+     }
+     }
+}
+     
+</code></pre>
+<p>This higher-order function can be used to wrap any component and add a title prop to it. For example</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+import MyComponent from './MyComponent';
+import withTitle from './withTitle';
+
+const MyComponentWithTitle = withTitle(MyComponent);
+
+function App() {
+     return (
+     &lt;MyComponentWithTitle />
+     );
+}
+     
+</code>
+</pre>
+<p> 
+In this example, 'MyComponentWithTitle' is a new component that has all the props of 'MyComponent', plus a new prop called 'title'.
+</p>
+ 
+
+
+
+<h2 id="16">16. React Asynchronus Programming</h2>
+<p>Asynchronous programming is a way of writing code that can perform tasks concurrently, rather than in a blocking, sequential manner. This is important in React because it allows you to perform long-running or network operations without freezing the UI or blocking other user interactions.</p>
+<p>There are several ways to perform asynchronous tasks in React, including using async/await, Promises, and the 'useEffect' hook.</p>
+<p>Here is an example of using async/await to perform an asynchronous operation in a React component</p>
+<pre><code class="language-js">
+     import React, { useState, useEffect } from 'react';
+
+     async function fetchData() {
+       const response = await fetch('https://api.example.com/data');
+       const data = await response.json();
+       return data;
+     }
+     
+     function MyComponent() {
+       const [data, setData] = useState(null);
+     
+       useEffect(() => {
+         async function getData() {
+           const data = await fetchData();
+           setData(data);
+         }
+         getData();
+       }, []);
+     
+       return (
+          &lt;div>
+           {data ? &lt;p>{data.message}&lt;/p> : &lt;p>Loading...&lt;/p>}
+         &lt;/div>
+       );
+     }
+     
+     export default MyComponent;
+     
+</code></pre>
+<p>In this example, we use the useEffect hook to perform an 'async' 
+     operation when the component mounts. 
+     The 'fetchData' function uses the 'await' keyword to wait for
+      the promise returned by 'fetch' to resolve, and then 
+      parses the response as JSON. The component displays a loading message while the data is being fetched, and then displays the data when it becomes available.</p>
+
+
+<h2 id="17">17. React Networking</h2>
+<p>In React, networking refers to the process of making network requests (e.g., HTTP requests) to retrieve or send data from a server. Networking is a common task in web development, and there are many ways to perform networking in React.</p>
+<p>One way to perform networking in React is by using the fetch API. Here is an example of using fetch to retrieve data from a server in a React component</p>
+<pre>
+<code class="language-js">
+import React, { useState, useEffect } from 'react';
+
+function MyComponent() {
+     const [data, setData] = useState(null);
+
+     useEffect(() => {
+     async function getData() {
+          const response = await fetch('https://api.example.com/data');
+          const data = await response.json();
+          setData(data);
+     }
+     getData();
+     }, []);
+
+     return (
+     &lt;div>
+          {data ? &lt;p>{data.message}&lt;/p> : &lt;p>Loading...&lt;/p>}
+          &lt;/div>
+     );
+}
+
+export default MyComponent;
+     
+</code>
+</pre>
+<p>In this example, we use the useEffect hook to perform a network request when the component mounts. The fetch function makes an HTTP GET request to the specified URL and returns a promise that resolves with a Response object. We then call the json method on the Response object to parse the response as JSON.</p>
+<p>There are many other ways to perform networking in React, including using libraries like Axios or the XMLHttpRequest API. You can also use the useReducer hook and the Redux library to manage network requests and data in a more scalable way.</p>
+
+
+<h2 id="18">18. React Persistence</h2>
+<p>In React, persistence refers to the ability to store and retrieve data in a way that persists beyond a single session or page refresh. There are several ways to add persistence to a React app, including using cookies, local storage, and server-side storage.</p>
+<p>
+Here is an example of using local storage to persist data in a React component </p>
+<pre>
+<code class="language-js">
+import React, { useState } from 'react';
+
+function MyComponent() {
+     const [message, setMessage] = useState('');
+
+     useEffect(() => {
+     const storedMessage = localStorage.getItem('message');
+     if (storedMessage) {
+          setMessage(storedMessage);
+     }
+     }, []);
+
+     function handleChange(event) {
+     setMessage(event.target.value);
+     localStorage.setItem('message', event.target.value);
+     }
+
+     return (
+     &lt;div>
+        &lt;input value={message} onChange={handleChange} />
+     &lt;/div>
+     );
+}
+
+export default MyComponent;
+     
+</code>
+</pre>
+<p>In this example, we use the useEffect hook to check for a stored value in local storage when the component mounts. If a value is found, we use the setMessage function to update the component's state. We also use the handleChange function to update the state and store the new value in local storage whenever the user types in the input field.</p>
+<p>Local storage is a simple and convenient way to add persistence to a React app, but it has some limitations. The stored data is only available on the same device and browser, and it is vulnerable to data loss if the user clears their browser cache.</p>
+<p>Other options for adding persistence to a React app include using cookies or server-side storage solutions like a database or cloud storage.</p>
+
+
+
+<h2 id="19">19. React Animations</h2>
+<p>In React, animations refer to the process of creating visual transitions between elements on the screen. Animations can be used to add visual interest and polish to a React app, and there are many ways to implement animations in React.</p>
+<p>One way to implement animations in React is by using the animate.css library and the react-animations library. Here is an example of using these libraries to add a fade-in animation to a React component</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+import { FadeIn } from 'react-animations';
+import 'animate.css/animate.css';
+import './MyComponent.css';
+
+function MyComponent() {
+return (
+&lt;div className="animated fadeIn">
+   &lt;p>I will fade in!&lt;/p>
+&lt;/div>
+);
+}
+
+export default MyComponent;
+     
+</code>
+</pre>
+<p>In this example, we import the FadeIn animation from the react-animations library and the animate.css styles. We then apply the fadeIn class to the component's root element, which will trigger the fade-in animation when the component mounts.</p>
+<p>Another way to implement animations in React is by using the react-spring library, which provides a powerful and flexible way to create spring-based animations. Here is an example of using react-spring to animate a component's position</p>
+<pre><code class="language-js">
+import React, { useState, useEffect } from 'react';
+import { useSpring, animated } from 'react-spring';
+
+function MyComponent() {
+     const [isOpen, setIsOpen] = useState(false);
+     const springProps = useSpring({
+     transform: isOpen ? 'translate3d(0,0,0)' : 'translate3d(0,-100%,0)',
+     });
+
+     return (
+     &lt;animated.div style={springProps}>
+        &lt;button onClick={() => setIsOpen(!isOpen)}>Toggle&lt;/button>
+        &lt;p>I will animate!&lt;/p>
+        &lt;/animated.div>
+     );
+}
+
+export default MyComponent;
+     
+</code></pre>
+<p>In this example, we use the useSpring hook to create a spring-based animation that updates the component's transform style based on the value of the isOpen state variable. When the isOpen variable is true, the component will be visible on the screen, and when it is false, the component will be hidden off the screen.</p>
+<p>There are many other ways to implement animations in React, including using CSS transitions, the react-transition-group library, and the React Native animation APIs.</p>
+<h2 id="20">20. React Testing</h2>
+<p>Testing is an important part of the development process in React, as it allows you to ensure that your code is working correctly and as expected. There are many tools and libraries available for testing React components, including Jest, Enzyme, and React Testing Library.</p>
+<p>Here is an example of a test for a simple React component using Jest and Enzyme</p>
+<pre>
+<code class="language-js">
+import React from 'react';
+import { shallow } from 'enzyme';
+import MyComponent from './MyComponent';
+
+describe('MyComponent', () => {
+     it('renders the component', () => {
+     const wrapper = shallow(&lt;MyComponent />);
+     expect(wrapper).toMatchSnapshot();
+     });
+
+     it('updates the state when the button is clicked', () => {
+     const wrapper = shallow(&lt;MyComponent />);
+     wrapper.find('button').simulate('click');
+     expect(wrapper.state('isClicked')).toBe(true);
+     });
+});
+     
+</code>
+</pre>
+<p>In this example, we use Jest to define a test suite for the MyComponent component. The first test uses Enzyme's shallow function to render the component and create a "wrapper" object that we can use to access the component's properties and methods. We use the toMatchSnapshot function to create a snapshot of the rendered component and ensure that it does not change unexpectedly.</p>
+<p>The second test uses Enzyme's find and simulate functions to simulate a click event on the component's button and check that the component's isClicked state variable is updated as expected.</p>
+<p>There are many other ways to test React components, including using React Testing Library to test components in a way that more closely resembles how a user would interact with them, and using Jest's mocking features to test asynchronous code and network requests.</p>
+
+<h1>Thank You</h1>
+<p>Thank you for visiting Web Dev Monk to read our React JS tutorial. We are grateful that you took the time to learn about React and we hope that you found the tutorial helpful.</p>
+<p>We understand that learning a new technology can be challenging, and we encourage you to re-read the tutorial if you feel like you need more clarification or practice. Repetition is a great way to solidify your understanding and improve your skills.</p>
+<p>Thank you again for choosing Web Dev Monk as your learning resource. We hope to see you again soon</p>
+</main>
+                   
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

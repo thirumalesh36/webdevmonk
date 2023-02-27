@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Looking for a quick and easy way to learn Python? Look no further than this 45-minute tutorial! In a conversational style, you'll learn the fundamental concepts of Python programming, including variables, data types, control structures, functions, and more.">
+
+
+
+<!-- structured data
+
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes",
+"url":"https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes",
+"name":"Learn Python Programming in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Looking for a quick and easy way to learn Python? Look no further than this 45-minute tutorial! In a conversational style, you'll learn the fundamental concepts of Python programming, including variables, data types, control structures, functions, and more.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Programming Tutorials for beginners and people who need revision",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/python.png",
+"contentUrl":"https://www.webdevmonk.com/main/python.png",
+"caption":"Learn Python Programming in 45 minutes"
+}
+}
+]
+}
+
+</script>
+-->
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Learn Python Programming in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/python.png" />
+<meta property="og:description" content="Looking for a quick and easy way to learn Python? Look no further than this 45-minute tutorial! In a conversational style, you'll learn the fundamental concepts of Python programming, including variables, data types, control structures, functions, and more." />
+<meta property="og:image:width" content="300" />
+<meta property="og:image:height" content="200" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn Python Programming in 45 minutes">
+<meta name="twitter:description" content="Looking for a quick and easy way to learn Python? Look no further than this 45-minute tutorial! In a conversational style, you'll learn the fundamental concepts of Python programming, including variables, data types, control structures, functions, and more.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/python.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/learn-python-in-45-minutes" />
+
+
+<title>Learn Python Programming in 45 minutes</title>
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i>   
+<h1>Python basics tutorial in 45 minutes</h1>
+<img id="image" src="../main/python.png" alt="Python tutorial in 45 minutes" width="500px" height="400px">  
+<p>Looking for a quick and easy way to learn Python? Look no further than this 45-minute tutorial! In a conversational style, you'll learn the fundamental concepts of Python programming, including variables, data types, control structures, functions, and more. Perfect for beginners or anyone looking for a refresher on Python basics.
+</p>
+<p>Master the basics of programming with our tutorial 
+<a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>  Beginner-friendly with essential concepts with clear explanation.</p>   
+<h2>Concepts: </h2>
+<p><a href="#1">1.  Python Introduction</a> </p> 
+<p><a href="#2">2.  Python Syntax</a> </p> 
+<p><a href="#3">3.  Python Output</a> </p> 
+<p><a href="#4">4.  Python Variables</a> </p> 
+<p><a href="#5">5.  Python Datatypes</a> </p> 
+<p><a href="#6">6.  Python Input</a> </p> 
+<p><a href="#sp">Python Operators</a></p>
+<p><a href="#7">7.  Python Numbers</a> </p> 
+<p><a href="#8">8.  Python Lists</a> </p> 
+<p><a href="#9">9.  Python Tuples</a> </p> 
+<p><a href="#10">10.  Python Strings</a> </p> 
+<p><a href="#11">11.  Python String Methods</a> </p> 
+<p><a href="#12">12.  Python List Methods</a> </p> 
+<p><a href="#13">13.  Python Dictionaries</a> </p> 
+<p><a href="#14">14.  Python Sets</a> </p> 
+<p><a href="#15">15.  Python if-else</a> </p> 
+<p><a href="#16">16.  Python while loops</a> </p> 
+<p><a href="#17">17.  Python for loops</a> </p> 
+<p><a href="#18">18. Python Booleans</a></p>
+<p><a href="#19">19. Python Casting</a></p>
+<p><a href="#20">20. Python Functions</a></p>
+<p><a href="#21">21. Python OOP</a></p>
+<p><a href="#22">22. Python Classes/Objects</a></p>
+<p><a href="#23">23. Python Inheritance</a></p>
+<p><a href="#24">24. Python Iterators</a></p>
+<p><a href="#25">25. Python Files</a></p>
+<p><a href="#26">26. Python Modules</a></p>
+<p><a href="#27">27. Python Math Module</a></p>
+<p><a href="#28">28. Python Date Module</a></p>
+<p><a href="#29">29. Python RegEx</a></p>
+<p><a href="#30">30. Python Libraries</a></p>
+<p><a href="#31">31. Python NumPy Library Introduction</a></p>
+<p><a href="#32">32. Python Pandas Library Introduction</a></p>
+
+<h2 id="1">1. Python Introduction</h2>
+<p>Python is a powerful and popular programming language that is used for a wide range of applications. It was first created in the late 1980s, and has since become one of the most widely-used programming languages in the world. One of the reasons for Python's popularity is its simplicity and readability, which makes it easy to learn for beginners.</p>
+<p>To start using Python, you need to have it installed on your computer. Python is available for download from the official Python website, and can be installed on Windows, Mac, and Linux systems. Once you have Python installed, you can start writing and running Python programs.
+</p>
+<p>A Python program is simply a text file containing Python code, with a ".py file extension". You can create a new Python file in any text editor, such as Notepad or Sublime Text. To run a Python program, you can open a command prompt or terminal window, navigate to the directory containing the program file, and type "python filename.py".
+</p>
+<p>Let's start with a basic "Hello, World!" program in Python. This program will simply print the text "Hello, World!" to the screen.
+</p>
+<pre><code class="language-py">
+# Example of a "Hello, World!" program in Python
+print("Hello, World!")
+
+# output 
+# Hello, World!
+</code></pre>
+<p>In this example, print() is a built-in Python function that takes an argument and prints it to the screen. The argument in this case is the string "Hello, World!"</p>
+
+<h2 id="2">2. Python Syntax</h2>
+<p>Python is a high-level, interpreted programming language. It is known for its clear and concise syntax, which makes it easy to read and write code. In Python, whitespace is significant and is used to define code blocks. This means that indentation is important and should be consistent throughout your code.</p>
+<h3>Comments</h3>
+<p>One of the most important things to keep in mind when writing Python code is to use comments. Comments are lines of text in your code that are ignored by the Python interpreter. They are used to explain what your code is doing and to make it more readable for other programmers.</p>
+<p>Python Comments can be define using # symbol for Single line and ''' for Multiple lines. Any text that follows a hash symbol on a line is ignored by the interpreter.</p>
+<p>We already use comments in the Python Introduction Section for an Example</p>
+
+
+<h2 id="3">3. Python Output</h2>
+<p>In Python, you can use the print() function to output data to the console. The print() function takes one or more arguments, which can be of any data type.</p>
+<pre><code class="language-py">print("Hello, World!")
+</code></pre>
+<p>This simple Python code will output the text "Hello, World!" to the console</p>
+<p>You can also use the + operator to concatenate multiple strings</p>
+<pre><code class="language-py">
+name = "Alice"
+age = 25
+print("My name is " + name + " and I am " + str(age) + " years old.")
+
+</code></pre>
+<p>This code will output the text "My name is Alice and I am 25 years old." to the console</p>
+<p>In addition to simple text output, you can also format your output using placeholders. Placeholders are special characters that are replaced with values at runtime. The most common placeholder is the %s placeholder, which is used to represent a string.</p>
+<pre><code class="language-py">
+name = "Bob"
+age = 30
+print("My name %s and My age is %d." % (name, age))
+
+</code></pre>
+<p>The above Python code will output the text "My name is Bob and My age is 30." to the console. The %s placeholder is used to represent the name variable, and the %d placeholder is used to represent the age variable.</p>
+<p>In addition to simple text output, you can also use the print() function to output variables, lists, and other data structures. You will understand this later.</p>
+
+
+<h2 id="4">4. Python Variables</h2>
+<p>Let's start with the basics: what is a variable in Python? A variable is a name that indicates a value in it. It's like a container that holds a specific piece of information. You can use variables to store different types of data, such as numbers, text, or even more complex objects.</p>
+<p>To create a variable in Python, you need to choose a name for it and use the assignment operator "=" to assign a value to it.</p>
+<pre><code class="language-py">my_variable = 42
+</code></pre>
+<p>Here, we've created a variable called "my_variable" and assigned the value 42 to it. Now we can use the variable name in our code to refer to the value it contains.</p>
+<p>Python variable names can include letters, numbers, and underscores, but they cannot begin with a number. They are case-sensitive, so "my_variable" and "My_Variable" are two different variables. It's a good practice to choose meaningful variable names that describe what they represent.</p>
+<p>Let's look at some examples of how to use variables in Python</p>
+<pre><code class="language-py">
+# Example 1: Storing a number
+age = 25
+print("I am", age, "years old.")
+
+# Example 2: Storing text
+name = "Alice"
+print("My name is", name)
+
+# Example 3: Storing the result of an expression
+a = 2
+b = 3
+c = a + b
+print("The sum of", a, "and", b, "is", c)
+
+# Example 4: Updating a variable
+count = 0
+count = count + 1
+print("Count is now", count)
+
+# Example 5: Using multiple variables
+width = 10
+height = 5
+area = width * height
+print("The area is", area)
+     
+</code></pre>
+<p>In Example 1, we're using a variable called "age" to store a number, and then printing a message that includes that variable.</p>
+<p>In Example 2, we're using a variable called "name" to store a text string, and then printing a message that includes that variable.
+</p>
+<p>In Example 3, we're using variables to store the values of x and y, and then using those variables in an expression to calculate the value of z i.e: 5.</p>
+<p>In Example 4, we're updating the value of a variable called "count" by adding 1 to it, and then printing the new value of the variable i.e: 1.</p>
+<p>In Example 5, we're using multiple variables to calculate the area of a rectangle, and then printing the result.</p>
+<p>Variables can also be used in more complex ways, such as storing lists, dictionaries, and objects.</p>
+
+
+<h2 id="5">5. Python Datatypes</h2>
+<p>In Python, a data type is a classification of the kind of data that a variable can hold. The data type of a variable determines the operations that can be performed on it and the methods that can be called on it.</p>
+<p>Python has several built-in data types, including</p>
+
+     <p>1. Numbers</p> 
+     <p>2. Strings</p>  
+     <p>3. Lists</p> 
+     <p>4. Tuples</p> 
+     <p>5. Sets</p> 
+     <p>6. Dictionaries</p> 
+     <p>7. Booleans</p>
+
+<p>We will discuss about each of them in detail later in this Python tutorial</p>
+<p>Those are the main built-in data types in Python, but you can also create your own custom data types using classes (Objects). 
+Understanding data types is fundamental to working with Python, and by mastering them you will be able to write more sophisticated and powerful programs.</p>
+
+
+<h2 id="6">6. Python Input</h2>
+<p>In Python, input() function is used to accept user input. The input() function allows the user to enter a value or string of characters, which can then be used in your Python program.</p>
+<pre><code class="language-py">
+name = input("What is your name? ")
+print("Hello, " + name + "!")
+   
+# Output
+'''
+What is your name? Alice
+Hello, Alice!
+'''
+</code></pre>
+<p>In the above python example, the user is asked to enter their name. The 'input()' function takes in the user's input as a string and assigns it to the variable name. The program then prints out a greeting using the user's name.
+</p>
+
+<h2 id="sp">Python Operators</h2>
+<p>In Python, the operators are special keyboard symbols or keywords used to perform some operations on one or more values. There are several types of operators in Python that includes arithmetic operators, comparison operators, logical operators, bitwise operators, and assignment operators.</p>
+<h3>Arithmetic Operators</h3>
+<p>Arithmetic operators are used to perform mathematical operations on numeric values. </p>
+<ol>
+     <li>'+' Addition</li>
+     <li>'-' Subtraction</li>
+     <li>'*' Multiplication</li>
+     <li>'/' Division></li>
+     <li>'%' Modulus (remainder of a division)
+     </li>
+     <li>'**' Exponentiation (raises a number to a power)
+     </li>
+     <li>'//' Floor division (quotient of a division, rounded down to the nearest integer value)
+     </li>
+</ol>
+<pre><code class="language-py">
+a = 10
+b = 3
+print(a + b)   # Output: 13
+print(a - b)   # Output: 7
+print(a * b)   # Output: 30
+print(a / b)   # Output: 3.3333333333333335
+print(a % b)   # Output: 1
+print(a ** b)  # Output: 1000
+print(a // b)  # Output: 3
+
+</code></pre>
+<h3>Comparison Operators</h3>
+<p>Comparison operators are used to perform comparison between two values and to return a Boolean value (True or False).</p>
+<ol>
+     <li>'==' Equal to
+     </li>
+     <li>'!=' Not equal to</li>
+     <li>'&lt;' Less than</li>
+     <li>'>' Greater than</li>
+     <li>'&lt;=' Less than or equal to</li>
+     <li>'>=' Greater than or equal to</li>
+</ol>
+<pre><code class="language-py">
+     x = 10
+y = 5
+print(x == y)  # Output: False
+print(x != y)  # Output: True
+print(x &lt; y)   # Output: False
+print(x > y)   # Output: True
+print(x &lt;= y)  # Output: False
+print(x >= y)  # Output: True
+
+</code></pre>
+<h3>Logical Operators</h3>
+<p>Logical operators are used to combine Boolean values and return a Boolean value (True or False).</p>
+<ol>
+<li>'and': True if both values are True</li>
+<li>'or': True if at least one values  is True
+</li>
+<li>'not': True will be False and False will be True
+</li>
+</ol>
+<pre>
+     <code class="language-py">
+a = 5
+b = 10
+c = 15
+print(a &lt; b and b &lt; c)  # Output: True
+print(a &lt; b or b > c)   # Output: True
+print(not a &lt; c)        # Output: False
+     
+     </code>
+</pre>
+<h3>Bitwise Operators
+</h3>
+<p>Bitwise operators are used to perform bit-level operations on integer values. </p>
+<ol>
+     <li>'&' Bitwise AND
+     </li>
+     <li>'|' Bitwise OR
+     </li>
+     <li>'^' Bitwise XOR
+     </li>
+     <li>'~' Bitwise NOT
+     </li>
+     <li>'&lt;&lt;' Bitwise left shift
+     </li>
+     <li>'>>' Bitwise right shift
+     </li>
+</ol>
+<pre><code class="language-py">
+a = 0b1010  # Binary representation of 10
+b = 0b1100  # Binary representation of 12
+print(bin(a & b))   # Output: 0b1000 (Binary representation of 8)
+print(bin(a | a))   # Output: 0b1110 (Binary representation of 14)
+print(bin(a ^ b))   # Output: 0b011
+
+</code></pre>
+
+<h3>Assignment Operators
+</h3>
+<ol>
+     <li>'=' Assigns a value to a variable
+     </li>
+     <li>'+=' Adds a value to the variable and assigns the result
+     </li>
+     <li>'-=' Subtracts the value from the variable and assigns the result
+     </li> 
+     <li>'*=' Multiplies the variable by a value and assigns the result
+     </li>
+     <li>'/=' Divides the variable by a value and assigns the result
+     </li>
+     <li>'%=' Gets the modulus of the variable and a value, and assigns the result
+     </li>
+     <li>'**=' Raises the variable to a power and assigns the result
+     </li>
+     <li>'//=' Gets the floor division of the variable and a value, and assigns the result
+     </li>
+
+</ol>
+<pre><code class="language-py">
+x = 10
+x += 5  # Equivalent to x = x + 5
+print(x)  # Output: 15
+
+x = 10
+x *= 2  # Equivalent to x = x * 2
+print(x)  # Output: 20
+     
+</code></pre>
+<h3>Membership Operators</h3>
+<p>Membership operators are used to test if a value is a member of a sequence, such as a string, list, or tuple.</p>
+<ol>
+     <li>in</li>
+     <li>not in</li>
+</ol>
+<pre><code class="language-py">
+my_list = [1, 2, 3, 4, 5]
+print(3 in my_list)  # Output: True
+print(6 not in my_list)  # Output: True
+
+</code></pre>
+<h3>Identity Operators
+</h3>
+<p>Identity operators in Python are used to find the memory location of the two objects. </p>
+<ol>
+     <li>is Returns True if both variables are the same object
+     </li>
+     <li>is not Returns True if both variables are not the same object
+     </li>
+</ol>
+<pre><code class="language-py">
+x = [1, 2, 3]
+y = [1, 2, 3]
+z = x
+
+print(x is y)  # Output: False
+print(x is z)  # Output: True
+print(x is not y)  # Output: True
+     
+</code></pre>
+
+
+
+<h2 id="7">7. Python Numbers</h2>
+<p>Python has three main types of numbers: integers, floating-point numbers, and complex numbers. In this tutorial, we'll explore each of these types and how to use them in your Python programs.</p>
+<p>1. Integers: Integers are whole numbers with no decimal point. In Python, you can define an integer by assigning a value to a variable.</p>
+<pre><code class="language-py">
+# Examples of integers in Python
+x = 5
+y = -10
+z = 0
+     
+</code></pre>
+<p>You can perform various operations on integers, including addition, subtraction, multiplication, division, and modulus.</p>
+<pre><code class="language-py">
+# Examples of integer operations in Python
+a = 10
+b = 3
+c = a + b
+d = a - b
+e = a * b
+f = a / b
+g = a % b
+
+</code></pre>
+<p>2. Floating-point numbers: Floating-point numbers, or floats, are numbers with decimal points. In Python, you can define a float by including a decimal point in the value.</p>
+<pre><code class="language-py">
+# Examples of floats in Python
+x = 3.14
+y = -2.5
+z = 0.0
+     
+</code></pre>
+<p>You can perform the same operations on floats as you can on integers. </p>
+<pre><code class="language-py">
+a = 0.1
+b = 0.2
+c = a + b
+print(c) # Output: 0.30000000000000004
+
+</code></pre>
+<p>3. Complex numbers: Complex numbers are numbers with a real and imaginary component. In Python, you can define a complex number by including a "j" after the imaginary component.</p>
+<pre><code class="language-py">
+# Examples of complex numbers in Python
+x = 3 + 2j
+y = -1j
+z = 4 - 5j
+
+# Examples of complex number operations in Python
+a = 3 + 2j
+b = 1 - 1j
+c = a + b
+d = a - b
+e = a * b
+f = a / b
+g = a.conjugate()
+
+</code></pre>
+
+
+<h2 id="8">8. Python Lists</h2>
+<p>A list in Python is a collection of items, which can be of different data types. 
+We modify or update lists with the elements. To create a list in Python, you can use square brackets [] and separate each item with a comma.
+</p>
+<pre><code class="language-py">
+my_list = [1, 2, "hello", 3.14, True]
+print(my_list)
+   
+# Output 
+# [1, 2, 'hello', 3.14, True]
+
+</code></pre>
+<h3>Accessing List Items
+</h3>
+<p>You can access items in a list by their index, which starts at 0 for the first item. To access an item in a list, you can use square brackets [] with the index of the item inside.
+</p>
+<pre><code class="language-py">
+my_list = [1, 2, "hello", 3.14, True]
+print(my_list[0])  # Output: 1
+print(my_list[2])  # Output: 'hello'
+
+</code></pre>
+<h3>Modifying List Items
+</h3>
+<p>You can modify items in a list by assigning a new value to the item's index. To modify an item in a list, use the square brackets [] with the index of the item inside, and assign a new value to it.</p>
+<pre><code class="language-py">
+my_list = [79, 23, "hi", 30.33, True]
+my_list[2] = "Hi"
+print(my_list)  # Output: [79, 23, "Hi", 30.33, True]
+
+</code></pre>
+<h3>Slicing Lists
+</h3>
+<p>You can also extract a portion of a list using slicing. To slice a list, use the colon : to indicate the range of items to extract. The first number indicates the starting index, and the second number indicates the ending index (exclusive).
+</p>
+<pre><code class="language-py">
+my_list = [79, 23, "Hi", 30.33, True]
+print(my_list[1:4])  # Output: [23, 'Hi', 30.33]
+</code></pre>
+<h3>Appending to a List
+</h3>
+<p>You can add new items to the end of a list using the append() method. To append an item to a list, use the dot notation . with the append() method and pass in the item to be added.</p>
+<pre><code class="language-py">
+my_list = [1, 2, "hello", 3.14, True]
+my_list.append("new item")
+print(my_list)  # Output: [1, 2, 'hello', 3.14, True, 'new item']
+
+</code></pre>
+
+
+<h2 id="9">9. Python Tuples</h2>
+<p>In Python, a tuple is another type of data structure, similar to a list. However, unlike a list, a tuple is immutable, meaning that you can't change the values in a tuple after it's created. Tuples are typically used to store related pieces of information that don't need to be modified.
+</p>
+<p>To create a tuple in Python, you can use parentheses () and separate each item with a comma. </p>
+<pre><code class="language-py">
+my_tuple = (79, 23, "Hi", 30.33, True)
+print(my_tuple)
+
+# Output : (79, 23, "Hi", 30.33, True)
+</code></pre>
+
+<h3>Accessing Tuple Items</h3>
+<p>You can access items in a tuple by their index, just like in a list. To access an item in a tuple, you can use square brackets [] with the index of the item inside.</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, "hello", 3.14, True)
+print(my_tuple[0])  # Output: 1
+print(my_tuple[2])  # Output: 'hello'
+
+</code></pre>
+<h3>Packing and Unpacking Tuples
+</h3>
+<p>In Python, you can also pack and unpack tuples. Packing a tuple means creating a tuple and assigning values to it in a single step. Unpacking a tuple means assigning the values of a tuple to variables in a single step.
+</p>
+<pre><code class="language-py">
+# Packing a tuple
+my_tuple = 79, 23, 30
+print(my_tuple)  # Output: (79, 23, 30)
+
+# Unpacking a tuple
+a, b, c = my_tuple
+print(a, b, c)  # Output: 79 23 30
+
+</code></pre>
+<p>If you are trying to modify tuple elements you will get 
+     an eroor like this:
+</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, 3)
+
+</code></pre>
+<p>The above simple code will leads to a TypeError</p>
+<pre><code class="language-py">
+my_tuple[0] = 10   # TypeError: 'tuple' object does not support item assignment
+</code></pre>
+<p>But you can convert a tuple to a list, modify the list, and then convert it back to a tuple if needed. To convert a tuple to a list, you can use the list() function. To convert a list back to a tuple, you can use the tuple() function.</p>
+<pre><code class="language-py">
+my_tuple = (1, 2, 3)
+my_list = list(my_tuple)
+my_list[0] = 10
+new_tuple = tuple(my_list)
+print(new_tuple)  # Output: (10, 2, 3)
+
+</code></pre>
+
+
+
+<h2 id="10">10. Python Strings</h2>
+<p>In Python, strings are a series of characters. They are created by enclosing a sequence of characters within single quotes, double quotes, or triple quotes. </p>
+<pre><code class="language-py">
+my_string = 'Hello, World!'
+my_string2 = "Hello, World!"
+my_string3 = '''Hello, 
+                    World!'''
+     
+</code></pre>
+<p>In the examples above, my_string and my_string2 are created using single and double quotes respectively, while my_string3 is created using triple quotes, which allows the string to span multiple lines.
+</p>
+<p>You can access individual characters of a string by using indexing, just like with lists and tuples. For example, to access the first character of a string, you can use string[0]. </p>
+<pre><code class="language-py">
+my_string = 'Hello, World!'
+print(my_string[0])  # Output: 'H'
+      
+</code></pre>
+<p>Strings in Python are immutable. However, you can create a new string by concatenating or formatting existing strings. To concatenate two or more strings, you can use the + operator</p>
+<pre><code class="language-py">
+string1 = 'Hello'
+string2 = 'World'
+new_string = string1 + ' ' + string2
+print(new_string)  # Output: 'Hello World'
+
+</code></pre>
+<p>You can also format a string using the .format() method or formatted string literals, also known as f-strings.</p>
+<pre><code class="language-py">
+name = 'Alice'
+age = 25
+greeting = 'My name is {0} and My age is {1}.'.format(name, age)
+print(greeting)  # Output: 'My name is Alice and My age is 25.'
+
+</code></pre>
+
+<h2 id="11">11. Python String Methods</h2>
+<p>In Python, strings are objects that have many built-in methods that can be used to perform various operations on strings. Here are some of the most commonly used string methods in Python</p>
+<h3>1. '.lower()' and '.upper()'
+</h3>
+<p>These methods return a new string with all the characters converted to lowercase or uppercase, respectively.</p>
+<pre><code class="language-py">
+my_string = "Hello, World!"
+print(my_string.lower())  # Output: "hello, world!"
+print(my_string.upper())  # Output: "HELLO, WORLD!"
+
+</code></pre>
+<h3>2. '.strip()'</h3>
+<p>This method returns a new string with all the leading and trailing whitespace characters removed.</p>
+<pre><code class="language-py">
+my_string = "   Hello, World!   "
+print(my_string.strip())  # Output: "Hello, World!"
+
+</code></pre>
+<h3>3. '.replace()'</h3>
+<p>This method returns a new string with all occurrences of a specified substring replaced with a new substring.</p>
+<pre><code class="language-py">
+my_string = "Hello, World!"
+new_string = my_string.replace("World", "Universe")
+print(new_string)  # Output: "Hello, Universe!"
+
+</code></pre>
+<h3>5. '.join()'
+</h3>
+<p>This method returns a new string by joining the elements of a list with a specified separator.</p>
+<pre><code class="language-py">
+my_list = ["apple", "banana", "cherry"]
+my_string = ", ".join(my_list)
+print(my_string)  # Output: "apple, banana, cherry"
+
+</code></pre>
+<h3>6. '.find()'</h3>
+<p>This method returns the index of the first occurrence of a specified substring in the original string. If the substring is not found, it returns -1. </p>
+<pre><code class="language-py">
+my_string = "Hello, World!"
+index = my_string.find("World")
+print(index)  # Output: 7
+     
+</code></pre>
+<h3>7. '.startswith()' and '.endswith()'</h3>
+<p>These methods return a boolean value indicating whether the original string starts or ends with a specified substring, respectively.</p>
+<pre><code class="language-py">
+my_string = "Hello, World!"
+print(my_string.startswith("Hello"))  # Output: True
+print(my_string.endswith("World"))  # Output: True
+
+</code></pre>
+
+<h3>8. '.isdigit()' and '.isalpha()'</h3>
+<p>These methods return a boolean value indicating whether the original string contains only digits or only alphabetic characters, respectively.</p>
+<pre><code class="language-py">
+my_string = "123"
+print(my_string.isdigit())  # Output: True
+print(my_string.isalpha())  # Output: False
+
+my_string = "abc"
+print(my_string.isdigit())  # Output: False
+print(my_string.isalpha())  # Output: True
+
+</code></pre>
+<h3>9. '.format()'</h3>
+<p>This method returns a new string by formatting the original string with values specified in the arguments.</p>
+<pre><code class="language-py">
+name = "Alice"
+age = 25
+my_string = "My name is {} and I am {} years old".format(name, age)
+print(my_string)  # Output: "My name is Alice and I am 25 years old"
+
+</code></pre>
+<p>There are some more methods but these are the basics</p>
+
+
+
+
+<h2 id="12">12. Python List Methods</h2>
+<h3>1. '.append()'</h3>
+<p>This method adds an element to the end of the list</p>
+<pre><code class="language-py">
+my_list = [1, 2, 3]
+my_list.append(4)
+print(my_list)  # Output: [1, 2, 3, 4]
+
+</code></pre>
+<h3>2. '.extend()'</h3>
+<p>This method adds multiple elements to the end of the list. The elements can be from another list or any other iterable object.</p>
+<pre><code class="language-py">
+my_list = [1, 2, 3]
+my_list.extend([4, 5, 6])
+print(my_list)  # Output: [1, 2, 3, 4, 5, 6]
+
+</code></pre>
+<h3>3. '.insert()'</h3>
+<p>This method inserts an element at a specified position in the list. </p>
+<pre><code class="language-py">
+my_list = [1, 2, 3]
+my_list.insert(1, 4)
+print(my_list)  # Output: [1, 4, 2, 3]
+</code></pre>
+<h3>4. '.remove()'</h3>
+<p>This method removes the first occurrence of a specified element from the list. </p>
+<pre><code class="language-py">
+my_list = [1, 2, 3, 2]
+my_list.remove(2)
+print(my_list)  # Output: [1, 3, 2]
+
+</code></pre>
+<h3>5. '.pop()' </h3>
+<p>This method removes and returns the last element of the list. If an index is specified, it removes and returns the element at that index</p>
+<pre><code class="language-py">
+my_list = [1, 2, 3]
+last_element = my_list.pop()
+print(last_element)  # Output: 3
+print(my_list)  # Output: [1, 2]
+
+my_list = [1, 2, 3]
+second_element = my_list.pop(1)
+print(second_element)  # Output: 2
+print(my_list)  # Output: [1, 3]
+     
+</code></pre>
+<h3>6. '.index()'</h3>
+<p>This method returns the index of the first occurrence of a specified element in the list. </p>
+<pre><code class="language-py">
+my_list = [1, 2, 3, 2]
+index_of_2 = my_list.index(2)
+print(index_of_2)  # Output: 1
+     
+</code></pre>
+<h3>7. '.count()'</h3>
+<p>This method returns the number of times a specified item appears in the list. </p>
+<pre><code class="language-py">
+my_list = [1, 2, 3, 2]
+count_of_2 = my_list.count(2)
+print(count_of_2)  # Output: 2
+     
+</code></pre>
+<h3>8. '.sort()'</h3>
+<p>This method sorts the elements of the list in ascending order. </p>
+<pre><code class="language-py">
+my_list = [3, 1, 2]
+my_list.sort()
+print(my_list)  # Output: [1, 2, 3]
+
+</code></pre>
+<h3>9. '.reverse()'
+</h3>
+<p>reverse the order of the elements in the list.</p>
+<pre><code class="language-py">
+my_list = [1, 2, 3]
+my_list.reverse()
+print(my_list)  # Output: [3, 2, 1]
+
+</code></pre>
+
+
+<h2 id="13">13. Python Dictionaries</h2>
+<p>Have you ever used a dictionary to look up a definition of a word? In the same way, Python dictionaries allow you to associate a key (like a word) with a value (like a definition).</p>
+<p>In Python, a dictionary is defined with curly braces {}, and it consists of key-value pairs separated by a colon :. Here's an example of a dictionary that stores the name and age of a person:
+</p>
+<pre><code class="language-py">person = {"name": "John", "age": 25}
+</code></pre>
+<p>In this dictionary, "name" is the key, and "John" is the value associated with it. "age" is another key, with the corresponding value of 25. One way to retrieve the value that is linked to a specific key is by using square brackets [] as a notation.</p>
+<pre><code class="language-py">
+name = person["name"]
+print(name)  # Output: "John"
+
+</code></pre>
+
+<p>You can also add new key-value pairs to a dictionary using the square bracket notation []. </p>
+<pre><code class="language-py">
+person["occupation"] = "Engineer"
+print(person)  # Output: {"name": "John", "age": 25, "occupation": "Engineer"}
+
+</code></pre>
+<p>If you try to access a key that doesn't exist in a dictionary, a KeyError will be raised. You can use the get() method to access a key's value, and if the key doesn't exist, a default value will be returned instead of raising an error</p>
+<pre><code class="language-py">
+city_population = {"New York": 8398748, "Los Angeles": 3990456, "Chicago": 2705994}
+population_of_boston = city_population.get("Boston", "Unknown")
+print(population_of_boston)  # Output: "Unknown"
+
+</code></pre>
+<p>This 'get()' method is particularly useful when you don't know if a key exists in a dictionary or not.</p>
+<p>One important thing to note is that keys in a dictionary must be unique. If you try to assign a value to a key that already exists in the dictionary, the previous value will be overwritten.</p>
+<pre><code class="language-py">
+person = {"name": "John", "age": 25}
+person["age"] = 30
+print(person)  # Output: {"name": "John", "age": 30}
+
+</code></pre>
+
+
+
+
+
+<h2 id="14">14. Python Sets</h2>
+<p>Imagine that you have a bunch of cards, and you want to know which cards are unique and which ones are duplicates. That's exactly what sets in Python do!
+</p>
+<p>In Python, a set is defined with curly braces {}, just like a dictionary, but without the key-value pairs. A set is a collection of unique elements, and it can contain any data type.</p>
+<pre><code class="language-py">numbers = {1, 2, 3, 4, 5}
+</code></pre>
+<p>In this set, all the elements are unique, so there are no duplicates. You can also create a set with mixed data types</p>
+<pre><code class="language-py">
+mixed = {1, "hello", 2.5, (1, 2, 3)}
+</code></pre>
+<p>In this set, there are four elements of different data types, and they're all unique.
+</p>
+<p>One useful thing you can do with sets is to perform operations like union, intersection, and difference. These operations allow you to combine sets, find elements that are common to multiple sets, or find elements that are unique to one set.</p>
+<pre><code class="language-py">
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+
+# Intersection of set1 and set2
+intersection = set1 & set2
+print(intersection)  # Output: {3}
+
+# Difference between set1 and set2
+difference = set1 - set2
+print(difference)  # Output: {1, 2}
+     
+</code></pre>
+<p>You can add new elements to a set using the add() method, and you can remove elements using the remove() method. </p>
+<pre><code class="language-py">
+fruits = {"apple", "banana", "orange"}
+fruits.add("mango")
+print(fruits)  # Output: {"apple", "banana", "orange", "mango"}
+
+fruits.remove("banana")
+print(fruits)  # Output: {"apple", "orange", "mango"}
+
+</code></pre>
+<p>One important thing to note is that sets are unordered, which means that the elements are not stored in a particular order. If you need to maintain the order of the elements, you should use a list instead.</p>
+
+
+<h2 id="15">15. Python if-else</h2>
+<p>An 'if' statement is used to conditionally execute a block of code. </p>
+<p>Remember indentation is strictly concsidered.</p>
+<pre><code class="language-py">
+if condition:
+    # statements to run if the condition is only true
+
+</code></pre>
+<pre><code class="language-py">
+age = 18
+if age >= 18:
+     print("You are an adult.")
+
+</code></pre>
+<p>In this example, we're checking whether the age variable is greater than or equal to 18.</p>
+<p>But what if we want to do something else if the condition is not true? That's where the 'else' statement comes in.</p>
+<pre><code class="language-py">
+age = 15
+if age >= 18:
+     print("You are an adult.")
+else:
+     print("You are not an adult.")
+     
+</code></pre>
+<p>In this example, if the age variable is less than 18, we print the message "You are not an adult."
+</p>
+<p>You can also chain multiple 'if' statements together using the 'elif' statement. </p>
+<pre><code class="language-py">
+age = 25
+if age &lt; 18:
+     print("You are not an adult.")
+elif age &lt; 30:
+     print("You are a young adult.")
+else:
+     print("You are an adult.")
+
+</code></pre>
+<p>In this example, we're checking whether the age variable is less than 18, between 18 and 29, or greater than or equal to 30. Depending on the value of age, we print a different message.</p>
+<p>You can also use logical operators like 'and' and 'or' to combine multiple conditions. </p>
+<pre><code class="language-py">
+age = 20
+gender = "male"
+if age >= 18 and gender == "male":
+     print("You are a man.")
+elif age >= 18 and gender == "female":
+     print("You are a woman.")
+else:
+     print("You are not an adult.")
+     
+</code></pre>
+<p>In this example, we're checking both the age and gender variables to determine whether the person is a man, a woman, or not an adult.
+</p>
+<p>You can also use nested if statements to check multiple conditions. </p>
+<pre><code class="language-py">
+age = 20
+if age >= 18:
+     if age &lt; 30:
+          print("You are a young adult.")
+     else:
+          print("You are an adult.")
+else:
+     print("You are not an adult.")
+     
+</code></pre>
+<p>In this example, we're using a nested if statement to check whether the age variable is between 18 and 29, or greater than or equal to 30.</p>
+
+
+
+
+<h2 id="16">16. Python while loops</h2>
+<p>A while loop in Python is a control flow statement that allows you to execute a block of code repeatedly as long as a certain condition is true. The basic structure of a while loop in Python is as follows:
+</p>
+<pre><code class="language-py">
+while condition:
+     # code 
+</code></pre>
+<p>The condition in a while loop must evaluate to a boolean value. If the condition is initially true, the code inside the loop will execute.</p>
+<p> After the code in the loop has finished executing, the condition will be checked again, and if it is still true, the code in the loop will execute again. 
+
+</p>
+<p>Here's an example of a while loop in action that prompts the user to guess a secret number:</p>
+<pre><code class="language-py">
+import random
+
+secret_number = random.randint(1, 100)
+guess = 0
+
+while guess != secret_number:
+     guess = int(input("Guess the secret number (between 1 and 100): "))
+
+     if guess &lt; secret_number:
+          print("Too low! Try again.")
+     elif guess > secret_number:
+          print("Too high! Try again.")
+     else:
+          print("Congratulations! You guessed the secret number!")
+</code></pre>
+<p>In this example, we use a while loop to repeatedly prompt the user to guess a secret number, which is a random integer between 1 and 100.
+The loop continues to execute as long as the user's guess is not equal to the secret number.</p>
+<p>Inside the loop, we use an if statement to check whether the user's guess is too low or too high. 
+If the guess is too low, we print a message telling the user to try again with a higher number.
+If the guess is too high, we print a message telling the user to try again with a lower number. 
+If the guess is correct, we print a congratulatory message and the loop exits.</p>
+
+
+<h2 id="17">17. Python for loops</h2>
+<p>A for loop in Python is used to iterate over a sequence of values, such as a list or a string. </p>
+<pre><code class="language-py">
+for value in sequence:
+     # code to execute for each value in the sequence
+</code></pre>
+<p>In this Python for loop syntax, value is a variable that is assigned to each value in the sequence, one at a time, and the code inside the loop is executed for each value in the sequence.
+</p>
+<p>Here's a basic example of a for loop that iterates over a list of numbers and prints each number to the console:
+</p>
+<pre><code class="language-py">
+numbers = [1, 2, 3, 4, 5]
+
+for number in numbers:
+     print(number)
+</code></pre>
+<p>In this example, we define a list of numbers and then use a for loop to iterate over each number in the list. 
+For each iteration of the loop, the number variable is assigned to the current number in the list, and then the print() function is used to print that number to the console.</p>
+<p>You can use any iterable object as the sequence in a for loop, including lists, tuples, strings, dictionaries, and more.
+You can also use other Python functions and libraries to generate sequences to iterate over.
+The possibilities are endless, and the power and flexibility of for loops make them a
+valuable tool for many programming tasks.se any valid boolean expression as the condition in a while loop, and it can be based on variables,
+functions, or any other logical operation that evaluates to either True or False.</p>
+
+
+<h2 id="18">18. Python Booleans</h2>
+<p>Booleans are a type of data in Python that can only have two possible values: True or False. Think of it like a light switch that can only be on or off - there's no in-between.</p>
+<p>To create a Boolean value in Python, you simply type either True or False (without the quotes) into your code. For example, let's say we want to create a variable called "is_sunny" that tells us whether or not it's currently sunny outside. We could write:
+</p>
+<pre><code class="language-py">is_sunny = True</code></pre>
+<p>This sets the value of "is_sunny" to True, which means it's currently sunny outside. If it were cloudy, we would set the value to False instead:
+</p>
+<pre><code class="language-py">is_sunny = False</code></pre>
+<p>Now, let's look at some examples of how we might use Booleans in Python.</p>
+<pre><code class="language-py">
+num = 4
+is_even = (num % 2 == 0)
+print(is_even)
+</code></pre>
+<p>In this example, we create a variable called "num" and set it to 4. We then create another variable called "is_even" and set it equal to the result of a Boolean expression - specifically, whether the remainder of "num" divided by 2 is equal to 0 (which is true for even numbers). Finally, we print the value of "is_even", which should be True in this case.
+</p>
+<pre><code class="language-py">
+password = "password123"
+user_input = input("Enter your password: ")
+is_correct = (user_input == password)
+if is_correct:
+     print("Access granted!")
+else:
+     print("Access denied.")
+</code></pre>
+<p>In this example, we create a variable called "password" and set it equal to a string that represents the correct password. We then ask the user to input their password and store it in a variable called "user_input". We create another variable called "is_correct" and set it equal to whether "user_input" matches the correct password. We then use an if statement to check the value of "is_correct" - if it's True, we print "Access granted!" (meaning the password was correct), otherwise we print "Access denied." (meaning the password was incorrect).</p>
+
+
+
+
+<h2 id="19">19. Python Casting</h2>
+<p>Casting or Type Conversion is the method of converting one data type to another in Python. Sometimes you may need to convert a value from one type to another in order to perform certain operations or store it in a particular type of variable.</p>
+
+<pre><code class="language-py">
+# string to integer
+num_string = "42"
+num_int = int(num_string)
+print(num_int)
+</code></pre>
+<p>In this Python example, we create a variable called "num_string" and set it equal to the string "42". We then create another variable called "num_int" and use the "int" function to convert "num_string" to an integer. Finally, we print the value of "num_int", which should be 42 (an integer).</p>
+<pre><code class="language-py">
+# float to integer
+num_float = 3.14
+num_int = int(num_float)
+print(num_int)
+</code></pre>
+<p>In this example, we create a variable called "num_float" and set it equal to the float 3.14. We then create another variable called "num_int" and use the "int" function to convert "num_float" to an integer. However, since "num_float" is not a whole number, the "int" function will round it down to the nearest integer. Finally, we print the value of "num_int", which should be 3 (an integer).</p>
+<pre><code class="languag-py">
+num_int = 42
+num_string = str(num_int)
+print(num_string)
+</code></pre>
+<p>In this example, we create a variable called "num_int" and set it equal to the integer 42. We then create another variable called "num_string" and use the "str" function to convert "num_int" to a string. Finally, we print the value of "num_string", which should be "42" (a string).
+</p>
+
+
+<h2 id="20">20. Python Functions</h2>
+<p>Functions are building blocks for any Programming Language. Functions are like mini-programs that we can create and use within our larger programs. They are made up of a series of instructions, just like a recipe for baking a cake. We can use functions to perform specific tasks, and we can call them as many times as we need to throughout our program.</p>
+<pre><code class="language-py">
+def say_hello():
+   print("Hello, world!")
+
+say_hello()
+</code></pre>
+<p>This function simply prints "Hello, world!" to the console when it is called. The program only execute when we called with the function name and paranthesis'()'</p>
+<pre><code class="language-py">
+# A function that adds two numbers together
+def add_numbers(a, b):
+  result = a + b
+  print(result)
+ 
+add_numbers(2, 3) # 5
+add_numbers(5, 6) # 11
+</code></pre>
+<p>This function takes two arguments, "a" and "b". When the function is called with values for "a" and "b", it adds them together and prints the result to the console.</p>
+<pre><code class="language-py">
+def greet(name):
+  print("Hello, " + name + "!")
+
+greet("Alice")
+</code></pre>
+<p>This function takes one argument, "name". When the function is called with a value for "name", it prints "Hello, [name]!" to the console.</p>
+<p>Functions can be very useful when we need to perform the same task multiple times throughout our program. Instead of writing out the instructions for that task each time, we can simply call the function.</p>
+<p>A function can return a value to any where in the program when it is called instead of executing in the function itself</p>
+<p>When the return statement is invoked in a function the interpreter stop the execution of function and return the result</p>
+<pre><code class="language-py">
+def add_numbers(a, b):
+  return a + b
+# the function end
+
+print(add_numbers(2, 3))  # 5
+sum_2 = add_numbers(5, 6) 
+print(sum_2) #11
+</code></pre>
+<p>This code defines a function called "add_numbers" that takes two arguments, "a" and "b". Inside the function, it adds "a" and "b" together using the "+" operator, and then uses the "return" keyword to return the result of the addition.</p>
+<pre><code class="language-py">
+def divide_numbers(a, b):
+if b == 0:
+     return "Error: Division by zero"
+else:
+     return a / b
+
+result1 = divide_numbers(10, 2)
+result2 = divide_numbers(10, 0)
+
+print(result1)
+print(result2)
+
+</code></pre>
+<p>This function takes two arguments, "a" and "b". If "b" is equal to 0, the function returns an error message. Otherwise, the function returns the result of dividing "a" by "b". In this example, we've called the function with two different sets of arguments - one where "b" is not zero, and one where "b" is zero. We've stored the results in variables called "result1" and "result2", and printed them to the console.
+</p>
+
+
+<h2 id="21">21. Python OOP</h2>
+<p>Object-oriented programming is a way of writing computer programs that focuses on creating "objects" that can perform specific tasks or have specific properties. Think of an object like a toy or a tool - it has a specific purpose and can do certain things.</p>
+<p>In Python, we create objects using "classes". A class is like a predefined template that contains the properties and behavior(methods) of an object. We can create many objects from the same class, just like we can build many toys from the same blueprint.</p>
+
+<h2 id="22">22. Python Classes/Objects</h2>
+<p>In Python, a class is a blueprint for creating objects with specific properties and behaviors. You can think of a class like a cookie cutter - it defines the shape and characteristics of a cookie, but doesn't actually make any cookies until you use it.</p>
+<p>The 'class' keyword is used to create a class in Python.</p>
+<pre><code class="language-py">
+class Animal:
+    pass
+</code></pre>
+
+<p>In this example, we've defined a class called Animal using the class keyword. The pass keyword is used to indicate that we're not including any properties or methods in the class yet.
+</p>
+<p>Now that we've defined our class, we can create objects (also called instances) of that class. We do this using the class name followed by parentheses, like this</p>
+<pre><code class="language-py">
+cat = Animal()
+dog = Animal()
+</code></pre>
+<p>In this example, we've created two new objects of the Animal class and assigned them to variables called cat and dog. These objects don't have any properties or methods yet, but we can add those using the __init__ method.
+</p>
+<pre><code class="language-py">
+class Animal:
+     def __init__(self, species, name):
+          self.species = species
+          self.name = name
+ 
+</code></pre>
+<p>In this example, we've added an __init__ method to the Animal class that takes two arguments: species and name. Inside the __init__ method, we use the self keyword to set the species and name properties of the object.
+</p>
+<p>Now that we've added an __init__ method to our class, we can create new objects and set their properties at the same time. </p>
+<pre><code class="language-py">
+cat = Animal("cat", "Fluffy")
+dog = Animal("dog", "Rover")
+
+print(cat.name) # "Fluffy"
+print(dog.species) # "dog"
+     
+</code></pre>
+<p>In this example, we've created two objects of the Animal class and assigned them to variables called cat and dog. We've also set their properties (species and name) using the arguments passed to the __init__ method.
+</p>
+<pre><code class="language-py">
+class Animal:
+def __init__(self, species, name):
+     self.species = species
+     self.name = name
+
+def say_hello(self):
+     print(f"Hello, my name is {self.name} and I'm a {self.species}.")
+
+cat = Animal("cat", "Fluffy")
+horse = Animal("horse", "Rover")
+
+cat.say_hello() # "Hello, my name is Fluffy and I'm a cat."
+horse.say_hello() # "Hello, my name is Rover and I'm a horse."
+
+</code></pre>
+<p>In this example, we've added a say_hello method to the Animal class. This method takes no arguments (other than self) and simply prints a message containing the species and name properties of the object.
+</p>
+<p>Now that we've added a method to our class, we can call it on objects of that class using the . operator (e.g. cat.say_hello()).
+</p>
+
+
+<h2 id="23">23. Python Inheritance</h2>
+<p>Inheritance is an essential concept in object-oriented programming (OOP), which enables the creation of a new class called a subclass from an existing class known as a superclass. The subclass acquires all the attributes and methods of the superclass and can also include its own properties and methods.
+</p>
+<p>To create a subclass in Python, use the class keyword followed by the name of the subclass and the name of the superclass in parentheses.</p>
+<pre><code class="language-py">
+class Vehicle:
+def __init__(self, name, model):
+     self.name = name
+     self.model = model
+
+def start(self):
+     print("Starting the engine...")
+
+class Car(Vehicle):
+def drive(self):
+     print(f"{self.name} {self.model} is driving now.")
+
+</code></pre>
+<p>In this example, we have two classes: Vehicle is the superclass, and Car is the subclass. We have also defined the __init__ method and a start method for both classes.
+</p>
+<p>To indicate that Car is a subclass of Vehicle, we have included Vehicle in parentheses after the Car class name.
+</p>
+<p>In the __init__ method of the Car class, we have not defined any unique attributes, but we have inherited the attributes name and model from the Vehicle class.
+</p>
+<p>In the drive method of the Car class, we have added a unique method that is not present in the Vehicle class.
+</p>
+<p>Now that we have defined our classes, we can create objects of both classes and call their methods</p>
+<pre><code class="language-py">
+vehicle = Vehicle("Car", "Audi")
+car = Car("Car", "BMW")
+
+vehicle.start() # "Starting the engine..."
+car.start() # "Starting the engine..."
+
+car.drive() # "Car BMW is driving now."
+     
+</code></pre>
+<p>In this example, we have created an object of the Vehicle class (vehicle) and an object of the Car class (car). We have also called their respective methods.
+</p>
+<p>When we call the start method on both vehicle and car objects, they use the same start method defined in the Vehicle class. However, when we call the drive method on the car object, it uses the drive method defined in the Car class.
+</p>
+<p>In addition to inheriting and overriding methods, subclasses can also add new methods that are not present in the superclass.</p>
+<pre><code class="language-py">
+class Vehicle:
+def __init__(self, name, model):
+     self.name = name
+     self.model = model
+
+def start(self):
+     print("Starting the engine...")
+
+class Car(Vehicle):
+def drive(self):
+     print(f"{self.name} {self.model} is driving now.")
+
+def honk(self):
+     print("Honk! Honk!")
+ 
+</code></pre>
+<p>In this example, we have added a new honk method to the Car class. This method is unique to the Car class and is not present in the Vehicle class. We can call this method on Car objects but not on Vehicle objects.</p>
+
+
+
+<h2 id="24">24. Python Iterators</h2>
+<p>In Python, an iterator is an object that allows you to iterate over a collection of items one at a time. It is a built-in object that can be used with for loops and other functions that expect an iterable object.</p>
+<p>To create an iterator in Python, you need to define a class with two methods: __iter__() and __next__(). The __iter__() method returns the iterator object itself, while the __next__() method returns the next item in the sequence.
+</p>
+<pre><code class="language-py">
+class MyIterator:
+def __init__(self, start, end):
+     self.current = start
+     self.end = end
+
+def __iter__(self):
+     return self
+
+def __next__(self):
+     if self.current >= self.end:
+          raise StopIteration
+     else:
+          self.current += 1
+          return self.current - 1
+
+my_iter = MyIterator(1, 5)
+for i in my_iter:
+print(i)
+ 
+# Output
+'''
+1
+2
+3
+4
+'''
+</code></pre>
+<p>In the above Python example, we have defined a class called MyIterator that takes two arguments in its constructor: start and end. The __iter__() method returns the object itself, and the __next__() method generates the next number in the sequence until it reaches the end value.
+</p>
+<p>We have created an instance of the MyIterator class with start value of 1 and end value of 5. We have then used a for loop to iterate over the iterator and print each item.
+</p>
+<p>Another example of an iterator is the range function in Python. This function generates a sequence of numbers from a starting value to an end value</p>
+<pre><code class="language-py">
+for i in range(1, 5):
+   print(i)
+ 
+# Output
+'''
+1
+2
+3
+4
+'''
+</code></pre>
+<p>In this example, we have used the range function to generate a sequence of numbers from 1 to 5. We have then used a for loop to iterate over the sequence and print each item.
+</p>
+<p>In summary, iterators are objects that allow you to iterate over a collection of items one at a time. They are defined by classes with __iter__() and __next__() methods, and they can be used with for loops and other functions that expect an iterable object. Examples of iterators in Python include custom iterators and built-in functions like range().
+</p>
+
+<h2 id="25">25. Python Files</h2>
+<p>Working with files is an important part of programming in Python. So we simply this tutorial to understand how to work with Files in Python.
+</p>
+<h3>Opening a File
+</h3>
+<p>In Python, every file must be open to perform operations. the open() function help with that.
+</p>
+<p>The open() function takes two arguments: the filename and the mode in which you want to open the file. The most common modes are</p>
+
+
+<ol>
+     <li>r - read mode (default)
+     </li>
+     <li>w - write mode
+     </li>
+     <li>a - append mode
+     </li>
+     <li>x - exclusive creation mode
+     </li>
+
+</ol>
+<p>Opening a file in read mode</p>
+
+<pre><code class="language-py">file = open("example.txt", "r")
+</code></pre>
+<p>This Python code will open the file example.txt in read mode and assign it to the variable file.
+</p>
+<h3>Reading from a File
+</h3>
+<p>Once you have opened a file, you can read its contents using the read() method. 
+</p>
+<pre><code class="language-py">
+file = open("example.txt", "r")
+contents = file.read()
+print(contents)
+     
+</code></pre>
+<p>This code will open the file example.txt, read its contents, and print them to the console.
+</p>
+<p>You can also read a file line-by-line using the readline() method.</p>
+<pre><code class="language-py">
+file = open("example.txt", "r")
+line = file.readline()
+while line:
+     print(line)
+     line = file.readline()
+
+</code></pre>
+<p>This code will open the file example.txt, read each line, and print it to the console.
+</p>
+<h3>Writing to a File
+</h3>
+<p>To write to a file, you need to open it in write mode using the 'w' argument. </p>
+<pre><code class="language-py">
+file = open("example.txt", "w")
+file.write("Hello, World!")
+file.close()
+     
+</code></pre>
+<p>This code will open the file example.txt in write mode, write the string "Hello, World!" to the file, and then the file will be closed.
+</p>
+<h3>Appending to a File
+</h3>
+<p>To append to a file, you need to open it in append mode using the 'a' argument.</p>
+<pre><code class="language-py">
+file = open("example.txt", "a")
+file.write("Hello again, World!")
+file.close()
+
+</code></pre>
+<p>This code will open the file example.txt in append mode, write the string "Hello again, World!" to the end of the file, and then close the file.
+</p>
+<h3>Closing a File
+</h3>
+<p>It's important to always close a file after you're done working with it. To close a file, you can use the close() method.</p>
+<pre><code class="language-py">
+file = open("example.txt", "r")
+contents = file.read()
+file.close()
+     
+</code></pre>
+<p>This code will open the file example.txt, read its contents, and then close the file.
+</p>
+
+
+<h2 id="26">26. Python Modules</h2>
+<p>Python modules are collections of functions and classes that allow you to organize your code and reuse it across multiple projects. </p>
+<p>A Python module is a file containing Python code that can be executed or imported into other Python files. Modules allow you to organize your code into reusable components, making it easier to maintain and reuse across multiple projects.</p>
+<p>For example, let's say you have a Python file containing a function that generates a random number. You can save this function in a file called random_number_generator.py, which can be imported into other Python files using the import statement.
+</p>
+<h3>Creating a Python Module
+</h3>
+<p>Creating a Python module is easy. Simply create a new Python file with a '.py' extension and save it in the same directory as your main Python script. Here's an example of a simple module called hello.py:
+</p>
+<pre><code class="language-py">
+def say_hello():
+      print("Hello, World!")
+
+</code></pre>
+<p>To use this module, you can import it into your main Python file using the 'import' statement</p>
+<pre><code class="language-py">
+#my_main.py file
+import hello
+
+hello.say_hello()
+
+</code></pre>
+<p>This Python code will import the hello module and call the say_hello() function, which will print "Hello, World!" to the console.
+</p>
+<h3>Importing Specific Functions or Classes
+</h3>
+<p>Sometimes you may only want to import specific functions or classes from a module. To do this, you can use the 'from' keyword followed by the module name and the function or class you want to import.</p>
+<pre><code class="language-py">
+from random import randint
+
+num = randint(1, 10)
+print(num)
+     
+</code></pre>
+<p>This code imports the randint() function from the random module and generates a random number between 1 and 10.
+</p>
+<h3>Aliasing a Module
+</h3>
+<p>You can also alias a module using the as keyword. This is useful when you want to use a shorter or more descriptive name for a module</p>
+<pre><code class="language-py">
+import math as m
+
+print(m.pi)
+     
+</code></pre>
+<p>This code imports the math module and aliases it as m. We can then use the m alias to access the pi constant in the math module.
+</p>
+<h3>Creating Packages
+</h3>
+<p>A package can be define as a collection of modules. Packages allow you to further organize your code and create a more modular design. To create a package, simply create a new directory and include a file called __init__.py. This file tells Python that the directory should be treated as a package. </p>
+<p>Here's an example of a package called 'math_utils'</p>
+<pre><code class="language-py">
+math_utils/
+     __init__.py
+     addition.py
+     subtraction.py
+
+</code></pre>
+<p>You can then import specific modules from the package using the dot notation.</p>
+<pre><code class="language-py">
+from math_utils.addition import add_numbers
+
+sum = add_numbers(2, 3)
+print(sum)
+     
+</code></pre>
+<p>This simple Python code imports the add_numbers() function from the addition module in the math_utils package and calculates the sum of 2 and 3.
+</p>
+
+
+
+<h2 id="27">27. Python Math Module</h2>
+<p>The Python 'math' module is a built-in module that provides access to a range of mathematical functions and constants. It's a very useful tool for anyone who needs to perform mathematical calculations in their Python code. In this tutorial, we will take a closer look at the math module and how to use it in your Python programs.
+</p>
+<h3>Importing the Math Module
+</h3>
+<p>Before you can use the 'math' module in your Python program, you need to import it. You can do this by including the following line at the beginning of your Python script:
+</p>
+<pre><code class="language-py">import math
+</code></pre>
+<p>This will import the entire math module into your script, allowing you to access all of its functions and constants.
+</p>
+<h3>Mathematical Functions
+</h3>
+<p>The 'math' module provides a variety of mathematical functions that can be used to perform calculations. Some of the most commonly used functions include</p>
+<ol>
+<li>math.sqrt(x): Returns the square root of x.
+</li>
+<li>math.pow(x, y): Returns x value with the power of y.
+</li>
+<li>math.sin(x): Returns the sine of x (in radians).
+</li>
+<li>math.cos(x): cosine of x (in radians).
+</li>
+<li>math.tan(x): tangent of x (in radians).
+</li>
+<li>math.radians(x): Converts x from degrees to radians.
+</li>
+<li>math.degrees(x): Converts x from radians to degrees.
+</li>
+</ol>
+<pre><code class="language-py">
+import math
+
+x = 4
+y = 3
+
+# Calculate the hypotenuse of a right triangle
+z = math.sqrt(math.pow(x, 2) + math.pow(y, 2))
+
+# degrees to radians conversion
+angle = math.radians(45)
+
+# Calculate the sine and cosine of the angle
+sin = math.sin(angle)
+cos = math.cos(angle)
+
+print(z)
+print(sin)
+print(cos)
+     
+</code></pre>
+<p>This code calculates the hypotenuse of a right triangle using the sqrt() and pow() functions, converts an angle from degrees to radians using the radians() function, and calculates the sine and cosine of the angle using the sin() and cos() functions.
+</p>
+<h3>Mathematical Constants
+</h3>
+<p>The math module also provides a number of mathematical constants that can be used in calculations. Some of the most commonly used constants include:
+</p>
+<ol>
+     <li>math.pi: The mathematical constant π (pi).
+     </li>
+     <li>math.e: The mathematical constant e.
+     </li>
+     <li>math.inf: A representation of infinity.
+     </li> 
+     <li>math.nan: A representation of "not a number".
+     </li>
+</ol>
+<pre><code class="lamguage-py">
+import math
+
+radius = 3
+
+# Calculate the circumference of a circle
+circumference = 2 * math.pi * radius
+
+# Calculate the area of a circle
+area = math.pi * math.pow(radius, 2)
+
+print(circumference)
+print(area)
+     
+</code></pre>
+<p>This code calculates the circumference and area of a circle using the 'pi' constant and the pow() function.
+</p>
+
+
+<h2 id="28">28. Python Date Module</h2>
+<p>The 'datetime' module in Python provides various classes to work with dates and times. The most commonly used classes are date, time, datetime, and timedelta.
+</p>
+<p>To use the datetime module, you need to import it first using the following code:
+</p>
+<pre><code class="language-py">import datetime
+</code></pre>
+<h3>Working with Dates
+</h3>
+<p>To create a 'date' object, you can use the 'date() 'method. It will require three arguments year, month, and day.
+</p>
+<pre><code class="language-py">
+import datetime
+
+# create a date object
+my_date = datetime.date(2022, 2, 22)
+
+print(my_date)  # 2022-02-22
+print(my_date.year)  # 2022
+print(my_date.month)  # 2
+print(my_date.day)  # 22
+
+</code></pre>
+<p>You can also get today's date using the 'today()' method.
+</p>
+<pre><code class="language-py">
+import datetime
+
+# get today's date
+today = datetime.date.today()
+
+print(today)  # 2023-02-22
+print(today.year)  # 2023
+print(today.month)  # 2
+print(today.day)  # 22
+     
+</code></pre>
+<h3>Working with Times
+</h3>
+<p>To create a 'time' object, you can use the 'time()' method. It takes four arguments: hour, minute, second, and microsecond.
+</p>
+<pre><code class="language-py">
+import datetime
+
+# create a time object
+my_time = datetime.time(10, 30, 45, 100000)
+
+print(my_time)  # 10:30:45.100000
+print(my_time.hour)  # 10
+print(my_time.minute)  # 30
+print(my_time.second)  # 45
+print(my_time.microsecond)  # 100000
+     
+</code></pre>
+<h3>Working with Datetimes
+</h3>
+<p>To create a 'datetime' object, you can use the 'datetime()' method. It takes seven arguments: year, month, day, hour, minute, second, and microsecond.
+</p>
+<pre><code class="language-py">
+import datetime
+
+# create a datetime object
+my_datetime = datetime.datetime(2022, 2, 22, 10, 30, 45, 100000)
+
+print(my_datetime)  # 2022-02-22 10:30:45.100000
+print(my_datetime.year)  # 2022
+print(my_datetime.month)  # 2
+print(my_datetime.day)  # 22
+print(my_datetime.hour)  # 10
+print(my_datetime.minute)  # 30
+print(my_datetime.second)  # 45
+print(my_datetime.microsecond)  # 100000
+
+</code></pre>
+
+
+
+
+<h2 id="29">29. Python RegEx</h2>
+<p>Python RegEx, short for regular expression, is a powerful tool for matching and manipulating text. It allows you to search for patterns in strings, replace text, and more.
+</p>
+<p>Let's say you want to match all phone numbers in a list of strings. Here's how you can use RegEx to accomplish this</p>
+<pre><code class="language-py">
+import re
+
+strings = [
+     "My phone number is 123-456-7890.",
+     "Call me at 555-123-4567.",
+     "The number is 9876543210."
+]
+
+pattern = r"\d{3}-\d{3}-\d{4}"
+
+for string in strings:
+     match = re.search(pattern, string)
+     if match:
+          print("Phone number found:", match.group())
+
+</code></pre>
+<p>In this Python RegEx example, we import the re module and define a list of strings that may contain phone numbers. We then define a RegEx pattern that matches the format of phone numbers with three digits, a dash, another three digits, another dash, and four digits. We use the search() method to find the first match of this pattern in each string, and if we find a match, we print the matched phone number.
+</p>
+<p>This is just one example of how you can use Python RegEx to match patterns in text. With practice and experimentation, you can use RegEx to accomplish a wide range of tasks in text manipulation.
+</p>
+
+
+
+
+
+<h2 id="30">30. Python Libraries</h2>
+<p>Python Libraries are collections of pre-written code that can be imported into your Python projects to make your programming easier and more efficient. These libraries contain functions, classes, and variables that are designed to perform specific tasks, from data analysis to web development.</p>
+<p>There are many libraries available in Python, and some of the most popular ones are</p>
+<ol>
+     <li>NumPy</li>
+     <li>Pandas</li>
+     <li>Matplotlib</li>
+     <li>Requests</li>
+     <li>Flask</li>
+</ol>
+<p>To use a library in your Python project, you need to first install it using a package manager like 'pip'. Once installed, you can import the library and use its functions and classes in your code.
+</p>
+<p>Here's an example of how to use the requests library to make a simple HTTP request:
+</p>
+<pre><code class="language-py">
+import requests
+
+response = requests.get("https://www.google.com")
+print(response.status_code)
+print(response.content)
+
+</code></pre>
+<p>In this Pyhton example, we import the requests library and use its get() method to make an HTTP GET request to Google's homepage. We then print the response status code and content of the page.
+</p>
+
+
+
+<h2 id="31">31. Python NumPy Library Introduction</h2>
+<p>NumPy is a Python library that stands for "Numerical Python". It's a powerful library that is widely used in scientific computing, data analysis, and machine learning. NumPy provides an array object that is much more efficient than traditional Python lists, as well as a large collection of mathematical functions to operate on these arrays.
+</p>
+<p>To use NumPy, you first need to install it using a package manager like 'pip'. Once installed, you can import NumPy into your Python project and start using its functions.
+</p>
+<p>Here's an example of how to create a NumPy array:
+</p>
+<pre><code class="language-py">
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+print(arr) # [1 2 3 4 5]
+
+
+</code></pre>
+<p>In this example, we import the NumPy library and create an array of integers using the 'np.array()' function. Then the array is printed on the console.</p>
+<p>Here's an example of how to perform a simple mathematical operation on a NumPy array:
+</p>
+<pre><code class="language-py">
+import numpy as np
+
+arr = np.array([1, 2, 3, 4, 5])
+new_arr = arr + 10
+print(new_arr) # [11 12 13 14 15]
+
+     
+</code></pre>
+<p>In this example, we create a NumPy array and then add 10 to each element using the '+' operator. The result is a new NumPy array with each element increased by 10.
+</p>
+<p>NumPy also provides many other functions for performing mathematical operations, such as trigonometric functions, logarithmic functions, and statistical functions. These functions can be very useful for scientific computing and data analysis.
+</p>
+
+
+<h2 id="32">32.  Python Pandas Library Introduction</h2>
+<p>Pandas is a Python library that is widely used in data analysis and manipulation. It provides two primary data structures - Series and DataFrame - that make it easy to work with tabular data.
+</p>
+<p>To use Pandas, you first need to install it using a package manager like pip. Once installed, you can import Pandas into your Python project and start using its functions.
+</p>
+<p>Here is an example:</p>
+<pre><code class="language-py">
+import pandas as pd
+
+data = {'Name': ['John', 'Jane', 'Bob', 'Alice'],
+          'Age': [28, 34, 22, 41],
+          'City': ['New York', 'Paris', 'London', 'Tokyo']}
+
+df = pd.DataFrame(data)
+print(df)
+
+</code></pre>
+<p>In this example, we create a Python dictionary containing three lists - Name, Age, and City - and then pass this dictionary to the pd.DataFrame() function to create a Pandas DataFrame. We then print the DataFrame to the console.
+</p>
+<p>Pandas DataFrames are similar to Excel spreadsheets or database tables, and provide many powerful features for working with tabular data. For example, you can easily filter, sort, and aggregate data using Pandas functions.
+</p>
+<p>Here's an example of how to filter a Pandas DataFrame based on a condition</p>
+<pre><code class="language-py">
+import pandas as pd
+
+data = {'Name': ['John', 'Jane', 'Bob', 'Alice'],
+          'Age': [28, 34, 22, 41],
+          'City': ['New York', 'Paris', 'London', 'Tokyo']}
+
+df = pd.DataFrame(data)
+
+filtered_df = df[df['Age'] > 30]
+print(filtered_df)
+     
+</code></pre>
+<p>In this example, we use the > operator to filter the DataFrame based on the Age column. The result is a new DataFrame containing only the rows where the age is greater than 30.
+</p>
+<p>Pandas provides many other powerful features for working with tabular data, such as merging data from multiple sources, handling missing values, and visualizing data using plots and charts. These features make it a must-have library for anyone working with data in Python.
+</p>
+<h1>Thank You</h1>
+<p>I want to thank you for taking the time to visit the Python tutorial on webdevmonk. I hope you found the tutorial informative and useful in your journey to learn Python.
+</p>
+<p>I encourage you to revisit the tutorial anytime you need to refresh your memory or clarify any concepts. Additionally, I invite you to explore the other programming tutorials and project sections available on the website. You may find some simple web projects that you can practice on.
+</p>
+<p>If you have any questions or feedback, please do not hesitate to reach out. Thank you again for visiting and happy learning!
+</p>
+
+</main>
+
+
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevmonk</h2></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

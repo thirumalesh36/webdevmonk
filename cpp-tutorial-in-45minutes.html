@@ -1,0 +1,1559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Learn or revise the concepts of C++ in 45 minutes by this simple webdevmonk's C++ tutorial.">
+<title>C++ Fundamentals in 45 minutes</title>
+
+<!-- structured data-->
+
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes",
+"name":"C++ Fundamentals in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Learn or revise the concepts of C++ in 45 minutes by this simple webdevmonk's C++ tutorial.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/cpp.png",
+"contentUrl":"https://www.webdevmonk.com/main/cpp.png",
+"caption":"C++ Fundamentals in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="C++ Fundamentals in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/cpp.png" />
+<meta property="og:description" content="Learn or revise the concepts of C++ in 45 minutes by this simple webdevmonk's C++ tutorial." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="C++ Fundamentals in 45 minutes">
+<meta name="twitter:description" content="Learn or revise the concepts of C++ in 45 minutes by this simple webdevmonk's C++ tutorial.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/cpp.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/cpp-tutorial-in-45minutes" />
+
+
+
+
+
+
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i>  
+<h1>C++ Fundamentals Guide to get Started</h1> 
+<img id="image" src="../main/cpp.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+<p>Hello one and all, this 45 minutes C++ tutorial is specially made for beginners and people who looking for the C++ revision.</p>
+<p>Learn the fundamentals of programming with our tutorial <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>   Beginner-friendly with essential concepts and interactive exercises designed to aid learning and retention</p> 
+<h2>Concepts: </h2>
+<p><a href="#1">1. C++ Introduction</a> </p> 
+<p><a href="#2"> 2. C++ Syntax</a></p>  
+<p><a href="#3"> 3. C++ Output</a></p> 
+<p><a href="#4"> 4. C++ Sum of Two Numbers</a></p> 
+<p><a href="#5"> 5. C++ Comments</a></p> 
+<p><a href="#6"> 6. C++ Variables</a></p> 
+<p><a href="#7"> 7. C++ Input</a></p> 
+<p><a href="#8"> 8. C++ Data Types</a></p> 
+<p><a href="#9"> 9. C++ Booleans</a></p> 
+<p><a href="#10"> 10. C++ Operators</a></p>
+<p><a href="#11"> 11. C++ if, if-else, switch statements</a></p> 
+<p><a href="#12"> 12. C++ while, do-while, for loops</a></p> 
+<p><a href="#13"> 13. C++ break and continue</a></p> 
+
+<p><a href="#14"> 14. C++ Arrays</a></p> 
+<p><a href="#15"> 15. C++ Structures</a></p>  
+<p><a href="#16"> 16. C++ References</a></p> 
+<p><a href="#17"> 17. C++ Pointers</a></p> 
+<p><a href="#18"> 18. C++ Functions</a></p> 
+<p><a href="#19"> 19. C++ OOP concept</a></p> 
+<p><a href="#20"> 20. C++ Files</a></p> 
+
+<p><a href="#21"> 21. C++ Exceptions</a></p> 
+
+
+<h2 id="1">1. C++ Introduction</h2>
+<p>C++ is a high-performance programming language that is widely used in a variety of fields, including operating systems, web browsers, and various applications. C++ is an extension of the C language, which was developed in the 1970s.</p>
+<p>C++ is an object-oriented programming language, which means that it is designed to support the creation and manipulation of "objects" that represent real-world entities.</p>
+<h3>Why to learn C++?</h3>
+<p>1. C++ is widely used. Many companies use C++ in their software development, so learning the language can make you a more attractive candidate for a job in the tech industry.</p>
+<p>2. C++ is a general-purpose programming language that is widely used in a variety of fields.</p>
+<p>3. Operating systems: C++ is often used to develop the core components of operating systems, such as the kernel and device drivers.</p>
+<p>4. Web browsers: Many web browsers, such as Google Chrome and Mozilla Firefox, are written in C++.</p> 
+<p>5. Applications: C++ is used to develop a wide range of applications, including office suites, graphic design software, and games (GTA 5, Fortnite, Dota 2, World of Warcraft).</p>
+
+<h2 id="2">2. C++ Syntax</h2>
+<p>A common structure for a C++ program includes the following elements</p>
+<p>1.<strong>Preprocessor directives:</strong>Preprocessor directives are lines of code that are processed by a preprocessor before the source code is compiled. They are typically used to include header files, define macros, and perform other tasks that need to be done before the code is compiled.
+</p>
+<p>2. <strong>Function prototypes: </strong> These are declarations of functions that are used in the program. They include the function name, the data types of the parameters, and the return type.</p>
+<p>3. <strong>Global variables:</strong> These are variables that are declared outside of any function and are available to all functions in the program.</p> 
+<p>4. <strong>main() function: </strong> This is the entry point of the program and is where the program's execution begins. It is typically used to call other functions and perform tasks.
+</p>
+<p>5. <strong>other functions: </strong> These are functions that are defined and used in the program. They can be called from the main() function or from other functions.</p>
+
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+void greet(); // function prototype
+
+int main() {
+greet();
+return 0;
+}
+
+void greet() {
+std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+
+
+<h2 id="3">3. C++ Output</h2>
+<p>In C++, you can use the 'std::cout' object to output text to the console. The 'std::cout' object is part of the iostream library, which is included using the '#include &lt;iostream>' directive at the top of the program.</p>
+<p>To output text using std::cout, you can use the &lt;&lt; operator, followed by the text you want to output</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+std::cout &lt;&lt; "Hello, World!" &lt;&lt; std::endl;
+return 0;
+}
+
+</code>
+</pre>
+<p>This will output the text "Hello, World!" to the console. The 'std::endl' inserts a newline character after the text is output.</p>
+
+<h2 id="4">4. C++ Sum of Two Numbers</h2>
+<p></p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+int a = 10;
+int b = 20;
+int sum = a + b;
+std::cout &lt;&lt; "The sum of a and b is: " &lt;&lt; sum &lt;&lt; std::endl;
+return 0;
+}
+
+</code>
+</pre>
+<p>This will output the text "The value of x is: 30" to the console.</p>
+<h2 id="5">5. C++ Comments</h2>
+<p>Comments are used in C++ to add notes and explanations to the code. They are ignored by the compiler and are used only to help the programmer understand the code.</p>
+<p>There are two types of comments in C++: </p>
+<h3>1. single-line comments</h3>
+<h3>2. multi-line comments.</h3>
+<p>Single-line comments start with // and continue until the end of the line. </p>
+<pre>
+<code class="language-cpp">
+int a = 10; // Declare and initialize variable x
+</code>
+</pre>
+<p>Multi-line comments start with /* and end with */.</p>
+<pre>
+<code class="language-cpp">
+/*
+This is a multi-line
+comment. It can span
+multiple lines.
+*/
+
+</code>
+</pre>
+
+<p>You can also use comments to "comment out" a block of code that you don't want to execute. </p>
+<pre>
+<code class="language-cpp">
+/*
+int a = 10;
+int b = 20;
+int sum = a + b;
+std::cout &lt;&lt; "The sum is: " &lt;&lt; sum &lt;&lt; std::endl;
+*/
+
+</code>
+</pre>
+<p>In this example, the code between the /* and */ will not be executed, but it will still be present in the program. This can be useful for testing or debugging.</p>
+
+<h2 id="6">6. C++ Variables</h2>
+<p>In C++, a variable is a named location in memory where you can store a value. Variables must be declared with a specific data type, such as 'int' for integers or 'char' for characters.</p>
+<p>Here is an example of how to declare and initialize a variable in C++</p>
+<pre>
+<code class="language-cpp">
+int A = 10;    // A and a are not same
+char c = 'A';
+float f = 3.14;
+
+// You can also declare multiple variables of the same type on a single line, like this:
+int th= 10, second_num = 20, c = 30;
+
+</code>
+</pre>
+<p>declaring a variable without initializing it is also allowed</p>
+<pre>
+<code class="language-cpp">
+int a;
+</code>
+</pre>
+<p>In this case, the value of the variable is undefined until it is assigned a value later in the program.</p>
+<p>It is important to choose descriptive names for your variables to make your code easier to read and understand. Variable names can contain letters, digits, and the underscore character '(_)', but they must not begin with a digit.</p> 
+<h2 id="7">7. C++ Input</h2>
+<p>In C++, you can use the 'std::cin' object to read input from the console. The 'std::cin' object is part of the iostream library, which is included using the '#include &lt;iostream>' directive at the top of the program.</p>
+<p>To read input using 'std::cin', you can use the >> operator, followed by the variable you want to store the input in.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+int x;
+std::cout &lt;&lt; "Enter a number: ";
+std::cin >> x;
+std::cout &lt;&lt; "You entered: " &lt;&lt; x &lt;&lt; std::endl;
+return 0;
+}
+
+</code>
+</pre>
+<p>This will output the text "Enter a number: " to the console and wait for the user to enter a number. The entered number will be stored in the x variable, and then the program will output the text "You entered: [number]" to the console.</p>
+<h2 id="8">8. C++ Data Types</h2>
+<p>In C++, data types refer to the type and size of data that a variable or a constant can hold. There are several built-in data types in C++, which include:</p>
+<h3>char: </h3> <p>The 'char' data type in C++ is used to hold character values. It occupies 1 byte of memory and can hold any character from the ASCII table, which includes alphabets (both uppercase and lowercase), digits, and special characters.</p>
+<h3>int: </h3> <p> This 'int' data in C++  type is used to store the integer values. It occupies 2 or 4 bytes of memory, depending on the system, and can hold whole numbers within a certain range.</p> 
+<h3>float: </h3><p>This 'float' type in C++ is used to store floating-point values of variables. It occupies 4 bytes of memory and can hold decimal values with a certain degree of precision.</p> 
+<h3>double: </h3><p>This data type in C++ is also used to store floating-point values. It occupies 8 bytes of memory and can hold decimal values with a higher degree of precision than float.</p>
+<h3>bool: </h3><p>This data type in C++ is used to store boolean values, which can be either true or false. It occupies 1 byte of memory.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+// Declare teh variables of several data types
+char c = 'A';
+int i = 10;
+float f = 3.14;
+double d = 123.456;
+bool b = true;
+
+// Print the values of the variables
+std::cout &lt;&lt; "c = " &lt;&lt; c &lt;&lt; std::endl;
+
+std::cout &lt;&lt; "i = " &lt;&lt; i &lt;&lt; std::endl;
+std::cout &lt;&lt; "f = " &lt;&lt; f &lt;&lt; std::endl;
+std::cout &lt;&lt; "d = " &lt;&lt; d &lt;&lt; std::endl;
+std::cout &lt;&lt; "b = " &lt;&lt; b &lt;&lt; std::endl;
+
+return 0;
+}
+// Output: 
+
+/*
+c = A
+i = 10
+f = 3.14
+d = 123.456
+b = 1
+*/
+</code>
+</pre>
+
+<h2 id="9">9. C++ Booleans</h2>
+<p>In C++, boolean values are represented using the bool data type. A boolean value can be either 'true' or 'false', and it occupies 1 byte of memory.</p>
+<p>For 'true' the value is 1 and for 'false' the value is 0</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+bool flag = true;
+
+if (flag)
+{
+std::cout &lt;&lt; "flag is true" &lt;&lt; std::endl;
+}
+else
+{
+std::cout &lt;&lt; "flag is false" &lt;&lt; std::endl;
+}
+
+return 0;
+}
+
+</code>
+</pre>
+<p>Boolean values are often used in conditional statements, such as 'if', 'while', and 'for', to control the flow of a program. </p>
+<h2 id="10">10. C++ Operators</h2>
+<p>C++ operators are the kind symbols that perform specific operations on one or more operands (values or variables). </p>
+<h3>1. Arithmetic Operators</h3>
+<p>The arithmetic operators are used to perform basic mathematical operations on variables and values.</p>
+<p>1. ' + ' : a+b</p>
+<p>2. ' - ' : a-b</p>
+<p>3. ' * ' : a*b</p>
+<p>4. ' / ' : a/b</p>
+<p>5. ' % ' : a%b (returns the remainder when a is divided by b.)</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+int a = 10;
+int b = 5;
+
+std::cout &lt;&lt; a + b &lt;&lt; std::endl;  // Outputs 15
+std::cout &lt;&lt; a - b &lt;&lt; std::endl;  // Outputs 5
+std::cout &lt;&lt; a * b &lt;&lt; std::endl;  // Outputs 50
+std::cout &lt;&lt; a / b &lt;&lt; std::endl;  // Outputs 2
+std::cout &lt;&lt; a % b &lt;&lt; std::endl;  // Outputs 0
+
+return 0;
+}
+
+</code>
+</pre>
+<h3>2. Assignment Operators</h3>
+<p>In C++, there are several assignment operators that can be used to assign a value to a variable</p>
+<p>1. ' = ' : a = 9</p>
+<p>2. ' += ' : a += 9 (a = a+9) </p>
+<p>3. ' -=  ' : a-=9</p>
+<p>4. ' *= ' : a*=9</p>
+<p>5. ' /= ' : a/=9</p>
+<p>6. ' %= ' : a%=9</p>
+<p>7. ' >>= ' : a>>=9 </p>
+<p>8. ' &lt;&lt;= ' : a&lt;&lt;=9</p>
+<p>9. ' ^= ' : a^=9</p>
+<p>9. ' &= ' : a&=9</p>
+<p>10. ' |= ' : a|=9</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int a = 10;
+int b = 5;
+
+std::cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; std::endl;
+std::cout &lt;&lt; "b = " &lt;&lt; b &lt;&lt; std::endl;
+
+a += b; // a is now 15
+std::cout &lt;&lt; "a += b: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+a -= b; // a is now 10
+std::cout &lt;&lt; "a -= b: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+a *= b; // a is now 50
+std::cout &lt;&lt; "a *= b: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+x /= y; // x is now 10
+std::cout &lt;&lt; "x /= y: x = " &lt;&lt; x &lt;&lt; std::endl;
+
+x %= y; // x is now 0
+std::cout &lt;&lt; "x %= y: x = " &lt;&lt; x &lt;&lt; std::endl;
+
+a &lt;&lt;= 1; // a is now 0
+std::cout &lt;&lt; "a &lt;&lt;= 1: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+a >>= 1; // a is now 0
+std::cout &lt;&lt; "a >>= 1: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+a &= b; // a is now 0
+std::cout &lt;&lt; "a &= b: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+a ^= b; // a is now 5
+std::cout &lt;&lt; "a ^= b: a = " &lt;&lt; b &lt;&lt; std::endl;
+
+a |= b; // a is now 5
+std::cout &lt;&lt; "a |= b: a = " &lt;&lt; a &lt;&lt; std::endl;
+
+return 0;
+}
+
+// Output: 
+
+/* 
+a = 10
+b = 5
+a += b: a = 15
+a -= b: a = 10
+a *= b: a = 50
+a /= b: a = 10
+a %= b: a = 0
+a &lt;&lt;= 1: a = 0
+a >>= 1: a = 0
+a &= b: a = 0
+a ^= b: a = 5
+a |= b: a = 5
+
+*/
+</code>
+</pre>
+
+<h3>3. Comparision Operators</h3>
+<p>1. ' == ' : a==b </p>
+<p>2. ' &lt; ': a&lt;b</p>
+<p>3. ' > ' : a>b</p>
+<p>4. ' &lt;= ' : a&lt;=b</p>
+<p>5. ' >= ' : a>=b</p>
+<p>6. ' != ' : a!=b</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int a = 10;
+int b = 5;
+
+std::cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; std::endl;
+std::cout &lt;&lt; "b = " &lt;&lt; a &lt;&lt; std::endl;
+
+// Equal to
+std::cout &lt;&lt; "a == b: " &lt;&lt; (a == b) &lt;&lt; std::endl; // False
+
+// Not equal to
+std::cout &lt;&lt; "a != b: " &lt;&lt; (a != b) &lt;&lt; std::endl; // True
+
+// Greater than
+std::cout &lt;&lt; "a > b: " &lt;&lt; (a > b) &lt;&lt; std::endl; // True
+
+// Less than
+std::cout &lt;&lt; "a &lt; b: " &lt;&lt; (a &lt; b) &lt;&lt; std::endl; // False
+
+// Greater than or equal to
+std::cout &lt;&lt; "a >= b: " &lt;&lt; (a >= b) &lt;&lt; std::endl; // True
+
+// Less than or equal to
+std::cout &lt;&lt; "a &lt;= b: " &lt;&lt; (a &lt;= b) &lt;&lt; std::endl; // False
+
+return 0;
+}
+
+// Output: 
+
+/* 
+a = 10
+b = 5
+a == b: 0
+b != b: 1
+a > b: 1
+a &lt; b: 0
+a >= b: 1
+a &lt;= b: 0
+
+*/
+</code>
+</pre>
+<h3>4. Logical Operators</h3>
+<p>1. ' && ' : x &lt; 5 &&  x &lt; 10 (return 'true' if both conditions are true)</p>
+<p>2. ' || ' : x  &lt; 5 || x &lt; 4 (return 'true' if any conditions are true)</p>
+<p>3. ' ! ' : !(x &lt; 5 && x &lt;  10) (Reverse the result, returns 'false' even  the result is 'true')</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+bool a = true;
+bool b = false;
+
+std::cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; std::endl;
+std::cout &lt;&lt; "b = " &lt;&lt; b &lt;&lt; std::endl;
+
+// Logical AND
+std::cout &lt;&lt; "a && b: " &lt;&lt; (a && b) &lt;&lt; std::endl; // False
+
+// Logical OR
+std::cout &lt;&lt; "a || b: " &lt;&lt; (a || b) &lt;&lt; std::endl; // True
+
+// Logical NOT
+std::cout &lt;&lt; "!a: " &lt;&lt; (!a) &lt;&lt; std::endl; // False
+std::cout &lt;&lt; "!b: " &lt;&lt; (!b) &lt;&lt; std::endl; // True
+
+return 0;
+}
+
+// Output: 
+
+/* 
+
+a = 1
+b = 0
+a && b: 0
+a || b: 1
+!a: 0
+!b: 1
+
+*/
+</code>
+</pre>
+<h3>5. Increment and Decrement operators</h3>
+<p>1. ' ++ ' :&nbsp; a++ &nbsp;or &nbsp;++a &nbsp;(a = a+1)</p>
+<p>2. ' -- ' :&nbsp; a-- &nbsp;or &nbsp;--a &nbsp;(a = a-1)</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int a = 0;
+
+a++; // add 1 to a (a is now 1)
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+
+++a; // add 1 to a (a is now 2)
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+
+a--; // subtract 1 from a (a is now 1)
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+
+--a; // subtract 1 from a (a is now 0)
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+
+return 0;
+}
+
+// Output: 
+
+/* 
+
+1
+2
+1
+0
+
+*/
+</code>
+</pre>
+<h3>6. Conditional Operators</h3>
+<p>In C++, the conditional operator (also known as the ternary operator) is a way to perform a conditional expression.</p>
+<pre>
+<code class="language-cpp">// syntax 
+condition ? expression1 : expression2
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int a = 10;
+int b = 20;
+
+int c = (a > b) ? a : b; // if a is greater than b, c will be set to a; otherwise, c will be set to a
+std::cout &lt;&lt; "c: " &lt;&lt; c &lt;&lt; std::endl;
+
+return 0;
+}
+
+// Output: 
+// z: 20
+
+</code>
+</pre>
+
+<h3>7. Bitwise operators</h3>
+<p>In C++, bitwise operators are used to perform bit-level operations on variables.</p>
+<p>1. ' & ' : (bitwise AND)</p>
+<p>2. ' | ' : (bitwise OR) </p>
+<p>3. ' ^ ' : (bitwise XOR)</p>
+<p>4. ' ~ ' :  (bitwise NOT)</p>
+<p>5. ' &lt;&lt; ' : (left shift)</p>
+<p>6. ' >> ' :  (right shift)</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int a = 10; // binary representation: 1010
+int y = 7;  // binary representation: 0111
+
+std::cout &lt;&lt; (a & b) &lt;&lt; std::endl; // bitwise AND: 0010 (2)
+std::cout &lt;&lt; (a | b) &lt;&lt; std::endl; // bitwise OR: 1111 (15)
+std::cout &lt;&lt; (a ^ b) &lt;&lt; std::endl; // bitwise XOR: 1101 (13)
+std::cout &lt;&lt; (~a) &lt;&lt; std::endl;    // bitwise NOT: 0101 (-11)
+std::cout &lt;&lt; (a &lt;&lt; 1) &lt;&lt; std::endl; // left shift: 10100 (20)
+std::cout &lt;&lt; (b >> 1) &lt;&lt; std::endl; // right shift: 0011 (3)
+
+return 0;
+}
+
+// Output: 
+
+/* 
+
+2
+15
+13
+-11
+20
+3
+
+*/
+</code>
+</pre>
+<p>Note that the bitwise NOT operator '(~)' inverts the bits of a number, while the left shift ('&lt;&lt;)' and right shift '(>>)' operators shift the bits of a number to the left or right, respectively. The number of positions to shift the bits is specified as an operand.</p>
+
+<h3>8. Other operators</h3>
+<p>1. <strong>Sizeof operator: </strong> The sizeof operator returns the size, in bytes, of a variable or data type.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main()
+{
+int i = 10;
+float f = 3.14;
+double d = 3.14159265358979323846;
+
+std::cout &lt;&lt; "Size of int: " &lt;&lt; sizeof(i) &lt;&lt; " bytes" &lt;&lt; std::endl;
+std::cout &lt;&lt; "Size of float: " &lt;&lt; sizeof(f) &lt;&lt; " bytes" &lt;&lt; std::endl;
+std::cout &lt;&lt; "Size of double: " &lt;&lt; sizeof(d) &lt;&lt; " bytes" &lt;&lt; std::endl;
+
+return 0;
+}
+
+// Output: 
+
+/* 
+
+Size of int: 4 bytes
+Size of float: 4 bytes
+Size of double: 8 bytes
+
+*/
+</code>
+</pre>
+<p>2. <strong>Member access operators: </strong> These operators are used to access members of a class or struct. The dot operator (.) is used to access a member of an object, while the arrow operator (->) is used to access a member of a pointer to an object.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+class Point
+{
+public:
+int a, b;
+
+Point(int a = 0, int b = 0)
+: a(a), b(b)
+{
+}
+};
+
+int main()
+{
+Point p1(1, 2);
+Point *p2 = new Point(3, 4);
+
+std::cout &lt;&lt; "p1.a: " &lt;&lt; p1.a &lt;&lt; std::endl;
+std::cout &lt;&lt; "p1.b: " &lt;&lt; p1.b &lt;&lt; std::endl;
+std::cout &lt;&lt; "p2->a: " &lt;&lt; p2->a &lt;&lt; std::endl;
+std::cout &lt;&lt; "p2->b: " &lt;&lt; p2->b &lt;&lt; std::endl;
+
+delete p2;
+
+return 0;
+}
+
+// Output: 
+
+/* 
+p1.a: 1
+p1.b: 2
+p2->a: 3
+p2->b: 4
+*/
+</code>
+</pre>
+<h2 id="11">11. C++ if, if-else, switch statements </h2>
+<h3>if</h3>
+<p>In C++, the 'if' statement allows you to specify a block of code to be executed if a certain condition is met(true). The syntax for an 'if' statement is as follows:
+</p>
+<pre>
+<code class="language-cpp">
+if (condition) {
+// execute if condition is true
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+int a = 5;
+if (a > 4) {
+std::cout &lt;&lt; "a is greater than 4" &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+<p>The above example C++ program, will output 'a is greater than 4' because the condition x > 4 is true.</p>
+
+<h3>if-else</h3>
+<p>The 'if-else' statement is an extension of the if statement that allows you to specify a block of code to be executed if the condition is 'true', and a different block of code is used to be executed if the condition is 'false'. The syntax for an 'if-else' statement is as follows:</p>
+<pre>
+<code class="language-cpp">
+if (condition) {
+// execute if condition is true
+} else {
+// execute if condition is false
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+int a = 5;
+if (a > 4) {
+std::cout &lt;&lt; "a is greater than 4" &lt;&lt; std::endl;
+} else {
+std::cout &lt;&lt; "a is not greater than 4" &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+<p>This will output 'a is greater than 4' because the condition a > 4 is true. If not 'a is not greater than 4' will print</p>
+
+<h3>switch</h3>
+<p>The 'switch' statement is another way to specify a block of code to be executed based on a condition. It allows you to specify a number of different cases, and the code associated with each case will be executed if the condition matches the case. The syntax for a switch statement is as follows:</p>
+<pre>
+<code class="language-cpp">
+switch (expression) {
+case value1:
+// execute if expression == value1
+break;
+case value2:
+// execute if expression == value2
+break;
+...
+default:
+// if expression does not match any of the cases, this block will execute
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+int a = 5;
+switch (a) {
+case 1:
+std::cout &lt;&lt; "a is 1" &lt;&lt; std::endl;
+break;
+case 2:
+std::cout &lt;&lt; "a is 2" &lt;&lt; std::endl;
+break;
+case 5:
+std::cout &lt;&lt; "a is 5" &lt;&lt; std::endl;
+break;
+default:
+std::cout &lt;&lt; "a is not 1 or 5" &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+<p>This will output 'a is 5' because the value of a matches the case 5.</p>
+<p>It's important to note that the 'break' statement is used to exit the switch statement and prevent the code from falling through to the next case. If you omit the 'break' statement, the code will continue to execute through all the remaining cases until it reaches the end of the switch statement or a 'break' statement is encountered.</p>
+
+<h2 id="12">12. C++ while, do-while, for loops </h2>
+<h3>while loop</h3>
+<p>In C++, the while loop allows you to execute a block of code repeatedly as long as a specific condition is true. The syntax is:</p>
+<pre>
+<code class="language-cpp">
+while (condition) {
+// statements to execute as long as the condition is true
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+int a = 0;
+while (a &lt; 5) {
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+a++;
+}
+
+</code>
+</pre>
+<p>This will output the numbers 0 through 4 because the condition x &lt; 5 is checked at the beginning of each iteration and the loop will continue as long as the condition is true.</p>
+
+<h3>do-while</h3>
+<p>The 'do-while' loop is similar to the 'while' loop, but the condition is checked at the end of each iteration instead of at the beginning. This means that the code in the loop will always be executed at least once, regardless of the value of the condition. The syntax for a 'do-while' loop is as follows:</p>
+<pre>
+<code class="language-cpp">
+do {
+// execute at least once
+} while (condition);
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+int a = 9;
+do{
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+a++;
+}while(a>10)
+</code>
+</pre>
+<p>Even though the condition is false it prints 9 to the console that means it 
+execute at least once.</p>
+<h3>for loop</h3>
+<p>The 'for' loop is a more concise way to write a loop that performs a specific number of iterations. The syntax for a for loop is as follows:</p>
+<pre>
+<code class="language-cpp">
+for (initialization; condition; update) {
+// execute as long as condition is true
+}
+
+</code>
+</pre>
+<p>The 'initialization' statement is executed before the loop starts and is usually used to initialize a loop counter. The 'condition' is checked at the beginning of each iteration, and the loop will continue as long as the condition is true. The 'update' statement is executed at the end of each iteration and is usually used to increment or decrement the loop counter.</p>
+<pre>
+<code class="language-cpp">
+for (int i = 0; i &lt; 5; i++) {
+std::cout &lt;&lt; i &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+
+<p>This will output the numbers 0 through 4</p>
+<pre>
+<code class="language-cpp">
+for (int i = 5; i > 0; i--) {
+std::cout &lt;&lt; i &lt;&lt; std::endl;
+}
+
+</code>
+</pre>
+<p>This will output the numbers from 5 through 1</p>
+<h2 id="13">13. C++ break and continue </h2>
+<h3>break</h3>
+<p>In C++, the break statement is used to exit a loop or a switch statement and transfer control to the statement immediately following the loop or switch. </p>
+<pre>
+<code class="language-cpp">
+int a = 0;
+while (a &lt; 5) {
+std::cout &lt;&lt; a &lt;&lt; std::endl;
+a++;
+if (a == 2) {
+break;
+}
+}
+
+</code>
+</pre>
+<p>In the above C++ program, the while loop is said to run from 0 to 4 but because of the 'break' statement, it exit after printing 1 </p>
+
+<h3>continue</h3>
+<p>The 'continue' statement is used to skip the rest of the current iteration of a loop and move on to the next iteration.</p>
+<pre>
+<code class="language-cpp">
+for (int i = 0; i &lt; 10; i++) {
+if (i % 2 == 1) {
+continue;
+}
+std::cout &lt;&lt; i &lt;&lt; std::endl;
+}
+
+
+</code>
+</pre>
+<p>This will output the numbers 0, 2, 4, 6, 8 because the 'continue' statement is used to skip the current iteration of the loop if the value of i is odd.</p>
+<h2 id="14">14. C++ Arrays</h2>
+<p>In C++, an array is a collection of elements of the same type stored in contiguous memory locations. Arrays are indexed with integers, and the elements of an array can be accessed using their index.</p>
+<pre>
+<code class="language-cpp">
+int arr[5] = {1, 2, 3, 4, 5};
+
+</code>
+</pre>
+<p>This creates an array of 5 elements, with the elements initialized to the values 1, 2, 3, 4, and 5. The array is indexed from 0 to 4, so the first element of the array is arr[0], the second element is arr[1], and so on.</p>
+<p>You can also declare an array without initializing its elements, in which case the elements will be initialized to their default values:</p>
+<pre>
+<code class="language-cpp">
+int arr[5]; // elements are initialized to 0
+
+</code>
+</pre>
+<p>You can access the elements of an array using the array index, for example:</p>
+<pre>
+<code class="language-cpp">
+int x = arr[2]; // x is assigned the value 3
+
+</code>
+</pre>
+<p>You can also modify the elements of an array using the array index</p>
+<pre>
+<code class="language-cpp">
+arr[3] = 10; // the fourth element of the array is now 10
+
+</code>
+</pre>
+<p>To input an array from a user in C++, you can use a loop to prompt the user to enter the values of the array one by one. </p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+using namespace std;
+
+const int MAX_SIZE = 100;
+
+int main()
+{
+int array[MAX_SIZE];
+int size;
+
+//  to enter the size of the array
+cout &lt;&lt; "Enter the size of the array: ";
+cin >> size;
+
+// to enter the values of the array
+for (int i = 0; i &lt; size; i++)
+{
+cout &lt;&lt; "Enter element " &lt;&lt; i + 1 &lt;&lt; ": ";
+cin >> array[i];
+}
+
+// Print the array
+cout &lt;&lt; "The array is: [ ";
+for (int i = 0; i &lt; size; i++)
+{
+cout &lt;&lt; array[i] &lt;&lt; " ";
+}
+cout &lt;&lt; "]" &lt;&lt; endl;
+
+return 0;
+}
+
+// Output 
+
+/* 
+Enter the size of the array: 5
+Enter element 1: 1
+Enter element 2: 2
+Enter element 3: 5
+Enter element 4: 6
+Enter element 5: 4
+The array is: [ 1 2 5 6 4 ]
+
+*/
+</code>
+</pre>
+<p>This code will prompt the user to enter the size of the array, and then prompt the user to enter each element of the array one by one. The resulting array will be stored in the array variable.</p>
+<h2 id="15">15.  C++ Structures</h2>
+<p>In C++, a structure is a user-defined data type that can hold a collection of variables of different data types. Structures are often used to represent real-world entities that have multiple attributes, such as a student with a name, an age, and a grade point average.</p>
+<pre>
+<code class="language-cpp">
+struct structure_name
+{
+type variable_name_1;
+type variable_name_2;
+...
+};
+
+</code>
+</pre>
+<p>To create a variable of this structure type, you can use the following syntax:</p>
+<pre>
+<code class="language-cpp">
+student s;
+</code>
+</pre>
+<p>You can then access the individual attributes of the structure using the dot operator '(.)'.</p>
+<pre>
+<code class="language-cpp">
+s.name = "John";
+s.age = 20;
+s.gpa = 3.5;
+
+</code>
+</pre>
+<p>You can also create an array of structures</p>
+<pre>
+<code class="language-cpp">
+student students[MAX_SIZE];
+
+</code>
+</pre>
+<p>where MAX_SIZE is a constant representing the maximum number of students. You can then access the individual elements of the array using an index, like this:</p>
+
+<pre>
+<code class="language-cpp">
+students[0].name = "John";
+students[0].age = 20;
+students[0].gpa = 3.5;
+
+students[1].name = "Jane";
+students[1].age = 21;
+students[1].gpa = 3.6;
+
+</code>
+</pre>
+<p>You can also define functions that operate on structures. </p>
+<pre>
+<code class="language-cpp">
+void print_student(student s)
+{
+cout &lt;&lt; "Name: " &lt;&lt; s.name &lt;&lt; endl;
+cout &lt;&lt; "Age: " &lt;&lt; s.age &lt;&lt; endl;
+cout &lt;&lt; "GPA: " &lt;&lt; s.gpa &lt;&lt; endl;
+}
+
+</code>
+</pre>
+<p>You can call this function</p>
+<pre>
+<code class="language-cpp">
+student s;
+s.name = "John";
+s.age = 20;
+s.gpa = 3.5;
+
+print_student(s);
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+#include &lt;string>
+
+using namespace std;
+
+// Define the structure for a student
+struct student
+{
+string name;
+int age;
+float gpa;
+};
+
+// Function to print the information for a student
+void print_student(student s)
+{
+cout &lt;&lt; "Name: " &lt;&lt; s.name &lt;&lt; endl;
+cout &lt;&lt; "Age: " &lt;&lt; s.age &lt;&lt; endl;
+cout &lt;&lt; "GPA: " &lt;&lt; s.gpa &lt;&lt; endl;
+}
+
+int main()
+{
+// Create a student variable
+student s;
+s.name = "John";
+s.age = 20;
+s.gpa = 3.5;
+
+// Print the information for the student
+print_student(s);
+
+return 0;
+}
+
+// Output 
+
+/*  
+
+Name: John
+Age: 20
+GPA: 3.5
+
+*/
+
+</code>
+</pre>
+<h2 id="16">16. C++ References</h2>
+<p>In C++, a reference is a way to refer to a variable by an alias, rather than by its actual name. This can be useful when you want to pass a variable to a function by reference, allowing the function to modify the original variable rather than just a copy of it.</p>
+
+<pre>
+<code class="language-cpp">
+int x = 5;
+int& y = x;  // y is a reference to x
+y = 10;  // this modifies x
+std::cout &lt;&lt; x &lt;&lt; std::endl;  // prints 10
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+
+#include &lt;iostream>
+
+void increment(int &x) {
+x++;
+}
+
+int main() {
+int a = 10;
+std::cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; std::endl;
+increment(a);
+std::cout &lt;&lt; "a = " &lt;&lt; a &lt;&lt; std::endl;
+return 0;
+}
+
+</code>
+</pre>
+<p>In this example, we have defined a function increment that takes an integer reference as an argument. Inside the function, we increment the value of the reference, which has the effect of incrementing the original value of the variable passed to the function. When we call the function with the variable a, the value of a is incremented from 10 to 11.</p>
+<p>References are declared using the '&' symbol, and they are accessed just like regular variables. It is important to note that once a reference is initialized, it cannot be changed to refer to a different object. This is in contrast to pointers, which can be reassigned to point to different objects.</p>
+<h2 id="17">17. C++ Pointers</h2>
+<p>In C++, a pointer is a variable that stores the address of another variable. Pointers are useful for working with arrays and dynamically allocated memory, and they can also be used to pass large amounts of data to functions more efficiently.</p>
+<p>To declare a pointer in C++, you use the * operator in the variable declaration.</p>
+<pre>
+<code class="language-cpp">
+int* ptr;  // ptr is a pointer to an int
+double* dptr;  // dptr is a pointer to a double
+
+</code>
+</pre>
+<p>To use a pointer, you must first initialize it to the address of a variable. This is done using the & operator, which returns the address of a variable. </p>
+<pre>
+<code class="language-cpp">
+int a = 5;
+int* ptr = &amp;a;  // ptr now points to x
+*ptr = 10;  // this modifies x
+std::cout &lt;&lt; a &lt;&lt; std::endl;  // prints 10
+
+</code>
+</pre>
+<p>In this example, the pointer ptr is initialized to the address of a, and then the value of x is modified by dereferencing ptr and assigning a new value to it using the * operator. This changes the value of a, which is then printed to the console.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+int main() {
+// Declare and initialize an int variable
+int x = 5;
+
+// Declare a pointer to an int
+int* ptr;
+
+// Initialize the pointer to the address of x
+ptr = &amp;x;
+
+// Print the value of x and the address of x
+std::cout &lt;&lt; "x: " &lt;&lt; x &lt;&lt; ", &x: " &lt;&lt; &x &lt;&lt; std::endl;
+
+// Print the value of ptr and the address stored in ptr
+std::cout &lt;&lt; "ptr: " &lt;&lt; ptr &lt;&lt; ", *ptr: " &lt;&lt; *ptr &lt;&lt; std::endl;
+
+// Modify the value of x using the pointer
+*ptr = 10;
+
+// Print the new value of x
+std::cout &lt;&lt; "x: " &lt;&lt; x &lt;&lt; std::endl;
+
+return 0;
+}
+
+// Output: 
+
+/* 
+x: 5, &x: 0x7ffc49b3576c
+ptr: 0x7ffc49b3576c, *ptr: 5
+x: 10
+*/
+
+</code>
+</pre>
+<h2 id="18">18. C++ Functions</h2>
+<p>In C++, a function is a block of reusable code that performs a specific task and may return a value. Functions are useful for organizing and reusing code, and they allow you to break a large program into smaller, more manageable pieces.</p>
+<p>To declare a function in C++, you use the 'function_name', 'parameter list (if any)', and return_type (if want to return a value) syntax. For example:</p>
+<pre>
+<code class="language-cpp">
+int add(int x, int y) {
+return x + y;
+}
+
+</code>
+</pre>
+<p>To call a function in C++, you use the function_name(argument_list)</p>
+
+<pre>
+<code class="language-cpp">
+int result = add(3, 4);  // result is 7
+
+</code>
+</pre>
+<p>In this example, the add function is called with the arguments 3 and 4, and the returned value of 7 is stored in the variable result.</p>
+<p>In C++, functions can also be overloaded, which means that you can have multiple functions with the same name but different parameter lists.</p>
+<pre>
+<code class="language-cpp">
+double add(double x, double y) {
+return x + y;
+}
+
+std::string add(std::string x, std::string y) {
+return x + y;
+}
+
+</code>
+</pre>
+<p>Now you have two add functions, one that takes two double arguments and returns a double, and another that takes two std::string arguments and returns a std::string. The correct function will be called depending on the type of arguments you pass to it.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+// Declaring a function that takes two integer(int) arguments and returns an int
+int add(int x, int y) {
+return x + y;
+}
+
+// Declare a function that takes no arguments and returns void
+void printHello() {
+std::cout &lt;&lt; "Hello, world!" &lt;&lt; std::endl;
+}
+
+int main() {
+// Calling the add function and print the result
+int result = add(3, 4);
+std::cout &lt;&lt; "3 + 4 = " &lt;&lt; result &lt;&lt; std::endl;
+
+// Calling the printHello function
+printHello();
+
+return 0;
+}
+// Output: 
+
+/*
+
+3 + 4 = 7
+Hello, world!
+
+*/
+
+</code>
+</pre>
+<p>This program declares two functions: add, which takes two int arguments and returns their sum as an int, and printHello, which takes no arguments and prints "Hello, world!" to the console.</p>
+<p>In the main function, the add function is called with the arguments 3 and 4, and the returned value is stored in the variable result. The result variable is then printed to the console.</p>
+<p>Next, the printHello function is called, which prints "Hello, world!" to the console.</p>
+<h2 id="19">19. C++ OOP concept</h2>
+<p>Object-oriented programming (OOP) is a programming model that is based on the concept of "objects", which are data structures that contain both data and functions. </p>
+<p>In C++, you can use OOP by defining classes, which are templates for creating objects. A class defines the data and functions that an object will have, as well as the relationships between different objects. </p>
+<pre>
+<code class="language-cpp">
+class Dog {
+public:
+// Constructor
+Dog(std::string name, int age) : name_(name), age_(age) {}
+
+// Member functions
+void bark() { std::cout &lt;&lt; "Woof!" &lt;&lt; std::endl; }
+void setAge(int age) { age_ = age; }
+std::string getName() { return name_; }
+int getAge() { return age_; }
+
+private:
+// Data members
+std::string name_;
+int age_;
+};
+
+</code>
+</pre>
+<p>This class defines a Dog object with a name and age, and it has four member functions: a constructor, which is used to create a new Dog object; bark, which prints "Woof!" to the console; setAge, which sets the age of the Dog; and getName and getAge, which return the name and age of the Dog, respectively.</p>
+<p>To create a new Dog object, you use the new operator and call the constructor:</p>
+<pre>
+<code class="language-cpp">
+Dog* dog1 = new Dog("Max", 3);
+
+</code>
+</pre>
+<p>You can then call the member functions of the Dog object using the (.) operator</p>
+<pre>
+<code class="language-cpp">
+dog1->bark();  // prints "Woof!"
+dog1->setAge(4);
+std::cout &lt;&lt; dog1->getName() &lt;&lt; " is " &lt;&lt; dog1->getAge() &lt;&lt; " years old." &lt;&lt; std::endl;  // prints "Max is 4 years old."
+
+</code>
+</pre>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+
+// Define a Dog class
+class Dog {
+public:
+// Constructor
+Dog(std::string name, int age) : name_(name), age_(age) {}
+
+// Member functions
+void bark() { std::cout   &lt;&lt; "Woof!" &lt;&lt;&lt;&lt; std::endl; }
+void setAge(int age) { age_ = age; }
+std::string getName() { return name_; }
+int getAge() { return age_; }
+
+private:
+// Data members
+std::string name_;
+int age_;
+};
+
+int main() {
+// Create three Dog objects
+Dog* dog1 = new Dog("Max", 3);
+Dog* dog2 = new Dog("Buddy", 5);
+Dog* dog3 = new Dog("Charlie", 1);
+
+// Call member functions on the Dog objects
+dog1->bark();  // prints "Woof!"
+dog2->setAge(6);
+std::cout &lt;&lt;&lt;&lt; dog3->getName() &lt;&lt;  " is " &lt;&lt; dog3->getAge() &lt;&lt; " years old." &lt;&lt; std::endl;  // prints "Charlie is 1 years old."
+
+return 0;
+}
+
+// Output: 
+/* 
+
+Woof!
+Charlie is 1 years old.
+
+*/
+</code>
+</pre>
+<h2 id="20">20. C++ Files</h2>
+<p>In C++, you can use file input/output (I/O) to read and write data to files on your computer. This is useful for storing data that you want to use later, or for reading in data from external sources.</p>
+<p>You can open, read, write to the files</p>
+<pre>
+<code class="language-cpp">
+#include &lt;fstream>
+#include &lt;iostream>
+
+int main() {
+// Open a file for reading
+std::fstream file;
+file.open("data.txt", std::ios::in);
+if (!file.is_open()) {
+std::cerr &lt;&lt; "Error opening file." &lt;&lt; std::endl;
+return 1;
+}
+
+// Read data from the file using the >> operator
+int x;
+double y;
+std::string z;
+file >> x >> y >> z;
+std::cout &lt;&lt; "x: " &lt;&lt; x &lt;&lt; ", y: " &lt;&lt; y &lt;&lt; ", z: " &lt;&lt; z &lt;&lt; std::endl;
+
+// Read a line of text from the file using getline
+std::string line;
+std::getline(file, line);
+std::cout&lt;&lt; "Line: " &lt;&lt; line &lt;&lt; std::endl;
+
+// Close the file
+file.close();
+
+// Open a file for writing
+file.open("output.txt", std::ios::out);
+if (!file.is_open()) {
+std::cerr &lt;&lt; "Error opening file." &lt;&lt; std::endl;
+return 1;
+}
+
+// Write data to the file using the << operator
+file &lt;&lt; x &lt;&lt; " " &lt;&lt; y &lt;&lt; " "  &lt;&lt; z   std::endl;
+
+// Write a block of data to the file using write
+char data[10] = {'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j'};
+file.write(data, 10);
+
+// Close the file
+file.close();
+
+return 0;
+}
+
+</code>
+</pre>
+<p>This program opens a file for reading, reads in data from the file using the >> operator and getline, and then closes the file. It then opens a new file for writing, writes data to the file</p>
+<h2 id="21">21. C++ Exceptions</h2>
+<p>In C++, exceptions are a mechanism for handling runtime errors that allows you to separate the error handling code from the normal flow of your program. Exceptions can be thrown when an error occurs, and they can be caught and handled by a separate block of code.</p>
+<p>To throw an exception in C++, you can use the 'throw' keyword followed by an object or value that represents the exception.</p>
+<pre>
+<code class="language-cpp">
+if (x == 0) {
+throw std::runtime_error("Division by zero");
+}
+
+</code>
+</pre>
+<p>This code throws a std::runtime_error exception with the message "Division by zero" if x is equal to 0.</p>
+<p>To catch an exception in C++, you can  use a 'try' block followed by one or more 'catch' blocks. The 'try' block contains the code that might throw an exception, and the 'catch' blocks contain the code that handles the exception. </p>
+<pre>
+<code class="language-cpp">
+try {
+// this code might throw an exception
+int result = 1 / x;
+std::cout &lt;&lt; result &lt;&lt; std::endl;
+} catch (std::exception& e) {
+// this  code is to handle the exception
+std::cerr &lt;&lt; "Error: " &lt;&lt; e.what() &lt;&lt; std::endl;
+}
+
+
+</code>
+</pre>
+<p>This code divides 1 by x and prints the result, but if an exception is thrown, it is caught and an error message is printed to the console.</p>
+<pre>
+<code class="language-cpp">
+#include &lt;iostream>
+#include &lt;stdexcept>
+
+int divide(int x, int y) {
+if (y == 0) {
+throw std::runtime_error("Division by zero");
+}
+return x / y;
+}
+
+int main() {
+try {
+std::cout &lt;&lt; divide(10, 2) &lt;&lt; std::endl;  // prints 5
+std::cout &lt;&lt; divide(10, 0) &lt;&lt; std::endl;  // throws an exception
+} catch (std::exception& e) {
+std::cerr &lt;&lt; "Error: " &lt;&lt; e.what() &lt;&lt; std::endl;
+}
+
+return 0;
+}
+// Output  
+
+/* 
+
+5
+Error: Division by zero
+
+*/
+
+</code>
+</pre>
+<h1>Thank You</h1>
+<p><strong>Thank you</strong> for visiting and reading through this C++ tutorial. I hope you found it helpful and that you feel more confident working with the language.</p>
+
+<p>If you enjoyed this tutorial, please consider sharing it with others who may also find it useful. Sharing knowledge and helping others learn is a great way to give back to the community.</p>
+<p>We have many more tutorials on a variety of programming languages, so please feel free to come back and learn more. We are always happy to help you on your journey to becoming a better programmer.</p>
+<p>Thank you again for your time and interest, and I hope you have a great day!</p>
+</main>
+
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevmonk</h2></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

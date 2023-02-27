@@ -1,0 +1,1198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="This 45 minutes JavaScript tutorial will help you to learn all the basic concepts of java script to get started with web development.">
+
+
+<!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes",
+"name":"Learn JavaScript in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"This 45 minutes JavaScript tutorial will help you to learn all the basic concepts of java script to get started with web development.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/JS.png",
+"contentUrl":"https://www.webdevmonk.com/main/JS.png",
+"caption":"Learn JavaScript in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes" />
+<meta property="og:title" content="Learn JavaScript in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/JS.png" />
+<meta property="og:description" content="This 45 minutes JavaScript tutorial will help you to learn all the basic concepts of java script to get started with web development." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn JavaScript in 45 minutes">
+<meta name="twitter:description" content="This 45 minutes JavaScript tutorial will help you to learn all the basic concepts of java script to get started with web development. ">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/JS.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/js-tutorial-in-45minutes" />
+
+
+<title>Learn JavaScript in 45 minutes</title>
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i> 
+<h1>JavaScript fundamentals in 45 minutes</h1> 
+<img src="../main/JS.png" alt="webdevmonk JavaScript tutorial" width="200px"> 
+<p>This simple Java Script tutorial, will help you to learn all the concepts of Java Script with example programs. This 45 minutes Java Script tutorial is specially made for beginners and people who looking for the Java Script Programming Language revision.</p>
+<p>Master the basics of programming with our tutorial 
+<a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a>  Beginner-friendly with essential concepts with clear explanation.</p>   
+<h2>Concepts: </h2>
+     <p><a href="#intro">1. Intorduction to JS</a> </p> 
+     <p><a href="#hello"> 2. "Hello World" program</a></p>  
+     <p><a href="#syn"> 3. Syntax</a></p> 
+     <p><a href="#comments"> 4. Comments</a></p> 
+     <p><a href="#var"> 5. Variables</a></p> 
+     <p><a href="#data"> 6. Data Types</a></p> 
+     <p><a href="#operators"> 7. Operators</a></p> 
+     <p><a href="#functions"> 8. Functions</a></p> 
+     <p><a href="#9"> 9. Arrays</a></p> 
+     <p><a href="#10"> 10. Strings and String Methods</a></p>
+     <p><a href="#11"> 11. Array Methods</a></p> 
+     <p><a href="#12"> 12. Objects</a></p> 
+     <p><a href="#13"> 13. Object Oriented Programming with JS</a></p> 
+     
+     <p><a href="#14"> 14. Dates in JS</a></p> 
+     <p><a href="#15"> 15. Math with JS</a></p>  
+     <p><a href="#16"> 16. if, if-else, switch</a></p> 
+     <p><a href="#17"> 17. for, for in, for of, while, do while</a></p> 
+     <p><a href="#18"> 18. break and continue</a></p> 
+     <p><a href="#19"> 19. Asynchronus Java Script</a></p> 
+     <p><a href="#20"> 20. Java Script DOM</a></p> 
+     <p><a href="#21"> 21. Java Script BOM</a></p> 
+
+<h2 id="intro">1. Introduction to JS</h2>
+<p>JavaScript is a programming language  used to add  dynamic features to websites. It is a client-side language, which means that the code is executed by the user's web browser rather than on a server.</p>
+<p>This allows for websites to be more responsive and interactive, as users can interact with page elements and see the results of their actions without needing to wait for the page to be refreshed by the server. JavaScript is a powerful and versatile language, and it is one of the core technologies used on the web.</p>
+<h2>How to write code in Java Script</h2><p>
+To write a program in JavaScript, you will need a text editor and a web browser. A text editor is a program that allows you to write and edit code, while a web browser is a program that allows you to view the content of a website or web application.
+</p>
+<p>Once you have written your JavaScript code, you can save it in a file with a .js file extension. You can then open this file in your web browser, which will interpret and execute the JavaScript code. This allows you to test and debug your code, and see the results of your program in action.</p>
+<p>In simple words,</p>
+<p>1. Open your text editor and create a new file for your code.</p>
+<p>2. Write your JavaScript code using the appropriate syntax and conventions.
+</p>
+<p>3. Save the file with a <b>'.js'</b> file extension.</p>
+<p>4. Open the file in your web browser to test and debug your code.</p>
+
+<h2  id="hello">2. "Hello World" program in JS</h2>   
+<p>Use the 'console.log' function to print the string "Hello World" (Output) to the console.</p>
+<pre>
+<code class="language-js">
+console.log("Hello World");
+
+// Output:
+// Hello World
+</code>
+</pre>
+<p> 
+To run this program, you can either include it in a web page and open the page in a web browser that supports JavaScript, or you can use a JavaScript shell or command-line tool to execute the code directly.
+In either case, when the code is executed, the string "Hello World"  will be printed to the console.</p> 
+
+<h2  id="syn">3. Syntax of Java Script</h2>   
+<p>The syntax of JavaScript is similar to other programming languages like C, Java, etc., and it is based on the ECMAScript specification.</p>
+<p>1. JavaScript is case-sensitive, so variable and function names must be spelled correctly and use the correct case.</p> 
+<p>2. Statements in JavaScript are typically terminated with a semicolon (;), although this is not always required.</p>
+<p>3. JavaScript uses curly braces&nbsp;&nbsp; { ...... } to group code blocks and control structures, such as 'if' statements and 'for' loops.</p>
+
+
+<h2  id="comments">4. Comments in Java Script</h2>   
+<p>In JavaScript, comments are used to add notes and explanations to your code. They are ignored by the JavaScript interpreter and do not affect the execution of your program.</p>
+<p>There are two-types of comments in Java Script: Single line and Multi line comments</p>
+<pre>
+<code class="language-js">
+// This is a single-line comment 
+
+/* This is a
+multi-line comment
+that can span multiple
+lines of code */
+</code>
+</pre> 
+
+<h2  id="var">5. Variables in Java Script</h2>   
+<p>In JavaScript, variables are used to store and manage data in your program. A variable is a named container that holds a value, and the value of a variable can be changed or updated during the execution of your program.</p>
+<h3>Declaring a Variable in JS: </h3>
+<p>You can use 'var', 'let', 'const' keywords of JS to declare a variable</p>
+<h3>Assignining a value to a variable in JS: </h3>
+
+<pre>
+<code class="language-js">
+var message1 = "Visit webdevmonk to learn programming";
+let message2 = "Visit webdevmonk to learn programming";
+const message3 = "Visit webdevmonk to learn programming";
+
+// These assignments are allowed (updating the values of the variable)
+message1 = "Welcome to webdevmonk 1";
+message2 = "Welcome to webdevmonk 2";
+
+// This assignment is not allowed (because message3 is a const variable)
+message3 = "Welcome to webdevmonk 3"; // will cause an error
+</code>
+</pre>
+
+<h2  id="data">6. Data Types in Java Script</h2>
+<p>A data type is a classification of the type of value that a variable can hold. </p>
+<p>JavaScript is a dynamically-typed language, which means that the same variable can hold values of different types at different times. This means that you don't need to specify the data type of a variable when you declare it, and you can assign a value of any type to a variable.
+</p> <p>JavaScript has a number of built-in data types, including numbers, strings, booleans, arrays, and objects.</p>
+<h3>Numbers:</h3>
+<p> JavaScript uses the same data type for both integer and floating-point numbers, so you can use the same type for both whole numbers and decimal values. For example, the number 42 is a valid JavaScript number, as is the number 3.14.</p>
+<h3>Strings:</h3>
+<p> In JavaScript, a string is a sequence of characters, represented in JavaScript by enclosing the characters in single or double quotes. For example, the string "Hello, world!" is a valid JavaScript string.</p>
+<h3>Booleans:</h3>
+<p>In JavaScript, a boolean value is a binary value that can be either 'true' or 'false'. This data type is commonly used in conditional statements and loops to control the flow of a program.
+</p>
+
+<h3>Arrays: </h3>
+<p>In JavaScript, an array is a data structure that allows you to store and access a collection of values. Each value in an array is called an element, and you can access an element by its position in the array. For example, the array [1, 2, 3] is a valid JavaScript array that contains the elements 1, 2, and 3.</p>
+<h3>Objects: </h3>
+<p>In JavaScript, an object is a data structure that allows you to store and access a collection of named values, called properties. Each property has a name and a value, and you can access a property by its name. For example, the object {name: "John", age: 30} is a valid JavaScript object that contains the properties name and age.
+</p>
+<pre>
+<code class="language-js">
+let name = "webdevmonk";  // a string
+let year = 1978;          // integer type (Numbers)
+let isWebsite = True;     // boolean
+</code>
+</pre>
+<pre>
+<code class="language-js">
+// this example shows what does it meant by dynamically-typed
+let name = "webdevemonk";
+console.log(name);  // webdevemonk
+name = 30;
+console.log(name)  // 30
+</code>
+</pre>
+<p>The first line of code declares a variable called name and assigns it the string value "webdevemonk". The console.log function is then used to print the value of the variable to the console. This will output the string "webdevemonk" in the console.</p>
+<p>The next line reassigns the variable name with the value 30, which is a number. And the next console.log function is used again to print the value of the variable to the console, this will output the number 30.</p>
+<p>In JavaScript, variables are not bound to a specific data type. A variable can be assigned a value of any data type, and the value can be changed at any time.</p>
+<h3>How to know the type of the data in a variable:</h3>
+<p>By using 'typeof' function, we can get the type of specific value.</p>
+<pre>
+<code class="language-js">
+let name = "webdevmonk";  
+let year = 1978;          
+let isWebsite = true; 
+
+console.log(typeof(name));
+console.log(typeof(year));
+console.log(typeof(isWebsite));
+
+// Output: 
+/* 
+string
+number
+boolean
+*/
+</code>
+</pre>
+
+<h2 id="operators">7. Operators in Java Script</h2>
+<p>In JavaScript, operators are special symbols that are used to perform operations on variables and values.  In Java Script, number of different operators that can be used to perform various operations on variables and values.</p>   
+<h3>1. Arithmetic Operators:</h3><p>Arithmetic Operators in JS such as + (addition), - (subtraction), * (multiplication), and / (division), which can be used to perform basic mathematical operations on numbers</p>
+<h3>2. Comparision Operators: </h3><p>Comparision Operators in JSsuch as == (equal to), != (not equal to), > (greater than), and &lt; (less than), which can be used to compare two values and determine whether they are equal, not equal, greater than, or less than each other</p>
+<h3>3. Logical Operators: </h3> <p>Logical Operators in JS  such as && (and), || (or), and ! (not), which can be used to combine multiple conditions in a logical expression and determine whether all, some, or none of the conditions are true</p>
+<h3>4. Assignment operator: </h3><p>Assignment operator in JS such as = (assignment), += (add and assign), and -= (subtract and assign), which can be used to assign a value to a variable and perform operations on the variable's current value at the same time</p>
+<h3>5. Bitwise operators: </h3><p>Bitwise operators in JS such as & (and), | (or), and ~ (not), which can be used to perform operations on individual bits of a number</p>
+<h3>6. Conditional Operator: </h3><p>Conditional Operator in JS is the ? symbol, which can be used as a shorthand way of expressing a simple conditional statement (e.g. x > 10 ? "x is greater than 10" : "x is not greater than 10")</p>
+<pre>
+<code class="language-js">
+// Defining some variables
+let x = 10;
+let y = 20;
+let z = 30;
+
+// Perform arithmetic operations
+let a = x + y;   // a = 30
+let b = x - z;   // b = -20
+let c = x * y;   // c = 200
+let d = z / x;   // d = 3
+
+// Perform comparison operations
+let e = (x == y);   // e = false
+let f = (y != z);   // f = true
+let g = (x > y);    // g = false
+
+
+// Perform logical operations
+let i = (x == 10 && y == 20);   // i = true
+let j = (x == 10 || y == 30);   // j = true
+let k = !(x == y);              // k = true
+
+// Use assignment operators
+let l = 0;
+l += x;   // l = 10
+l -= y;   // l = -10
+l *= z;   // l = -300
+l /= x;   // l = -30
+
+// Use conditional operator
+let x = 8;
+(x > 9) ? "X value is greater than 9" : "X value is not greater than 9";   // m = "x is not greater than 10"
+
+</code>
+</pre>
+
+<h2 id="functions">8. Functions</h2>
+<p>A function is a block of code that can be reusable and is used to perform a specific task. Functions allow you to organize your code, making it easier to read and maintain. They can also be used to break down a complex problem into smaller, more manageable parts.</p>   
+<p>To define a function in JavaScript, you can use the function keyword followed by the name of the function and a set of parentheses (). The code that makes up the function should be placed inside a pair of curly braces {}. </p>
+<p>Functions can also accept an input in the form of arguments, which are passed to the function inside the parentheses () when the function is called.</p>
+<pre>
+<code class="language-js">
+function greet(name) {
+console.log("Hello "+name);
+}
+</code>
+</pre>
+<p>This function, named greet, simply prints the string "Hello, world!" to the console when it is called. To call a function in JavaScript, you simply need to write its name followed by a set of parentheses (). For example:</p>
+<pre>
+<code class="language-js">
+greet("Martha");   // Hello Martha
+greet("Jonas");    // Hello Jonas
+</code>
+</pre>
+<h3>Functions with return keyword:</h3>
+<p>Functions can also return a value using the return keyword. This allows you to use the output of a function in other parts of your code. 
+</p>
+<pre>
+<code class="language-js">
+function square(x) {
+return x * x;
+}
+
+let result = square(5);  // result = 25        
+</code>
+</pre>
+<h3>Arrow Functions in Java Script:</h3>
+<p> In JavaScript, an arrow function is a concise syntax for defining a function. Arrow functions are also known as "fat arrow" functions, because of the fat arrow => symbol that is used to define them. </p>
+<pre>
+<code class="language-js">
+// Syntax
+let functionName = (arg1, arg2, ...) => {
+// function body
+};
+
+</code>
+</pre>
+<pre>
+<code class="language-js">
+let greet = ()=>{
+console.log("Hello");
+}
+
+//You can call an arrow function in the same way as a regular function.
+
+greet(); //Hello
+</code>
+</pre>
+
+<pre>
+<code class="language-js">
+// Example
+let square = (x) => {
+return x * x;
+};
+
+</code>
+</pre>
+<p>This arrow function is equivalent to the following regular function</p>
+<pre>
+<code class="language-js">
+function square(x) {
+return x * x;
+};
+</code>
+</pre>
+<pre>
+<code class="language-js">
+let result = square(9);  // result = 81</code>
+</pre>
+
+<h2 id="9">9. Arrays in Java Script</h2>   
+<p>In JavaScript, an array is a special type of data structure that can be used to store a collection of values. Arrays are ordered and can hold values of any data type, including numbers, strings, objects, and even other arrays.</p>
+<p>To create an array in JavaScript, you can use the 'Array' constructor or the array literal syntax, which is a set of square brackets [] containing a comma-separated list of values. </p>
+<pre>
+<code class="language-js">
+let numbers = new Array(1, 2, 3, 4, 5);
+let colors = ["red", "green", "blue"];
+let mixed = [1, "hello", true, [1, 2, 3]];</code>
+</pre>
+<p>Once you have created an array, you can access its elements by using their index, which is the position of the element in the array. In JavaScript, array indices start at 0, so the first element of an array is at index 0, the second element is at index 1, and so on.</p>
+<pre>
+<code class="language-js">
+let colors = ["red", "green", "blue"];
+console.log(colors)      // Output: [ 'red', 'green', 'blue' ]
+console.log(colors[0]);  // Output: red
+console.log(colors[1]);  // Output: green
+console.log(colors[2]);  // Output: blue
+</code>
+</pre>
+<p>You can also modify the elements of an array by using their index and assigning a new value to them</p>
+<pre>
+<code class="language-js">
+let colors = ["red", "green", "blue"];
+
+colors[0] = "orange";
+colors[1] = "yellow";
+colors[2] = "purple";
+
+console.log(colors);  // Output: ["orange", "yellow", "purple"]
+
+</code>
+</pre>
+<h2 id="10">10. Strings and String Methods in Java Script</h2>   
+<p>In JavaScript, a string is a sequence of characters represented by Unicode code points. You can create a string by enclosing a series of characters in single or double quotes.</p>
+<pre>
+<code class="language-js">
+const str1 = 'webdevmonk';
+const str2 = "webdevmonk tutorials";
+</code>
+</pre>
+<p>You can access individual characters in a string using square brackets and an index. </p>
+<pre>
+<code class="language-js">
+console.log(str1[0]); // "w"
+console.log(str2[3]); // "d"
+</code>
+</pre>
+<p>Strings in Java Script are immutable</p>
+<pre>
+<code class="language-js"> 
+let str1 = 'hello';
+console.log(str1);     // hello
+str1 = "hi";          // allow in Java Script
+str1[0] = "H"        // changing a specific character using index not allowed
+console.log(str1);  // hi
+</code></pre>
+<h3>Java Script String Methods: </h3>
+<p>Java Script have some set of predefined string methods to work with strings</p>
+<p>Some of them are: </p>
+<p>1. 'charAt(index)': Returns the character at the specified index. </p>
+<p>2. 'charCodeAt(index)': Returns the Unicode code point value of the character at the specified index.</p>
+<p>3. 'concat(string1, string2, ...)': Concatenates one or more strings. Concatenates (combine) one or more strings. </p>
+<p>4. 'endsWith(searchString, endPosition)': Determines whether a string ends with the specified string. </p>
+<p>5. 'includes(searchString, position)': Determines whether a string contains the specified string.</p>
+<p>6.' indexOf(searchString, position)': Returns the index of the first occurrence of the specified string.</p>
+<p>7. 'lastIndexOf(searchString, position)': Returns the index of the last occurrence of the specified string.</p>
+<p>8. 'localeCompare(compareString, locales', options): Compares two strings in the current or specified locale.</p>
+<p>9. 'normalize(form)': Returns the Unicode Normalization Form of a string. </p>
+<p>10.' repeat(count)': Returns a new string with the specified number of copies of the original string. </p>
+<p>11.  'replace(searchValue, replaceValue)': Replaces all occurrences of a specified value with another value.</p>
+<p>12. 'search(regexp)': Search matches for a between a regular expression and a string. </p>
+<p>13. 'slice(start, end)': Extracts a section of a string and returns a new string. </p>
+<p>14. 'split(separator, limit)': Splits a string into an array of substrings. </p>
+<p>15. 'startsWith(searchString, position)': Determines whether a string begins with the specified string. </p>
+<p>16. 'substr(start, length)': Extracts a specified number of characters from a string, starting at a specified index. </p>
+<p>17.  'substring(start, end)': Extracts a specified part of a string.</p>
+<p>18. 'toUpperCase()': Converts a string to uppercase. </p>
+<p>19. trim()'': Removes whitespace from the beginning and end of a string. </p>
+<p>20. 'valueOf()': Returns the primitive value of a string. </p>
+<p>21. 'toLowerCase()': Converts a string to lowercase. </p>
+<pre>
+<code class="language-js">
+let str = "Hello, world";
+
+// Get the character at index 0
+console.log(str.charAt(0)); // "H"
+
+// Get the Unicode code point value of the character at index 0
+console.log(str.charCodeAt(0)); // 72
+
+// Concatenate two strings
+console.log(str.concat(" How are you?")); // "Hello, world! How are you?"
+
+// Check if the string ends with "!"
+console.log(str.endsWith("!")); // true
+
+// Check if the string includes "world"
+console.log(str.includes("world")); // true
+
+// Get the index of the first occurrence of "l"
+console.log(str.indexOf("l")); // 2
+
+// Get the index of the last occurrence of "l"
+console.log(str.lastIndexOf("l")); // 9
+
+// all characters to uppercase
+console.log(str.toUpperCase());  // HELLO, WORLD
+
+// all characters to lowercase
+console.log(str.toLowerCase());  // hello, world
+</code>
+</pre>
+<h2 id="11">11.  Java Script  Array Methods</h2>   
+<p>JavaScript arrays have a number of useful built-in methods that allow you to manipulate the data stored in an array</p>
+<p>1. 'push': adds one or more elements to the end of an array and returns the new length of the array</p>
+<p>2. 'pop': it removes the last element of an array from that array and returns that element</p>
+<p>3. 'shift': removes the first element from an array and returns that element</p>
+<p>4.  'unshift': adds one or more elements to the beginning of an array and returns the new length of the array</p>
+<p>5. 'concat': creates a new array by merging two or more arrays</p>
+<p>6. 'slice': creates a new array with a subset of elements from an existing array</p>
+<p>7. 'splice': modifies an array by removing or replacing elements, or adding new elements </p>
+<p>8. 'indexOf': returns the index of the first occurrence of a given element in an array, or -1 if the element is not found</p>
+<p>9. 'lastIndexOf': returns the index of the last occurrence of a given element in an array, or -1 if the element is not found</p>
+<p>10. 'forEach': executes a provided function once for each element in an array</p>
+<pre>
+<code class="language-js">
+let fruits = ['apple', 'banana', 'orange', 'mango'];
+
+// adding a new element to the end of the array
+fruits.push('grapes');  
+
+// remove the last element from the array
+let last = fruits.pop();  
+
+// add a new element to the beginning of the array
+fruits.unshift('strawberry'); 
+
+// create a new array by merging two arrays
+let vegetables = ['broccoli', 'carrot', 'pepper'];
+let produce = fruits.concat(vegetables);  // ['strawberry', 'apple', 'banana', 'orange', 'mango', 'broccoli', 'carrot', 'pepper']
+
+// create a new array with a subset of elements from an existing array
+let citrus = produce.slice(2, 5);  // ['banana', 'orange', 'mango']
+
+// modify an array by replacing elements
+produce.splice(2, 3, 'lemon', 'lime');  // ['strawberry', 'apple', 'lemon', 'lime', 'broccoli', 'carrot', 'pepper']
+
+// finding the index of an element 
+let index = produce.indexOf('lime');  
+
+// to find the last occurrence of an element 
+let lastIndex = produce.lastIndexOf('apple'); 
+
+// execute a function for each element in the array
+produce.forEach(function(item) {
+console.log(item);
+});
+</code>
+</pre>
+<h3>Java Script Higher Order Functions: </h3>
+<p>In JavaScript the higher-order function is a kind of function that takes one or more functions as arguments, or returns a function as an output(result). Higher-order functions allow you to abstract over actions, not just values.</p>
+<p>1. 'Array.prototype.map': This method creates a new array with the results of calling a provided function on every element in the calling array.</p>
+<pre>
+<code class="language-js">
+const numberss = [1, 2, 3, 4];
+const doubled = numberss.map(a => a * 2);
+console.log(doubled);  // [2, 4, 6, 8]
+</code>
+</pre>
+<p>'Array.prototype.filter': This method creates a new array with all elements that pass the test implemented by the provided function.</p>
+<pre>
+<code class="language-js">
+const numbers = [1, 2, 3, 4, 5, 6];
+const even = numbers.filter(a => a > 3);
+console.log(even);  // [4, 5, 6]
+</code>
+</pre>
+<p>'Array.prototype.reduce': This method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+</p>
+<pre>
+<code class="language-js">
+const numbers = [1, 2, 3, 4];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+console.log(sum);  // 10
+</code>
+</pre>
+<p>'Array.prototype.sort': This method sorts the elements of an array in place and returns the sorted array. The default sort order is built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.</p>
+<pre>
+<code class="language-js">
+const fruits = ['apple', 'banana', 'kiwi', 'mango'];
+const sortedFruits = fruits.sort();
+console.log(sortedFruits);  // ['apple', 'banana', 'kiwi', 'mango']
+</code>
+</pre>
+
+<h2 id="12">12.  Java Script Objects</h2>   
+<p>In JavaScript Programming, an object is a data type that is composed of a collection of key-value pairs. An object can be created using the object literal syntax, which is denoted by curly braces {}. The keys in an object are strings, and the values can be of any data type, including other objects.</p>
+<pre>
+<code class="language-js">
+let user = {
+name: 'Martha',
+age: 25,
+job: 'Artist'
+};
+</code>
+</pre>
+<p>You can access the values of an object using 'dot' notation or 'bracket' notation.</p>
+<pre>
+<code class="language-js">
+let nameOfUser = user.name;
+console.log(nameOfUser);  // Martha
+console.log(user.age);    // 25
+console.log(user);        // { name: 'Martha', age: 25, job: 'Artist'}
+</code>
+</pre>
+<p>You can also add new properties to an object by simply assigning a value to a new key.</p>
+<pre>
+<code class="language-js">
+user.location = 'New York';
+</code>
+</pre>
+<h3>Array of Objects: </h3>
+<p>An array of objects is an array that contains objects as its elements.</p>
+<pre>
+<code class="language-js">
+let people = [
+{
+name: 'John',
+age: 30,
+job: 'developer'
+},
+{
+name: 'Jane',
+age: 25,
+job: 'designer'
+},
+{
+name: 'Bob',
+age: 35,
+job: 'manager'
+}
+];
+
+console.log(people[1]);         //{ name: 'Jane', age: 25, job: 'designer' }
+console.log(people[0].name);  // John
+</code>
+</pre>
+
+<h2 id="13">13.  Object Oriented Programming with Java Script </h2>   
+<p>Java Script also allow us to create Classes and other OOP stuff in Programming, which can contain data and code that manipulates that data. In JavaScript, objects can be created using the object literal syntax, which is denoted by curly braces {}, or using the Object constructor.</p>
+<pre>
+<code class="language-js">
+let person = {
+name: 'John',
+age: 30,
+job: 'developer',
+sayHello: function() {
+console.log(`Hello, my name is ${this.name}`);
+}
+};
+person.sayHello();  // Hello, my name is John
+</code>
+</pre>
+<h3>Classes in Java Script: </h3>
+<p>In JavaScript, a class is a type of object that can be used to create new objects. A class is defined using the class keyword, and it can contain properties (also called "fields") and methods (also called "functions").</p>
+<h2>example</h2>
+<pre>
+<code class="language-js">
+class Person {
+a = 10;
+
+sayHello(name) {
+console.log(`Hello, my name is ${name}`);
+}
+}
+
+const person1 = new Person();
+const person2 = new Person();
+person1.sayHello("Sara");
+console.log(person2.a);
+
+// output
+
+/*
+Hello, my name is Sara
+10
+*/
+</code>
+</pre>
+<h2>example with constructors</h2>
+<pre>
+<code class="language-js">
+class Person {
+constructor(name, age, job) {
+this.name = name;
+this.age = age;
+this.job = job;
+}
+
+sayHello() {
+console.log(`Hello, my name is ${this.name}`);
+}
+}
+
+const person1 = new Person("Martha", 25, "Artist");
+const person2 = new Person("Jonas", 26, "developer");
+</code>
+</pre>
+<h3>Constructor in Java Script: </h3>
+<p>In JavaScript, a 'constructor' is a special method that is called when an object is created from a class. The constructor is responsible for setting up the initial state of the object, and it is defined using the 'constructor' keyword.</p>
+<h3>'this' keyword in Java Script: </h3>
+<p>In JavaScript Programming, the 'this' keyword refers to the current object that the code is being executed on. The value of this can change depending on how the code is invoked.</p>
+<h3>Inheritance in Java Script: </h3>
+<p>Inheritance is a fundamental concept in object-oriented programming (OOP) that allows one object (the child object) to inherit the properties and methods of another object (the parent object). Generally, In JavaScript, the inheritance is implemented by using prototypes.</p>
+<p>In JavaScript, the 'extends' keyword is often used to create a child class that inherits from a parent class.</p>
+<pre>
+<code class="language-js">
+class Vehicle {
+constructor(make, model) {
+this.make = make;
+this.model = model;
+}
+
+getDescription() {
+return `${this.make} ${this.model}`;
+}
+}
+
+class Car extends Vehicle {
+constructor(make, model, year) {
+super(make, model);
+this.year = year;
+}
+}
+
+let myCar = new Car('Toyota', 'Camry', 2020);
+console.log(myCar.getDescription()); // Output: "Toyota Camry"
+console.log(myCar.year); // Output: 2020
+</code>
+</pre>
+<p>In JavaScript, the 'extend' keyword is often used to create a child object that inherits from a parent object. </p>
+<pre>
+<code class="language-js">
+let parent = {
+make: 'Toyota',
+model: 'Camry',
+getDescription: function() {
+return `${this.make} ${this.model}`;
+}
+};
+
+let child = extend(parent, {
+year: 2020
+});
+
+console.log(child.getDescription()); // Output: "Toyota Camry"
+console.log(child.year); // Output: 2020
+</code>
+</pre>
+
+<h2 id="14">14. Date Object in Java Script </h2>   
+<p> 
+You can create a new Date object by calling the Date constructor with no arguments, which will create a Date object set to the current date and time:
+</p>
+<pre>
+<code class="language-js">
+let currentDate = new Date();
+</code>
+</pre> 
+<p>Once you have a Date object, you can use its methods to get and set the date and time. </p>
+<pre>
+<code class="language-js">
+let currentDate = new Date();
+
+console.log(currentDate.getFullYear()); // returns the year (e.g. 2022)
+console.log(currentDate.getMonth()); // returns the month (0-11)
+console.log(currentDate.getDate()); // returns the day of the month (1-31)
+console.log(currentDate.getHours()); // returns the hour (0-23)
+console.log(currentDate.getMinutes()); // returns the minute (0-59)
+console.log(currentDate.getSeconds()); // returns the second (0-59)
+
+currentDate.setFullYear(2021); // sets the year to 2021
+currentDate.setMonth(11); // sets the month to December (11)
+currentDate.setDate(25); // sets the day of the month to 25
+currentDate.setHours(12); // sets the hour to 12 (noon)
+currentDate.setMinutes(0); // sets the minute to 0
+currentDate.setSeconds(0); // sets the second to 0
+</code>
+</pre>
+<p>You can also create a Date object for a specific date and time by passing arguments to the Date constructor.</p>
+<pre>
+<code class="language-js">
+let birthday = new Date(1995, 0, 1); // January 1st, 1995
+let meeting = new Date(2022, 11, 16, 13, 30, 0); // December 16th, 2022, 1:30 PM
+</code>
+</pre>
+
+<h2 id="15">15. Math Object in Java Script </h2>   
+<p>JavaScript has a built-in Math object that provides a variety of mathematical functions and constants.</p>
+<pre>
+<code class="language-js">
+let num1 = 6.9;
+console.log(Math.PI); //  3.141592653589793
+console.log(Math.E); //  2.718281828459045
+
+console.log(Math.sqrt(9)); //   3
+console.log(Math.abs(-5)); //  5
+console.log(Math.pow(2, 3)); //   8
+console.log(Math.max(10, 5, -1, 3)); //  10
+console.log(Math.min(10, 5, -1, 3)); //   -1
+
+console.log(Math.random() * 3); // prints a random number between 0 and 3
+console.log(Math.round(3.14)); //  3
+console.log(Math.ceil(3.14)); //  4
+console.log(Math.floor(num1)); //  6
+console.log(Math.floor(Math.random() * 3)); // prints a random integer number between 0 and 3
+
+</code>
+</pre>
+<h2 id="16">16.  if, if-else, switch statements in Java Script</h2>   
+<p>In JavaScript, you can use the 'if' statement to execute a block of code 'if' a certain condition is 'true'</p>
+<pre>
+<code class="language-js">
+let num = 10;
+
+if (num > 5) {
+console.log("num is greater than 5"); // num is greater than 5
+num = num + 1;
+console.log(true);   // true
+}
+console.log(num);   // 11
+</code>
+</pre>
+<p>You can also use the 'if-else' statement to execute a different block of code if the condition is 'false'.</p>
+<pre>
+<code class="language-js">
+let num1 = 10;
+
+if (num1 > 6) {
+console.log("num1 is bigger than 5");
+} else {
+console.log("num1 is not bigger than 5");
+}
+</code>
+</pre>
+<p>You can also use the 'else if' clause to check for multiple conditions</p>
+<pre>
+<code class="language-js">
+let num1 = 10;
+
+if (num1 > 10) {
+console.log("num1 is greater than 10");
+} else if (num1 > 5) {
+console.log("num1 is greater than 5 but not greater than 15");
+} else {
+console.log("num1 is not greater than 5");
+}
+
+</code>
+</pre>
+<p>You can also use the 'switch' statement to select one of several blocks of code to execute based on the value of an expression. The switch statement is an alternative to a multiple of ' if-else' statements</p>
+<pre>
+<code class="language-js">
+let a = 10;
+switch (a) {
+case 1:
+console.log("a is 1");
+break;
+case 2:
+console.log("a is 2");
+break;
+default:
+console.log("a is neither 1 nor 2");
+break;
+}
+</code>
+</pre>
+<p>The break statements are used to exit the current switch case. If you omit the break statement, the code will continue to execute into the next case.</p>
+
+
+<h2 id="17">17. for, for in, for of, while, do while loops in Java Script</h2>   
+<p>=&gt; The 'for' loop is used to execute a block of code repeatedly until a specific condition become false</p>
+<pre><code class="language-js"> 
+for (initialization; condition; increment) {
+// code to be executed
+}
+</code></pre>
+<p>The 'initialization' statement represents starting of a loop. It is typically used to initialize a counter variable. The condition is evaluated at the beginning of each iteration of the loop. If the condition is always 'true', the loop will continue to execute always (you need to shutdown sometimes). If the condition is 'false', the 'for' loop will skip (exit). 
+The  'statement' is executed at the end of each iteration of the loop, and is typically used to update the counter variable.</p>
+<pre>
+<code class="language-js">
+for (let i = 0; i &lt; 10; i++) {
+console.log(i);
+}
+</code>
+</pre>
+<p>This 'for' loop will print the numbers from 0 to 9 to the console.</p>
+<p>=&gt; The 'for in' loop is a loop that is  used to iterate over the properties of an Java Script object.</p>
+<pre>
+<code class="language-js">
+for (let variable in object) {
+// code to be executed
+}
+</code>
+</pre>
+
+<pre>
+<code class="language-js">
+const person = {
+name: 'John',
+age: 30,
+occupation: 'teacher'
+};
+
+for (let property in person) {
+console.log(`${property}: ${person.property}`);
+}
+
+// Output 
+
+/* 
+name: John
+age: 30
+occupation: teacher
+*/
+</code>
+</pre>
+<p>=&gt; The 'for of' loop is used to iterate over the values of an iterable object, such as an array. </p>
+<pre>
+<code class="language-js">
+for (let variable of object) {
+// code to be executed
+}
+</code>
+</pre>
+
+<pre>
+<code class="language-js">
+const colors = ['red', 'green', 'blue'];
+
+for (let color of colors) {
+console.log(color);
+}
+
+// Output: 
+
+/*
+red
+green
+blue
+*/
+</code>
+</pre>
+
+<p>=&gt; The 'while loop' is used to execute it's block of code until the condition become 'false'. </p>
+<pre>
+<code class="language-js">
+while (condition) {
+// code to be executed
+}
+</code>
+</pre>
+<pre>
+<code class="language-js">
+let i = 0;
+while (i &lt;= 10) {
+console.log(i);
+i++;
+}
+</code>
+</pre>
+<p>This 'while' loop will print the numbers 0 through 10 to the console.</p>
+<p>=&gt; the 'do while' loop is similar to the while loop, but it executes the block of code at least once, before checking the condition. </p>
+<pre>
+<code class="language-js">
+do {
+// code to be executed
+} while (condition);
+</code>
+</pre>
+<pre>
+<code class="language-js">
+let i = 0;
+do {
+console.log(i);
+i++;
+} while (i &lt;= 10);
+</code>
+</pre>
+<p>This do-while loop of Java Script will print the numbers 0 through 10 to the console.</p> 
+<p>note that the do while loop will always execute the block of code at least once, regardless of the value of the condition. </p>
+
+<h2 id="18">18. break and continue</h2>   
+<p>In JavaScript Programming Language, the 'break' and 'continue' statements can be used to control the flow of a loop.</p>
+<p>The break statement is used to exit a loop early, before the loop has completed all of its iterations.</p> 
+<pre>
+<code class="language-js">
+for (let i = 0; i &lt; 10; i++) {
+if (i === 5) {
+break;
+}
+console.log(i);
+}
+</code>
+</pre>
+<p>In the above JS example,  the loop will print the numbers 0 through 4 to the console, and then exit when it reaches the 'break' statement on the fifth iteration.</p>
+<p>The 'continue' statement is used to skip the remainder of the current iteration of a loop and move on to the next iteration.</p>
+<pre>
+<code class="language-js">
+for (let i = 0; i &lt; 10; i++) {
+if (i % 2 == 1) {
+continue;
+}
+console.log(i);
+}
+</code>
+</pre>
+<p>In this example, the loop will print the numbers 0, 2, 4, 6, 8 to the console, because the 'continue' statement will skip over the odd numbers.</p>
+<h2 id="19">19. Asynchronus Java Script</h2>   
+<p>Asynchronous JavaScript is a programming concept in which JavaScript code is written in a way that allows it to perform operations concurrently, rather than sequentially, by using callback functions or Promises to handle asynchronous events. This enables JavaScript programs to perform multiple tasks at the same time, improving the efficiency and performance of the program.</p>
+<h3>Call backs in JS</h3>
+<p>A callback is a function that is passed as an argument to another function and is executed after the outer function has finished executing. Callbacks are often used in JavaScript to handle asynchronous operations, such as making an HTTP request or waiting for a user event like a click.</p>
+<pre>
+<code class="language-js">
+function doSomething(callback) {
+// Perform some task
+callback();
+}
+
+doSomething(function() {
+console.log('The task is complete');
+});
+</code>
+</pre>
+<pre>
+<code class="language-js">
+function greet(name, callback) {
+console.log(`Hello, ${name}!`);
+callback();
+}
+
+function sayGoodbye() {
+console.log('Goodbye!');
+}
+
+greet('John', sayGoodbye);
+</code>
+</pre>
+<p>In this example, the greet function takes a name and a callback function as arguments. It first logs a greeting to the console and then calls the callback function. The sayGoodbye function is passed as the callback to the greet function, and it logs a farewell message to the console when it's called.</p>
+
+<h3>Promises: </h3>
+<p> In JavaScript Programming Language, a 'promise' is an object that represents the  completion or failure of an asynchronous operation. Promises provide a way to write asynchronous code in a way that is easier to read and reason about, by chaining together multiple asynchronous operations in a more synchronous-like style.
+</p>
+<pre>
+<code class="language-js">
+function addNumbers(a, b) {
+return new Promise((resolve, reject) => {
+if (a && b) {
+resolve(a + b);
+} else {
+reject(Error('Invalid arguments'));
+}
+});
+}
+
+addNumbers(2, 3)
+.then(sum => {
+console.log(`The sum is ${sum}`);
+})
+.catch(error => {
+console.log(error);
+});
+
+// Output: 
+// The sum is 5
+
+</code>
+</pre>
+<p>In this example, the addNumbers function returns a promise that is resolved with the sum of a and b if both arguments are provided, or rejected with an error if either argument is missing. The then method is called on the returned promise, and it takes a function as an argument that is called with the resolved value when the promise is fulfilled. The catch method is called on the returned promise and takes a function as an argument that is called with the rejected value when the promise is rejected.</p>
+<p>If you call addNumbers with only one argument, the output will be:</p>
+<pre>
+<code class="language-js">
+Error: Invalid arguments
+</code>
+</pre>
+<h3>async and await in Java Script</h3>
+<p>'async' and 'await' are Java Script keywords in JavaScript that are used to write asynchronous code.</p>
+<p>'async' is used to declare a function as asynchronous, which means that the function will return a promise. Async functions are used to perform asynchronous operations in JavaScript, such as making network requests or reading and writing to files.</p>
+<p>'await': The 'await' keyword is used to wait for a promise to be resolved or rejected.  When the await keyword is encountered, the function execution is paused until the promise is resolved, at which point the returned value is assigned to a variable or used in the following code."</p>
+<pre>
+<code class="language-js">
+async function getData() {
+try {
+const response = await fetch('https://example.com/data');
+const data = await response.json();
+return data;
+} catch (error) {
+console.error(error);
+}
+}
+</code>
+</pre>
+<p>In this example, the getData function is declared as async, which means that it returns a promise. The fetch function is used to make a network request to retrieve some data, and the await keyword is used to wait for the promise returned by fetch to be resolved. Once the promise is resolved, the data is parsed and returned by the function. If an error occurs during the process, it is caught and logged to the console.</p>
+
+<h2 id="20">20. Document Object Model(DOM)</h2>   
+<p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the structure of a document as a tree of objects, with each object representing a part of the document, such as an element, an attribute, or a piece of text.</p>
+<h3>Methods: </h3>
+<p>1. 'document.getElementById(id)': This method returns the element with the specified id attribute.</p>
+<p>2. 'document.getElementsByTagName(name)': This method returns a list of elements with the specified tag name.</p>
+<p>3. 'document.getElementsByClassName(name)': This method returns a list of elements with the specified class name. </p>
+<p>4. 'element.querySelector(selector)': This method returns the first element that matches the specified CSS selector.</p>
+<p>5. 'element.querySelectorAll(selector)': This method returns a list of all elements that match the specified CSS selector.</p>
+<p>6. 'element.innerHTML': This property gets or sets the HTML content of an element.</p>
+<p>7. 'element.innerText': This property gets or sets the text content of an element.</p>
+<p>8. 'element.style': This property gets or sets the inline style of an element.</p> 
+<p>9.'element.className': This property gets or sets the class name of an element.</p>
+<p>10. 'element.setAttribute(name, value)': This method sets the value of an attribute for an element.</p>
+<p>11. 'element.getAttribute(name)': This method gets the value of an attribute for an element.</p>
+<pre>
+<code class="language-js">
+&lt;!DOCTYPE html>
+&lt;html>
+&lt;body>
+&lt;h1 id="myHeading">Hello World!&lt;/h1>
+&lt;p>Click the button to change the text of the heading:&lt;/p>
+&lt;button onclick="changeText()">Click me&lt;/button>
+
+&lt;script>
+function changeText() {
+// Get a reference to the heading element
+var heading = document.getElementById("myHeading");
+// Change the text of the heading
+heading.innerText = "Hello DOM!";
+}
+&lt;/script>
+&lt;/body>
+&lt;/html>
+</code>
+</pre>
+<p>This page contains an h1 element with the text "Hello World!" and a button that, when clicked, will change the text of the heading to "Hello DOM!". The changeText function is defined in the script, and it uses the getElementById method to get a reference to the heading element, and then it sets the innerText property of the element to the new text.</p>
+<p>When the page is loaded, the heading will say "Hello World!", and when the button is clicked, the text will change to "Hello DOM!".</p>
+
+
+<h2 id="21">21. Browser Object Model (BOM)</h2>   
+<p>The Browser Object Model (BOM) is a part of the JavaScript programming language that allows you to interact with the browser and the web page. It consists of a set of objects, properties, and methods that you can use to manipulate the browser window, navigate the history of the page, and perform other tasks related to the web page and the browser.</p>
+<p>Some Examples: </p>
+<p>1. 'window': This is the top-level object in the BOM, and it represents the browser window. You can use it to manipulate the size and position of the window, as well as to access other objects in the BOM. </p>  
+<p>2. 'navigator': This object represents the browser and provides information about the browser and the user's device. You can use it to detect the user's browser and platform, and to check whether certain features are supported.</p>  
+<p>3. 'screen': This object represents the screen of the user's device and provides information about its size and color depth. You can use it to detect the screen size and orientation, and to determine whether the device is in portrait or landscape mode.</p>  
+<p>4. 'history': This object represents the history of the web page and allows you to navigate to previous and next pages in the history. You can use it to go back and forth between pages, or to jump to a specific page in the history.</p>  
+
+<p>Let's see an example for 'window'</p>
+<pre>
+<code class="language-js">
+// Open a new window
+window.open("https://example.com", "newWindow", "height=500,width=500");
+
+// Change the size of the current window
+window.resizeTo(1000, 1000);
+
+// Move the current window to a new position
+window.moveTo(100, 100);
+</code>
+</pre>
+<p>This code will open a new window with the specified size and position, and then it will resize and move the current window. You can find more information about the BOM and its objects in the documentation for the window object and the other BOM objects.</p>
+
+<h1>Thank You</h1>
+<p>Thank you for visiting WebDevMonk and for reading our JavaScript tutorial. We are glad that you took the time to learn more about this important programming language and hope that you found the information helpful. If you enjoyed your visit to our site, we would be grateful if you would share it with your friends and encourage them to visit us as well.</p>
+<p>In addition to our JavaScript tutorial, we have many other tutorials available on a variety of web development topics. We encourage you to explore our site and continue your learning journey with us. We also have a "Projects" page where you can find free source code and instructions for building various web development projects. We hope that you will take advantage of these resources and continue to visit WebDevMonk to further your knowledge and skills.</p>
+
+</main>
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevmonk</h2></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

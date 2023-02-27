@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Are you ready to take your programming skills to the next level with Dart? Look no further than WebDevMonk's comprehensive tutorial on learning Dart. From the basics of the language to advanced concepts, we cover it all.">
+     
+     <!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes",
+"name":"Learn Dart with WebDevMonk in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Are you ready to take your programming skills to the next level with Dart? Look no further than WebDevMonk's comprehensive tutorial on learning Dart. From the basics of the language to advanced concepts, we cover it all.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/dart.png",
+"contentUrl":"https://www.webdevmonk.com/main/dart.png",
+"caption":"Learn Dart with WebDevMonk in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Learn Dart with WebDevMonk in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/dart.png" />
+<meta property="og:description" content="Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn Dart with WebDevMonk in 45 minutes">
+<meta name="twitter:description" content="Improve your web development skills in just 45 minutes with WebDevMonk's comprehensive CSS tutorial. This tutorial covers all the essential elements of CSS, including selectors, properties, and formatting. Whether you are a beginner or have some experience with CSS, WebDevMonk's tutorial is perfect for improving your understanding and skills.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/dart.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/dart-tutorial-in-45minutes" />
+
+                
+     
+     <title>Learn Dart Fundamentals with WebDevMonk in 45 minutes</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+  
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+     <i class="fa-solid fa-arrow-up" id="up"></i>   
+     <h1>Dart Tutorial</h1>
+     <img id="image" src="../main/dart.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+       <p>Are you ready to take your programming skills to the next level with Dart? Look no further than WebDevMonk's comprehensive tutorial on learning Dart. Our easy-to-follow lessons and interactive exercises will have you coding like a pro. From the basics of the language to advanced concepts, we cover it all. </p>
+        <p>Begin your programming journey with our tutorial <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a> Designed for beginners, to help you learn by doing</p> 
+      
+                         <h2>Concepts: </h2>
+                         <p><a href="#1">1.  Dart Introduction</a> </p>
+                         <p><a href="#2">2. Dart Syntax</a> </p>  
+                         <p><a href="#3">3. Dart Comments</a> </p>  
+                         <p><a href="#4">4. Dart Ouput</a> </p>  
+                         <p><a href="#5">5. Dart Variables</a> </p>  
+                         <p><a href="#6">6. Dart Built-in-types</a> </p>  
+                         <p><a href="#7">7. Dart Operators</a> </p>  
+                         <p><a href="#8">8. Dart Input</a> </p>  
+                         <p><a href="#9">9. Dart if, if-else, switch</a> </p>  
+                         <p><a href="#10">10. Dart while, do-while, for</a> </p>  
+                         <p><a href="#11">11. Dart break and continue</a> </p>  
+                         <p><a href="#12">12. Dart Assert</a> </p>  
+                         <p><a href="#13">13. Dart exceptions</a> </p>  
+                         <p><a href="#14">14. Dart Functions</a> </p>  
+                         <p><a href="#15">15. Dart Classes</a> </p>  
+                         <p><a href="#16">16. Dart Constructors</a> </p>  
+                         <p><a href="#17">17. Dart Methods</a> </p>  
+                         <p><a href="#18">18. Dart Inheritance</a> </p>  
+                         <p><a href="#19">19. Dart enum</a> </p>  
+                         <p><a href="#20">20. Dart Generics</a> </p>  
+                         <p><a href="#21">21. Dart Asynchronus</a> </p>  
+                         <p><a href="#22">22. Dart Generators</a> </p>  
+                     
+
+<h2 id="1">1. Dart </h2>
+<p>Dart is a programming language developed by Google. It is a general-purpose language that is used to build applications for the web, mobile, and desktop.</p>
+<p>One of the main advantages of Dart is its ability to run on multiple platforms. With the use of Flutter, a mobile app development framework created by Google, it is possible to build natively compiled applications for mobile, web, and desktop from a single codebase. This means that developers can write their code once and deploy it to different platforms, which can save time and resources.</p>
+<p>Dart is also designed to be easy to learn and use. It has a syntax that is similar to other popular programming languages such as C# and Java, which makes it accessible to a wide range of developers. It also has strong support for object-oriented programming and includes features such as interfaces, abstract classes, and mixins.</p>
+<p>Dart is used in a number of Google products, including the Flutter framework for building mobile apps and the Angular framework for building web applications. It is also used by other companies and organizations for building a variety of applications.</p>
+<h3>Careers: </h3>
+<p>1. 'Mobile app developer': Dart is the primary programming language used in the Flutter framework, which is used to build natively compiled mobile apps for Android and iOS.</p>
+<p>2. 'Full-stack developer': Some developers may choose to use Dart as their language of choice for both front-end and back-end development. Full-stack developers with expertise in Dart may be able to work on a wide range of projects, from mobile apps to web applications and beyond.</p>
+<p>3. 'Data scientist': Dart has strong support for machine learning and data analysis, and developers with expertise in these areas may be able to use Dart to build applications that process and analyze large amounts of data.</p>
+<h3>Environment setup for Dart</h3>
+<p>To set up a development environment for Dart, you will need to install the Dart SDK (Software Development Kit) on your computer. The Dart SDK includes the Dart runtime and command-line tools that you can use to develop, run, and test Dart applications</p>
+<p>Download the latest stable release of the Dart SDK from the official website <a href="https://dart.dev/get-dart">//dart.dev/get-dart</a>.</p>
+<p>Once you installed Dart on your machine, then you can start write Code in Dart</p>
+<p>To write code in Dart, you can use any text editor or integrated development environment (IDE) that supports Dart. Some popular IDEs for Dart development include Visual Studio Code, Android Studio, and WebStorm.</p>
+<p>Here are some basic steps to write and run a simple Dart program</p>
+<p>1. Open your favourite text editor or any IDE and create a new dart file.</p>
+<p>2. Write the following Dart code in the file</p>
+<pre>
+<code class="language-c">
+void main() {
+     print('Hello, World!');
+     }
+        </code>
+</pre>
+<p>3. Save the file as 'main.dart'.</p>
+<p>4. Open a terminal window and navigate to the directory where you saved the file</p>
+<p>5. Run the following command to run the Dart program</p>
+<pre><code class="language-c">dart main.dart
+</code></pre>
+<p>This will execute the main function, which will print "Hello, World!" to the console.</p>
+<h2 id="2">2. Dart Syntax </h2>
+<p>Dart has a C-style syntax, which means that it uses curly braces to enclose code blocks and semicolons to terminate statements. It also supports object-oriented programming with classes and interfaces, and includes features such as generics, mixins, and asynchronous programming with async/await.</p>
+<p>Here is a simple example of a Dart program that prints "Dart Tutorial by webdevmonk" to the console</p>
+
+<pre>
+<code class="language-c">
+void main() {
+  print('Dart Tutorial by webdevmonk');
+}
+        </code>
+</pre>
+<p>In Dart, the 'main' function is the entry point of the program. The 'void' keyword in the above Dart program tells that the function does not return a value. The print function is used to output a string to the console.</p>
+<p>Dart also supports top-level functions, variables, and other declarations outside of class definitions. For example, the following code defines a top-level variable and a function that returns the sum of two numbers</p>
+<pre>
+<code class="language-c">
+int number = 5;
+
+int add(int a, int b) {
+     return a + b;
+}
+
+void main() {
+     print(add(number, 3)); // prints 8
+}
+     
+</code>
+</pre>
+
+<h2 id="3">3. Dart Comments </h2>
+<p>In Dart, you can use the comments to describe and notes to your code. Comments are ignored by the Dart compiler and do not affect the behavior of the program.</p>
+<p>There are two types of comments in Dart: single-line comments and multi-line comments.</p>
+<pre>
+<code class="language-c">
+// This is a single-line comment
+
+/*
+  This is a
+  multi-line comment
+*/
+
+</code>
+</pre>
+<p>Here is an example of using comments in a Dart program</p>
+<pre>
+<code class="language-c">
+void main() {
+// Print the current time
+print(DateTime.now());
+
+/*
+     Calculate the sum of two numbers.
+     value stored in the 'sum' variable.
+*/
+int sum = 1 + 2;
+print(sum); // prints 3
+}
+        
+</code>
+</pre>
+<h2 id="4">4. Dart Ouput </h2>
+<p>You might already familiar with this.</p>
+<p>
+In Dart, you can use the 'print' function to output strings, numbers, and other values to the console. The 'print' function takes a single argument and prints it to the console, followed by a newline character.</p>
+<pre>
+<code class="language-c">
+void main() {
+     print('Hello, World!'); // output a string
+     print(42); // output a number
+     print(true); // output a boolean
+     print([1, 2, 3]); // output a list
+     }
+ 
+// Output:
+
+/*
+Hello, World!
+42
+true
+[1, 2, 3]
+*/
+
+</code>
+</pre>
+<p>If you want to print multiple values on the same line, you can use string interpolation to embed the values in a string.</p>
+<pre>
+<code class="language-c">
+void main() {
+     int a = 1;
+     int b = 2;
+     print('The sum of $a and $b is ${a + b}'); // output 'The sum of 1 and 2 is 3'
+     }
+        
+</code>
+</pre>
+<p>Here, the $a and $b expressions are replaced with the values of the a and b variables, and the ${a + b} expression is replaced with the result of the a + b expression.</p>
+<h2 id="5">5. Dart Variables</h2>
+<p>In Dart, variables are used to store the values in a computer memory. A variable has a name and a type, and it can hold a value of that type.</p>
+<p>To declare a variable in Dart, you use the var keyword followed by the variable name</p>
+<pre>
+<code class="language-c">
+var name = 'John'; // name is a string variable
+var age = 30; // age is an int variable
+var isEmployed = true; // isEmployed is a boolean variable
+
+</code>
+</pre>
+<p>You can also specify the type of a variable explicitly using the 'Type' syntax.</p>
+<pre>
+     <code class="language-c">
+String name = 'John'; // name is a string variable
+int age = 30; // age is an int variable
+bool isEmployed = true; // isEmployed is a boolean variable
+
+     </code>
+     </pre>
+<p>If you declare a variable but do not assign a value to it, the variable is initialized to the default value for its type.</p>
+<pre>
+<code class="language-c">
+int x; // x is initialized to 0
+bool b; // b is initialized to false
+     
+</code>
+</pre>
+<p>You can reassign a new value to a variable using the assignment operator (=)</p>
+<pre><code class="language-c">
+var name = 'John';
+name = 'Jane'; // name is now 'Jane'
+
+</code></pre>
+<p>You can also declare multiple variables of the same type in a single statement using the 'Type' syntax. </p>
+<pre><code class="language-c">
+int a, b, c; // a, b, and c are all int variables
+
+</code></pre>
+<h3>Rules for declaring variable in Dart</h3>
+<p>These are some the rules to declare a variable in Dart</p>
+<p>1. Variable names can contain letters, digits, and underscores (_). They must start with a letter or an underscore.</p>
+<p>2. Variable names in Dart are case-sensitive. For example, name and Name are different variables.</p>
+<p>3. Variable names cannot be the same as a reserved keyword in Dart. For example, you cannot use 'var' or 'if' as a variable name.</p>
+<p>4. Variable names should follow the naming conventions of the Dart style guide. In general, variables should be written in lowerCamelCase, with the first letter of each word except the first one being capitalized.</p>
+<pre><code class="language-c">
+// valid variable names
+var name;
+var _private;
+var userId;
+
+// invalid variable names
+var 123; // must start with a letter or underscore
+var if; // cannot be a reserved keyword
+var user-id; // cannot contain hyphens
+     </code></pre>
+
+<h2 id="6">6. Dart Built-in-types</h2>
+<p>Dart has several built-in types that represent different kinds of values, such as numbers, strings, and booleans.</p>
+<h3>Numbers</h3>
+<p>Dart has two types for representing numbers: 'int' (for integers) and 'double' (for floating-point numbers)</p>
+
+<pre>
+<code class="language-c">
+int x = 42; // x is an int with the value 42
+double y = 3.14; // y is a double with the value 3.14
+
+</code>
+</pre><h3>Strings</h3>
+<p>Strings are sequences of Unicode characters. You can use single quotes (') or double quotes (") to define a string. </p>
+<pre><code class="language-c">
+String s1 = 'Hello, World!';
+String s2 = "Hello, World!";
+
+</code></pre>
+<h3>Booleans</h3>
+<p>Booleans represent true or false values. The bool type has only two  values in dart: 'true' and 'false'.</p>
+<pre><code class="language-c">
+bool isTrue = true;
+bool isFalse = false;
+     
+</code></pre>
+<h3>Lists</h3>
+<p>Lists (also known as arrays) are ordered collections of values. You can define a list using the List type and enclosing the values in square brackets ([]).</p>
+<pre>
+<code class="language-c">
+List&lt;int> numbers = [1, 2, 3]; // numbers is a list of integers
+List&lt;String> names = ['John', 'Jane', 'Bob']; // names is a list of strings
+
+</code>
+</pre>
+<h3>Sets</h3>
+<p> Sets are unordered collections of unique values. You can define a set using the Set type and enclosing the values in curly braces ({}).</p>
+<pre><code class="language-c">
+Set&lt;int> numbers = {1, 2, 3}; // numbers is a set of integers
+Set&lt;String> names = {'John', 'Jane', 'Bob'}; // names is a set of strings
+
+</code></pre>
+<h3>Maps</h3>
+<p>Maps are collections of key-value pairs. You can define a map using the Map type and enclosing the key-value pairs in curly braces ({}). </p>
+<pre><code class="language-c">
+Map&lt;String, int> grades = {'John': 80, 'Jane': 90, 'Bob': 70}; // grades is a map of strings to integers
+Map&lt;int, String> names = {1: 'John', 2: 'Jane', 3: 'Bob'}; // names is a map of integers to strings
+
+</code></pre>
+<h3>Runes and grapheme Clusters</h3>
+<p> 
+In Dart, 'runes' are a way to represent Unicode characters using integers. Runes are useful when you need to manipulate individual Unicode characters, such as when working with internationalization or text processing.
+</p>
+
+<p>Grapheme clusters are sequences of Unicode characters that are treated as a single unit by a user's operating system. For example, the character "é" (U+00E9) is composed of two Unicode code points: "e" (U+0065) and "´" (U+0301). When displayed on a screen, the two code points are combined to form a single glyph that represents the character "é".</p>
+<p>In Dart, you can use the 'String.split' function to split a string into a list of grapheme clusters.</p>
+<pre><code class="language-c">
+void main() {
+     var string = 'Hello, World!';
+     var graphemeClusters = string.split(''); // graphemeClusters is a list of strings, each representing a grapheme cluster
+     print(graphemeClusters); // prints ['H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd', '!']
+}
+        
+</code></pre>
+<h3>Symbols</h3>
+<p>In Dart, symbols are unique, immutable objects that represent a specific instance of a name. Symbols are often used to identify a name in a more efficient and reliable way than using a string.</p>
+<p>To create a symbol in Dart, you can use the '#' operator followed by the name.</p>
+<pre><code class="language-c">var symbol1 = #hello; // symbol1 is a symbol representing the name 'hello'
+var symbol2 = #world; // symbol2 is a symbol representing the name 'world'
+     </code></pre>
+<p>You can also create a symbol from a string using the 'Symbol' class</p>
+<pre><code class="language-c">
+var symbol = Symbol('hello'); // symbol is a symbol representing the name 'hello'
+
+</code></pre>
+<p>Symbols are often used as keys in maps and as identifiers in mirrors (a feature of the Dart runtime for reflection and introspection). </p>
+ 
+<h2 id="7">7.  Dart Operators</h2>
+<p>In Dart, the operators are special symbols that can perform operations on one or more operands (variables or values). Operators can be used to perform arithmetic calculations, assign values to variables, compare values, and more.</p>
+<h3>Arithmetic Operators</h3>
+<p>These operators perform arithmetic calculations on numerical operands. They include + (addition), - (subtraction), * (multiplication), / (division), ~/ (integer division), % (modulo division)</p>
+<pre>
+     <code class="language-js">
+var a = 1 + 2; // a is 3
+var b = 5 - 3; // b is 2
+var c = 2 * 3; // c is 6
+var a = 10 / 3; // a is 3.3333333333333335
+var b = 10 ~/ 3; // b is 3 (integer division)
+var c = 10 % 3; // c is 1 (remainder of the division)
+var d = -a; // d is -3
+
+     </code>
+</pre>
+<h3>Assignment operators</h3>
+<p>These operators assign a value to a variable. They include = (assignment), ??= (null-aware assignment), and compound assignment operators such as +=, -=, *=, and /=. </p>
+<pre><code class="language-js">
+var a = 1; // a is 1
+a = 2; // b is now 2
+
+var b; // b is null
+b ??= 3; // b is now 3
+
+var c = 1;
+c += 2; // c is now 3
+
+</code></pre>
+<h3>Comparison operators</h3>
+<p>These operators compare two values and return a boolean result. They include == (equal to), != (not equal to), > (greater than), >= (greater than or equal to), &lt; (less than), and &lt;= (less than or equal to). </p>
+<pre><code class="language-js">
+var a = 1;
+var b = 2;
+
+print(a == b); // prints false
+print(a != b); // prints true
+print(a > b); // prints false
+print(a >= b); // prints false
+print(a &lt; b); // prints true
+print(a &lt;= b); // prints true
+
+</code></pre>
+<h3>Logical operators</h3>
+<p>These operators perform logical operations on boolean operands. They include && (and), || (or), and ! (not). </p>
+<pre><code class="language-js">
+var a = true;
+var b = false;
+
+print(a && b); // prints false
+print(a || b); // prints true
+print(!(a || b)) // prints false
+</code></pre>
+<h3>Type test operators</h3>
+<p>In Dart, you can use the 'is' and 'is!' operators to test the type of an object.</p>
+<p>The 'is' operator returns true if the object is an instance of the specified type, and false otherwise.</p>
+<pre><code class="language-js">
+var a = 'Hello';
+print(a is String); // prints true
+print(a is int); // prints false
+
+</code></pre>
+<p>The is! operator returns true if the object is not an instance of the specified type, and false otherwise.</p>
+<pre>
+     <code class="language-js">
+void printType(dynamic value) {
+if (value is String) {
+     print('The value is a string');
+} else if (value is int) {
+     print('The value is an integer');
+} else {
+     print('The value is of unknown type');
+}
+}
+
+printType('Hello'); // prints 'The value is a string'
+printType(123); // prints 'The value is an integer'
+printType(null); // prints 'The value is of unknown type'
+
+          </code>
+</pre>
+
+
+ <h3>Cascade notation</h3>
+
+<h3>Conditional expressions</h3>
+<p>In Dart, the cascade notation (also known as the "cascade operator" or the "cascade syntax") is a way to perform multiple operations on the same object in a single expression</p>
+<p>The cascade notation uses the .. operator to chain together a series of method calls or property assignments. The object on which the operations are performed is specified at the beginning of the expression, and the operations are separated by .. operators.</p>
+<p>Here is an example of using the cascade notation to chain together a series of method calls</p>
+<pre>
+<code class="language-js">
+var sb = StringBuffer()
+..write('Hello')
+..write(' ')
+..write('World');
+
+print(sb.toString()); // prints 'Hello World'
+
+</code>
+</pre>
+<p>In the example above, the 'StringBuffer' object is created at the beginning of the expression, and then three method calls are chained together using the cascade notation.</p>
+<h2 id="8">8.  Dart Input</h2>
+<p>In Dart, you can use the stdin object from the 'dart:io' library to read input from the standard input stream (usually the keyboard).</p>
+<pre><code class="language-js">
+import 'dart:io';
+
+void main() {
+     stdout.write('Enter your name: '); // prompt the user for input
+     String name = stdin.readLineSync(); // read a line of input
+     print('Hello, $name!'); // print the input
+}
+
+</code></pre>
+<p>In the example above, the 'stdout.write' function is used to print a prompt to the user, and the 'stdin.readLineSync' function is used to read a line of input from the user. The input is then stored in the name variable and printed to the console using the 'print' function.</p>
+<p>You can also use the stdin.readSync function to read a single character of input from the user</p>
+<pre><code class="language-js">
+import 'dart:io';
+
+void main() {
+     stdout.write('Enter a character: '); // prompt the user for input
+     int character = stdin.readSync(); // read a single character of input
+     print('You entered the character "${String.fromCharCode(character)}".'); // print the input
+}
+     
+</code></pre>
+<p>Note that the 'readLineSync' and 'readSync' functions are synchronous, which means that they block the program until the user enters some input. If you want to read input asynchronously, you can use the 'stdin.readLine' and 'stdin.read' functions, which return a 'Future' object</p>
+<h2 id="9">9. Dart if, if-else, switch</h2>
+<p>In Dart, you can use the 'if' and 'if-else' statements to control the flow of your program based on a condition</p>
+<h3>if</h3>
+<p>The 'if' statement in dart will execute a block of code if the condition is only true.
+</p>
+<pre>
+     <code class="language-js">
+var a = 10;
+
+if (a > 0) {
+     print('a is positive');
+}
+     
+     </code>
+</pre>
+<h3>if-else</h3>
+<p>You can also use the if-else statement to specify an alternative block of code to execute if the condition is not true</p>
+<pre><code class="language-js">
+var a = -10;
+
+if (a > 0) {
+     print('a is positive');
+} else {
+     print('a is not positive');
+}
+     
+</code></pre>
+<p>In the example above, the if statement checks if the value of x is greater than zero, and if it is, it executes the code inside the first set of curly braces. If the condition is not met, the code inside the second set of curly braces is executed.</p>
+<h3>switch</h3>
+<p>You can also use the 'switch' statement to evaluate a value and execute code based on a matching case. The 'switch' statement is often used as an alternative to a series of 'if-else' statements.</p>
+<pre><code class="language-js">
+var a = 'hello';
+
+switch (a) {
+     case 'hello':
+     print('a is "hello"');
+     break;
+     case 'world':
+     print('a is "world"');
+     break;
+     default:
+     print('a is something else');
+}
+
+</code></pre>
+<p>In the example above, the 'switch' statement evaluates the value of x and executes the code inside the matching case block. If no case matches the value of x, the code inside the 'default' case is executed. The break statement is used to exit the switch statement and prevent the code from falling through to the next case.</p>
+<h2 id="10">10. Dart while, do-while, for</h2>
+<h3>while loop</h3>
+<p>The 'while' loop can executes a block of code multiple times as long as the condition is true. </p>
+<pre><code class="language-js">
+var count = 0;
+
+while (count &lt; 5) {
+     print(count);
+     count++;
+}
+     
+</code></pre>
+<p>In the example above, the 'while' loop will execute the code inside the curly braces until the value of count is no longer less than 5. The count++ expression increases the value of count by 1 after each iteration of the loop</p>
+<h3>do-while loop</h3>
+<p>The 'do-while' loop is similar to the 'while' loop, but it guarantees that the code inside the loop will be executed at least once, even if the condition is false</p>
+<pre>
+<code class="language-js">
+var count = 0;
+
+do {
+     print(count);
+     count++;
+} while (count &lt; 5);
+
+</code>
+</pre>
+<p>In the example above, the 'do-while' loop will execute the code inside the curly braces at least once, and then it will continue to execute the code as long as the value of 'count' is &lt; 5.</p>
+<h3>for loop</h3>
+<p>The 'for' loop in dart, is used to execute a block of code in a specific number of times as the condition is true. </p>
+<pre><code class="language-js">
+for (var i = 0; i &lt; 5; i++) {
+   print(i);
+}
+        
+</code></pre>
+<h2>example for all loops</h2>
+<pre><code class="language-js">
+void main() {
+// While loop
+var count = 0;
+
+while (count &lt; 5) {
+     print('while: $count');
+     count++;
+}
+
+// Do-while loop
+count = 0;
+
+do {
+     print('do-while: $count');
+     count++;
+} while (count &lt; 5);   // even though the condition is false it will execute once
+
+// For loop
+for (var i = 0; i &lt; 5; i++) {
+     print('for: $i');
+}
+}
+  
+// Output 
+
+/*
+
+while: 0
+while: 1
+while: 2
+while: 3
+while: 4
+do-while: 0
+for: 0
+for: 1
+for: 2
+for: 3
+for: 4
+
+*/
+</code></pre>
+<p>In the example above, the 'for' loop will execute the code inside the curly braces 5 times, with the value of i starting at 0 and increasing by 1 each time. The loop will continue as long as the value of i is less than 5.</p>
+
+<h2 id="11">11. Dart break and continue</h2>
+<p>In Dart, you can use the break and continue statements to control the flow of a loop.</p>
+<h3>break</h3>
+<p>The 'break' statement in Dart is used to exit a loop and continue execution of the code after the loop. </p>
+<p>Here is an example of using the 'break' statement in a w'hile' loop</p>
+<pre>
+     <code class="language-js">
+var count = 0;
+
+while (true) {
+     if (count >= 5) {
+     break;
+     }
+     print(count);
+     count++;
+}
+
+print('Done');
+</code>
+</pre>
+<p>In the above Dart example, the 'while' loop will run indefinitely until the break statement is encountered. When the value of count becomes greater than or equal to 5, the break statement is executed, and the loop is terminated. 
+The code after the loop (print('Done')) is then executed.</p>
+<h3>continue</h3>
+<p>The 'continue' statement is used to skip the rest of the current iteration of a loop and continue with the next iteration. Here is an example of using the 'continue' statement in a for loop</p>
+<pre><code class="language-js">
+for (var i = 0; i &lt; 10; i++) {
+     if (i % 2 == 0) {
+          continue;
+     }
+     print(i);
+     }
+        
+</code></pre>
+<p>In the example above, the 'for' loop iterates over a range of numbers from 0 to 9. If the value of i is even (that is, if i is divisible by 2), the continue statement is executed, and the rest of the loop's code is skipped. Otherwise, the value of i is printed to the console. The output of the loop will be the odd numbers from 1 to 9.</p>
+<h2 id="12">12. Dart Assert</h2>
+<p>In Dart, you can use the 'assert' function to verify that a boolean expression is true at runtime. If the expression is false, the 'assert' function will throw an exception.</p>
+<pre>
+     <code class="language-js">
+void main() {
+     var a = 10;
+     var b = 20;
+     
+     assert(a &lt; b); // this assertion will pass
+     assert(a > b); // this assertion will fail
+     }
+</code>
+</pre>
+<p>In the example above, the first 'assert' function call will pass because the expression x &lt; y is true. The 'second' assert function call will fail because the expression x > y is false. When the 'assert' function is called with a false expression, it will throw an AssertionError exception</p>
+<p>You can also pass a second argument to the 'assert' function to specify a message to be included in the exception</p>
+<pre><code class="language-js">
+void main() {
+var a = 10;
+var b = 20;
+
+assert(a > b, 'a should be greater than b'); // this assertion will fail
+}
+        
+</code></pre>
+<p>In the example above, when the 'assert' function is called with a false expression, it will throw an AssertionError exception with the message "x should be greater than y".</p>
+
+<h2 id="13">13. Dart exceptions</h2>
+<p>In Dart, an exception is an abnormal event that occurs during the execution of a program and disrupts the normal flow of control. Exceptions can be thrown by the Dart runtime, by the standard library, or by your own code.</p>
+<p>When an exception is thrown, it can be caught and handled by a 'try-catch' block. The 'try' block contains the code that may throw an exception, and the 'catch' block contains the code that handles the exception</p>
+<p>Here is an example of using a 'try-catch' block to handle an exception</p>
+<pre><code class="language-js">
+void main() {
+     try {
+          int.parse('abc'); // this will throw a FormatException
+     } catch (e) {
+          print('Caught exception: $e');
+     }
+}
+        
+</code></pre>
+<p>In the example above, the 'try' block contains a call to the 'int.parse' function, which attempts to parse a string as an integer. If the string is not a valid integer, the 'int.parse' function will throw a FormatException. The 'catch' block will catch the exception and print a message to the console.
+</p>
+<p>You can also specify multiple 'catch' blocks to handle different types of exceptions</p>
+<pre><code class="language-js">
+void main() {
+     try {
+          int.parse('abc'); // this will throw a FormatException
+     } on FormatException catch (e) {
+          print('Caught FormatException: $e');
+     } on Exception catch (e) {
+          print('Caught Exception: $e');
+     }
+     }
+        
+</code></pre>
+<p>In the example above, the first 'catch' block will handle FormatExceptions, and the second 'catch' block will handle all other types of exceptions. If an exception is thrown that is not a FormatException, it will be caught by the second 'catch' block</p>
+<p>You can also use the 'finally' block in Dart to specify code that should be executed regardless of whether an exception is thrown or caught. The 'finally' block is optional, and it is typically used to clean up resources or perform other tasks that should be done regardless of the outcome of the 'try' block</p>
+<pre><code class="language-js">
+void main() {
+     try {
+          int a = int.parse('hello'); // this will throw a FormatException
+     } catch (e) {
+          print('Caught exception: $e');
+     } finally {
+          print('Executing finally block');
+     }
+     }
+        
+</code></pre>
+<p>In the example above, the 'finally' block will be executed after the 'catch' block, regardless of whether an exception was thrown or caught.</p>
+<h2 id="14">14. Dart Functions</h2>
+<p>A function is a collection of reusable code that can be execute whenever it is called in the program.</p>
+<pre><code class="language-js">
+void printHello() {
+  print('Hello, World!');
+}
+
+void main() {
+  printHello();
+  printHello();
+  printHello();
+}
+  
+// Ouput
+
+/* 
+Hello, World!
+Hello, World!
+Hello, World!
+*/
+</code></pre>
+<p>In the example above, the printHello function is defined to print the string "Hello, World!" to the console. The function is called using its name followed by a set of parentheses.</p>
+<p>You can also define functions with parameters and return values</p>
+<pre><code class="language-js">
+int add(int a, int b) {
+     return a + b;
+     }
+void sayHi(String name) {
+     print("Hi, ${name}");
+}  
+     void main() {
+     int result = add(10, 20);
+     print(result); // prints 30
+     sayHi("Martha");
+     }
+  
+// Ouput 
+
+/*
+30
+Hi, Martha
+*/
+</code></pre>
+<p>You can also specify default values for function parameters, which allows you to call the function with fewer arguments</p>
+<pre><code class="language-js">
+int add(int a, int b, [int c = 0]) {
+     return a + b + c;
+     }
+     
+     void main() {
+     int result1 = add(10, 20); // z is 0
+     int result2 = add(10, 20, 30); // z is 30
+     
+     print(result1); // prints 30
+     print(result2); // prints 60
+     }
+        
+</code></pre>
+<p>In the Dart programming language, you can use the fat arrow (=>) syntax to define a function or method with a concise body. This is often called the "short-hand function syntax" or "fat arrow function syntax".</p>
+<p>Here is an example of how to use the fat arrow syntax to define a function</p>
+<pre><code class="language-js">add(int x, int y) => x + y;
+</code></pre>
+<p>This is equivalent to the following function definition using the 'function' keyword</p>
+<pre><code class="language-js">int add(int a, int b) {
+   return a + b;
+}
+   </code></pre>
+   <p>You can use the fat arrow syntax to define a function with a single line of code. If the function body is longer, you can use the {} syntax to define a block of code.</p>
+<pre><code class="language-js">
+doSomething() => print('Hello, World!');
+
+doSomethingElse() {
+     print('Hello, World!');
+     print('Goodbye, World!');
+}
+     
+</code></pre>
+ 
+   <h2 id="15">15. Dart Classes</h2>
+<p>In the Dart programming language, a class is a template for   creating multiple objects. A class can contain properties (variables) and methods (functions) that describe the characteristics and behavior of objects created from the class.</p>
+<pre><code class="language-js">
+class Student {
+     String name;
+     int age;
+     double gradePointAverage;
+     
+     void study() {
+          print('$name is studying');
+     }
+     
+     void sleep() {
+          print('$name is sleeping');
+     }
+     }
+        
+</code></pre>
+<p>This class defines a Student type that has three properties: name, age, and gradePointAverage. It also has two methods: study() and sleep().</p>
+<p>o create an object (an instance) of the Student class, you can use the new keyword followed by the class name and parentheses</p>
+<pre><code class="language-js">
+Student student = new Student();
+
+</code></pre>
+<p>You can then access the object's properties and methods using the dot notation</p>
+<pre><code class="language-js">
+student.name = 'Alice';
+student.age = 20;
+student.gradePointAverage = 3.8;
+
+student.study();  // Output: Alice is studying
+student.sleep();  // Output: Alice is sleeping
+
+</code></pre>
+ 
+<h2 id="16">16. Dart Constructors</h2>
+<p>In the Dart programming language, a constructor is a special method that is called when an object is created from a class. A class can have multiple constructors, which allows you to create objects in different ways.</p>
+<p>Here is an example of a class with a single constructor</p>
+<pre><code class="language-js">
+class Point {
+     num a, b;
+     
+     Point(this.a, this.b);
+     }
+        
+</code></pre>
+<p>To create an object of the Point class, you can call the constructor like this</p>
+<pre><code class="language-js">
+Point p = Point(1, 2);
+
+</code></pre>
+<p>You can also define multiple constructors in a class by using the 'factory' keyword.</p>
+<pre><code class="language-js">
+class Point {
+     num a, b;
+     
+     Point(this.a, this.b);
+     
+     factory Point.fromJson(Map<String, num> json) {
+          return Point(json['a'], json['b']);
+     }
+     }
+        
+</code></pre>
+<p>In this example, you can create a Point object from a JSON object like thi</p>
+<pre><code class="language-js">
+Map&lt;String, num> json = {'a': 1, 'b': 2};
+Point p = Point.fromJson(json);
+</code></pre>
+<p>You can also use the 'factory' keyword to create a singleton class, which is a class that allows only a single instance to be created.</p>
+
+<pre><code class="language-js">
+class Point {
+static final Point instance = Point._internal();
+num a, b;
+
+factory Point() {
+     return instance;
+}
+
+Point._internal();
+}
+        
+</code></pre>
+<p>In this example, calling the Point constructor will always return the same instance of the Point class.</p>
+<h2>example</h2>
+<pre><code class="language-js">
+import 'dart:math';
+
+class Point {
+     num a, b;
+
+     Point(this.a, this.b);
+
+     num distanceTo(Point other) {
+     var da = a - other.a;
+     var db = b - other.b;
+     return sqrt(da * da + db * db);
+     }
+}
+
+void main() {
+     Point p1 = Point(1, 2);
+     Point p2 = Point(4, 5);
+
+     print(p1.distanceTo(p2)); // Output: 4.47214
+}
+     
+</code></pre>
+<p>In the above dart example, the Point class represents a point in two-dimensional space. It has two instance variables, x and y, which represent the coordinates of the point. It also has a method called distanceTo, which calculates the distance between two points.</p>
+<p>In the 'main' function, we create two objects of the Point class and then use the distanceTo method to calculate the distance between them.</p>
+<h2 id="17">17. Dart Methods </h2>
+<p>In the Dart programming language, a method is a function that is defined inside a class or an object. You can use methods to perform operations or calculations on the data stored in an object.</p>
+<pre>
+     <code class="language-js">
+class Point {
+     num a, b;
+     
+     Point(this.a, this.b);
+     
+     num distanceTo(Point other) {
+          var da = a - other.b;
+          var da = b - other.b;
+          return sqrt(da * da + db * db);
+     }
+     }
+             
+     </code>
+</pre>
+<p>In this example, the Point class has a method called distanceTo that calculates the distance between two points.</p>
+<p>You can call a method on an object like this</p>
+<pre><code class="language-js">
+Point p1 = Point(1, 2);
+Point p2 = Point(4, 5);
+
+num distance = p1.distanceTo(p2);
+print(distance); // Output: 4.47214
+
+</code></pre>
+<p>You can also define methods with optional parameters by using the [parameterName] syntax.</p>
+<pre><code class="language-js">
+class Point {
+     num a, b;
+     
+     Point(this.a, this.b);
+     
+     void move(num da, num db, [bool animate = false]) {
+          a += da;
+          b += db;
+          if (animate) {
+          // Animate the movement
+          }
+     }
+     }
+        
+</code></pre>
+<p>In this example, the move method has two required parameters, dx and dy, and one optional parameter, animate. You can call this method with or without the optional parameter:</p>
+<pre><code class="language-js">
+Point p = Point(1, 2);
+p.move(3, 4);
+p.move(1, 2, true);
+
+</code></pre>
+<h2 id="18">18. Dart Inheritance </h2>
+<p>In the Dart programming language, inheritance is a mechanism that allows a class to inherit properties and methods from a parent class. This allows you to create a new class that is a modified version of an existing class, without having to rewrite all the code in the new class.</p>
+<pre><code class="language-js">
+class Shape {
+num a, b;
+
+Shape(this.a, this.b);
+
+void move(num da, num db) {
+     a += da;
+     b += db;
+}
+}
+
+class Circle extends Shape {
+num radius;
+
+Circle(num a, num b, this.
+
+</code></pre>
+<p>In this example, the Shape class has two instance variables, x and y, and a method called move. The Circle class extends the Shape class and adds a new instance variable, radius, and a new method, area, which calculates the area of the circle.
+ </p>
+ <p>The Circle class also has a constructor that calls the constructor of the Shape class using the super keyword. This allows the Circle class to inherit the x and y instance variables from the Shape class.</p>
+<p>You can create an object of the Circle class like this</p>
+<pre><code class="language-js">
+Circle c = Circle(1, 2, 3);
+print(c.a); // Output: 1
+print(c.b); // Output: 2
+print(c.radius); // Output: 3
+print(c.area); // Output: 28.274333882308138
+
+</code></pre> 
+<h2 id="19">19. Dart enum  </h2>
+<p>In the Dart programming language, an 'enum' is a special data type that represents a fixed set of values. You can use an 'enum' keyword to define a set of related constants, such as the days of the week or the suits in a deck of cards.</p>
+<pre><code class="language-dart">enum Color { red, green, blue }
+</code></pre>
+<p>This 'enum' defines three constants: 'Color.red', 'Color.green', and 'Color.blue'.</p>
+<p>You can access the constants of an 'enum' using the dot notation, like this:</p>
+<pre><code class="language-js">Color c = Color.red;
+ print(c); // Output: Color.red
+</code></pre>
+<p>You can also use the values property to get a list of all the constants in an 'enum'</p>
+<pre><code class="language-js">List<Color> colors = Color.values;
+print(colors); // Output: [Color.red, Color.green, Color.blue]
+     </code></pre>
+<p>An 'enum' is also useful when you want to define a set of related constants that have a numerical value. You can do this by assigning values to the constants when you define the 'enum'.</p>
+<pre><code class="language-js">
+enum Directions { east, west, north, south }
+
+Direction dir = Direction.north;
+print(dir.index); // Output: 0
+
+</code></pre>
+<p>In the above dart example, each constant in the Direction enum has a corresponding index value, starting from 0. You can access the index value of a constant using the index property.</p>
+<pre>
+<code class="language-js">
+enum Color { red, green, blue }
+
+void main() {
+     Color c = Color.red;
+     print(c); // Output: Color.red
+
+     List&lt;Color> colors = Color.values;
+     print(colors); // Output: [Color.red, Color.green, Color.blue]
+}
+
+</code>
+</pre>
+<p>In this example, we define an 'enum' called Color with three constants: Color.red, Color.green, and Color.blue.</p>
+<p>In the 'main' function, we create a variable of the Color type and assign it the value Color.red. We then print the value of the variable to the console.</p>
+<p>We also use the values property to get a list of all the constants in the Color 'enum'</p>
+
+
+
+<h2 id="20">20.  Dart Generics </h2>
+ <p>In the Dart programming language, generics are a way to create reusable components that can work with a variety of data types. Generics allow you to specify placeholders for the types of values that a component can accept, so that you can use the same component with different types of values.</p>
+ <pre><code class="language-js">
+class Stack&lt;T> {
+List&lt;T> _items = [];
+
+void push(T item) {
+     _items.add(item);
+}
+
+T pop() {
+     if (_items.isEmpty) {
+     throw 'Stack is empty';
+     }
+     return _items.removeLast();
+}
+}
+        
+ </code></pre>
+ <p>In this example, the Stack class is a generic class that can be used with any data type. The placeholder 'T' represents the type of the elements in the stack.</p>
+<p>You can use the Stack class like this</p>
+<pre>
+<code class="language-js">
+Stack&lt;int> stack = Stack&lt;int>();
+stack.push(1);
+stack.push(2);
+print(stack.pop()); // Output: 2
+print(stack.pop()); // Output: 1
+
+</code>
+</pre>
+<p>ou can also use the shorthand syntax to specify the type of the elements in the stack</p>
+<pre><code class="language-js">
+Stack&lt;int> stack = Stack();
+
+</code></pre>
+<p>In this example, the type of the elements in the stack is inferred to be 'int' based on the value passed to the push method.</p>
+
+<h2 id="21">21.  Dart Asynchronus</h2>
+<p>In the Dart programming language, asynchronous programming allows you to perform tasks concurrently, rather than sequentially. This is useful when you want to perform tasks that take a long time to complete, such as I/O operations or network requests, without blocking the main execution thread.</p>
+<p>There are several ways to perform asynchronous tasks in Dart. One way is to use the 'async' and 'await' keywords.</p>
+<p>Here is an example of how to use 'async' and 'await' to perform an asynchronous task</p>
+<pre>
+<code class="language-js">
+import 'dart:io';
+
+Future&lt;void> getData() async {
+     var url = 'https://example.com/data';
+     var response = await HttpClient().getUrl(Uri.parse(url));
+     var contents = await response.transform(utf8.decoder).join();
+     print(contents);
+}
+
+void main() {
+     getData();
+}
+     
+</code>
+</pre>
+<p>In this example, the getData function is 
+an asynchronous function that makes an HTTP request to a URL and prints the response to the console. The 
+'await' keyword is used to pause the execution of the function until the response is received.</p>
+<p>The getData function returns a 'Future' object, which represents a value that may be available in the future. You can use the then method of the 'Future' object to specify a callback function that will be executed when the value is available.</p>
+<pre><code class="language-js">getData().then((value) => print(value));
+</code></pre>
+<p>You can also use the 'async' and 'await' keywords to perform asynchronous tasks in a for loop.</p>
+<pre><code class="language-js">
+import 'dart:io';
+
+Future&lt;List&lt;int>> getData() async {
+     var url = 'https://example.com/data';
+     var response = await HttpClient().getUrl(Uri.parse(url));
+     return response.transform(utf8.decoder).join();
+}
+
+void main() async {
+     var data = await getData();
+     for (var i in data) {
+     print(i);
+     }
+}
+     
+</code></pre>
+<p>In this example, the 'main' function is marked as 'async', which allows it to use the 'await' keyword. The 'for' loop is executed asynchronously, so that each iteration of the loop is performed concurrently.</p>
+
+<h2 id="22">22. Dart Generators </h2>
+<p>In the Dart programming language, a generator is a special function that returns an iterable object. You can use a generator to create a sequence of values that can be iterated over, without having to generate the entire sequence in memory at once.</p>
+<p>Here is an example of how to define a generator function in Dar</p>
+<pre>
+<code class="language-js">
+Iterable&lt;int> integers(int start, int end) sync* {
+for (int i = start; i &lt;= end; i++) {
+     yield i;
+}
+}
+        
+</code>
+</pre>
+<p>In this example, the integers function is a generator function that returns an iterable object containing a range of integers from start to end, inclusive. The 'yield' keyword is used to return a value from the generator function.</p>
+<p>You can use the generator function like this</p>
+<pre><code class="language-js">
+for (int i in integers(1, 10)) {
+     print(i);
+     }
+        
+</code></pre>
+<p>This will output the numbers from 1 to 10 to the console.</p>
+<p>You can also use the 'sync*' keyword to define a generator function that can be used in a 'sync*' for loop. </p>
+<pre><code class="language-js">
+Iterable&lt;int> evenIntegers(int start, int end) sync* {
+     for (int i = start; i &lt;= end; i += 2) {
+          yield i;
+     }
+     }
+     
+     sync* for (int i in evenIntegers(2, 10)) {
+     print(i);
+     }
+     
+</code></pre>
+<p>This will output the even numbers from 2 to 10 to the console.</p>
+<h1>Thank You</h1>
+<p>Thank you for visiting 'webdevmonk' to read the Dart tutorial! We hope that you found the tutorial helpful and informative.</p>
+<p>If you have any questions or feedback about the tutorial, please don't hesitate to let us know. We are always looking for ways to improve our content and make it more valuable for our readers.</p>
+<p>We would also like to invite you to come back and visit webdevmonk again in the future to read more tutorials and learn about other programming languages and technologies. We are constantly adding new content to our website, and we hope you will find it useful in your learning journey.</p>
+<p>Thank you for choosing webdevmonk as your learning resource. We hope to see you again soon!</p>
+</main>
+
+
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

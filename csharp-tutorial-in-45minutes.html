@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FEJCEQWL1N');
+</script>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../main/style.css"> 
+     <link rel="stylesheet" href="../main/prism.css">
+     <link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <meta name="description" content="Learn the concepts of c# with webdevmonk c# tutorial. This will help you to learn or revise the c# programming language concepts in the short amount of time.">
+    
+     <!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes",
+"name":"Learn C# quickly and easily in 45 minutes",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Learn the concepts of c# with webdevmonk c# tutorial. This will help you to learn or revise the c# programming language concepts in the short amount of time.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/cpp.png",
+"contentUrl":"https://www.webdevmonk.com/main/csharp.png",
+"caption":"Learn C# quickly and easily in 45 minutes"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Learn C# quickly and easily in 45 minutes" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/csharp.png" />
+<meta property="og:description" content="Learn the concepts of c# with webdevmonk c# tutorial. This will help you to learn or revise the c# programming language concepts in the short amount of time." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Learn C# quickly and easily in 45 minutes">
+<meta name="twitter:description" content="Learn the concepts of c# with webdevmonk c# tutorial. This will help you to learn or revise the c# programming language concepts in the short amount of time.">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/csharp.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/csharp-tutorial-in-45minutes" />
+<title>Learn C# quickly and easily in 45 minutes</title>
+</head>
+<body>
+     <nav>
+          <a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+  
+          <ul>
+              <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+                <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+          </ul>
+          <div class="themes">
+               <i class="fa-solid fa-sun" id="white" onclick></i>
+               <i class="fa-solid fa-moon" id="moon" onclick></i>
+            </div>
+      <div class="menu" id="menu">
+           <i class="fa-solid fa-bars" id="opens" onclick></i>
+           <i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+     </div>
+       </nav>
+       <main> 
+     <i class="fa-solid fa-arrow-up" id="up"></i>   
+     <h1>C# beginners guide in 45 minutes</h1>
+     <img id="image" src="../main/csharp.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+       <p>This 45 minutes C# tutorial is specially made for beginners and the people who looking for the C# revision.</p>
+       <p>Begin your programming journey with our tutorial <a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a> Designed for beginners, it covers all the essential concepts  to help you learn by doing</p> 
+       <h2>Concepts: </h2>
+                         <p><a href="#1">1.  C# Introduction</a> </p> 
+                         <p><a href="#2">2. C# Syntax </a> </p> 
+                         <p><a href="#3">3. C# Output </a> </p> 
+                         <p><a href="#4">4.  C# Comments</a> </p> 
+                         <p><a href="#5">5. C# Variables </a> </p> 
+                         <p><a href="#6">6.  C# Data Types</a> </p> 
+                         <p><a href="#7">7.  C# Type Casting</a> </p> 
+                         <p><a href="#8">8.  C# Operators</a> </p> 
+                         <p><a href="#9">9.  C# if, if-else, switch</a> </p> 
+                         <p><a href="#10">10.  C# while, do-while, for</a> </p> 
+                         <p><a href="#11">11.  C# break and continue</a> </p> 
+                         <p><a href="#12">12.  C# Booleans</a> </p> 
+                         <p><a href="#13">13.  C# Arrays</a> </p> 
+                         <p><a href="#14">14.  C# Strings</a> </p> 
+                         <p><a href="#15">15.  C# Methods</a> </p> 
+                         <p><a href="#16">16.  C# OOP Concepts</a> </p> 
+                         <p><a href="#17">17.  C# Files</a> </p> 
+                         <p><a href="#18">18.  C# enum</a> </p> 
+                         <p><a href="#19">19. C# Input</a></p>
+<h2 id="1">1. C# Introduction</h2>
+<p>C# is a modern, object-oriented programming language developed by Microsoft as part of the .NET framework. It is a high-level, statically-typed language that is designed to be easy to read and write, and it is used to build a wide variety of applications, including Windows desktop applications, mobile apps, and web applications.</p>
+<h3>How to write code for c# ?</h3>
+<p>To set up a C# development environment, you will need to install the following:</p>
+<p>1. A text editor or integrated development environment (IDE) such as Visual Studio, Visual Studio Code, or MonoDevelop.</p>
+<p>2. The .NET Framework or .NET Core runtime, which provides a library of classes and functions that you can use in your C# code.</p>
+<p>3. The C# compiler, which translates your C# code into machine code that can be executed on a computer.</p>
+ <p>Once you have these tools installed, you can create a new C# project in your text editor or IDE and start writing C# code.</p>
+
+ <h2 id="2">2. C# Syntax</h2>
+ <pre>
+<code class="language-csharp">
+using System;
+
+namespace HelloWorld
+{
+class Program
+{
+     static void Main(string[] args)
+     {
+          Console.WriteLine("Hello, World!");
+     }
+}
+}
+     
+</code>
+ </pre>
+ <p><strong>1. 'using': </strong>
+     This directive tells the compiler to include the specified namespace (in this case, 'System') in the program. The 'System' namespace contains many useful classes and functions, including the 'Console' class that we use to output text to the console.
+</p>
+<p><strong>2. 'namespace': </strong>A namespace is a container for a set of related classes and functions. In this example, we are defining a namespace called 'HelloWorld' that contains a single class called 'Program'.</p>
+<p><strong>3. 'class': </strong>A class is a template for an object. In this example, we are defining a class called 'Program' that contains a single function called 'Main'.</p>
+<p><strong>4. 'static void Main(string[] args)': </strong>This is the entry point for the C# program. </p>
+<p><strong>5. 'Console.WriteLine("Hello, World!")': </strong>This simple line of code will prints the string "Hello, World!" to the console.</p>
+
+<h2 id="3">3. C# Output</h2>
+<p>To output text in C#, you can use the 'Console.Write' or 'Console.WriteLine' </p>
+<pre>
+<code class="language-csharp">
+Console.WriteLine("C# webdevmonk tutorial");
+
+</code>
+</pre>
+<p>The above C# program, will print the text "C# webdevmonk tutorial" to the console.</p>
+
+<h2 id="4">4. C# Comments</h2>
+<p>In C#, you can use comments to add explanations or notes to your code. </p>
+<p>here are two types of comments: single-line comments and multi-line comments.</p>
+<p>Single-line comments start with two forward slashes (//) and continue to the end of the line.</p>
+<pre>
+<code class="language-csharp">
+int a = 10; // Declare and initialize x
+
+</code>
+</pre>
+<p>In C# the multi-line comments are begin with a forward slash and an asterisk (/*) and end with an asterisk and a forward slash (*/). </p>
+<pre>
+<code class="language-csharp">
+/* This is a
+multi-line comment */
+  
+
+</code>
+</pre>
+<p>You can also use multi-line comments to comment out a block of code. </p>
+<pre>
+<code class="language-csharp">
+/*
+int a = 10;
+int b = 20;
+int sum = a + b;
+*/
+     
+</code>
+</pre>
+<h2 id="5">5. C# Variables</h2>
+<p>In C#, a variable is a storage location for a value of a particular type. You can use variables to store values such as numbers, strings, and objects.</p>
+<pre>
+<code class="language-charp">
+&lt;type> &lt;variableName>;
+
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+int a;  // declares an integer variable called a
+
+int a = 10;  //initialize the variable when you declare it by assigning a value to it using the assignment operator (=)
+</code>
+</pre>
+<p>In C#, you can also declare multiple variables of the same type in a single statement by separating them with commas</p>
+<pre>
+<code class="language-csharp">
+int num1, num2, num3;
+int num1 = 10, num2 = 20, num3 = 30;
+
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+int a;              // declares an integer variable
+double b;           // declares a double-precision floating-point variable
+string name;        // declares a string variable
+bool flag;          // declares a Boolean variable
+object obj;         // declares an object variable
+     
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace VariableExample
+{
+class Program
+{
+     static void Main(string[] args)
+     {
+          // Declare and initialize variables
+          int a = 10;
+          double b = 20.5;
+          string name = "John";
+          bool flag = true;
+          object obj = new object();
+
+          // Print variable values
+          Console.WriteLine("a = " + b);
+          Console.WriteLine("b = " +b);
+          Console.WriteLine("name = " + name);
+          Console.WriteLine("flag = " + flag);
+          Console.WriteLine("obj = " + obj);
+
+          // Modify variable values
+          a = 15;
+          b = 25.5;
+          name = "Jane";
+          flag = false;
+          obj = "Hello, World!";
+
+          // Print modified variable values
+          Console.WriteLine("a = " + a);
+          Console.WriteLine("b = " + b);
+          Console.WriteLine("name = " + name);
+          Console.WriteLine("flag = " + flag);
+          Console.WriteLine("obj = " + obj);
+     }
+}
+}
+ 
+// Output 
+
+/* 
+
+a = 10
+b = 20.5
+name = John
+flag = True
+obj = System.Object
+a = 15
+b = 25.5
+name = Jane
+flag = False
+obj = Hello, World!
+
+*/
+</code>
+</pre>
+
+ <h2 id="6">6. C# Data Types </h2>
+ <p> A data type is a classification of types of data that determine the possible values for that type, the operations that can be performed on it, and how it can be stored in memory.</p>
+ <p>In C#, there are several built-in datatypes that you can use to declare variables and constants.</p>
+<pre>
+<code class="language-csharp">
+bool: A boolean value that can be either true or false.
+char: A single Unicode character.
+byte: An 8-bit unsigned integer.
+sbyte: An 8-bit signed integer.
+short: A 16-bit signed integer.
+ushort: A 16-bit unsigned integer.
+int: A 32-bit signed integer.
+uint: A 32-bit unsigned integer.
+long: A 64-bit signed integer.
+ulong: A 64-bit unsigned integer.
+float: A 32-bit single-precision floating point number.
+double: A 64-bit double-precision floating point number.
+decimal: A 128-bit decimal value.
+string: A sequence of Unicode characters.
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+     int num = 5;               // Integer (whole number)
+     double num1 = 5.99D;  // Floating point number
+     char character = 'D';         // Character
+     bool isTrue = true;          // Boolean
+     string text = "Hello";     // String
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace DataTypesExample
+{
+class Program
+{
+     static void Main(string[] args)
+     {
+          // Declare and initialize variables of different data types
+          int intValue = 10;
+          double doubleValue = 3.14;
+          char charValue = 'A';
+          bool boolValue = true;
+          string stringValue = "Hello, World!";
+
+
+          Console.WriteLine("intValue: " + intValue);
+          Console.WriteLine("doubleValue: " + doubleValue);
+          Console.WriteLine("charValue: " + charValue);
+          Console.WriteLine("boolValue: " + boolValue);
+          Console.WriteLine("stringValue: " + stringValue);
+     }
+}
+}
+  
+// Output: 
+
+/* 
+
+intValue: 10
+doubleValue: 3.14
+charValue: A
+boolValue: True
+stringValue: Hello, World!
+
+*/
+</code>
+</pre>
+ <h2 id="7">7. C# Type Casting</h2>
+<p>In C#, type casting is the process of converting a value of one data type to another data type. Generally, this can be actually done in either implicitly or explicitly.</p>
+<p>Implicit type casting occurs automatically when the value of a variable is assigned to a variable of a different, but compatible, data type.</p>
+<pre>
+<code class="language-csharp">
+int a = 10;
+double y = a; // Implicit type casting from int to double
+     
+</code>
+</pre>
+<p>In this example, the value of 'a', which is an 'int', is assigned to 'y', which is a 'double'. This is allowed because the 'double' data type is able to hold all the values that the 'int' data type can hold, and therefore the conversion is safe.</p>
+<p>Explicit type casting, on the other hand, requires the programmer to specify the data type to which the value should be converted. This is done using parentheses and the name of the target data type. </p>
+<pre>
+<code class="language-csharp">
+double a = 3.14;
+int y = (int) a; // Explicit type casting from double to int
+     
+</code>
+</pre>
+<p>In this example, the value of 'a', which is a 'double', is explicitly cast to an 'int' and assigned to 'y'. This type of conversion is not always safe, as it may result in data loss if the value of 'a' is not able to be accurately represented as an 'int'.</p>
+<h2 id="8">8. C# Operators</h2>
+<p>In C#, operators are symbols that perform specific operations on one or more operands. </p>
+<h3>1. Arithmetic operators</h3>
+<p>These operators perform arithmetic operations on numerical values, such as addition, subtraction, multiplication, and division.</p>
+<p><strong>+, -, *, /, %, ++(increment), --(decrement),</strong></p>
+<pre>
+<code class="language-csharp">
+int a = 10;
+int b = 20;
+int c = a + b;  // c is 30
+
+</code>
+</pre>
+<h3>2. Comparison operators:</h3>
+<p>These operators compare two values and return a Boolean result indicating whether the comparison is true or false.</p>
+<p><strong>>, &lt;, >=, &lt;=, ==, !=</strong></p>
+<pre>
+<code class="language-csharp">
+int x = 10;
+int y = 20;
+bool result = x &lt; y;  // result is true
+
+</code>
+</pre>
+<h3>3. Logical Operators</h3>
+<p>These operators perform logical operations on Boolean values, such as AND, OR, and NOT.</p>
+<pre>
+<code class="language-csharp">
+bool x = true;
+bool y = false;
+bool result = x && y;  // result is false
+
+</code>
+</pre>
+<h3>4. Assignment Operators</h3>
+<p>These operators assign a value to a variable.</p>
+<p><strong>=, +=(a += 9 same as a = a + 9), -=, *=, /=, %=, &=, |=, ^=, >>=,&lt;&lt;=</strong></p>
+<pre>
+<code class="language-csharp">
+int x = 10;
+int y = 20;
+x = y;  // x is now 20
+     
+</code>
+</pre>
+
+<h3>5. Bitwise Operators</h3>
+<p>These operators perform bitwise operations on integral values, such as AND (&), OR (|), XOR (^), and NOT (!), etc.
+</p>
+<pre>
+<code class="language-csharp">
+int x = 10;  // binary representation: 1010
+int y = 20;  // binary representation: 10100
+int z = x & y;  // z is 8 (binary representation: 1000)
+
+</code>
+</pre>
+<h2>Example: </h2>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace OperatorExample
+{
+class Program
+{
+     static void Main(string[] args)
+     {
+          // Arithmetic operators
+          int a = 10;
+          int b = 20;
+          int c = a + b;
+          Console.WriteLine("a + b = " + c);
+
+          // Comparison operators
+          bool result = a &lt; b;
+          Console.WriteLine("a &lt; b is " + result);
+
+          // Logical operators
+          result = a > 0 && b &lt; 30;
+          Console.WriteLine("a > 0 && y &lt; 30 is " + result);
+
+          // Bitwise operators
+          int a = 10;  // binary representation: 1010
+          int b = 20;  // binary representation: 10100
+          int c = a & b;  // c is 8 (binary representation: 1000)
+          Console.WriteLine("a & b = " + c);
+
+          // Assignment operators
+          a = b;
+          Console.WriteLine("a = " + a);
+     }
+}
+}
+
+// Output 
+
+/* 
+a + b = 30
+a &lt; b is True
+a > 0 && b &lt; 30 is True
+a & b = 8
+a = 20
+
+
+*/
+</code>
+</pre>
+
+
+<h2 id="9">9. C# if, if-else, switch</h2>
+<p>In C#, you can use the 'if' statement to run a block of code only if a certain condition is true. </p>
+<pre>
+<code class="language-csharp">
+int a = 10;
+
+if (a > 5)
+{
+     Console.WriteLine("a is greater than 5");
+}
+     
+</code>
+</pre>
+<p>In this example, the code inside the if block will be executed because the condition x > 5 is true.</p>
+<p>You can  use the if-else statement to execute a block of code if a certain condition is true, and a different block of code if the condition is false. </p>
+<pre>
+<code class="language-csharp">
+int a = 10;
+
+if (a > 5)
+{
+     Console.WriteLine("a is greater than 5");
+}
+else
+{
+     Console.WriteLine("a is not greater than 5");
+}
+     
+</code>
+</pre>
+<p>In this example, the code inside the first if block will be executed because the condition x > 5 is true.</p>
+<p>You can also use the switch statement to execute a block of code based on the value of a variable. The switch statement allows you to specify multiple cases, each with its own block of code to execute.</p>
+<pre>
+<code class="language-csharp">
+int a = 2;
+
+switch (a)
+{
+     case 1:
+          Console.WriteLine("a is 1");
+          break;
+     case 2:
+          Console.WriteLine("a is 2");
+          break;
+     case 3:
+          Console.WriteLine("a is 3");
+          break;
+     default:
+          Console.WriteLine("a is not 1, 2, or 3");
+          break;
+}
+     
+</code>
+</pre>
+<p>In the above example program,  the code inside the case 2: block will be executed because the value of x is 2.</p>
+
+<h2 id="10">10. C# while, do-while, for loops</h2>
+<h3>while loop</h3>
+<p>A 'while' loop repeatedly executes a block of code as long as a certain condition is true.</p>
+
+<pre>
+<code class="language-csharp">
+//Syntax
+while (condition)
+{ 
+    // code block to execute
+}
+     
+</code>
+</pre>
+
+<pre>
+<code class="language-csharp">
+int i = 0;
+while (i &lt; 10)
+{
+     Console.WriteLine(i);
+     i++;
+}
+     
+     
+</code>
+</pre>
+<p>This will print the numbers 0 through 9 to the console.</p>
+<h3>do-while loop</h3>
+<p>A do-while loop is similar to a while loop, but the code block will always execute at least once before the condition is checked. </p>
+<pre>
+<code class="language-csharp">
+// Syntax
+do
+{
+     // code block to execute
+} while (condition);
+
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+int i = 0;
+do
+{
+     Console.WriteLine(i);
+     i++;
+} while (i &lt; 10);
+
+</code>
+</pre>
+<p>This will also print the numbers 0 through 9 to the console.</p>
+<pre>
+<code class="language-csharp">
+int i = 1;
+do
+{
+     Console.WriteLine("I can print even though the while condition is false");
+     i++;
+} while (i > 10);
+</code>
+</pre>
+<p>The body of the loop will execute even though the while condition is false because do-while loop execute 
+     first before checking the condition.
+</p>
+<h3>for loop</h3>
+<p>A for loop allows you to specify a loop counter and the conditions for terminating the loop. </p>
+<pre>
+<code class="language-csharp">
+for (initialization; condition; iteration)
+{
+     // code block to execute
+}
+     
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+for (int i = 0; i &lt; 10; i++)
+{
+     Console.WriteLine(i);
+}
+     
+</code>
+</pre>
+<p>This will also print the numbers 0 through 9 to the console.</p>
+<h3>foreach loop</h3>
+<p>You can also use the 'foreach' loop to iterate over a collection or array in C#. </p>
+<pre>
+<code class="language-csharp">
+foreach (var item in collection)
+{
+     // code block to execute
+}
+     
+</code>
+</pre>
+<pre>
+<code class="language-csharp">
+int[] numbers = { 1, 2, 3, 4, 5 };
+foreach (int number in numbers)
+{
+     Console.WriteLine(number);
+}
+     
+</code>
+</pre>
+<p>This will print the numbers from 1 to 5 to the console.</p>
+
+<h2 id="11">11. C# break and continue</h2>
+<h3>break</h3>
+<p>The 'break' statement is used to exit a loop early at a specific condition, before the loop condition is 'false'. When the 'break' statement is encountered inside a loop, the loop is immediately terminated and the program continues with the next statement after the loop.</p>
+<h3>continue</h3>
+<p>The 'continue' statement is used to skip the rest of the current iteration of a loop and move on to the next iteration. When the 'continue' statement is encountered inside a loop, the program jumps to the next iteration of the loop, without executing the remaining statements in the current iteration.</p>
+<pre>
+<code class="language-csharp">
+for (int i = 0; i &lt; 10; i++)
+{
+     if (i % 2 == 0)
+     {
+          continue; // skip the rest of the current iteration
+     }
+     if (i == 7)
+     {
+          break; // exit the loop
+     }
+     Console.WriteLine(i);
+}
+     
+</code>
+</pre>
+
+
+<h2 id="12">12. C#  Booleans</h2>
+<p>In C#, a boolean is a type that can represent one of two values: 'true' or 'false'. Booleans are often used in conditional statements to test a condition and execute different code blocks depending on the result of the test.</p>
+<pre>
+<code class="language-csharp">
+bool flag = true;
+
+if (flag)
+{
+     Console.WriteLine("flag is true");
+}
+else
+{
+     Console.WriteLine("flag is false");
+}
+     
+</code>
+</pre>
+<p>Remember, 'if' statement will print it's block only if the condition is true other 'else' block of code will execute.</p>
+<p>This will print "flag is true" to the console.</p>
+<p>You can also use boolean values in expressions, such as:</p>
+<pre>
+<code class="language-csharp">
+bool a = true;
+bool b = false;
+
+bool c = a && b; // c is false
+bool d = a || b; // d is true
+     
+</code>
+</pre>
+<p>The && operator represents a logical AND, which is true if both operands are true, and false otherwise. </p>
+<pre>
+<code class="language-csharp">
+int a = 5;
+int b = 10;
+
+bool c = a &lt; b; // c is true
+     
+</code>
+</pre>
+<p>In this example, 'c' is true because 'a' is less than 'b'.</p>
+
+
+<h2 id="13">13. C#  Arrays</h2>
+<p>In C#, an array is a collection of elements of the same type, stored in a contiguous block of memory. You can declare an array by specifying the type of its elements and the number of elements in square brackets</p>
+<pre>
+<code class="language-csharp">
+int[] numbers = new int[5];
+
+</code>
+</pre>
+<p>This creates an array of ints with 5 elements, which are initialized to the default value for their type (0 for integers).</p>
+<p>You can also initialize an array with a list of values </p>
+<pre>
+<code class="language-csharp">
+int[] numbers = new int[] { 1, 2, 3, 4, 5 };
+
+</code>
+</pre>
+<p>Or you can use like this</p>
+<pre>
+<code class="language-csharp">
+int[] numbers = { 1, 2, 3, 4, 5 };
+
+</code>
+</pre>
+<p>Once you have an array, you can access its elements using an index in square brackets,</p>
+<pre>
+<code class="language-csharp">
+int first = numbers[0]; // first is 1
+int last = numbers[4]; // last is 5
+     
+</code>
+</pre>
+<p>Note that array indices are zero-based, so the first element of an array is at index 0, the second element is at index 1, and so on.</p>
+ <p>You can also use a loop to iterate over the elements of an array</p>
+<pre><code class="language-csharp">
+for (int i = 0; i &lt; numbers.Length; i++)
+{
+     Console.WriteLine(numbers[i]);
+}
+     
+</code></pre>
+<p>This will print the numbers 1 through 5 to the console.</p>
+<p>You can also use the 'foreach' loop to iterate over an array:</p>
+<pre>
+<code class="language-csharp">
+foreach (int number in numbers)
+{
+     Console.WriteLine(number);
+}
+     
+</code>
+</pre>
+<p>This will also print the numbers 1 through 5 to the console.</p>
+
+<pre>
+<code class="language-csharp"> 
+using System;
+
+namespace ArrayExample
+{
+class Program
+{
+static void Main(string[] args)
+{
+     // create an array of strings
+     string[] names = { "Alice", "Bob", "Charlie", "Dave", "Eve" };
+
+     // print the elements of the array
+     foreach (string name in names)
+     {
+          Console.WriteLine(name);
+     }
+
+     // to modify an element of  array
+     names[3] = "Carol";
+
+     // print the modified array
+     Console.WriteLine("Modified array:");
+     foreach (string name in names)
+     {
+          Console.WriteLine(name);
+     }
+}
+}
+}
+    
+// Output 
+
+/* 
+
+Alice
+Bob
+Charlie
+Dave
+Eve
+Modified array:
+Alice
+Bob
+Charlie
+Carol
+Eve
+
+*/
+</code>
+</pre>
+
+
+
+<h2 id="14">14. C#  Strings</h2>
+<p>In C#, the 'string' is a sequence of  characters. It is a reference type, which means that a variable of type "string" stores a reference to the location of the string in memory, rather than the string itself. This means that strings are mutable, which means that you can change the value of a string after it is created.</p>
+<pre>
+<code class="language-csharp">
+// Creating a string
+string str1 = "Hello, World!";
+
+// Concatenating strings
+string str2 = "Hello, ";
+string str3 = "World!";
+string str4 = str2 + str3;  // str4 is "Hello, World!"
+
+// Accessing characters in a string
+char firstChar = str1[0];  // firstChar is 'H'
+char lastChar = str1[str1.Length - 1];  // lastChar is '!'
+
+// Getting a substring
+string str5 = str1.Substring(7, 5);  // str5 is "World"
+
+// Comparing strings (case-sensitive)
+bool areEqual = str1 == str4;  // areEqual is true
+
+// Comparing strings (case-insensitive)
+bool areEqualIgnoreCase = str1.Equals(str4, StringComparison.OrdinalIgnoreCase);  // areEqualIgnoreCase is true
+
+// Checking if a string starts with or ends with a specific prefix or suffix
+bool startsWithH = str1.StartsWith("H");  // startsWithH is true
+bool endsWithExclamation = str1.EndsWith("!");  // endsWithExclamation is true
+
+</code>
+</pre>
+<p>C# also provides the StringBuilder class, which allows you to efficiently build up a string by appending new characters or substrings to it.</p>
+<pre>
+<code class="language-csharp">
+StringBuilder sb = new StringBuilder();
+
+for (int i = 0; i &lt; 10; i++) {
+     sb.Append("Hello, World! ");
+}
+
+string str = sb.ToString();  // str is "Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! Hello, World! "
+
+</code>
+</pre>
+<h2 id="15">15. C#  Methods</h2>
+<p>In C#, a method is a block of code that can perform a specific task and may return a result when it is called. Methods are declared within a class or struct and can be called (invoked) from other parts of the program.</p>
+<pre>
+<code class="language-csharp">
+public class Calculator {
+     public int Add(int a, int b) {
+          return a + b;
+     }
+     }
+     
+</code>
+</pre>
+<p>This example declares a class called 'Calculator' with a method called 'Add' that takes two int arguments and returns the sum of the two numbers as an integer result.</p>
+<p>To call (invoke) a method, you can use the method name followed by the arguments in parentheses. </p>
+<pre>
+<code class="language-csharp">
+Calculator calculator = new Calculator();
+int result = calculator.Add(3, 4);  // result is 7
+
+</code>
+</pre>
+<p>Methods can also have optional parameters, which allow you to omit certain arguments when calling the method. Optional parameters must be assigned a default value in the method declaration.</p>
+<pre>
+<code class="language-csharp">
+public int Multiply(int x, int y, int z = 1) {
+     return a * b * c;
+     }
+     
+     int result1 = calculator.Multiply(2, 3);  // result1 is 6 (c is 1 by default)
+     int result2 = calculator.Multiply(2, 3, 4);  // result2 is 24 (c is 4)
+     
+</code>
+</pre>
+<h3>Complete example: </h3>
+
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace MethodExample
+{
+public class Calculator
+{
+     // Method that adds two numbers and returns the result
+     public int Add(int a, int b)
+     {
+          return a + b;
+     }
+
+     // Method that subtracts two numbers and returns the result
+     public int Subtract(int x, int y)
+     {
+          return a - b;
+     }
+
+     // Method that multiplies two numbers and returns the result
+     // with an optional third parameter that defaults to 1
+     public int Multiply(int x, int y, int z = 1)
+     {
+          return a * b * c;
+     }
+
+     // Method that divides two numbers and returns the quotient and remainder
+     // using output parameters
+     public void Divide(int numerator, int denominator, out int quotient, out int remainder)
+     {
+          quotient = numerator / denominator;
+          remainder = numerator % denominator;
+     }
+}
+
+class Program
+{
+     static void Main(string[] args)
+     {
+          Calculator calculator = new Calculator();
+
+          int result1 = calculator.Add(3, 4);
+          Console.WriteLine("3 + 4 = " + result1);
+
+          int result2 = calculator.Subtract(10, 5);
+          Console.WriteLine("10 - 5 = " + result2);
+
+          int result3 = calculator.Multiply(2, 3);
+          Console.WriteLine("2 * 3 = " + result3);
+
+          int result4 = calculator.Multiply(2, 3, 4);
+          Console.WriteLine("2 * 3 * 4 = " + result4);
+
+          int quotient;
+          int remainder;
+          calculator.Divide(10, 3, out quotient, out remainder);
+          Console.WriteLine("10 / 3 = " + quotient + " remainder " + remainder);
+     }
+}
+}
+
+
+// Output: 
+
+/* 
+3 + 4 = 7
+10 - 5 = 5
+2 * 3 = 62 * 3 * 4 = 24
+10 / 3 = 3 remainder 1
+*/
+</code>
+</pre>
+
+
+
+
+
+
+
+
+<h2 id="16">16. C#  OOP Concepts</h2>
+<p>Object-oriented programming (OOP) is a programming paradigm that is based on the concept of "objects", which are data structures that contain both data and behavior. </p>
+<h3>1. Classes</h3>
+<p>A 'class' is a template or blueprint for creating many objects. It defines the data and behavior that objects of that class will have. </p>
+<pre>
+<code class="language-csharp">
+public class Employee
+{
+     public string Name { get; set; }
+     public int Age { get; set; }
+     public string Department { get; set; }
+
+     public void Work()
+     {
+          Console.WriteLine("Doing some work...");
+     }
+}
+
+</code>
+</pre>
+<h3>2. Object</h3>
+<p> An object is an instance of a class. You can create an object by using the 'new' keyword and calling the class's constructor. </p>
+<pre>
+<code class="language-csharp">
+Employee employee = new Employee();
+employee.Name = "John Smith";
+employee.Age = 30;
+employee.Department = "IT";
+employee.Work();
+     
+</code>
+</pre>
+<h3>3. Constructors</h3>
+<p> A constructor is a special method that is called only when the object is created. Constructors are used to initialize the data of an object and set it up for use.</p>
+<p>There are two main types of constructors in C#: parameterized constructors and default constructors.</p>
+<pre>
+<code class="language-csharp">
+public class Employee
+{
+     public string Name { get; set; }
+     public int Age { get; set; }
+     public string Department { get; set; }
+
+     public Employee(string name, int age, string department)
+     {
+          Name = name;
+          Age = age;
+          Department = department;
+     }
+}
+
+Employee employee = new Employee("John Smith", 30, "IT");
+
+</code>
+</pre>
+<h3>4. Inheritance</h3>
+<p>Inheritance is a special model to create a new class that is a updated version of an existing class. The new class is called the derived class or child class, and the existing class is the base class or parent class. The derived class can inherit the data and behavior of the base class and can also have additional data and behavior of its own.</p>
+<pre>
+<code class="language-csharp">
+public class Manager : Employee
+{
+public int NumberOfEmployees { get; set; }
+
+public void Lead()
+{
+     Console.WriteLine("Leading my team...");
+}
+}
+
+</code>
+</pre>
+<h3>5. Polymorphism</h3>
+<p> Polymorphism is the ability of a class to be used in multiple forms. There are two main types of polymorphism in C#: inheritance-based polymorphism (also known as "overriding") and interface-based polymorphism (also known as "implementing").</p>
+<h3>6. Encapsulation</h3>
+<p>Encapsulation is the concept of bundling data and behavior together in a single unit, or object. </p>
+<pre>
+     <code class="language-csharp">
+public class Employee
+{
+     private string name;
+     private int age;
+     private string department;
+
+     public Employee(string name, int age, string department)
+     {
+          this.name = name;
+          this.age = age;
+          this.department = department;
+     }
+
+     public string Name
+     {
+          get { return name; }
+          set { name = value; }
+     }
+
+     public int Age
+     {
+          get { return age; }
+          set { age = value; }
+     }
+
+     public string Department
+     {
+          get { return department; }
+          set { department = value; }
+     }
+
+     public void Work()
+     {
+          Console.WriteLine(Name + " is doing some work in the " + Department + " department.");
+     }
+}
+ </code>
+     </pre>
+<h2>example:</h2>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace ClassExample
+{
+     public class Employee
+     {
+          public string Name { get; set; }
+          public int Age { get; set; }
+          public string Department { get; set; }
+
+          public Employee(string name, int age, string department)
+          {
+               Name = name;
+               Age = age;
+               Department = department;
+          }
+
+          public void Work()
+          {
+               Console.WriteLine(Name + " is doing some work in the " + Department + " department.");
+          }
+     }
+
+     class Program
+     {
+          static void Main(string[] args)
+          {
+               Employee employee1 = new Employee("John Smith", 30, "IT");
+               Employee employee2 = new Employee("Jane Doe", 35, "Marketing");
+
+               employee1.Work();
+               employee2.Work();
+          }
+     }
+}
+      
+// Output 
+
+/* 
+John Smith is doing some work in the IT department.
+Jane Doe is doing some work in the Marketing department.
+*/
+</code>
+</pre>
+ 
+<h2 id="17">17. C# Files</h2>
+<p>In C#, a file is a named location on a disk that stores data, programs, or other information. C# provides a set of classes in the 'System.IO' namespace that you can use to read, write, and manipulate files in your code.</p>
+<p>Here is an example of how to read a text file in C# using the 'StreamReader' class:</p>
+<pre>
+<code class="language-csharp">
+using System;
+using System.IO;
+
+namespace FileExample
+{
+class Program
+{
+     static void Main(string[] args)
+     {
+          string filePath = "C:\\temp\\myfile.txt";
+          string fileContent;
+
+          using (StreamReader reader = new StreamReader(filePath))
+          {
+               fileContent = reader.ReadToEnd();
+          }
+
+          Console.WriteLine(fileContent);
+     }
+}
+}
+
+</code>
+</pre>
+<p>Here is an example of how to write to a text file in C# using the 'StreamWriter' class:</p>
+<pre>
+<code class="language-csharp">
+using System;
+using System.IO;
+
+namespace FileExample
+{
+     class Program
+     {
+          static void Main(string[] args)
+          {
+               string filePath = "C:\\temp\\myfile.txt";
+               string fileContent = "Hello, World!";
+
+               using (StreamWriter writer = new StreamWriter(filePath))
+               {
+                    writer.Write(fileContent);
+               }
+          }
+     }
+}
+     
+</code>
+</pre>
+<p>There are many other classes and methods in the System.IO namespace that you can use to work with files in C#. </p>
+<h2 id="18">18. C#   enum</h2>
+<p>In C#, an 'enum' (enumeration) is a value type that represents a set of named constants. Enums are useful for defining a set of related values that can be used throughout your code, and can help to make your code more readable and maintainable by providing named constants instead of magic numbers.</p>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace EnumExample
+{
+public enum DaysOfTheWeek
+{
+     Monday,
+     Tuesday,
+     Wednesday,
+     Thursday,
+     Friday,
+     Saturday,
+     Sunday
+}
+
+class Program
+{
+     static void Main(string[] args)
+     {
+          DaysOfTheWeek today = DaysOfTheWeek.Monday;
+
+          if (today == DaysOfTheWeek.Saturday || today == DaysOfTheWeek.Sunday)
+          {
+               Console.WriteLine("It's the weekend!");
+          }
+          else
+          {
+               Console.WriteLine("It's a weekday.");
+          }
+     }
+}
+}
+
+</code>
+</pre>
+<p>In this example, an 'enum' called DaysOfTheWeek is defined with seven named constants representing the days of the week. The enum is then used to determine whether a given day is a weekday or a weekend day.</p>
+<h2 id="19">19. C# Input   </h2>
+<p>In C#, you can use the 'Console' class in the 'System' namespace to read input from the console. The 'Console' class provides several methods for reading input, depending on the type of data you want to read.</p>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace InputExample
+{
+     class Program
+     {
+          static void Main(string[] args)
+          {
+               Console.WriteLine("Enter your name: ");
+               string name = Console.ReadLine();
+               Console.WriteLine("Hello, " + name + "!");
+          }
+     }
+}
+
+</code>
+</pre>
+<p>This example uses the ReadLine method of the 'Console' class to read a string from the console. The 'ReadLine' method reads a line of text from the console and returns it as a string.</p>
+<p>Here is an example of how to read a number from the console in C#</p>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace InputExample
+{
+     class Program
+     {
+          static void Main(string[] args)
+          {
+               Console.WriteLine("Enter a number: ");
+               int number = int.Parse(Console.ReadLine());
+               Console.WriteLine("You entered: " + number);
+          }
+     }
+}
+
+</code>
+</pre>
+<p> This example uses the 'ReadLine' method to read a string from the console, and then uses the 'int.Parse' method to convert the string to an integer.
+</p>
+<p>You can also use the ReadKey method to read a single key from the console without blocking the program.</p>
+<pre>
+<code class="language-csharp">
+using System;
+
+namespace InputExample
+{
+     class Program
+     {
+          static void Main(string[] args)
+          {
+               ConsoleKeyInfo key = Console.ReadKey();
+               Console.WriteLine("You pressed: " + key.KeyChar);
+          }
+     }
+}
+     
+</code>
+</pre>
+<p>This example uses the 'ReadKey' method to read a single key from the console and stores it in a 'ConsoleKeyInfo' object. The KeyChar property of the 'consoleKeyInfo' object contains the character representation of the key that was pressed.</p>
+
+<h2>Thank You</h2>
+<p>Thank you for taking the time to go through the webdevmonk's 45 minute C# tutorial. We hope that you found the tutorial helpful and informative. If you enjoyed this tutorial, we encourage you to check out some of our other tutorials on our website. We have a variety of topics covered, and we're sure you'll find something else that interests you.</p>
+<p>In addition to our tutorials, don't forget to visit our project page for access to free source code. This can be a great way to practice what you've learned and to see how it can be applied in a real-world setting.
+</p>
+<p>Finally, we recommend re-reading this tutorial to fully understand the concepts covered. Practice makes perfect, and the more you go over the material, the better you'll understand it.</p>
+<p>Thank you again for your interest in our tutorials. We hope to see you again soon!</p>
+</main>
+
+<!--F O O T E R -->
+
+<footer>
+
+     <div class="content-one"> 
+          <a href="../index.html"><h2>webdevmonk</h2></a>
+
+     <ul>
+     <a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+     <a href="../projects/projects-main-page.html"><li>Projects</li></a>
+     </ul>
+     <p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+     </p>
+     </div>
+     
+     <div class="copy-right">
+     <p>Copyright © 2023 webdevmonk. All rights reserved</p>
+     </div>
+     
+     <div class="privacy-policy">
+     <p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+     </div>
+     
+     </footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>

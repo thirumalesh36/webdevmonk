@@ -1,0 +1,1267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FEJCEQWL1N"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-FEJCEQWL1N');
+</script>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../main/style.css"> 
+<link rel="stylesheet" href="../main/prism.css">
+<link rel="shortcut icon" href="../main/fav.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta name="description" content="Looking to learn the basics of Java programming in a short amount of time? Our 45-minute Java tutorial is the perfect place to start. In this course, you'll learn how to set up a development environment, understand basic syntax, work with data types, and start using object-oriented programming concepts.">
+
+<!--GOOGLE  ANALYTICS-->
+<script  type="application/ld+json" >
+{
+"@context":"https://schema.org",
+"@graph":
+[
+{
+"@type":"WebPage",
+"@id":"https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes ",
+"url":"https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes",
+"name":"Java for Beginners: A Quick Start Guide",
+"isPartOf":{"@id":"https://www.webdevmonk.com/"},
+"description":"Looking to learn the basics of Java programming in a short amount of time? Our 45-minute Java tutorial is the perfect place to start. In this course, you'll learn how to set up a development environment, understand basic syntax, work with data types, and start using object-oriented programming concepts.",
+"inLanguage":"en-US",
+"potentialAction":[{"@type":"ReadAction","target":["https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes"]}]
+},
+{
+"@type":"BreadcrumbList",
+"@id":"https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes/#breadcrumb",
+"itemListElement":[
+{"@type":"ListItem","position":1,","name":"webdevmonk","item":"https://www.webdevmonk.com/"},
+{"@type":"ListItem","position":2,"name":"Projects","item":"https://www.webdevmonk.com/projects/projects-main-page.html"}
+]
+},
+{
+"@type":"WebSite",
+"@id":"https://www.webdevmonk.com/#website",
+"url":"https://www.webdevmonk.com/",
+"name":"webdevmonk",
+"description":"Learn programming with WebDevMonk's tutorials, examples, and front-end projects with free source code and demos. Covering languages such as HTML, CSS, JavaScript, C, Java, Dart, Flutter, and React, we've got you covered. Start learning today and take your skills to the next level.",
+"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.webdevmonk.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],
+"inLanguage":"en-US"
+},
+{
+"@type":"Person",
+"@id":"https://www.webdevmonk.com/#/schema/person/",
+"name":"Webdevmonk official site owner",
+"image":{
+"@type":"ImageObject",
+"inLanguage":"en-US",
+"@id":"https://www.webdevmonk.com/main/",
+"url":"https://www.webdevmonk.com/main/java.png",
+"contentUrl":"https://www.webdevmonk.com/main/java.png",
+"caption":"Java for Beginners: A Quick Start Guide"
+}
+}
+]
+}
+
+</script>
+
+
+
+<!-- og tags and twitter cards-->
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes" />
+<meta property="og:title" content="Java for Beginners: A Quick Start Guide" />
+<meta property="og:image" content="https://www.webdevmonk.com/main/java.png" />
+<meta property="og:description" content=" Looking to learn the basics of Java programming in a short amount of time? Our 45-minute Java tutorial is the perfect place to start. In this course, you'll learn how to set up a development environment, understand basic syntax, work with data types, and start using object-oriented programming concepts." />
+<meta property="og:image:width" content="500" />
+<meta property="og:image:height" content="400" />
+<meta property="og:image:type" content="image/png" />
+<meta property="og:site_name" content="webdevmonk" />
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@webdevmonk">
+<meta name="twitter:creator" content="@webdevmonk" />
+<meta name="twitter:title" content="Java for Beginners: A Quick Start Guide">
+<meta name="twitter:description" content="Looking to learn the basics of Java programming in a short amount of time? Our 45-minute Java tutorial is the perfect place to start. In this course, you'll learn how to set up a development environment, understand basic syntax, work with data types, and start using object-oriented programming concepts. ">
+<meta name="twitter:image" content="https://www.webdevmonk.com/main/java.png">
+
+<!--Canonicl Tag-->
+
+<link rel="canonical" href="https://www.webdevmonk.com/tutorials/java-tutorial-in-45minutes" />
+
+<title>Java for Beginners: A Quick Start Guide</title>
+</head>
+<body>
+<nav>
+<a href="../index.html"> <img src="../main/webmonk.png" width="200px"></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<div class="themes">
+<i class="fa-solid fa-sun" id="white" onclick></i>
+<i class="fa-solid fa-moon" id="moon" onclick></i>
+</div>
+<div class="menu" id="menu">
+<i class="fa-solid fa-bars" id="opens" onclick></i>
+<i class="fa-sharp fa-solid fa-xmark" id="closes" onclick></i>
+</div>
+</nav>
+<main> 
+<i class="fa-solid fa-arrow-up" id="up"></i>  
+<h1>Java 45 minutes quick start guide</h1> 
+<img id="image" src="../main/java.png" alt="CSS tutorial in 45 minutes" width="500px" height="400px">  
+<p>Looking to learn the basics of Java programming in a short amount of time? Our 45-minute Java tutorial is the perfect place to start. In this course, you'll learn how to set up a development environment, understand basic syntax, work with data types, and start using object-oriented programming concepts.</p>
+<p>Discover the world of programming with our in-depth tutorial,    
+<a href="../tutorials/computer-programming-all-concepts.html">The Building Blocks of Computer Programming</a> Perfect for beginners, it covers essential concepts and features interactive exercises to aid learning and retention</p>
+<h2>Concepts: </h2>
+<p><a href="#1">1.  Java Introduction</a> </p>
+<p><a href="#2">2. Java Syntax</a></p>
+<p><a href="#3">3. Java Comments</a></p>
+<p><a href="#4">4. Java Output</a></p>
+<p><a href="#5">5. Java Variables</a></p>
+<p><a href="#6">6. Java Data Types</a></p>
+<p><a href="#7">7. Java Booleans</a></p>
+<p><a href="#8">8. Java Input</a></p>
+<p><a href="#9">9. Java Operators</a></p>
+<p><a href="#10">10. Java if, if-else, switch</a></p>
+<p><a href="#11">11. Java while, do-while, for </a></p>
+<p><a href="#12">12. Java break and continue</a></p>
+<p><a href="#13">13. Java Methods</a></p>
+<p><a href="#14">14. Java Method Overloading</a></p>
+<p><a href="#15">15. Java Recursion</a></p>
+<p><a href="#16">16. Java Classes and Objects</a></p>
+<p><a href="#17">17. Java Class Methods</a></p>
+<p><a href="#18">18. Java Constructors</a></p>
+<p><a href="#19">19. Java Inheritence</a></p>
+<p><a href="#20">20. Java Polymorphism</a></p>
+<p><a href="#21">21. Java Arrays</a></p>
+<p><a href="#22">22. Java Strings</a></p>
+<p><a href="#23">23. Java Files</a></p>
+<p><a href="#24">24. Java Linked lists</a></p>
+
+<h2 id="1">1. Java Introduction</h2>
+
+<p>Java is a  famous programming language that is widely used for building a variety of applications, including web, mobile, desktop, and backend applications. It is a high-level language, meaning that it is easier to read and write than low-level languages, which are closer to machine code. Java is an object-oriented language, which means that it is based on the concept of "objects," which can represent real-world entities and their properties and behaviors.</p>
+<h3>How to write code for Java?</h3>
+<p>1. Download and install the Java Development Kit (JDK) on your computer. This will give you access to the necessary tools for writing and compiling Java code.</p>
+<p>2. Create a new file with a '.java' extension in any Text Editor(elclipse, vs code). This will be the file in which you will write your code.</p>
+<p>3. Then start writing Java code with correct Java Syntax</p>
+
+<h2 id="2">2. Java  Syntax</h2>
+<p>The syntax of a Java program is as follows</p>
+<p>1. Declare a class with the 'public' keyword and the name of the class.</p>
+<pre><code class="language-java">
+public class MyClass {
+
+}
+
+</code></pre>
+<p>Declare a 'main' method within the class. The 'main' method is the entry point of a Java program and is where the code execution begins.</p>
+<pre><code class="language-java">
+public class MyClass {
+public static void main(String[] args) {
+
+}
+}
+
+</code></pre>
+<p>3. Write code within the main method to perform the desired tasks.</p>
+<pre>
+<code class="language-java">
+public class MyClass {
+public static void main(String[] args) {
+System.out.println("Hello, world!");
+}
+}
+
+</code>
+</pre>
+<p>Remember that, In Java, it is convention to name the '.java' file the same as the class it contains. For example, if you have a class called 'MyClass', you would save it in a file called 'MyClass.java'. This helps to keep your code organized and makes it easier to find the file associated with a particular class. But, it does not required all the time</p>
+
+<h2 id="3">3. Java Comments</h2>
+<p>In Java, comments are lines of code that are not executed by the program, but are included to provide documentation or explanations of the code.</p>
+<p>There are two types of comments in Java: single-line comments and multi-line comments</p>
+<pre>
+<code class="language-java">
+// This is a single-line comment
+
+/*
+This is a multi-line comment.
+It can span multiple lines.
+*/
+
+</code>
+</pre>
+<p>It is a good practice to include comments in your code to provide explanations and documentation for others who may be reading or working with your code. </p>
+<h2 id="4">4. Java Output</h2>
+<p>In Java, you can output text to the console using the 'System.out.println()' method. This method prints the text passed to it as an argument, followed by a new line.</p>
+<p>For example, the following Java program will print "webdevmonk - Java Tutorial" to the console</p>
+<pre>
+<code class="language-java">
+System.out.println("webdevmonk - Java Tutorial");
+</code>
+</pre>
+<p>You can also use the 'System.out.print()' method to print text to the console without a new line.</p>
+<pre><code class="language-java">
+System.out.print("Hello, ");
+System.out.print("world!");
+
+</code></pre>
+<p>In addition to printing text, you can also use the System.out.println() and System.out.print() methods to print the values of variables or numbers, etc.</p>
+<pre>
+<code class="language-java">
+System.out.println(10);   // display 10
+System.out.println(true); // display true
+</code>
+</pre>
+<p>You can also use formatted output in Java by using the 'printf()' method like in C programming language</p>
+<p>Overall, the 'System.out.println()', 'System.out.print()', and 'printf()' methods are useful for outputting text and data to the console in Java.</p>
+<h2 id="5">5. Java Variables</h2>
+<p>In Java, a variable is a location in memory where you can store a value of a particular type. You can use variables to store data such as numbers, strings, and objects, and you can use them to perform calculations and manipulate data in your program.</p>
+<p>To declare a variable in Java, you need to specify the type of the variable and its name. </p>
+<pre><code class="language-java">int num;
+</code></pre>
+
+<p>To assign a value to a variable, you can use the assignment operator '='. </p>
+<pre><code class="language-java">
+int num;
+num = 10;
+
+</code></pre>
+<p>You can also declare and assign a value to a variable in a single statement:</p>
+<pre><code class="language-java">
+int num = 10;
+
+</code></pre>
+<p>Once you have declared a variable, you can use it in your code to store and manipulate data.</p>
+<pre>
+<code class="language-java">
+int num1 = 10;
+int num2 = 20;
+int sum = num1 + num2;
+System.out.println("Sum is: "+ sum);   // print Sum is: 30
+</code>
+</pre>
+<p>In the above Java example, the variables num1 and num2 are assigned the values 10 and 20, respectively. The variable sum is then assigned the value of num1 plus num2, which is 30</p>
+<p>It is a good practice to use descriptive names for your variables to make your code more readable and easier to understand</p>
+<h2>example</h2>
+<pre>
+<code class="language-java">
+public class Main {
+public static void main(String[] args) {
+// Declaring and initialize a double variable in java
+int num = 10;
+
+// Declaring and initialize a double variable in java
+double price = 19.99;
+
+// Declaring and initialize a string variable in java
+String name = "John";
+
+// Declaring and initialize a character variable
+char letter = 'A';
+
+System.out.println(name);
+double total = num * price;
+System.out.println(total);
+System.out.println(letter);
+System.out.println(num);
+}
+}
+
+// Output 
+
+/* 
+John
+199.89999999999998
+A
+10
+*/
+</code>
+</pre>
+
+
+<h2 id="6">6. Java Data Types </h2>
+<p>In Java, a data type specifies the kind of value that a variable can hold. Java has a number of built-in data types for storing numbers, characters, and boolean values</p>
+<h3>1. int</h3>
+<p>In Java, this data type is used to store 32-bit integers (whole numbers). For example: int num = 10;</p>
+<h3>2. double</h3>
+<p>In Java, this data type is used to store 64-bit floating-point numbers (decimal numbers). For example: double price = 19.99;</p>
+<h3>3. char</h3>
+<p>In Java, this data type is used to store a single character, such as a letter or symbol. A char value is represented with single quotes. For example: char letter = 's';</p>
+<h3>4. boolean</h3>
+<p>In Java, this data type is used to store a true or false value. For example: boolean flag = true;</p>
+<h3>5. String</h3>
+<p>In Java, this data type is used to store a sequence of characters (a string). A String value is represented with double quotes. For example: String name = "John";</p>
+<p>In addition to these basic data types, Java also has a number of other data types, such as 'long' for storing long integers and 'float' for storing single-precision floating-point numbers.</p>
+
+<pre>
+<code class="language-java"> 
+public class Main {
+public static void main(String[] args) {
+// Declare and initialize variables of different data types
+int num = 10;
+double price = 19.99;
+char letter = 'A';
+boolean flag = true;
+String name = "John";
+
+System.out.println(num);
+System.out.println(price);
+System.out.println(letter);
+System.out.println(flag);
+System.out.println(name);
+}
+}
+
+// Output 
+
+/* 
+
+10
+19.99A
+true
+John
+
+*/
+</code>
+</pre>
+<p>In this program, we are declaring variables of different data types and assigning them initial values. We are then using the 'System.out.println()' method to print the values of the variables to the console.</p>
+<h2 id="7">7. Java Booleans</h2>
+<p>In Java, a boolean data type is a data type that can hold a 'true' or 'false' value. Booleans are often used to represent the result of a condition or to control the flow of a program.</p>
+<p>To declare a boolean variable in Java, use the 'boolean' keyword followed by the variable name.</p>
+<pre><code class="language-java">boolean flag;
+</code></pre>
+<p>To assign a value to a boolean variable, use the 'true' or 'false' keywords.</p>
+<pre><code class="language-java">boolean flag = true;
+</code></pre>
+<p>You can also use boolean variables in conditions to control the flow of a program.</p>
+<pre><code class="language-java">
+if (flag) {
+// Code to execute if flag is true
+} else {
+// Code to execute if flag is false
+}
+
+</code></pre>
+
+<h2 id="8">8. Java Input</h2>
+<p>In Java, you can use the 'Scanner' class to read input from the user. To use the 'Scanner' class, you will need to 'import' it at the top of your file using the following import statement</p>
+<pre><code class="language-java">import java.util.Scanner;
+</code></pre>
+<p>Then, you can create a 'Scanner' object and use it to read input from the user.</p>
+<pre><code class="language-java">
+Scanner scanner = new Scanner(System.in);
+System.out.print("Enter a number: ");
+int num = scanner.nextInt();
+System.out.println("You entered: " + num);
+
+</code></pre>
+<p>In this example, we are using the Scanner object to read an integer from the user. The 'nextInt()' method reads an integer from the user and stores it in the num variable.</p>
+<p>You can use other methods of the Scanner class to read different types of input, such as 'nextDouble()' to read a double, 'nextLine()' to read a string, and 'nextBoolean()' to read a boolean.</p>
+<h2>example</h2>
+<pre>
+<code class="language-java">
+import java.util.Scanner;
+
+public class Main {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+
+// Reading a string from the user
+System.out.print("Enter a string: ");
+String str = scanner.nextLine();
+
+// Reading an integer from the user
+System.out.print("Enter an integer: ");
+int num = scanner.nextInt();
+
+// Reading a double from the user
+System.out.print("Enter a double: ");
+double d = scanner.nextDouble();
+
+
+
+// Print the values 
+System.out.println("You entered: ");
+System.out.println(num);
+System.out.println(d);
+System.out.println(str);
+
+}
+}
+
+// Output
+
+/*
+
+Enter a string: webdevmonk
+Enter an integer: 9
+Enter a double: 23.78
+You entered: 9
+23.78
+webdevmonk
+*/
+</code>
+</pre>
+
+
+
+<h2 id="9">9. Java Operators</h2>
+<p>In Java, operators are the symbols that perform operations on variables and values. Java has a number of built-in operators that can be used to perform tasks such as arithmetic, assignment, and comparison.</p>
+<h3>1. Arithmetic Operators</h3><p> 
+These operators perform basic mathametic calculations , such as addition, subtraction, multiplication, and division. For example: +, -, *, /, %</p>
+<h3>2. Assignment Operators</h3>
+<p>These are used to assign the values to variables. The  common assignment operator is '=', it assigns a value to a variable. For example: int num = 10;</p>
+<h3>3. Comparision Operators</h3>
+<p>These operators generally compare two values and return a boolean value  whether the comparison is true or false. For example: == (equal to), != (not equal to), > (greater than), &lt; (less than), >= (greater than or equal to), &lt;= (less than or equal to)</p>
+<h3>4. Logical operators</h3>
+<p>These operators are used to perform logical operations, such as and, or, and not. For example: && (and), || (or), ! (not)</p>
+<h3>5. Conditional Operator</h3>
+<p>This operator is also known as the ternary operator. It allows you to specify a condition and two possible outcomes, and returns one of the outcomes based on the condition. For example: (condition) ? outcome1 : outcome2</p>
+<p>There are many operators out there in Java, But these are the basic</p>
+<h2>example</h2>
+<pre>
+<code class="language-java">
+public class OperatorExample {
+public static void main(String[] args) {
+int a = 10;
+int b = 20;
+
+// Arithmetic operators
+System.out.println(a + b); // 30
+System.out.println(a - b); // -10
+System.out.println(a * b); // 200
+System.out.println(a / b); // 2
+System.out.println(a % b); // 0
+
+// Comparison operators
+System.out.println(a == b); // false
+System.out.println(a != b); // true
+System.out.println(a > b); // false
+System.out.println(a &lt; b); // true
+System.out.println(a >= b); // false
+System.out.println(a &lt;= b); // true
+
+// Logical operators
+System.out.println(a > 0 && b > 0); // true
+System.out.println(a > 0 || b > 0); // true
+System.out.println(!(a > 0)); // false
+
+// Increment and decrement operators
+a++;
+b--;
+System.out.println(a); // 11
+System.out.println(b); // 19
+
+// Ternary operator
+int c = (a > b) ? a : b;
+System.out.println(c); // 19
+}
+}
+
+</code>
+</pre>
+<h2 id="10">10. Java if, if-else, switch</h2>
+<h3>if</h3>
+<p>In Java, you can use the 'if' statement to execute a block of code if a certain condition is true. </p>
+<pre><code class="language-java">
+int a = 10;
+if (a > 0) {
+System.out.println("a is positive");
+}
+
+</code></pre>
+<p>In this example, the code inside the curly braces will be executed if the condition x > 0 is true</p>
+<h3>if-else</h3>
+<p>You can also use an 'if-else' statement to specify different code to be executed if the condition is true or false.</p>
+<pre>
+<code class="language-java">
+int a = 10;
+if (a > 0) {
+System.out.println("a is positive");
+} else {
+System.out.println("a is not positive");
+}
+
+</code>
+</pre>
+<p>In this example, the code inside the first set of curly braces will be executed if the condition x > 0 is true, and the code inside the second set of curly braces will be executed if the condition is false.</p>
+<h3>switch</h3>
+<p>You can also use a switch statement to execute different blocks of code based on the value of a variable.</p>
+<pre><code class="language-java">
+int a = 2;
+switch (a) {
+case 1:
+System.out.println("a is 1");
+break;
+case 2:
+System.out.println("a is 2");
+break;
+default:
+System.out.println("a is neither 1 nor 2");
+break;
+}
+
+</code></pre>
+<p>In this example, the code inside the block corresponding to the 'case' that matches the value of x will be executed. If no case matches the value of x, the code inside the 'default' block will be executed. It's important to include the 'break' statement at the end of each 'case' block to prevent the code from falling through to the next 'case' block</p>
+<h2 id="11">11. Java while, do-while, for </h2>
+<h3>while</h3>
+<p>The 'while' loop in Java, executes a block of code as long as a certain condition is true. It has the following syntax:
+</p>
+<pre>
+<code class="language-java">
+while (condition) {
+// code to be executed
+}
+
+</code>
+</pre>
+<pre>
+<code class="language-java">
+int i = 0;
+while (i &lt; 5) {
+System.out.println(i);
+System.out.println("hello");
+i++;
+}
+
+</code>
+</pre>
+<p>This will print the numbers 0 through 4 and "hello" 5 times.</p>
+<h3>do-while</h3>
+<p>The 'do-while' loop is similar to the 'while' loop, but it executes the block of code at least once before checking the condition. It has the following syntax:</p>
+<pre><code class="language-java">
+do {
+// code to be executed
+} while (condition);
+
+</code></pre>
+<pre><code class="language-java">
+int i = 0;
+do {
+System.out.println(i);
+i++;
+} while (i&lt;5);
+
+</code></pre>
+<p>This will also print the numbers 0 through 4.</p>
+<p>Now let's see the difference</p>
+<pre>
+<code class="language-java">
+int i = 0;
+do {
+System.out.println("Hello");
+i++;
+} while (i == 5);
+
+</code>
+</pre>
+<p>In the above example, even though the condition if false it executed once because it execute before it check the condition.
+</p>
+<h3>for</h3>
+<p>The 'for' loop is used to execute a block of code a certain number of times. It has the following syntax:</p>
+<pre><code class="language-java">
+for (initialization; condition; iteration) {
+// code to be executed
+}
+
+</code></pre>
+<p>The initialization part is executed before the loop starts. The condition is checked before each iteration. If it is true, the loop continues. If it is false, the loop ends. The iteration part is executed after each iteration.</p>
+<pre><code class="language-java">
+for (int i = 0; i &lt; 5; i++) {
+System.out.println(i);
+}
+
+</code></pre>
+<p>This will also print the numbers 0 through 4.</p>
+<h2 id="12">12.  Java break and continue</h2>
+<h3>break</h3>
+<p>The 'break' statement is used to exit a loop early, before the loop condition becomes false. It can also be used to exit a 'switch' statement.</p>
+<p>Here's an example of using break in a while loop:</p>
+<pre>
+<code class="language-java">
+int i = 0;
+while (true) {
+if (i >= 5) {
+break;
+}
+System.out.println(i);
+i++;
+}
+
+</code>
+</pre>
+<p>This loop is said to execute infinite number of times. But, This will print the numbers 0 through 4 because of the 'break' statement.</p>
+<h3>continue</h3>
+<p>The 'continue' statement is used to skip the rest of the current iteration of a loop and go to the next one.</p>
+<p>Here's an example of using 'continue' in a 'for' loop:</p>
+<pre><code class="language-java">
+for (int i = 0; i &lt; 10; i++) {
+if (i % 2 == 0) {
+continue;
+}
+System.out.println(i);
+}
+
+</code></pre>
+<p>This will print the odd numbers 1 through 9.</p>
+<p>Both 'break' and 'continue' can be used in any of the three loop types: 'while', 'do-while', and 'for'.</p>
+
+<h2 id="13">13. Java Methods</h2>
+<p>In Java, a method is a block of code that performs a specific task when it is called. Methods allow you to reuse code and make your programs more modular and easier to maintain.</p>
+<p>Here's the general syntax for a method in Java:
+</p>
+<pre>
+<code class="language-java">
+modifier returnType methodName(parameter list) {
+// method body
+}
+
+</code>
+</pre>
+<p>The 'modifier' specifies the visibility and accessibility of the method. It can be 'public', 'private', 'protected', or have no modifier (package-private).</p>
+<p>The 'returnType' specifies the data type of the value returned by the method. If the method does not return a value to the where it is called, the return type is 'void'.</p>
+<p>The 'methodName' is the name of the method. It should follow the same naming conventions as variables in Java.</p>
+<p>The 'parameter list' specifies the input parameters for the method. It is a comma-separated list of variables, each with a data type and a name. If the method does not take any parameters, the parameter list is empty.</p>
+<p>Here's an example of a method that takes two integers as parameters and returns their sum:</p>
+<pre><code class="language-java">
+public int add(int a, int b) {
+return a + b;
+}
+
+</code></pre>
+<p>To call a method, you use its name followed by a list of arguments in parentheses. The arguments must match the parameters in data type and order.</p>
+<p>Here's an example of calling the 'add' method from the previous example</p>
+<pre><code class="language-java">
+int result = add(3, 4);
+
+</code></pre>
+<p>This will assign the value 7 to the result variable.</p>
+<p>You can just execute a method without return value</p>
+<pre>
+<code class="language-java">
+void sayHi(){
+System.out.println("Hi");
+}
+sayHi();
+</code>
+</pre>
+<p>This will print "Hi" to the console.</p>
+<h2>example</h2>
+<pre>
+<code class="language-java">
+public class Main {
+public static void main(String[] args) {
+int result = add(3, 4);
+System.out.println(result);
+}
+
+public static int add(int a, int b) {
+return a + b;
+}
+}
+
+// Output 
+// 7
+</code>
+</pre>
+<p>This program defines a method called add that takes two integers as parameters and returns their sum. It then calls the add method with the arguments 3 and 4, and prints the result.</p>
+<h2 id="14">14. Java Method Overloading</h2>
+<p>Method overloading is a feature in Java that allows you to define multiple methods with the same name, but with different parameter lists. When you call one of these methods, Java will determine which version to use based on the number and types of the arguments you provide.</p>
+<pre>
+<code class="language-java">
+public class Main {
+public static void main(String[] args) {
+System.out.println(add(3, 4));
+System.out.println(add(3, 4, 5));
+}
+
+public static int add(int a, int b) {
+return a + b;
+}
+
+public static int add(int a, int b, int c) {
+return a + b + c;
+}
+}
+
+</code>
+</pre>
+<p>In this example, the add method is overloaded with two versions: one that takes two integers and returns their sum, and another that takes three integers and returns their sum.</p>
+<p>When you call the add method with two arguments, Java will use the first version of the method. When you call it with three arguments, Java will use the second version.</p>
+<p>Method overloading is useful when you want to provide multiple ways to perform a similar operation, but with different numbers or types of arguments.</p>
+<p>There are some rules to follow when overloading methods in Java</p>
+<p>1. The methods must have the same name.</p>
+<p>2. The methods must have different parameter lists. This means that the number, order, or types of the parameters must be different.</p>
+<p>3. The methods can have different return types, but this does not contribute to determining which version to use.</p>
+<p>4. The methods can have different access modifiers (e.g. public, private, protected), but this also does not contribute to determining which version to use.</p>
+<h2 id="15">15. Java Recursion</h2>
+<p>Recursion is a programming technique in which a method calls itself with a modified version of its input.</p>
+<p>Here's an example of a recursive method in Java that calculates the factorial of a number</p>
+<pre><code class="language-java">
+public int factorial(int n) {
+if (n == 0) {
+return 1;
+}
+return n * factorial(n - 1);
+}
+
+</code></pre>
+<p>This method calculates the factorial of a number by calling itself with a modified input (n - 1) until it reaches the base case, which is when the input is 0. The base case is important because it provides a stopping point for the recursion, otherwise the method would keep calling itself indefinitely.</p>
+<p>For example, to calculate the factorial of 4, the method would call itself with the input 3, then with the input 2, then with the input 1, and finally with the input 0. The result of each call is multiplied together to get the final result:</p>
+<pre><code class="language-java">
+factorial(4) = 4 * factorial(3)
+= 4 * 3 * factorial(2)
+= 4 * 3 * 2 * factorial(1)
+= 4 * 3 * 2 * 1 * factorial(0)
+= 4 * 3 * 2 * 1 * 1
+= 24
+
+</code></pre>
+<h2 id="16">16. Java Classes and Objects</h2>
+<p>In Java, a class is a template for creating multiple objects. An object is an instance of a class that contains its own state and behavior.</p>
+<p>Here's an example of a simple class in Java
+</p>
+<pre><code class="language-java">
+public class Example {
+// instance variables
+int i;
+int j = 30;
+}
+
+</code></pre>
+<p>This class defines a Example with two instance variables: i and i. </p>
+<p>To create an object from the class, you should use the 'new' keyword </p>
+<pre>
+<code class="language-java">
+Example obj1 = new Example();
+
+</code>
+</pre>
+<p>Like that you can create multiple objects with same properties in Java.</p>
+<p>To access the state of the object, you can use the dot notation to access the instance variables</p>
+<pre>
+<code class="language-java">
+System.out.println(obj1.i);   // 0  (if undefined an instance variable the default value will be 0)
+System.out.println(obj1.j);   // 30
+</code>
+</pre>
+<p>Classes and objects are a fundamental concept in object-oriented programming, and they allow you to model real-world entities in your code. They can make your code more modular, reusable, and easier to maintain.</p>
+<h2 id="17">17. Java Class Methods</h2>
+<p>In Java, a class can have both instance methods and static methods.</p>
+<p>Instance methods are methods that operate on the state of a specific object. They are called on an instance of the class and can access the object's instance variables. They are defined using the 'non-static' keyword.</p>
+<pre><code class="language-java">
+public class Example {
+private int i;
+private int j;
+
+public void function() {
+System.out.println("i: " + i + " and " + "j is "+j);
+}
+}
+
+</code></pre>
+<p>To call an instance method, you need to create an object of the class and use the dot notation to access the method</p>
+<pre><code class="language-java">
+Example obj1= new Example();
+obj1.function();
+</code></pre>
+<p>Static methods, on the other hand, are methods that do not operate on the state of a specific object. They are called on the class itself and do not have access to the object's instance variables.'static' keyword is used to define them.</p>
+<pre>
+<code class="language-java">
+public class MathUtils {
+public static int add(int a, int b) {
+return a + b;
+}
+}
+
+</code>
+</pre>
+<p>In this example, the add method is a static method because it does not operate on the state of a specific object and does not access any instance variables.</p>
+<p>To call a static method, you can use the class name followed by the dot notation and the method name</p>
+<pre><code class="language-java">
+int result = MathUtils.add(3, 4); // result is 7
+
+</code></pre>
+<p>Static methods are often used to provide utility functions or to perform operations that do not depend on the state of an object. They can be called without creating an instance of the class, which makes them more efficient and easier to use.</p>
+<pre><code class="language-java">
+public class Example{
+int i = 10;
+int j;
+void sayHello(String name){
+System.out.println("Hello, "+ name);
+}
+int add(int i){
+int sum = i+i;   
+return sum;
+} 
+
+public static void main(String args[]){
+Example obj =  new Example();
+obj.sayHello("Jake");   // Hello, Jake
+System.out.println(obj.add(10));            // 20
+}
+}
+
+</code></pre>
+<h2 id="18">18. Java Constructors </h2>
+<p>In Java, a constructor is a special type of method that is used to initialize an object. It has the same name as the class and is called when an object of that class is created.</p>
+<pre><code class="language-java">
+public class Student {
+private String name;
+private int age;
+
+public Student(String name, int age) {
+this.name = name;
+this.age = age;
+}
+}
+
+</code></pre>
+<p>To create an object of the Student class and initialize it with a name and age, you would use the following Java code</p>
+<pre><code class="language-java">Student s = new Student("John", 20);
+</code></pre>
+<p>Constructors can also have different visibility modifiers, such as   'public', 'private', or 'protected', just like other methods.</p>
+<p>If a class does not have a constructor defined, the Java compiler will automatically create a default constructor with an empty body. However, once you define any constructors for a class, the default constructor will no longer be provided.</p>
+<p>Constructors can also be overloaded, just like other methods. This means that a class can have multiple constructors with different parameter lists.</p>
+<h2 id="19">19. Java Inheritence</h2>
+<p>In Java, inheritance is a way to create a new class that is a modified version of an existing class. The new class is called the subclass or child class, and the existing class is the superclass or parent class.</p>
+<p>The subclass inherits all the members (fields, methods, and nested classes) of the superclass, but can also have additional members of its own. This allows you to reuse the code in the superclass and extend it with new functionality.</p>
+<p>Here is an example of how to create a subclass in Java</p>
+<pre><code class="language-java">
+public class Animal {
+// fields and methods
+}
+
+public class Dog extends Animal {
+// additional fields and methods
+}
+
+</code></pre>
+<p>The 'extends' keyword is used to create a subclass, and the Animal class is the superclass. The Dog class inherits all the members of the Animal class and can also have additional members of its own.</p>
+<pre><code class="language-java">
+public class Animal {
+protected String name;
+
+public Animal(String name) {
+this.name = name;
+}
+
+public void speak() {
+System.out.println("I am an animal and my name is " + name);
+}
+}
+
+public class Dog extends Animal {
+public Dog(String name) {
+super(name);
+}
+
+@Override
+public void speak() {
+System.out.println("I am a dog and my name is " + name);
+}
+}
+
+public class Cat extends Animal {
+public Cat(String name) {
+super(name);
+}
+
+@Override
+public void speak() {
+System.out.println("I am a cat and my name is " + name);
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+Animal a = new Animal("George");
+a.speak();  // Output: "I am an animal and my name is George"
+
+Dog d = new Dog("Buddy");
+d.speak();  // Output: "I am a dog and my name is Buddy"
+
+Cat c = new Cat("Whiskers");
+c.speak();  // Output: "I am a cat and my name is Whiskers"
+}
+}
+
+</code></pre>
+<p>In the Java programming language, the @Override annotation is used to indicate that a method is intended to override a method in a superclass. It is a compile-time annotation, meaning that it is checked by the compiler and does not have any effect at runtime.</p>
+</p>
+<p>In the above Java example, the Animal class is the superclass, and the Dog and Cat classes are subclasses that inherit from it. The speak method in the Animal class is overridden in the Dog and Cat classes.</p>
+<p>The 'main' method creates an object of each class and calls the speak method on them. The output shows that the correct version of the speak method is called for each object, based on its actual type.</p>
+<p>In addition to creating a subclass that inherits from a single superclass, Java also supports multiple inheritance through interfaces. An interface is a special type of class that only contains method declarations, and a class can implement one or more interfaces.</p>
+<p>Here is an example of how to create a class that implements an interface</p>
+<pre>
+<code class="language-java">
+public interface Movable {
+void move();
+}
+
+public class Car implements Movable {
+public void move() {
+// implementation of the move method
+}
+}
+
+</code>
+</pre>
+<p>The Car class implements the Movable interface and must implement the move method declared in the interface</p>
+
+<h2 id="20">20. Java Polymorphism</h2>
+<p>In Java, polymorphism refers to the ability of a reference variable to refer to multiple types of objects at different times. Polymorphism allows you to write code that can handle multiple different types of objects in a uniform way.</p>
+<p>In Java two types of polymorphism techniques are there</p>
+<p>1. Static polymorphism, also known as method overloading, refers to the ability to have multiple methods with the same name but different parameter lists in the same class. The compiler determines which method to call based on the number and type of the arguments passed to the method.</p>
+<p>2. Dynamic polymorphism, also known as method overriding, refers to the ability to have multiple methods with the same name and parameter list in different classes that are related by inheritance. The actual method called is determined at runtime based on the actual type of the object, not the reference type.</p>
+<p>Here is an example of both types of polymorphism in a Java program</p>
+<pre>
+<code class="language-java">
+public class Shape {
+// Static polymorphism: overloaded methods
+public void draw() {
+System.out.println("Drawing a shape");
+}
+
+public void draw(String color) {
+System.out.println("Drawing a " + color + " shape");
+}
+
+// Dynamic polymorphism: overridden method
+public void rotate() {
+System.out.println("Rotating a shape");
+}
+}
+
+public class Circle extends Shape {
+// Dynamic polymorphism: overridden method
+@Override
+public void rotate() {
+System.out.println("Rotating a circle");
+}
+}
+
+public class Main {
+public static void main(String[] args) {
+// Static polymorphism: the draw method is chosen based on the number of arguments
+Shape s1 = new Shape();
+s1.draw();       // Output: "Drawing a shape"
+s1.draw("red");  // Output: "Drawing a red shape"
+
+// Dynamic polymorphism: the rotate method is chosen based on the actual type of the object
+Shape s2 = new Circle();
+s2.rotate();  // Output: "Rotating a circle"
+}
+}
+
+</code>
+</pre>
+<p>The Shape class has two methods with the same name but different parameter lists (static polymorphism) and one method that is overridden in the Circle class (dynamic polymorphism).</p>
+<p>In the 'main' method, the draw method is chosen based on the number of arguments passed to it (static polymorphism), and the rotate method is chosen based on the actual type of the object (dynamic polymorphism).</p>
+
+<h2 id="21">21. Java Arrays</h2>
+<p>In Java, an array is a object that holds a fixed number of values of a same datatype. The values in an array are called elements, and each element has an index that determines its position in the array.</p>
+<pre><code class="language-java">int[] numbers = {1, 2, 3, 4, 5};
+</code></pre>
+<p>This code creates an array of integers called numbers and initializes it with the values 1, 2, 3, 4, and 5. The length of the array is determined by the number of elements it contains.</p>
+<p>You can create an array of same datatype using the 'new' operator</p>
+<pre><code class="language-java">int[] numbers = new int[5];
+</code></pre>
+<p>This creates an array of integers with a length of 5, but the elements are not initialized and have the default value of 0. You can then assign values to the elements of the array using their indexes</p>
+<pre><code class="language-java">
+numbers[0] = 1;
+numbers[1] = 2;
+numbers[2] = 3;
+numbers[3] = 4;
+numbers[4] = 5;
+
+</code></pre>
+<p>Arrays in Java are indexed starting from 0, so the first element of the numbers array is at index 0, the second element is at index 1, and so on.</p>
+<p>You can access the elements of an array using the square brackets [] operator</p>
+<pre><code class="language-java">
+int first = numbers[0];  // first = 1
+int second = numbers[1]; // second = 2
+
+</code></pre>
+<p>You can also use a loop to iterate over the elements of an array</p>
+<pre>
+<code class="language-java">
+for (int i = 0; i &lt; numbers.length; i++) {
+System.out.println(numbers[i]);
+}
+
+</code>
+</pre>
+<p>This code will print the elements of the numbers array on separate lines.</p>
+<p>In addition to arrays of primitive types, such as int, double, and boolean, you can also create arrays of objects.</p>
+<pre><code class="language-java">
+String[] names = {"Alice", "Bob", "Charlie"};
+
+</code></pre>
+<p>This creates an array of String objects and initializes it with the values "Alice", "Bob", and "Charlie".</p>
+<h2>example</h2>
+<pre><code class="language-java">
+public class Main {
+public static void main(String[] args) {
+int[] numbers = {1, 2, 3, 4, 5};
+
+for (int i = 0; i &lt; numbers.length; i++) {
+System.out.println(numbers[i]);
+}
+
+String[] names = {"Alice", "Bob", "Charlie"};
+
+for (String name : names) {
+System.out.println(name);
+}
+
+Person[] people = {
+new Person("Alice", 25),
+new Person("Bob", 30),
+new Person("Charlie", 35)
+};
+
+for (Person person : people) {
+System.out.println(person.getName() + " is " + person.getAge() + " years old");
+}
+}
+}
+
+class Person {
+private String name;
+private int age;
+
+public Person(String name, int age) {
+this.name = name;
+this.age = age;
+}
+
+public String getName() {
+return name;
+}
+
+public int getAge() {
+return age;
+}
+}
+
+</code></pre>
+<p>This code defines an array of integers, an array of strings, and an array of objects of type Person. It then uses a loop to iterate over the elements of each array and print their values.</p>
+<h2 id="22">22. Java Strings</h2>
+<p>We have been using strings so many times, now it's time to know about strings in detail.</p>
+<p>In Java, a 'String' is an immutable sequence of characters. It is one of the most commonly used classes in the Java Standard Library because of its widespread use in programming. Strings are often used to store and manipulate text data in programs.</p>
+<p> 
+Here is an example of creating and using a 'String' in Java
+</p>
+<pre><code class="language-java">
+public class Main {
+public static void main(String[] args) {
+String greeting = "Hello, World!";
+
+System.out.println(greeting);
+}
+}
+
+// Output
+// Hello, World!
+</code></pre>
+<p>You can also create a String object using string literals, which are sequences of characters enclosed in double quotes. </p>
+<pre><code class="language-java">String greeting = "Hello, World!";
+</code></pre>
+<p>In this case, the Java compiler will automatically create a String object with the value "Hello, World!".</p>
+<p>You can manipulate strings in a variety of ways in Java. Some common string manipulation techniques include concatenation, substring extraction, and searching for a specific character or sub-string within a string. Here are some examples</p>
+<pre><code class="language-java">
+public class Main {
+public static void main(String[] args) {
+String s1 = "Hello";
+String s2 = "World";
+
+String s3 = s1 + ", " + s2 + "!";
+System.out.println(s3);  // prints "Hello, World!"
+
+String s4 = s3.substring(0, 5);  // s4 is "Hello"
+System.out.println(s4);
+
+int index = s3.indexOf("Wor");  // index is 6
+System.out.println(index);
+}
+}
+
+// Output 
+
+/*
+Hello, World!
+Hello
+7
+*/
+</code></pre>
+<p>There are many other methods available in the String class for manipulating strings in Java. </p>
+
+
+
+
+
+
+
+
+<h2 id="23">23. Java Files</h2>
+<p>In the Java programming language, a file is a resource for storing data. A file can be used to store a variety of data types, including text, numerical data, and binary data.</p>
+<p>To work with files in Java, you can use the java.io package, which provides classes for reading and writing to files. Some common classes in the java.io package for working with files include</p>
+<p>'File': This class represents a file or directory on the file system. It provides methods for creating, deleting, and renaming files, as well as for determining the file's attributes (such as its size and last modified time).</p>
+<p>'FileInputStream' and 'FileOutputStream': These classes provide input and output streams for reading and writing to files.</p>
+<p>'BufferedReader' and 'BufferedWriter': These classes provide a convenient way to read and write text files, using a buffer to improve performance.</p>
+<p>'Scanner': This class provides a convenient way to read input from a variety of sources, including files.</p>
+
+<p>Here is an example of how to read a text file in Java using the BufferedReader class</p>
+<pre><code class="language-java">
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class Main {
+public static void main(String[] args) {
+BufferedReader reader = null;
+try {
+reader = new BufferedReader(new FileReader("file.txt"));
+String line = null;
+while ((line = reader.readLine()) != null) {
+System.out.println(line);
+}
+} catch (IOException e) {
+e.printStackTrace();
+} finally {
+try {
+if (reader != null) {
+reader.close();
+}
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}
+}
+
+</code></pre>
+<p>This code opens the file "file.txt" for reading, reads each line of the file one at a time, and prints it to the console. It's important to close the reader when you are finished with it to free up system resources.</p>
+<p>Here is an example of how to write to a text file in Java using the BufferedWriter class</p>
+<pre><code class="language-java">
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class Main {
+public static void main(String[] args) {
+BufferedWriter writer = null;
+try {
+writer = new BufferedWriter(new FileWriter("file.txt"));
+writer.write("Hello, world!");
+writer.newLine(); // Write a newline
+writer.write("This is a test.");
+} catch (IOException e) {
+e.printStackTrace();
+} finally {
+try {
+if (writer != null) {
+writer.close();
+}
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}
+}
+
+</code></pre>
+<p>This code opens the file "file.txt" for writing, writes the string "Hello, world!" with a newline after the text, and then writes the text "This is a test.". It's important to close the writer when you are finished with it to free up system resources.</p>
+<p>If the file called "file.txt" does not exist in the system, it will be created automatically in Java. If it does exist, the existing content of the file will be overwritten by the new content. If you want to append the new content to the existing content of the file instead of overwriting it, you can pass a second parameter to the 'FileWriter' constructor, set to true, like this: 'new FileWriter'("file.txt", true).</p>
+<h2 id="24">24. Java Linked lists</h2>
+<p>In Java, a linked list is a linear data structure that stores a sequence of elements, in which each element is a separate object that is linked to the previous and next elements in the list. Linked lists are implemented using the 'java.util.LinkedList' class, which extends the 'AbstractSequentialList' class and implements the 'List' interface.</p>
+<p>Linked lists have the following characteristics</p>
+<p>1. Elements are stored in nodes, which are objects that contain the element itself and a reference to the next node in the list.</p>
+<p>2. The first node in the list is known as the head, and the last node in the list is known as the tail.</p>
+<p>3. Linked lists do not have a fixed size, so you can add and remove elements from the list dynamically.</p>
+<p>4. Linked lists are efficient for inserting and deleting elements at any position in the list, but they are not as efficient as arrays for accessing and searching for elements.</p>
+<p>Here is an example of how to create a linked list in Java and add elements to it</p>
+<pre><code class="language-java">
+import java.util.LinkedList;
+
+public class Main {
+public static void main(String[] args) {
+// Create a new linked list
+LinkedList&lt;String> list = new LinkedList&lt;>();
+
+// Add elements to the list
+list.add("Apple");
+list.add("Banana");
+list.add("Cherry");
+
+// Print the list
+System.out.println(list); // Output: [Apple, Banana, Cherry]
+}
+}
+
+</code></pre>
+
+<p>To access and modify the elements in a linked list, you can use the methods provided by the 'LinkedList' class, such as 'get', 'set', 'add', 'addFirst', 'addLast', 'remove', and 'clear'. For example, to remove the first element from the list, you can use the 'removeFirst' method:</p>
+<pre><code class="language-java">list.removeFirst();
+</code></pre>
+<p>To iterate over the elements in a linked list, you can use a 'for' loop or an iterator. </p>
+
+<pre><code class="language-java">
+import java.util.Iterator;
+
+// ...
+
+Iterator&lt;String> iterator = list.iterator();
+while (iterator.hasNext()) {
+String element = iterator.next();
+System.out.println(element);
+}
+
+</code></pre>
+<h1>Thank You</h1>
+<p>Thank you for taking the time to read our 45-minute Java tutorial on the 'webdevmonk' website. We hope that you found it helpful and that you have a better understanding of the Java programming language.</p>
+<p>If you would like to solidify your understanding of the material covered in the tutorial, we recommend reviewing the concepts again. Reading the tutorial a second time, or reviewing specific sections as needed, can be a useful way to reinforce your understanding and help you retain the information.</p>
+<p>Additionally, practicing coding exercises and writing your own programs can be a great way to gain hands-on experience and further develop your skills. Don't be afraid to experiment and try out new things as you continue to learn Java.</p>
+<p>Thank you again for your dedication to learning Java and for visiting the 'webdevmonk' website. We wish you the best of luck on your journey as a Java programmer!</p>
+</main>
+
+<!--F O O T E R -->
+
+<footer>
+
+<div class="content-one"> 
+<a href="../index.html"><h2>webdevmonk</h2></a>
+
+<ul>
+<a href="../tutorials/tutorials-main-page.html"><li>Tutorials</li></a>
+<a href="../projects/projects-main-page.html"><li>Projects</li></a>
+</ul>
+<p>Feedback and Queries: &nbsp;&nbsp;<a id="mail" href="mailto:webdevmonk.feedback@gmail.com">Email us</a>
+</p>
+</div>
+
+<div class="copy-right">
+<p>Copyright © 2023 webdevmonk. All rights reserved</p>
+</div>
+
+<div class="privacy-policy">
+<p><a href="../about/privacy-policy-webdevmonk.html" style="text-decoration:underline;">privacy policy</a> &nbsp;&nbsp;and&nbsp;&nbsp; <a href="../about/terms-of-use-webdevmonk.html" style="text-decoration:underline;">terms of use</a></p>
+</div>
+
+</footer>
+
+<script src="../main/app.js"></script>
+<script src="../main/prism.js"></script>
+</body>
+</html>
